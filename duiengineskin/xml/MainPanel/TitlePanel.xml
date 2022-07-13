@@ -3,7 +3,7 @@
   <img pos="20,12,@122,@26" skin="titlepanel_logo"></img>
   
   <!--文字运营位-->
-  <link name="link_header_ad" pos="-0,|-0，@0,@0" crtext="C9A566" font="0000:微软雅黑" align="left" maxwidth="200" cursor="hand" dotted="1" show="0"></link>
+  <link name="link_header_ad" pos="-0,|-0,@0,@0" crtext="C9A566" font="0000:微软雅黑" align="left" maxwidth="200" cursor="hand" dotted="1" show="0"></link>
   
   <!--icon广告-->
   <!-- <imgbtn name="btn_icon_ad" pos="-588,|-14,@28,@28" skin="titlepanel_ad_skin" cursor="hand" show="0"></imgbtn>  -->
@@ -17,7 +17,7 @@
   <!--用户昵称-->
   <text name="txt_nickname" pos="-450,|-8" crtext="333333" font="0000:微软雅黑" align="left" cursor="arrow" maxwidth="200" dotted="1"></text>
   <!--会员身份标识-->
-  <imgbtn name="btn_crown" pos="-0,0,@0,@0" skin="titlepanel_translucent" icoskin="titlepanel_vipclose" cursor="hand"/>
+  <imgbtn name="btn_crown" pos="432,|-8,@0,@0" skin="titlepanel_translucent" icoskin="titlepanel_vipclose" cursor="hand"/>
   
    <!--企业认证-->
   <dlg name="dlg_enterprise" pos="-0,0,-0,-0">
@@ -27,8 +27,8 @@
   
   <!--会员中心-->
   <imgbtn name="btn_vipcenter" pos="-0,0,-0,-0" class="cls_titlepanel_vipcenter_btn" txtyoffset="2">%str1505%</imgbtn>
-  <dlg name="dlg_coupon" pos="[-28,|-22,@34,@15" skin="titlepanel_vipcenter_cornel" show="0">
-    <text name="text_coupon" pos="6,0" font2="facename:微软雅黑;adding:-2" crtext="ffffff"></text>
+  <dlg name="dlg_coupon" pos="[-0,|-0,@0,@0" skin="titlepanel_vipcenter_cornel" show="0">
+    <text name="text_coupon" pos="0,0" font2="facename:微软雅黑;adding:-2" crtext="ffffff"></text>
   </dlg>
   <text name="text_vipcenter" class="cls_titlepanel_vipcenter_btn" show="0"></text>
 
