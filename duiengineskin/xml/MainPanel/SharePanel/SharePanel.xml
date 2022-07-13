@@ -1,0 +1,322 @@
+<dlg name="ShareContainerPanel" pos="0,0,-0,-1">
+  <!--分类面板-->
+  <dlg name="ShareLeftPanel" pos="0,0,64,-0" skin="share_leftpanel_img">
+    <!--会话按钮-->
+    <buttonex name="session_list_btn" pos="0,0" width="64" height="72" class="share_tab_btn" crtext-check="ffffff" crtext-uncheck="333333"
+         text-yoffset="32" normal-skin="share_sessionbtn" hover-skin="share_sessionbtn_hover" down-skin="share_sessionbtn_hover" check-skin="share_sessionbtn_select">%str315%</buttonex>
+    <!--好友按钮-->
+    <buttonex name="friend_list_btn" pos="0,72" width="64" height="72" class="share_tab_btn" crtext-check="ffffff" crtext-uncheck="333333"
+         text-yoffset="36" normal-skin="share_friendbtn" hover-skin="share_friendbtn_hover" down-skin="share_friendbtn_hover" check-skin="share_friendbtn_select">%str316%</buttonex>
+    <!--群按钮-->
+    <buttonex name="group_list_btn" pos="0,144" width="64" height="72" class="share_tab_btn" crtext-check="ffffff" crtext-uncheck="333333"
+         text-yoffset="36" normal-skin="share_groupbtn" hover-skin="share_groupbtn_hover" down-skin="share_groupbtn_hover" check-skin="share_groupbtn_select">%str317%</buttonex>
+    <!--添加按钮-->
+    <imgbtn name="add_btn" pos="8,-56" width="48" height="48" animate="true" skin="share_add_btn_img" cursor="arrow"></imgbtn>
+  </dlg>
+  <!--中间面板-->
+  <dlg name="ShareMiddlePanel" pos="64,0,304,-0" show="0">
+    <!--会话列表-->
+    <listboxex name="session_list" pos="0,0,-0,-0" itemheight="60" crbg="ffffff" virtual="1" sbenable="2">
+      <template>
+        <img name="share_session_item_bkg" pos="0,0,-0,-0" skin="share_hoveritem_img" show="0"/>
+        <!--删除会话按钮-->
+        <imgbtn name="share_session_del_btn" pos="0,22" width="16" height="16" animate="true" skin="share_deletebtn" cursor="arrow" tip="%str355%" show="0"></imgbtn>
+        <!--单人会话头像-->
+        <img name="share_session_head" pos="16,10" width="40" height="40" skin="share_userhead_img"/>
+        <!--多人会话头像-->
+        <dlg name="SessionHeadPanel" crbg="e9e9e9" pos="16,10" width="40" height="40" show="0">
+          <img name="share_session_three_head" pos="2,2" width="17" height="17" skin="share_userhead_img"/>
+          <img name="share_session_four_head" pos="21,2" width="17" height="17" skin="share_userhead_img"/>
+          <img name="share_session_one_head" pos="2,21" width="17" height="17" skin="share_userhead_img"/>
+          <img name="share_session_two_head" pos="21,21" width="17" height="17" skin="share_userhead_img"/>
+        </dlg>
+        <!--未读消息标记-->
+        <dlg name="SessionUnreadPanel" pos="45,5" width="26" height="20" show="0">
+          <img name="share_session_unread_img" pos="0,2,@20,@16" skin="share_unread_bkg"/>
+          <text name="share_session_unread_num" pos="0,0,-0,-0" class="share_panel_unread_num_text"></text>
+        </dlg>
+        <link name="share_session_name" pos="68,10,-10,32" class="share_panel_name_text"></link>
+        <link name="share_session_content" pos="68,32,-75,52" class="share_panel_tip_text"></link>
+        <text name="share_session_time" pos="-70,32,-10,52" class="share_panel_time_text"></text>
+        <hr pos="0,-1,-0,-0" crbg="f3f3f3"/>
+      </template>
+    </listboxex>
+    <!--好友列表-->
+    <listboxex name="friend_list" pos="0,0,-0,-0" itemheight="60" crbg="ffffff" virtual="1" sbenable="2" show="0">
+      <template>
+        <img name="share_friend_item_bkg" pos="0,0,-0,-0" skin="share_hoveritem_img" show="0"/>
+        <img name="share_friend_head" pos="16,10" width="40" height="40" skin="share_userhead_img"/>
+        <link name="share_friend_name" pos="68,19,-9,41" class="share_panel_name_text"></link>
+        <hr pos="0,-1,-0,-0" crbg="f3f3f3"/>
+      </template>
+    </listboxex>
+    <!--群列表-->
+    <listboxex name="group_list" pos="0,0,-0,-0" itemheight="60" crbg="ffffff" virtual="1" sbenable="2" show="0">
+      <template>
+        <img name="share_group_item_bkg" pos="0,0,-0,-0" skin="share_hoveritem_img" show="0"/>
+        <dlg name="GroupHeadPanel" crbg="e9e9e9" pos="16,10" width="40" height="40">
+          <img name="share_member_three_head" pos="2,2" width="17" height="17" skin="share_userhead_img"/>
+          <img name="share_member_four_head" pos="21,2" width="17" height="17" skin="share_userhead_img"/>
+          <img name="share_member_one_head" pos="2,21" width="17" height="17" skin="share_userhead_img"/>
+          <img name="share_member_two_head" pos="21,21" width="17" height="17" skin="share_userhead_img"/>
+        </dlg>
+        <link name="share_group_name" pos="68,19,-9,41" class="share_panel_name_text"></link>
+        <hr pos="0,-1,-0,-0" crbg="f3f3f3"/>
+      </template>
+    </listboxex>
+  </dlg>
+  <!--右侧面板-->
+  <dlg name="ShareRightPanel" pos="304,0,-0,-0" show="0">
+    <!--分割线-->
+    <hr pos="0,0,1,-0" crbg="e5e5e5"/>
+    <!--会话面板-->
+    <dlg name="MsgDetailPanel" pos="1,0,-0,-0" show="0">
+      <dlg name="MsgDisplayPanel" pos="0,0,-0,-0">
+        <!--会话窗口标题栏-->
+        <dlg name="MsgTitlePanel" pos="0,0,-0,60">
+          <link name="msg_title_name" pos="140,19,-140,-19" class="share_panel_msg_title_text" show="0"></link>
+          <imgbtn name="msg_title_btn" pos="[0,10" width="30" height="40" class="share_msgdown_btn"></imgbtn>
+          <text name="msg_name_calc_size" pos="0,0" class="share_panel_msg_title_text" show="0"></text>
+          <imgbtn name="msg_file_factory_btn" pos="-95,10" width="70" height="40" animate="true" class="share_filefactory_btn" cursor="arrow">%str362%</imgbtn>
+          <!--分割线-->
+          <hr pos="0,-1,-0,-0" crbg="e5e5e5"/>
+        </dlg>
+        <!--会话窗口中间区域-->
+        <dlg name="MsgChatPanel" pos="0,60,-0,-59">
+          <!--消息内容显示区域-->
+          <listboxex name="chat_msg_list" pos="0,0,-0,-0" itemheight="80" virtual="1" sbenable="2">
+            <template>
+              <!--消息时间-->
+              <dlg name="MsgTimePanel" pos="0,0,-0,20" show="0">
+                <text name="msg_time_tip" pos="0,0,-0,18" class="share_msg_time_text"></text>
+              </dlg>
+              <!--查看历史消息-->
+              <dlg name="ViewHistoryPanel" pos="0,0,-0,25" show="0">
+                <link name="view_more_link" pos="|-39,4" class="cls_btn_weblink">%str373%</link>
+                <dlg name="MsgLoadingPanel" pos="0,0,-0,-0" show="0">
+                  <gifplayer name="gif_loading" pos="|-30,1" width="18" height="18" skin="loading_gif"/>
+                  <text pos="[8,2" class="share_msg_time_text">%str382%</text>
+                </dlg>
+              </dlg>
+              <!--系统消息-->
+              <dlg name="SysMsgPanel" pos="0,20,-0,45" show="0">
+                <dlg name="SysMsgTipPanel" pos="|-200,0,@376,@25" skin="share_sysmsg_img">
+                  <text name="sys_msg_tip" pos="8,3,-8,-3" class="share_msg_time_text" multilines="1"></text>
+                </dlg>
+              </dlg>
+              <!--左侧显示格式-->
+              <dlg name="FriendMsgPanel" pos="0,20,-0,-0">
+                <buttonex name="msg_head_img" pos="24,0,@40,@40" normal-skin="share_userhead_img"/>
+                <text name="msg_friend_name" pos="84,0,480,18" class="share_msg_name_text"></text>
+                <!--消息背景-->
+                <dlg name="ChatPanel" pos="76,24,@360,@360" skin="share_msg_left_bkg">
+                  <!--纯文本消息类型-->
+                  <dlg name="PureTextPanel" pos="0,0,-0,-0" show="0">
+                    <!--消息体-->
+                    <chatrichedit name="edit_msg_content" show="1" number="0" enabledragdrop="0" autowordsel="0"
+                       font="0600:微软雅黑" inset="0,0,0,0" wordwrap="1"
+                       pos="11,5,-4,-5" multilines="1" wantreturn="1" vscrollbar="0" readonly="1"
+                       autovscroll="0" crtext="333333" align="left" hscrollbar="0"
+                       autohscroll="0" transparent="1" show_caret="0">
+                    </chatrichedit>
+                  </dlg>
+                  <!--视频文件类型-->
+                  <dlg name="VideoFilePanel" pos="0,0,-0,-0" show="0">
+                    <link name="video_file_name" pos="10,8,-4,28" class="share_file_name_text"/>
+                    <img name="video_file_image" pos="10,34,-4,-4" skin="share_defthumb"/>
+                    <imgbtn name="video_play_btn" pos="|-24,|-7" width="48" height="48" animate="true" cursor="arrow" skin="share_videoplaybtn" tip="%str383%"></imgbtn>
+                  </dlg>
+                  <!--图片文件类型-->
+                  <dlg name="ImageFilePanel" pos="0,0,-0,-0" show="0">
+                    <img name="image_file_image" pos="10,4,-4,-4" skin="share_defthumb"/>
+                  </dlg>
+                  <!--其他文件类型-->
+                  <dlg name="NormalFilePanel" pos="0,0,-0,-0" show="0">
+                    <img name="file_type_image" pos="14,12,@30,@30" skin="other_middle_image"/>
+                    <link name="normal_file_name" pos="53,12,-10,28" class="share_file_name_text"/>
+                    <text name="normal_file_size" pos="53,32,-10,48" class="share_msg_name_text"/>
+                  </dlg>
+                  <!--文件夹类型-->
+                  <dlg name="FolderPanel" pos="0,0,-0,-0" show="0">
+                    <img name="folder_type_image" pos="14,12,@30,@30" skin="folder_middle_image"/>
+                    <link name="folder_name" pos="53,12,-10,-12" class="share_file_name_text"/>
+                  </dlg>
+                </dlg>
+                <!--文件操作面板-->
+                <dlg name="MsgFileOpPanel" pos="360,-40,-0,-20" show="0">
+                  <imgbtn name="btn_transfer_file" pos="0,1,@18,@18" animate="true" cursor="arrow" skin="share_transferfilebtn" tip="%str389%"></imgbtn>
+                  <imgbtn name="btn_down_file" pos="28,1,@18,@18" animate="true" cursor="arrow" skin="share_downfilebtn" tip="%str366%"></imgbtn>
+                </dlg>
+                <!--错误提示面板-->
+                <dlg name="MsgErrorTipPanel" pos="84,-20,-0,-2" show="0">
+                  <img name="msg_error_icon" pos="0,1,@16,@16" skin="error_image"/>
+                  <text name="msg_error_text" pos="20,0,-0,-0" class="share_msg_name_text"/>
+                </dlg>
+              </dlg>
+              <!--右侧显示格式-->
+              <dlg name="SelfMsgPanel" pos="0,20,-0,-0" show="0">
+                <buttonex name="self_msg_head_img" pos="-64,0,@40,@40" normal-skin="share_userhead_img"/>
+                <text name="self_msg_friend_name" pos="-480,0,-84,18" class="share_self_name_text"></text>
+                <!--消息背景-->
+                <dlg name="SelfChatPanel" pos="-430,24,@360,@360" skin="share_msg_right_bkg">
+                  <!--纯文本消息类型-->
+                  <dlg name="SelfPureTextPanel" pos="0,0,-0,-0" show="0">
+                    <!--消息体-->
+                    <chatrichedit name="self_edit_msg_content" show="1" number="0" enabledragdrop="0" autowordsel="0"
+                       font="0600:微软雅黑" inset="0,0,0,0" wordwrap="1"
+                       pos="5,5,-10,-5" multilines="1" wantreturn="1" vscrollbar="0" readonly="1"
+                       autovscroll="0" crtext="333333" align="left" hscrollbar="0"
+                       autohscroll="0" transparent="1" show_caret="0">
+                    </chatrichedit>
+                  </dlg>
+                  <!--视频文件类型-->
+                  <dlg name="SelfVideoFilePanel" pos="0,0,-0,-0" show="0">
+                    <link name="self_video_file_name" pos="4,8,-10,28" class="share_file_name_text"/>
+                    <img name="self_video_file_image" pos="4,34,-10,-4" skin="share_defthumb"/>
+                    <imgbtn name="self_video_play_btn" pos="|-24,|-7" width="48" height="48" animate="true" cursor="arrow" skin="share_videoplaybtn" tip="%str383%"></imgbtn>
+                  </dlg>
+                  <!--图片文件类型-->
+                  <dlg name="SelfImageFilePanel" pos="0,0,-0,-0" show="0">
+                    <img name="self_image_file_image" pos="4,4,-10,-4" skin="share_defthumb"/>
+                  </dlg>
+                  <!--其他文件类型-->
+                  <dlg name="SelfNormalFilePanel" pos="0,0,-0,-0" show="0">
+                    <img name="self_file_type_image" pos="8,12,@30,@30" skin="other_middle_image"/>
+                    <link name="self_normal_file_name" pos="47,12,-10,28" class="share_file_name_text"/>
+                    <text name="self_normal_file_size" pos="47,32,-10,48" class="share_msg_name_text"/>
+                  </dlg>
+                  <!--文件夹类型-->
+                  <dlg name="SelfFolderPanel" pos="0,0,-0,-0" show="0">
+                    <img name="self_folder_type_image" pos="8,12,@30,@30" skin="folder_middle_image"/>
+                    <link name="self_folder_name" pos="47,12,-10,-12" class="share_file_name_text"/>
+                  </dlg>
+                </dlg>
+                <!--文件操作面板-->
+                <dlg name="SelfMsgFileOpPanel" pos="-458,-40,-440,-20" show="0">
+                  <imgbtn name="self_btn_down_file" pos="0,1,@18,@18" animate="true" cursor="arrow" skin="share_downfilebtn" tip="%str366%"></imgbtn>
+                </dlg>
+                <!--错误提示面板-->
+                <dlg name="SelfMsgErrorTipPanel" pos="-234,-20,-84,-2" show="0">
+                  <img name="self_msg_error_icon" pos="0,1,@16,@16" skin="error_image"/>
+                  <text name="self_msg_error_text" pos="20,0" class="share_msg_name_text">%str391%</text>
+                </dlg>
+              </dlg>
+            </template>
+          </listboxex>
+          <!--计算消息体显示区域面板-->
+          <dlg name="CalcMsgSizePanel" pos="40,0,400,-0" show="0">
+            <chatrichedit name="edit_calc_size" show="1" number="0" enabledragdrop="0" autowordsel="0"
+              font="0600:微软雅黑" inset="0,0,0,0" wordwrap="1"
+              pos="11,5,-4,-5" multilines="1" wantreturn="1" vscrollbar="0" readonly="1"
+              autovscroll="0" crtext="333333" align="left" hscrollbar="0"
+              autohscroll="0" transparent="1" show_caret="0">
+            </chatrichedit>
+            <text name="text_calc_msg_size" pos="30,0" multilines="0" font="0000:微软雅黑"></text>
+            <text name="text_calc_sysmsg_size" pos="30,0" maxwidth="360" multilines="1" class="share_msg_time_text"></text>
+            <link name="link_calc_file_name" pos="30,30" class="share_file_name_text"/>
+            <text name="text_calc_file_size" pos="30,50" class="share_msg_name_text"/>
+          </dlg>
+        </dlg>
+        <!--邀请好友提示区域-->
+        <dlg name="InviteFriendPanel" pos="0,60,-0,90" crbg="f1f3f7" show="0">
+          <text pos="]-50,7" class="share_invite_text">%str451%</text>
+          <link name="copy_invite_link" pos="|-85,7" class="cls_btn_weblink">%str378%</link>
+          <text pos="[0,7" class="share_invite_text">%str379%</text>
+          <imgbtn name="close_invite_panel_btn" pos="-40,6" width="16" height="16" animate="true" skin="share_deletebtn" cursor="arrow" tip="%str381%"></imgbtn>
+        </dlg>
+        <!--添加好友提示区域-->
+        <dlg name="AddFriendPanel" pos="0,60,-0,90" crbg="f1f3f7" show="0">
+          <text pos="|-130,7" class="share_invite_text">%str385%</text>
+          <link name="add_friend_link" pos="[0,7" class="cls_btn_weblink">%str386%</link>
+          <imgbtn name="close_addfriend_panel_btn" pos="-40,6" width="16" height="16" animate="true" skin="share_deletebtn" cursor="arrow" tip="%str381%"></imgbtn>
+        </dlg>
+        <!--发送好友验证区域-->
+        <dlg name="FriendTipPanel" pos="0,60,-0,90" crbg="f1f3f7" show="0">
+          <text pos="|-165,7" class="share_invite_text">%str453%</text>
+          <link name="send_verify_link" pos="[0,7" class="cls_btn_weblink">%str454%</link>
+          <imgbtn name="close_friendtip_panel_btn" pos="-40,6" width="16" height="16" animate="true" skin="share_deletebtn" cursor="arrow" tip="%str381%"></imgbtn>
+        </dlg>
+        <!--会话窗口输入区域-->
+        <dlg name="MsgInputPanel" pos="0,-58,-0,-0">
+          <!--分割线-->
+          <hr pos="0,0,-0,0" crbg="e5e5e5"/>
+          <imgbtn name="msg_file_btn" pos="24,|-17" width="86" height="34" class="share_file_btn">%str323%</imgbtn>
+          <richedit name="msg_input_edit" pos="122,12,-102,46" class="cls_edit_set" font="0400:微软雅黑" password="0" show="1"
+                deftext="%str363%" crdeftext="999999" maxbuf="1000" inset="4,3,0,2" align="left" valign="middle"
+                multilines="1" wantreturn="1" vscrollbar="1" autovscroll="1" hscrollbar="0" deffont="0200:微软雅黑"
+                defleftmargin="4"></richedit>
+          <imgbtn name="msg_send_btn" pos="-90,|-17" width="66" height="34" class="share_file_btn">%str364%</imgbtn>
+        </dlg>
+      </dlg>
+      <dlg name="MsgMemberPanel" pos="0,0,-0,-0" show="0"/>
+      <dlg name="MsgNewFriendPanel" pos="0,0,-0,-0" show="0">
+        <dlg name="newfriend_title_panel" pos="0,0,-0,60">
+          <text pos="0,20,-0,40" class="share_panel_msg_title_text">%str442%</text>
+          <!--分割线-->
+          <hr pos="0,-1,-0,-0" crbg="e5e5e5"/>
+        </dlg>
+        <listboxex name="newfriend_noice_msg_list" pos="0,60,-0,-0" itemheight="80" virtual="1" sbenable="2">
+          <template>
+            <dlg name="newfriend_msg_panel" pos="0,0,-0,-0">
+              <img name="newfriend_head_image" pos="21,20,@40,@40" skin="share_userhead_img"/>
+              <text name="newfriend_name_txt" pos="74,20,-185,40" class="share_panel_name_text"></text>
+              <text name="newfriend_verify_txt" pos="74,44,-185,60" class="share_newfriend_verify_text"></text>
+              <imgbtn name="newfriend_send_msg_btn" pos="-100,27,-28,53" class="button" show="0">%str438%</imgbtn>
+              <imgbtn name="newfriend_reject_btn" pos="-190,27,-118,53" class="button">%str440%</imgbtn>
+              <imgbtn name="newfriend_accept_btn" pos="-100,27,-28,53" class="share_file_btn">%str439%</imgbtn>
+              <text name="newfriend_reject_txt" pos="-100,27,-28,53" class="share_newfriend_reject_text" show="0">%str441%</text>
+              <hr pos="0,-1,-0,-0" crbg="f3f3f3"/>
+            </dlg>
+          </template>
+        </listboxex>
+      </dlg>
+      </dlg>
+    <!--好友详情面板-->
+    <dlg name="FriendDetailPanel" pos="|-180,|-215" width="360" height="430" show="0">
+      <img name="friend_head" pos="|-70,0" width="140" height="140" skin="share_userhead_img" />
+      <text name="friend_name" pos="0,145,-0,175" class="share_panel_username_text"></text>
+      <hr pos="0,185,-0,185" style="dash" size="1" crbg="dedede"/>
+      <dlg name="FriendRemarkPanel" pos="95,203,-0,223">
+        <text pos="0,0" width="60" height="20" class="share_panel_common_text" show="1">%str320%</text>
+        <link name="add_remark_link" pos="55,0,135,-0" class="cls_btn_weblink" show="0">%str331%</link>
+        <text name="friend_remark" pos="60,0" maxwidth="270" height="20" class="share_panel_common_text" show="1"></text>
+        <imgbtn name="update_remark_btn" pos="[10,0" width="20" height="20" skin="share_update_btn" show="1" tip="%str346%"></imgbtn>
+      </dlg>
+      <dlg pos="95,230,-0,250">
+        <text pos="0,0" width="60" height="20" class="share_panel_common_text">%str321%</text>
+        <text name="friend_nickname" pos="60,0,-0,-0" class="share_panel_common_text"></text>
+      </dlg>
+      <dlg pos="95,257,-0,277">
+        <text pos="0,0" width="60" height="20" class="share_panel_common_text">%str322%</text>
+        <text name="friend_display_name" pos="60,0,-0,-0" class="share_panel_common_text"></text>
+      </dlg>
+      <imgbtn name="share_file_btn" pos="|-133,300" width="266" height="34" class="share_file_btn">%str438%</imgbtn>
+      <imgbtn name="delete_friend_btn" pos="|-133,340" width="266" height="34" class="share_common_btn">%str324%</imgbtn>
+      <imgbtn name="add_blacklist_btn" pos="|-133,380" width="266" height="34" class="share_common_btn">%str325%</imgbtn>
+    </dlg>
+    <!--群成员面板-->
+    <dlg name="GroupDetailPanel" pos="0,0,-0,-0" show="0">
+    </dlg>
+  </dlg>
+  <!--空面板-->
+  <dlg name="ShareEmptyPanel" pos="64,0,-0,-0" show="1">
+    <!--好友空面板-->
+    <dlg name="FriendEmptyPanel" pos="|-125,|-135" width="250" height="270" show="0">
+      <img pos="|-90,0" width="181" height="127" skin="share_empty_img" />
+      <text pos="0,170,-0,190" class="share_empty_text">%str327%</text>
+      <imgbtn name="add_friend_btn" pos="|-63,210" width="126" height="34" animate="true" class="share_file_btn" >%str319%</imgbtn>
+    </dlg>
+    <!--群组空面板-->
+    <dlg name="GroupEmptyPanel" pos="|-125,|-135" width="250" height="270" show="0">
+      <img pos="|-90,0" width="181" height="127" skin="share_empty_img" />
+      <text pos="0,170,-0,190" class="share_empty_text">%str328%</text>
+      <imgbtn name="create_group_btn" pos="|-63,210" width="126" height="34" animate="true" class="share_file_btn" >%str318%</imgbtn>
+    </dlg>
+    <!--会话空面板-->
+    <dlg name="SessionEmptyPanel" pos="|-182,|-128" width="364" height="256" show="1">
+      <img pos="0,0" width="364" height="158" skin="share_emptysession_bkg" />
+      <text pos="0,178,-0,198" class="share_empty_text">%str360%</text>
+      <imgbtn name="share_file2friend_btn" pos="|-63,220" width="126" height="34" animate="true" class="share_file_btn" >%str361%</imgbtn>
+    </dlg>
+  </dlg>
+</dlg>

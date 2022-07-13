@@ -1,0 +1,47 @@
+﻿<layer name="FilePropertyDlg" width="412" height="320" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+      <img pos="10,8" name="img_title" skin="common_logo_main"></img>
+      <text name="text_file_property_title" pos="39,9" class="cls_dlg_title_text">%str3764%</text>
+      <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+    </caption>
+
+    <dlg pos="20,54,-20,-54" name="panel_file_property" skin="dlg_panel_bkg_img">
+      <dlg pos="0,0,-0,58">
+        <dlg pos="10,12,@34,@34" skin="file_property_file_type_bkg_img">
+          <img name="img_file_type" pos="2,2,-2,-2"/>
+        </dlg>
+        <link name="text_file_name" pos="58,20" maxwidth="304" textmode="40024" crtext="333333"></link>
+        <hr pos="10,-0,-10,-0" style="dash" size="1" crbg="dde8f0"/>
+      </dlg>
+      <dlg pos="0,76,-0,104">
+        <text name="text_file_type_name" pos="16,0" crtext="989898">%str1003%</text>
+        <text name="text_file_type_value" pos="92,0" crtext="4c4c4c"></text>
+      </dlg>
+      <dlg pos="0,[0,-0,[28">
+        <text name="text_file_pos_name" pos="16,0" crtext="989898">%str1004%</text>
+        <link name="text_file_pos_value" pos="92,0" maxwidth="270" textmode="40024" crtext="4c4c4c"></link>
+      </dlg>
+      <dlg pos="0,[0,-0,[28">
+        <text name="text_file_size_name" pos="16,0" crtext="989898">%str1005%</text>
+        <text name="text_file_size_value" pos="92,0" crtext="4c4c4c"></text>
+      </dlg>
+      <dlg pos="0,[0,-0,[28" name="panel_file_count">
+        <text name="text_file_count_name" pos="16,0" crtext="989898">%str1006%</text>
+        <text name="text_file_count_value" pos="92,0" crtext="4c4c4c"></text>
+      </dlg>
+      <dlg pos="0,[0,-0,[28" name="panel_file_mtime">
+        <text name="text_file_mtime_name" pos="16,0" crtext="989898">%str1007%</text>
+        <text name="text_file_mtime_value" pos="92,0" crtext="4c4c4c"></text>
+      </dlg>
+    </dlg>
+    
+    <dlg pos="0,[16,-0,-0" name="file_appeal" show="0">
+      <text name="text_sealed_file_by_mistake" pos="260,0,@70,20" crtext="4c4c4c">%str3765%</text>
+      <link name="link_file_appeal" pos="[4,0,@60,@20" class="cls_btn_weblink">%str3766%</link>
+    </dlg>
+    
+    </dlg>
+  </body>
+</layer>

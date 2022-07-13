@@ -1,0 +1,90 @@
+<dlg name="WorkSpaceFileRecordContainerPanel" pos="0,0,-0,-0">
+  <!--文件列表视图-->
+    <dlg name="dlg_file_record_list_view" pos="0,0,-0,-0" show="0">
+      <text name="text_filename_calcul" pos="58,28" class="cls_operation_record_filename" show="0"></text>
+      <header name="file_record_list_header" pos="0,0,-0,@36"  fixWidth="0" itemSkin="listhead_btn_two" 
+        itemSwapEnable="0" sortHeader="1" check_txt_margin="12" crtext="757880" align="left">
+      </header>
+      <dlg pos="0,36,-0,-0">
+        <listboxex name="file_record_list_view" pos="0,0,-0,-0" itemheight="70" virtual="1" sbenable="3" frameskin="mainpanel_frame_select_bg">
+          <template>
+              <dlg name="dlg_record_info_item" pos="0,0,-0,-0">
+                <!--文件信息列-->
+                <dlg name="col_1">
+                  <img name="img_filetype" pos="20,26,@20,@20" skin="other_small_image"></img>  
+                  <dlg name="dlg_record_info_item_file" pos="58,20,-12,@16">
+                    <text name="txt_oldfilename" pos="0,0" crtext="666666" height="16" align="left" dotted="1" font="0000:微软雅黑"></text>
+                    <link name="link_filename" pos="[0,0,-0,@16" height="16" class="cls_operation_record_filename" dotted="1"></link>
+                  </dlg>   
+                 
+                  <hr name="hr_delete" pos="58,28" crbg="999999" show="0"/> 
+                  <text name="txt_size" pos="58,40" crtext="666666" align="left" dotted="1"></text>
+                </dlg>
+                  
+                <!--文件位置列-->
+                <dlg name="col_2">
+                  <dlg name="dlg_record_info_item_dir" pos="8,|-8,-0,@16">
+                    <text name="txt_olddirname" pos="0,0" crtext="666666" height="16" align="left" dotted="1" font="0000:微软雅黑"></text>
+                    <link name="link_dirname" pos="[0,0,-0,@16" height="16" class="cls_operation_record_filename" font="0000:微软雅黑" align="left" dotted="1"></link>
+                  </dlg>
+                </dlg> 
+
+                <!--操作类型列-->
+                <dlg name="col_3">
+                  <text name="txt_type" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+                </dlg>
+                  
+                <!--操作端列-->
+                <dlg name="col_4">
+                  <img name="img_op_from" pos="8,|-8,@16,@16" skin="workspace_record_op_local" show="0"></img>
+                  <text name="txt_devide" pos="[8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+                </dlg>  
+                  
+                <!--修改时间列-->
+                <dlg name="col_5">
+                  <text name="txt_time" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+                </dlg>
+                    
+                <hr pos="0,-2,-0,-1" crbg="f5f5f6"/> 
+              </dlg> 
+              
+              <dlg name="dlg_loading_item" pos="0,0,-0,-0" show="0">
+                <gifplayer name="gif_loading" pos="|-20,|-8,@20,@20" skin="workspace_file_record_load_item" align="center"/>
+              </dlg>  
+                
+              <dlg name="dlg_full_data_item" pos="0,0,-0,-0" show="0">
+                <text name="txt_full_data_tip" pos="|-150,|-8,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str4761%</text>
+              </dlg> 
+              
+              <dlg name="dlg_retry_item" pos="0,0,-0,-0" show="0">
+                <text name="txt_load_fail" pos="|-50,|-8,@90,@20" crtext="333333" align="left" dotted="1">%str4762%</text>
+                <link name="link_retry" pos="[1,|-8,@30,@20" cursor="hand" crtext="06a8ff" font="0000:微软雅黑" align="left" dotted="1">%str16%</link>
+              </dlg>  
+          </template>
+        </listboxex>
+      </dlg>
+    </dlg>
+  
+    <!--空文件列表视图-->
+    <dlg name="dlg_file_record_empty_view" pos="0,0,-0,-0" show="0">
+      <img name="empty_view_bg" pos="|-90,|-80,@181,@127" skin="workspace_file_empty"></img>
+      <text name="txt_loading_tip" pos="|-146,[2,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str4545%</text>
+    </dlg>
+
+    <!--正在加载视图-->
+    <dlg name="dlg_file_record_loading_view" pos="0,0,-0,-0" show="0">
+      <gifplayer name="gif_loading_view" pos="|-16,|-16,@32,@32" skin="gif_statuspanel_loading"/>
+      <text name="txt_loading_tip" pos="|-150,[12,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2311%</text>
+    </dlg>
+
+    <!--加载失败视图-->
+    <dlg name="dlg_file_record_error_view" pos="0,0,-0,-0" show="0">
+      <img name="error_view_bg" pos="|-90,|-64,@180,@128" skin="mainpanel_emptyview_error"></img>
+      <text name="txt_error_tip" pos="|-146,[0,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2312%</text>
+      <dlg name="link_error_dlg" pos="|-44,|84,-0,@22">
+        <text pos="0,0" crtext="333333" font="0200:微软雅黑">%str4613%</text>
+        <link name="link_error_retry" pos="[4,0" crtext="06A7FF" font="0202:微软雅黑" cursor="hand">%str217%</link>
+      </dlg>
+    </dlg>
+  
+</dlg>

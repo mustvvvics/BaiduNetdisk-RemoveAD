@@ -1,0 +1,88 @@
+﻿<layer name="LoginDeviceStatusDlg" width="660" height="442" appwin="0" ncRect="0,0,0,0" resize="0" translucent="0" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+      <img pos="10,8" name="img_logo" skin="common_logo_main"></img>
+      <text pos="39,9" name="text_title" class="cls_dlg_title_text">%str3727%</text>
+      <imgbtn name="btn_return" pos="2,7,@60,@24" icoskin="logindevicestatus_dlg_arrow_btn" crtext="333333" icoxoffset="8" icoyoffset="5" txtxoffset="12" skin="logindevicestatus_dlg_return_btn" animate="true" cursor="arrow" show="0">%str3719%</imgbtn>
+      <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,8,-2,28" cursor="arrow" tip="%str250%" animate="1" show="0"/>
+      </caption>
+      <dlg name="panel_device_exceed_limit" pos="0,38,-0,-0">
+        <img name="img_account_header_show" pos="421,15,@30,@30" skin="titlepanel_default_head" show="1">
+          <img name="img_userhead_frame" pos="0,0,-0,-0" skin="logindevicestatus_dlg_head_frame"/>
+        </img>
+        <text name="text_account_name" pos="459,21" crtext="69737e" font="0000:微软雅黑" align="left" cursor="arrow" maxwidth="89" dotted="1"></text>
+        <img name="img_account_member_type" pos="[5,22" skin="titlepanel_vipclose" show="1"/>
+        <link name="link_logout" pos="[12,21,@60,@16" class="cls_login_device_status_dlg_gray_link">%str3700%</link>
+        
+        <text pos="222,74" class="cls_login_device_status_dlg_big_text">%str3701%</text>
+        <dlg name="panel_device_question" pos="428,90,@14,@14" tip="%str3728%" skin="logindevicestatus_dlg_question">
+        </dlg>
+        <text pos="[6,90" name="text_current_device_num" crtext="FF0000" font="0200:微软雅黑"></text>
+        <text pos="170,117" name="text_device_limit_tip" class="cls_login_device_status_dlg_middle_text">%str3702%</text>
+
+        <dlg name="panel_app_guide_tip" pos="196,157,@278,@24">
+          <text pos="0,0" name="text_open_app_tip" crtext="666665" >%str3705%</text>
+          <link name="link_app_name" pos="[1,0" class="cls_login_device_status_dlg_gray_link">%str3706%</link>
+          <text pos="[1,0" name="text_oprate_app_tip" crtext="666665" >%str3707%</text>
+        </dlg>
+        
+        <text name="text_other_solution" pos="40,204" crtext="666665" >%str3708%</text>
+        <text pos="493,204" crtext="666665" >%str3709%</text>
+        <link name="link_refresh" pos="578,204" class="cls_login_device_status_dlg_gray_link">%str3710%</link>
+        
+        <dlg name="panel_device_solution_main_device_logout" skin="logindevicestatus_dlg_small_sln_bkg" pos="38,234,@188,@96">
+          <text pos="|-75,8" class="cls_login_device_status_dlg_small_text">%str3711%</text>
+          <text name="text_main_device_guide_tip" pos="|-70,48" crtext="666665" >%str3705%</text>
+          <link name="link_app_name_from_sln" pos="|-8,48" class="cls_login_device_status_dlg_gray_link">%str3706%</link>
+          <text name="text_main_device_op_tip" pos="|-72,68" crtext="666665" >%str3707%</text>
+        </dlg>
+        
+        <dlg name="panel_device_solution_self_logout" skin="logindevicestatus_dlg_small_sln_bkg" pos="239,234,@188,@96">
+          <text pos="|-75,8" class="cls_login_device_status_dlg_small_text">%str3712%</text>
+          <link name="link_view_device_list" pos="|-36,58" class="cls_login_device_status_dlg_gray_link">%str3713%</link>
+        </dlg>
+        
+        <dlg name="panel_device_solution_open_svip" skin="logindevicestatus_dlg_small_sln_bkg" pos="440,234,@188,@96">
+          <link name="link_open_svip" pos="8,8" class="cls_login_device_status_dlg_blue_link">%str3714%</link>
+          <text pos="21,48" crtext="666665" >%str3715%</text>
+          <text pos="21,68" crtext="666665" >%str3716%</text>
+        </dlg>
+      </dlg>
+
+      <dlg name="panel_device_cheat" pos="1,38,-1,-1">
+        <dlg name="panel_device_cheat_tip" pos="0,0,-0,-0">
+          <dlg name="panel_device_cheat_account" pos="145,21,-0,51">
+            <img name="img_cheat_account_header" pos="0,0,@30,@30" skin="titlepanel_default_head" show="1">
+              <img name="img_userhead_frame" pos="0,0,-0,-0" skin="logindevicestatus_dlg_head_frame"/>
+            </img>
+            <text name="text_cheat_account_name" pos="[8,4" crtext="69737e" font="0000:微软雅黑" align="left" cursor="arrow" maxwidth="89" dotted="1"></text>
+            <img name="img_cheat_account_member_type" pos="[5,4" skin="titlepanel_vipclose" show="1"/>
+          </dlg>
+          <dlg name="panel_device_cheat_appeal_start" pos="95,64,-0,-0">
+            <text pos="0,0" crtext="666665" >%str3717%</text>
+            <text pos="48,24" crtext="666665" >%str3720%</text>
+            <imgbtn name="btn_appeal" pos="30,[24,@170,@36" animate="true" cursor="hand" skin="logindevicestatus_dlg_blue_btn">%str3718%</imgbtn>
+            <link name="link_cheat_account_logout" pos="91,[15" class="cls_login_device_status_dlg_gray_link">%str3700%</link>
+            <imgbtn name="btn_quit" pos="30,111,@170,@36" animate="true" cursor="hand" skin="logindevicestatus_dlg_blue_btn" show="0">%str250%</imgbtn>
+          </dlg>
+          <dlg name="panel_device_cheat_appeal_succeed" pos="65,60,-0,-0" show="0">
+            <text pos="0,0" class="cls_login_device_status_dlg_middle_text" >%str3721%</text>
+            <text pos="38,[15" crtext="666665" >%str3722%</text>
+            <text pos="8,[10" crtext="666665" >%str3723%</text>
+            <imgbtn name="btn_go_login" pos="50,[22,@170,@36" animate="true" cursor="arrow" skin="logindevicestatus_dlg_blue_btn">%str3724%</imgbtn>
+          </dlg>
+          <dlg name="panel_device_cheat_appeal_wait" pos="35,60,-0,-0" show="0">
+            <text pos="0,0" name="text_cheat_appeal_wait_time" class="cls_login_device_status_dlg_middle_text" >%str3725%</text>
+            <text pos="40,[15" crtext="666665" >%str3723%</text>
+            <imgbtn name="btn_cheat_account_logout" pos="85,[46,@170,@36" animate="true" cursor="arrow" skin="logindevicestatus_dlg_blue_btn">%str3700%</imgbtn>
+            <imgbtn name="btn_wait_quit" pos="85,99,@170,@36" animate="true" cursor="hand" skin="logindevicestatus_dlg_blue_btn" show="0">%str250%</imgbtn>
+          </dlg>
+        </dlg>
+        <dlg name="panel_device_cheat_appeal_page" pos="0,0,-0,-0">
+          <webbrowser name="appeal_web_page" pos="0,0,-0,-0" use_ie="0" show="1"/>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

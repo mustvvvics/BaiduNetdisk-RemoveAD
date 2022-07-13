@@ -1,0 +1,18 @@
+<layer name="ShareBatchLinkGuideDlg" width="340" height="280" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <!--标题栏-->
+      <caption pos="1,1,-0,36">
+        <img pos="10,8" skin="common_logo_main"/>
+        <text name="definition_txt_title" pos="39,9" class="cls_dlg_title_text">%str1476%</text>  <!--开通超级会员-->
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg pos="1,37,-0,-0">
+        <img pos="132,20,@77,@77" name="img_guide" align="center" skin="share_batch_link_guide_bkg"/>
+        <text name="batch_link_guide_text" pos="50,[22,@240,@22" align="center" crtext="000000" font="0200:微软雅黑">%str3444%</text>   
+        <imgbtn name="btn_svip" pos="70,[28,@200,@46" align="center"  cursor="arrow" crtext="532B07" font="0400:微软雅黑" skin="video_definition_guidedlg_btn">%str1476%</imgbtn>
+      </dlg>
+    </dlg>
+  </body>
+</layer>
+

@@ -1,0 +1,24 @@
+﻿<layer name="BatchUploadPrivilegeDlg" width="504" height="320" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_message_box">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text name="text_upload_title" pos="39,9" class="cls_msgbox_title_text">%str800%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+
+      <dlg name="UploadPrivilegePanel" pos="1,38,-1,-1" crbg="f3fbff">
+        <link name="text_upload_tip" pos="12,25,-12,43" class="batchuploaddlg_guide_text">%str801%</link>
+        <img name="img_upload_privilege" pos="12,60,-12,-50" skin="batch_upload_guide_image"/>
+        <imgbtn name="btn_ok" pos="-186,-38,-94,-10" class="batchuploaddlg_defultbtn">%str802%</imgbtn>
+        <imgbtn name="btn_cancel" pos="-84,-38,-12,-10" class="msgboxbtn">%str803%</imgbtn>
+      </dlg>
+      <dlg name="UpgradeTipPanel" pos="0,38,-0,-0" show="0">
+        <img pos="30,33,@34,@34" skin="msgbox_question"/>
+        <text pos="74,40,-10,58" crtext="666666">%str805%</text>
+        <imgbtn name="btn_upgrade_suc" pos="-164,-27,-92,-3" class="msgboxbtn">%str806%</imgbtn>
+        <imgbtn name="btn_upgrade_cancel" pos="-82,-27,-10,-3" class="msgboxbtn">%str807%</imgbtn>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,28 @@
+<layer name="SharebatchLinkLDlg" width="470" height="190" toolwin="1" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <!--标题栏-->
+      <caption pos="1,1,-0,38">
+        <img pos="10,8" skin="common_logo_main"/>
+        <text name="txt_title" pos="39,10,@90,@20" class="cls_dlg_title_text">%str3445%</text> 
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg name="batch_link_access_dlg" pos="0,58,-0,-0">
+        <text name="link_access" pos="24,0,@300,@20" align="center" crtext="A9A9A9" font="0000:微软雅黑" >%str3437%</text> 
+      </dlg>
+      <dlg name="batch_link_tip_dlg" pos="1,90,-0,-0">
+	    <gifplayer name="creat_batch_link_gif_loading" pos="-200,0" show="0" width="18" height="18" skin="loading_gif"/>
+        <text name="creat_batch_link_tip" pos="[2,0,@150,@20" align="center" multilines="0" crtext="0FABFE" show="0" font="0000:微软雅黑">%str3443%</text> 
+	    <text name="creat_batch_link_error" pos="-416,0,@400,@20" align="right" multilines="0" crtext="FF0000" show="0" font="0000:微软雅黑"></text> 
+      </dlg>	  
+      <dlg name="batch_link_num_dlg" pos="1,120,-0,-0">
+        <text name="batch_link_num_text1" pos="28,6,@84,@18" align="center" multilines="0" crtext="333333 " font="0000:微软雅黑">%str3438%</text> 	
+        <richedit name="edit_link_num" pos="[4,2,@60,@28" class="cls_edit_set" font="0600:微软雅黑" password="0" show="1"
+          crdeftext="999999" maxbuf="2" inset="20,2,0,0" align="left" valign="middle" multilines="0" number="1"
+          wantreturn="1" vscrollbar="0" autovscroll="0" hscrollbar="0" deffont="0600:微软雅黑" defleftmargin="2"></richedit>
+        <text name="batch_link_num_text2" pos="[4,6" align="center" multilines="0" crtext="999999" font="0000:微软雅黑">%str3439%</text> 
+        <imgbtn name="btn_confirm" pos="308,0,@88,@32" cursor="arrow" class="button">%str3004%</imgbtn>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

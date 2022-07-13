@@ -1,0 +1,39 @@
+<layer name="WorkSpaceBeginnerTutorialPanel" width="273" height="393" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="dlg_tutorial_sync" pos="0,0,-0,-0" show="1" skin="workspace_tutorial_base">
+            <dlg name="dlg_front_page" pos="16,16,@240,@360" show="1">
+                <img skin="workspace_tutorial_first" pos="0,0,@240,@216"></img>
+                <imgbtn name="btn_close" skin="titlepanel_close_btn" pos="-30,15,@15,@16" cursor="arrow" tip="%str250%"></imgbtn>
+                <text pos="24,232" maxwidth="210" textmode="10" crtext="03081A " font="0000:微软雅黑" align="left" show="1">%str6208%</text>
+                <text name="txt_flow" pos="40,278" crtext="636D7E" font="0000:微软雅黑" show="0">%str6209%</text>
+                <link name="link_flow_size" pos="[2,278" crtext="1e78d5" font="0000:微软雅黑" show="0" tip="%str4864%"></link>
+                <imgbtn name="btn_start" skin="workspace_guide_btn_bkg_one" crtext="FFFFFF" font="0200:微软雅黑" pos="24,-56,@192,@36">%str6211%</imgbtn>
+            </dlg>
+            <dlg name="dlg_content_page" pos="16,16,@240,@360" show="0">
+                <img skin="workspace_tutorial_blue" pos="0,0,@240,@94"></img>
+                <text pos="24,16" font="0600:微软雅黑" crtext="06A7FF">%str6207%</text>
+                <gifplayer name="gif_gift_guide" pos="200,43,@36,@36" skin="workspace_tutorial_gift_gif" bulltimer="1"></gifplayer>
+                <img name="img_progress_gift" skin="workspace_tutorial_progress_unstart" pos="200,53" show="0"></img>
+                <img name="img_progress" skin="workspace_tutorial_progress_one" pos="24,54"></img>
+                <imgbtn name="btn_close" skin="titlepanel_close_btn" pos="-30,15,@15,@16" cursor="arrow" tip="%str250%"></imgbtn>
+                <text name="txt_content" pos="24,109" crtext="03081A" maxwidth="210" textmode="10" font="0000:微软雅黑" align="left" show="1">%str6200%</text>
+                <gifplayer name="gif_sync_guide" pos="24,164,@192,@120" skin="workspace_tutorial_open_local_dir" bulltimer="1"></gifplayer>
+                <text name="txt_error" pos="36,-77" crtext="FF436A" font="0000:微软雅黑" show="0">%str6219%</text>
+                <imgbtn name="btn_operate" skin="workspace_guide_btn_bkg_one" crtext="FFFFFF" font="0200:微软雅黑" pos="24,-56,@192,@36">%str6212%</imgbtn>
+            </dlg>
+            <dlg name="dlg_end_page" pos="16,16,@240,@360" show="0">
+                <img skin="workspace_tutorial_blue" pos="0,0,@240,@94"></img>
+                <text pos="24,16" font="0600:微软雅黑" crtext="06A7FF">%str6207%</text>
+                <img name="img_progress_end" skin="workspace_tutorial_progress_four" pos="24,54"></img>
+                <img name="img_progress_gift_end" skin="workspace_tutorial_gift_png" pos="200,43"></img>
+                <imgbtn name="btn_close" skin="titlepanel_close_btn" pos="-30,15,@15,@16" cursor="arrow" tip="%str250%"></imgbtn>
+                <gifplayer name="gif_sync_complete" pos="40,110,@160,@100" skin="workspace_tutorial_congratulations" bulltimer="1"></gifplayer>
+                <text name="txt_end_content" pos="50,218" crtext="03081A " font="0000:微软雅黑" align="left" show="1">%str6204%</text>
+                <text name="txt_gift" pos="50,240" crtext="03081A " font="0000:微软雅黑" align="left" show="1"></text>
+                <text name="txt_help" pos="52,293" crtext="03081A " font="0000:微软雅黑" align="left" show="1">%str6205%</text>
+                <link name="link_help" pos="80,313" crtext="1e78d5" cursor="hand" font="0002:微软雅黑" align="left" show="1">%str6206%</link>
+            </dlg>
+            
+        </dlg>
+    </body>
+</layer>

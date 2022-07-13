@@ -1,0 +1,12 @@
+<layer name="GameListWnd" width="320" height="359" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1">
+  <body>
+    <dlg name="dlg_game_center" pos="0,0,-0,-0" skin="game_center_bg">
+      <listboxex name="list_game_center" pos="14,34,-0,-0" itemheight="120" virtual="1" sbenable="2" show="1" >
+        <template>
+          <imgbtn name="gamecenter_bkg" pos="16,10,@260,-0" cursor="hand" show="0"/>
+        </template>
+      </listboxex>
+    </dlg>
+    <imgbtn name="btn_game_center" class="toolbarbtn" pos="0,[20,@92,@32" font="0000:微软雅黑" skin="game_center_btn_bg" cursor="arrow">%str1556%</imgbtn>
+  </body>
+</layer>

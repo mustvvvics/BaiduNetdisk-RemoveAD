@@ -1,0 +1,41 @@
+﻿<layer width="388" height="182" appwin="0" ncRect="0,0,0,0" translucent="1" resize="0">
+  <body>
+     <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+        <caption pos="0,0,-0,38">
+           <img pos="10,8" skin="common_logo_main"></img>
+           <text pos="39,9" class="cls_dlg_title_text">%str700%</text>
+           <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+        </caption>
+        <dlg pos="0,39,-0,-0" crtext="000000">
+				  <img name="img_head" pos="25,20,@64,@64"/>
+				  <dlg pos="107,18,-0,84">
+            <dlg pos="0,0,-0,20">
+               <dlg name="dlg_remark_panel" pos="0,0,-0,-0" show="0">
+                   <text name="text_remark" pos="0,2" font="0004:微软雅黑"></text>
+                   <imgbtn name="btn_update_remark" pos="[10,0,@20,@20" skin="share_update_btn" tip="%str346%"/>
+               </dlg>
+               <link name="link_add_remark" pos="0,2" font="0004:微软雅黑" hoverfont="0006:微软雅黑" class="cls_btn_weblink" show="1">%str331%</link>
+            </dlg>
+            <dlg name="dlg_nickname_panel" pos="0,22,-0,42">
+               <text pos="0,2">%str704%</text>
+               <text name="text_nickname" pos="[12,2"></text>
+            </dlg>
+            <dlg name="dlg_account_panel" pos="0,44,-0,64">
+               <text pos="0,2">%str705%</text>
+               <text name="text_account" pos="[12,2"></text>
+            </dlg>
+          </dlg>
+          <dlg name="verify_content_panel" pos="25,-125,-20,-60" skin="share_verify_panel_bg">
+            <text name="text_verify" pos="8,8,-8,-8" class="share_newfriend_verify_panel_text"></text>
+          </dlg>
+				  <dlg pos="0,-42,-0,-0">
+            <imgbtn name="btn_share" pos="-190,-40,@80,@28" animate="true" cursor="arrow"  class="share_file_btn" show="0">%str703%</imgbtn>
+            <imgbtn name="btn_add_friend" pos="-190,-40,@80,@28" animate="true" cursor="arrow"  class="share_file_btn">%str702%</imgbtn>
+            <imgbtn name="btn_block" pos="-100,-40,@80,@28" animate="true" cursor="arrow"  class="button">%str701%</imgbtn>
+            <imgbtn name="btn_accept_friend" pos="-190,-40,@80,@28" animate="true" cursor="arrow"  class="share_file_btn" show="0">%str439%</imgbtn>
+            <imgbtn name="btn_reject_friend" pos="-100,-40,@80,@28" animate="true" cursor="arrow"  class="button" show="0">%str440%</imgbtn>
+				  </dlg>
+        </dlg>
+     </dlg>
+  </body>
+</layer>

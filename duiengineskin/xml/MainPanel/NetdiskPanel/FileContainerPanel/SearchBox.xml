@@ -1,0 +1,6 @@
+<dlg name="Safebox" skin="mainpanel_addresspanel_bkg" pos="0,0,-0,-0">
+  <edit name="search_word_edit" pos="0,7,@240,@32" inset="10,0,68,0" skin="mainpanel_addresspanel_searchbox_edit_bgk" font="0200:宋体" align="left" deffont="0000:微软雅黑" crdeftext="999999" password="0" deftext="%str2203%" defleftmargin="10"></edit>
+  <imgbtn name="btn_search_clear" skin="mainpanel_addresspanel_searchbox_clear"  pos="-68,17,@12,@12" cursor="arrow" show="0"></imgbtn>
+  <hr pos="-50,15,@1,@16" crbg="d6d8dd"/>
+  <imgbtn name="btn_search" skin="titlepanel_translucent" crtext="818999" crhover="06A7FF" pos="-42,14,@24,@16" font="0000:微软雅黑" cursor="arrow">%str508%</imgbtn>
+</dlg>

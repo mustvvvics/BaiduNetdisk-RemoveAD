@@ -1,0 +1,22 @@
+<layer name="FileImportGuide" width="790" height="665" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg skin="workspace_guide_mask" pos="0,0,-0,-0">
+            <dlg name="dlg_main" pos="153,146,@484,@350" skin="workspace_guide_frame">
+                <dlg pos="10,10,-10,-10">
+                    <text name="dlg_title" pos="24,18">%str4576%</text>
+                    <hr name="dlg_line" pos="0,48,-0,48" crbg="EEEEEE"></hr>
+                    <dlg pos="0,[0,-0,-80">
+                        <text name="text_warning" pos="24,34,@208,@40" multilines="1" font="0000:微软雅黑">%str4577%</text>
+                        <link name="lnk_sync_dir" font="0002:微软雅黑" crtext="06A7FF" pos="24,[12,@175,@18" cursor="hand">%str4578%</link>                        
+                        <check name="self_start_check" pos="24,[12,@160,@17" crtext="AFB3BF" skin="btncheckbox" focusskin="function_collect_focus_skin">%str4579%</check>
+                        <dlg pos="|0,0,-0,@241" skin="workspace_guide_file_import" bulltimer="1"></dlg>
+                    </dlg>
+                    <dlg pos="0,252,-0,-0">        
+                        <imgbtn name="btn_complete_guide" font="0000:微软雅黑" alpha="255" crtext="FFFFFF" pos="|-64,0,@128,@36" skin="workspace_guide_btn_bkg_one" cursor="hand">%str4581%</imgbtn>
+                        <link name="lnk_resident_guide" font="0002:微软雅黑" pos="|-90,[8,@180,@18" crtext="AFB3BF" cursor="hand">%str4580%</link>
+                    </dlg>
+                </dlg>    
+            </dlg>
+        </dlg>
+    </body>
+</layer>

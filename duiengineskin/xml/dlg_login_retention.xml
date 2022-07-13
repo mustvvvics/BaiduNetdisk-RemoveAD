@@ -1,0 +1,15 @@
+<layer name="LoginRetentionDlg" width="420" height="210" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+    <body>
+        <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+            <caption pos="0,0,-0,38">
+                <img pos="10,8" skin="common_logo_main"/>
+                <text name="txt_title" pos="39,9" font="0000:微软雅黑" crtext="333333">%str3650%</text>
+                <imgbtn name="btn_close" skin="btn_sys_close" pos="385,7" cursor="arrow" tip="%str250%" animate="1"/>
+            </caption>
+            <text pos="115,58" name="retention_ask" font="0600:微软雅黑" crtext="000000" align="center">%str3651%</text>
+            <text pos="89,93" name="retention_tip" font="0000:微软雅黑" crtext="666665" align="center">%str3652%</text>
+            <imgbtn name="btn_confirm" pos="79,144,@120,@36" animate="true" cursor="arrow"  class="login_retention_dlg_confirm_btn" >%str3653%</imgbtn>
+            <imgbtn name="btn_retention" pos="222,144,@120,@36" animate="true" cursor="arrow"  class="login_retention_dlg_retent_btn" >%str3654%</imgbtn>
+        </dlg>
+    </body>
+</layer>

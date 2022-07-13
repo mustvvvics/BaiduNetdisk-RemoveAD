@@ -1,0 +1,38 @@
+<layer name="VideoGuideDlg" width="1006" height="568" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+       
+    <dlg name="dlg_main_guide" pos="0,0,-0,-0" skin="video_guide_mask_img">    
+      <imgbtn name="btn_close" skin="video_guide_btn_close" pos="-200,60,@14,@14" cursor="arrow" tip="%str250%" animate="1"/>
+      
+      <dlg name="dlg_loading" pos="0,80,-0,-0" show="1">
+        <gifplayer name="gif_loading" pos="|-18,|-100,@36,@36" skin="gif_statuspanel_loading"/>
+        <text name="txt_loading_tip" pos="|-150,[20,@300,@18" crtext="FFFFFF" font="0200:微软雅黑" align="center">%str4768%</text>
+      </dlg>
+  
+      <dlg name="dlg_guide_content" pos="0,80,-0,-0" show="0">     
+        <text name="text_guide" pos="|-200,|-196,@400,@20" align="center" crtext="FFFFFF" font="0600:微软雅黑">%str1474%</text>
+        <img name="image_guide" pos="|-126,[20,@252,@216" skin="video_guide_img"/>      
+        <imgbtn name="btn_buy" pos="|-200,|90,@176,@42" show="0" cursor="arrow" crtext="532B07" font="0200:微软雅黑" skin="video_guide_btn_yellow">%str1476%</imgbtn>
+        <dlg name="dlg_coupon_first" pos="|-66,|80,@69,@22" skin="privilege_guide_dlg_coupon" show="0">
+          <text name="text_coupon_first" pos="7,2" font2="facename:微软雅黑;adding:-1" crtext="ffffff" show="1"></text>
+        </dlg>
+        <text name="text_price_first" pos="|-80,|106" font2="facename:微软雅黑;adding:-1" crtext="532B07" show="0"></text>
+        
+        <imgbtn name="btn_buy_second" pos="|20,|90,@176,@42" cursor="arrow" crtext="9BDCFF" font="0200:微软雅黑" skin="btn_default_round_angle" show="0">%str5001%</imgbtn>
+        <dlg name="dlg_coupon_second" pos="|170,|80,@69,@22" skin="privilege_guide_dlg_coupon" show="0">
+          <text name="text_coupon_second" pos="7,2" font2="facename:微软雅黑;adding:-1" crtext="ffffff" show="0"></text>
+        </dlg>
+        <text name="text_price_second" pos="|140,|106" font2="facename:微软雅黑;adding:-1" crtext="9BDCFF" show="0"></text>
+        <imgbtn name="btn_try" pos="|-35,|150,@70,@20" cursor="hand" crtext="AFB3BF" font="0000:微软雅黑" skin="titlepanel_translucent" show="0">%str5002%</imgbtn>
+      </dlg>
+      
+      <dlg name="dlg_payoff_qr_code" pos="|-210,|-140,@220,@250" skin="video_guide_bubble" show="0">   
+        <text name="text_qr_code_title" pos="54,30" align="left" font="0204:微软雅黑" crtext="03081A"></text>
+        <text name="text_qr_code_title2" pos="[0,30" align="left" font="0204:微软雅黑" crtext="FF6500"></text>       
+        <img name="img_qr_code" pos="50,50,@125,@125"/>
+        <text name="text_qr_code_bottom" pos="0,-100,-0,-26" align="center" multilines="0" font="0000:微软雅黑" crtext="A3ACBD"></text>
+        <text name="text_qr_code_bottom2" pos="0,-80,-0,-6" align="center" multilines="0" font="0000:微软雅黑" crtext="A3ACBD"></text>
+      </dlg> 
+    </dlg>         
+  </body>
+</layer>

@@ -1,0 +1,9 @@
+<layer name="SafeboxSpacePanel" width="220" height="60" appwin="0" ncRect="0,0,0,0" toolwindow="1" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="mainpanel_addresspanel_pathnavigator_subdirpanel_bg">
+      <text name="txt_quota_guide" pos="12,10" crtext="999999" font="0000:微软雅黑" align="left"></text>
+      <imgbtn name="btn_quota_detail" pos="[5,10,@10,@10" skin="safebox_quota_detail_btn" cursor="hand" show="1"/>
+      <imgbtn name="btn_quota_buy" pos="12,32,@183,@24" skin="safebox_quota_buy_svip_btn" icoskin="safebox_quota_buy_svip_icon" icoxoffset="10" icoyoffset="5" txtxoffset="15" crtext="ca963b" font="0000:微软雅黑" cursor="hand"></imgbtn>
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,87 @@
+<layer name="ImageViewDlg" width="1024" height="650" minsize="1024,650" appwin="1" ncRect="0,0,0,0" resize="1" translucent="1" nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0"  skin="imageviewpanel_black_bg">
+
+      <!--主视图-->
+      <dlg name="dlg_main_view" pos="0,0,-0,-66">
+        <gifplayer name="main_image" pos="0,0,-0,-0" skin="imageviewpanel_image_loading" keep_size="1"/>
+        <dlg name="dlg_special_img_type_svip_guide" skin="video_guide_mask_img" pos="0,0,-0,-0" show="0">
+           <text name="guide_title" pos="|-170,|-180,@340,@24" crtext="F3F3F3" font="0400:微软雅黑">%str5010%</text>  
+           <img name="guide_img" pos="|-124,[20,@252,@216" skin="imageviewpanel_special_img_guide" ></img>              
+           <imgbtn name="btn_buy_svip" pos="|-88,[20,@176,@42" skin="btn_svip_round_angle">%str2341%</imgbtn>  
+		   <link name="link_yike" pos="|-80,[20,@160,@20" crtext="FFFFFF" font="0000:微软雅黑" cursor="hand">%str5011%</link>
+        </dlg>
+        <dlg name="dlg_left_btn" pos="0,70,%25,-70">
+          <imgbtn name="btn_image_left" skin="imageviewpanel_btn_left" pos="54,|-30" width="60" height="60" cursor="arrow" tip="%str2100%"></imgbtn>
+        </dlg>
+        <dlg name="dlg_right_btn" pos="%75,70,-0,-70">
+          <imgbtn name="btn_image_right" skin="imageviewpanel_btn_right" pos="-114,|-30" width="60" height="60" cursor="arrow" tip="%str2101%"></imgbtn>
+        </dlg>
+      </dlg>
+
+      <!--详细信息视图-->
+      <dlg name="dlg_detail_view" pos="-260,|-125,@260,@250" skin="imageviewpanel_detail_view_bg" show="0">
+        <text name="detail_text" pos="24,26,@80,@24" crtext="ffffff" font="0400:微软雅黑">%str2109%</text>
+        <imgbtn name="btn_detail_close" skin="imageviewpanel_detail_close" pos="-40,32,-30,42" cursor="arrow"></imgbtn>
+        <text name="detail_type" pos="24,80" class="cls_imagepanel_txt_gray">%str2110%</text>
+        <text name="detail_type_content" pos="74,80" crtext="ffffff" font="0004:微软雅黑"></text>
+        <text name="detail_size" pos="24,122" class="cls_imagepanel_txt_gray">%str2112%</text>
+        <text name="detail_size_content" pos="74,122" crtext="ffffff" font="0004:微软雅黑" ></text>
+        <text name="detail_path" pos="24,164" class="cls_imagepanel_txt_gray">%str2111%</text>
+        <link name="detail_path_content" pos="104,164" crtext="ffffff" font="0006:微软雅黑" maxwidth="120" dotted="1" cursor="hand"></link>
+        <text name="detail_path_share" pos="74,164" crtext="ffffff" font="0004:微软雅黑" show="0">%str2117%</text>
+        <text name="detail_time" pos="24,206" class="cls_imagepanel_txt_gray">%str2113%</text>
+        <text name="detail_time_content" pos="104,206" crtext="ffffff" font="0004:微软雅黑"></text>
+      </dlg>
+
+      <!--标题栏-->
+      <caption name="dlg_image_cap" pos="0,0,-0,70" skin="imageviewpanel_dlg_mask_up">
+        <text name="txt_title" pos="30,18" maxwidth="400" dotted="1" crtext="ffffff" font="0404:微软雅黑"></text>
+        <imgbtn name="btn_max" skin="imageviewpanel_btn_resize" pos="-90,18" animate="1" cursor="arrow"/>
+        <imgbtn name="btn_max_recover" skin="imageviewpanel_btn_resize_max"  pos="-90,18" show="0" animate="1" cursor="arrow"/>
+        <imgbtn name="btn_minimize" skin="imageviewpanel_btn_minsize" pos="-132,18" animate="1" cursor="arrow"/>
+        <imgbtn name="btn_close" skin="imageviewpanel_btn_close" pos="-48,18" cursor="arrow"/>
+      </caption>
+      
+      <!--操作栏视图-->
+      <dlg name="dlg_zoom_view" pos="-200,-218,-168,-113" show="0" skin="imageviewpanel_zoom_view_bg">
+        <sliderbar name="sliderbar_zoom_ctrl" pos="|-6,|-36,@12,@72" vertical="1" inverse="1" bgskin="imageviewpanel_zoom_slider_bg"
+                   posskin="imageviewpanel_zoom_slider_bar" thumbskin="imageviewpanel_zoom_slider_thumb" value="0" min="0" max="100"/>
+      </dlg>
+      <dlg name="dlg_op_tip" pos="|-86,-190,@172,@56" show="0" skin="toast_ok_bg">
+        <img name="op_tip_ico" pos="23,|-6,@16,@16" skin="toast_ok_ico"/>
+        <text name="txt_op_tip" pos="[6,0,-17,-0" crtext="ffffff" font="0200:微软雅黑" textmode="40824">%str2119%</text>
+      </dlg>
+      <dlg name="dlg_opbtnlist_view" pos="0,-136,-0,@70" skin="imageviewpanel_dlg_mask_down">
+        <dlg name="dlg_opbtnlist_view_child" pos="|-270,0,@540,-0">
+          <imgbtn name="btn_op_image_zoom" skin="imageviewpanel_btn_zoom" pos="0,23,@24,@24" cursor="arrow" tip="%str2102%"></imgbtn>
+          <imgbtn name="btn_op_image_rotate" skin="imageviewpanel_btn_rotate" pos="60,23,@24,@24" cursor="arrow" tip="%str2103%"></imgbtn>
+          <imgbtn name="btn_op_image_share" skin="imageviewpanel_btn_share" pos="120,23,@24,@24" cursor="arrow" tip="%str2104%" show="1"></imgbtn>
+          <imgbtn name="btn_op_image_download" skin="imageviewpanel_btn_download" pos="180,23,@24,@24" cursor="arrow" tip="%str2105%"></imgbtn>
+          <imgbtn name="btn_op_image_delete" skin="imageviewpanel_btn_delete" pos="240,23,@24,@24" cursor="arrow" tip="%str2106%" show="1"></imgbtn>
+          <imgbtn name="btn_op_image_detail" skin="imageviewpanel_btn_detail" pos="300,23,@24,@24" cursor="arrow" tip="%str2107%"></imgbtn>
+          <imgbtn name="btn_op_image_cloudedit" skin="imageviewpanel_btn_cloudedit" pos="360,23,@24,@24" cursor="arrow" tip="%str2128%"></imgbtn>
+          <img name="oplist_sep" pos="-123,30,@1,@10" skin="imageviewpanel_opbtnlist_view_sep"/>
+          <link name="txt_op_index" pos="-100,23" crtext="ffffff" font="0400:微软雅黑" show="0"></link>
+          <imgbtn name="btn_op_collaspe" class="cls_imagepanel_btn_collapse" pos="-100,23,@100,@24" cursor="arrow">%str2121%</imgbtn>
+        </dlg>
+      </dlg>
+
+      <!--底部列表视图-->
+      <dlg name="dlg_bottom_view" pos="|-450,-66,@900,-8" show="0">
+        <imgbtn name="btn_bottom_left" skin="imageviewpanel_btn_bottom_left" pos="5,|-12" width="9" height="16" cursor="arrow" tip="%str2124%"></imgbtn>
+        <img name="img_bottom_left_disable" pos="5,|-12" width="9" height="16" skin="imageviewpanel_btn_bottom_left_disable"  tip="%str2126%"  msgtransparent="0"/>
+        <imgbtn name="btn_bottom_right" skin="imageviewpanel_btn_bottom_right" pos="-14,|-12" width="9" height="16" cursor="arrow" tip="%str2125%"></imgbtn>
+        <img name="img_bottom_right_disable" pos="-14,|-12" width="9" height="16" skin="imageviewpanel_btn_bottom_right_disable"  tip="%str2127%"  msgtransparent="0"/>
+        <listboxex name="image_thumb_list" pos="30,0,-30,-0" itemheight="58" itemwidth="84" crbg="000000" virtual="1" horizontal="1">
+          <template>
+            <img name="img_bg" pos="4,0,@76,@58" skin="imageviewpanel_bottom_bg"/>
+            <gifplayer name="thumb_type_img" pos="4,0,@76,@58" skin="imageviewpanel_bottom_image_default" keep_size="1"/>
+            <img name="img_frame" pos="4,0,@76,@58" skin="imageviewpanel_bottom_sel"/>
+            <img name="img_mask" pos="4,0,@76,@58" skin="imageviewpanel_bottom_mask" show="0"/>
+          </template>
+        </listboxex>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

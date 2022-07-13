@@ -1,0 +1,12 @@
+﻿<layer name="AutoupgradeSvipTipDlg" width="900" height="650" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="autoupgrade_svip_tip_bg">
+      <dlg name="UploadPrivilegePanel" pos="|-250,|-152" width="500" height="302">
+        <img pos="0,0,-0,-0" skin="autoupgrade_svip_tip_guide"/>
+        <imgbtn name="btn_close" pos="-60,20,@24,@24" skin="autoupgrade_svip_tip_closebtn" cursor="arrow" tip="%str250%"></imgbtn>
+        <imgbtn name="btn_know" pos="|-50,-80,@100,@36" skin="autoupgrade_svip_tip_knownbtn" cursor="arrow"></imgbtn>
+        <link name="link_view_detail" pos="-100,-70,-20,-52" class="autoupgrade_tip_dlg_link">%str812%</link>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,7 @@
+<layer width="16" height="16" toolwin="1" ncRect="0,0,0,0"  resize="0" translucent="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="down_animation_bg">
+      <img name="file_type_img" pos="0,0,-0,-0"></img>
+    </dlg>
+  </body>
+</layer>

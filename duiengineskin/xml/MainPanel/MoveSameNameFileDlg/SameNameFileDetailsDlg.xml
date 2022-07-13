@@ -1,0 +1,49 @@
+<layer name="SameNameFileDetailsDlg" width="630" height="512" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+    <body>
+        <dlg pos="0,0,-0,-0" skin="same_name_frame">
+            <caption pos="15,15,-0,53">
+                <img pos="10,8" skin="common_logo_main"/>
+                <text name="txt_title" pos="39,9" font="0200:微软雅黑" crtext="333333">%str4260%</text>
+                <imgbtn name="btn_close" skin="btn_sys_close" pos="563,7" cursor="arrow" tip="%str250%" animate="1"/>
+            </caption>
+            <text pos="39,67" name="retention_ask" font="0000:微软雅黑" crtext="878C9C" align="center">%str4252%</text>
+            <text pos="165,111" name="exist_file_title" font="0000:微软雅黑" crtext="06A7FF" align="center">%str4253%</text>
+            <text pos="389,111" name="move_file_title" font="0000:微软雅黑" crtext="06A7FF" align="center">%str4254%</text>
+            <listboxex name="same_name_file_list" pos="15,145,-15,-99" itemheight="135" virtual="1">
+                <template>
+                    <dlg name="same_name_file_item" pos="0,0,-0,-0">
+                        <dlg name="same_name_file_bg" skin="same_name_content_frame" pos="51,0,@498,@123">
+                            <dlg name="exist_file" pos="0,0,248,80">
+                                <img pos="35,30,@20,@20" name="exist_file_img" skin="common_logo_main"/>
+                                <text pos="70,23" name="exist_file_name" font="0000:微软雅黑" crtext="03081A" maxwidth="123" dotted="1"></text>
+                                <text pos="70,45" name="exist_file_size" font="0000:微软雅黑" crtext="AFB3BF"></text>
+                                <text pos="[8,43" name="exist_file_time" font="0000:微软雅黑" crtext="AFB3BF"></text>
+                            </dlg>
+                            <hr name="hr_line" pos="249,16,@1,@48" crbg="F1F2F4" show="1"/>
+                            <dlg name="move_file" pos="250,0,-0,80">
+                                <img pos="35,30,@20,@20" name="move_file_img" skin="common_logo_main"/>
+                                <text pos="70,23" name="move_file_name" font="0000:微软雅黑" crtext="03081A" maxwidth="123" dotted="1"></text>
+                                <text pos="70,45" name="move_file_size" font="0000:微软雅黑" crtext="AFB3BF"></text>
+                                <text pos="[8,43" name="move_file_time" font="0000:微软雅黑" crtext="AFB3BF"></text>
+                            </dlg>
+                            <hr name="hr_end_line" pos="0,80,@498,@1" crbg="EDEDED" size="1" show="1"/>
+                            <dlg name ="check_group" pos="0,0,-0,-0">
+                                <check pos="99,95" name="ignore_check" font="0000:微软雅黑" crtext="03081A" skin="btncheckbox" show="0">%str4255%</check>
+                                <check pos="215,95" name="copy_check" font="0000:微软雅黑" crtext="03081A" skin="btncheckbox" show="0">%str4256%</check>
+                                <check pos="331,95" name="override_check" font="0000:微软雅黑" crtext="03081A" skin="btncheckbox" show="0">%str4261%</check>
+                            </dlg>
+                        </dlg>
+                    </dlg>
+                </template>
+            </listboxex>
+            <hr name="hr_end_line" pos="15,-99,@600,@1" crbg="EDEDED" size="1" show="1"/>
+            <dlg name ="mult_check_group" pos="15,-65,252,-0" show="0">
+                <check pos="24,1" name="all_ignore_check" font="0000:微软雅黑" crtext="03081A" skin="btncheckbox">%str4258%</check>
+                <check pos="113,1" name="all_copy_check" font="0000:微软雅黑" crtext="03081A" skin="btncheckbox">%str4257%</check>
+                <check pos="223,1" name="all_override_check" font="0000:微软雅黑" crtext="03081A" skin="btncheckbox">%str4259%</check>
+            </dlg>
+            <imgbtn name="btn_cancel" pos="339,-75,@120,@36" animate="true" cursor="arrow"  class="cls_samename_file_cancel_btn">%str4262%</imgbtn>
+            <imgbtn name="btn_confirm" pos="471,-75,@120,@36" animate="true" cursor="arrow"  class="cls_samename_file_confirm_btn">%str4263%</imgbtn>
+        </dlg>
+    </body>
+</layer>

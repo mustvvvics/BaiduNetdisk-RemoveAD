@@ -1,0 +1,12 @@
+<layer name="TipPanel" width="180" height="61" toolwindow="1" ncRect="0,0,0,0" resize="0" nomaxsize="1" translucent="1">
+  <body>
+    <dlg name="TipPanelBg" pos="0,0,-0,-0" skin="tippanel_bg">
+      <!--在线编辑引导-->
+   	  <dlg name="OnlineEditGuideDownTipPanel" pos="0,0,-0,-0" skin="tippanel_onlineedit_down_bg">
+	    </dlg>
+      <dlg name="OnlineEditGuideUpTipPanel" pos="0,0,-0,-0" skin="tippanel_onlineedit_up_bg">
+      </dlg>
+      <!--新功能引导-->
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,16 @@
+<layer name="LeftCategoryFloatingLayer" width="110" height="210" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+    <body>
+        <dlg pos="0,0,-0,-0" skin="main_panel_frame" crborder="999999">
+            <listboxex name="flotinglist_category" pos="1,1,-1,-1" itemheight="25" virtual="1">
+                <template>
+                    <dlg name="dlg_bkg" pos="0,0,-0,-0" crbg="eef0f6" show="0"/>
+                    <dlg name="dlg_item" pos="0,0,-0,-0">
+                        <check name="check_category" pos="2,|-8" skin="btncheckbox" show="0"></check>
+                        <text name="txt_category" pos="[13,|-8" class="cls_leftpanel_txt_normal" show="0"></text>
+                    </dlg>
+                </template>
+            </listboxex>
+        </dlg>
+    </body>
+
+</layer>

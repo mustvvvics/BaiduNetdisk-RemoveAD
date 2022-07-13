@@ -1,0 +1,10 @@
+<layer name="WorkspaceQuickStartGuide" width="320" height="258" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+    <body>
+        <dlg pos="0,0,-0,-0" skin="workspace_tutorial_quick_start_base">
+            <img name="img_guide" pos="8,23,@304,@135" skin="workspace_tutorial_quick_start_guide"></img>
+            <text name="quick_content" pos="50,[8" font="0200:微软雅黑" crtext="636D7E">%str6215%</text>
+            <imgbtn name="btn_close" skin="titlepanel_close_btn" pos="-55,45,@15,@16" cursor="arrow" tip="%str250%"></imgbtn>
+            <imgbtn name="btn_known" skin="workspace_guide_btn_bkg_one" crtext="FFFFFF" font="0200:微软雅黑" pos="96,-67,@128,@36">%str759%</imgbtn>
+        </dlg>
+    </body>
+</layer>

@@ -1,0 +1,15 @@
+<dlg name="WorkSpaceStatusPanel" pos="0,0,-0,-0">
+    <!--底部状态栏-->
+    <dlg name="dlg_simple_status_panel" pos="0,0,-0,-0" show="1" skin="workspace_status_panel" cursor="hand">
+        <hr pos="0,0,-0,1" size="1" crbg="F5F6FA"/>
+        <img name="img_status" pos="24,16,@16,@16" skin="mainpanel_statuspanel_error" show="0"></img>
+        <gifplayer name="gif_status" pos="24,16,@18,@18" skin="workspace_syncing_gif" show="0"></gifplayer>
+        <text name="txt_status" pos="48,16" height="16" crtext="000000" font="0000:微软雅黑" align="left" show="1"/>
+        <link name="link_status_tip" pos="[10,16" dotted="1" maxwidth="200" crtext="AFB3BF" font="0000:微软雅黑"></link>
+        <text name="txt_sync_count" pos="260,16,-85,@16" crtext="AFB3BF" font="0000:微软雅黑" align="right"></text>
+        <gifplayer name="gif_sync_loading" pos="[2,16,@18,@18" skin="loading_gif" show="0"></gifplayer>
+        <imgbtn name="btn_pause" pos="-41,16,@16,@16" skin="workspace_pause" crtext="000000"
+            font="0000:微软雅黑" cursor="hand" animate="1"></imgbtn>
+        <link name="link_sync_setting" pos="-81,16" font="0000:微软雅黑" crtext="06A7FF" cursor="hand" show="0">%str4922%</link>
+    </dlg>
+</dlg>

@@ -1,0 +1,75 @@
+<layer title="%str3450%" width="600" height="400" minsize="600,400" maxsize="600,400" appwin="1" ncRect="4,4,4,4" resize="1" translucent="0" nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <!--标题栏-->
+      <caption name="dlg_doc_caption" pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text pos="39,9" name="file_name_title" maxwidth="920" class="cls_dlg_title_text">%str2162%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,@32,@20" cursor="arrow" tip="%str250%" animate="0"/>
+      </caption>
+
+      <!--文件列表视图-->
+      <dlg name="dlg_list_view" pos="0,36,-0,-35" show="0">
+        <dlg pos="1,0,-2,42" name="history_float" skin="workspace_history_frame">
+            <text pos="24,13" name="txt_history_guide" crtext="CC9029" font="0000:微软雅黑"></text>
+            <imgbtn name="btn_buy" pos="-84,7,@80,@28" skin="usercard_svip_btn" crtext="64360D" font="0000:微软雅黑" cursor="hand" show="0">%str1100%</imgbtn>
+        </dlg>
+        <header name="file_list_header" pos="1,42,-1,@30" checkSkin="listhead_check" itemSkin="listhead_btn" noitemSkin="listhead_bkg"
+                fixWidth="0" itemSwapEnable="0" sortHeader="1" sortSkin="listhead_arrow" check_txt_margin="12" crtext="757880" align="left">
+        </header>
+        <dlg name="dlg_file_list" pos="0,72,-0,-0">
+          <listboxex name="file_list_view" pos="0,0,-0,-0" itemheight="50" itemwidth="-1" virtual="1" frameskin="mainpanel_frame_select_bg">
+            <template>
+              <!--背景-->
+              <img name="item_bkg" pos="1,0,-1,-1" skin="listitem_hover_bkg" show="0"></img>
+
+              <!--历史版本列-->
+              <dlg name="col_1">
+                <text name="txt_ver" pos="42,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+              </dlg>
+
+              <!--文件大小列-->
+              <dlg name="col_2">
+                <text name="txt_filesize" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+              </dlg>
+
+              <!--修改时间列-->
+              <dlg name="col_3">
+                <text name="txt_mtime" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+              </dlg>
+
+              <!--恢复列-->
+              <dlg name="col_4">
+                <imgbtn name="btn_revert" pos="8,12,@24,@24" skin="workspace_filever_saveas" cursor="arrow" tip="%str4772%" show="1"></imgbtn>
+                <imgbtn name="btn_svip" pos="[10,16,@34,@16" skin="workspace_filever_svip" cursor="arrow" tip="SVIP" show="1"></imgbtn>
+              </dlg>
+            </template>
+          </listboxex>
+        </dlg>
+      </dlg>
+
+      <!--正在加载视图-->
+      <dlg name="dlg_loading_view" pos="0,38,-0,-35" show="1">
+        <gifplayer name="loading_view_gif" pos="|-16,|-16,@32,@32" skin="gif_statuspanel_loading"/>
+        <text name="txt_loading_tip" pos="|-150,[12,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2311%</text>
+      </dlg>
+
+      <!--加载失败视图-->
+      <dlg name="dlg_error_view" pos="0,38,-0,-35" show="0">
+        <img name="error_view_bg" pos="|-90,|-100,@181,@127" skin="mainpanel_emptyview_error"></img>
+        <text name="txt_error_tip" pos="|-255,[8,@510,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2312%</text>
+        <imgbtn name="btn_refresh" pos="|-36,[16,@72,@25" class="defultbtn" crtext="ffffff" cursor="arrow">%str2313%</imgbtn>
+      </dlg>
+      <!--底部状态栏-->
+      <dlg pos="0,[0,-0,-0" show="1">
+        <text pos="20,9,-80,-0" name="file_status" class="cls_dlg_title_text" show="1"></text>
+        <dlg name="dlg_capacity_expand" pos="0,9,-50,-0" show="0">
+          <text pos="20,9,@180,@12" name="capacity_expand_text" class="cls_dlg_title_text">%str4587%</text>
+          <link name="capacity_expand_link" pos="[0,9,@24,@12" font="0004:微软雅黑" crtext="0065DD" cursor="hand">%str4588%</link>
+          <text pos="[0,9,@40,@12" name="capacity_expand_text" class="cls_dlg_title_text">%str4589%</text>
+        </dlg>
+        <text pos="-80,9,-20,-0" name="version_count_text" class="cls_dlg_title_text"></text>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

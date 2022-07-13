@@ -1,0 +1,8 @@
+﻿<layer name="DeviceFingerSdkWebPageDlg" width="0" height="0" appwin="0" ncRect="0,0,0,0" resize="0" translucent="0" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" show="0">
+      <!-- 浏览器控件 -->
+      <webbrowser name="sdk_webpage" pos="0,0,-0,-0" use_ie="1" show="0"/>
+    </dlg>
+  </body>
+</layer>

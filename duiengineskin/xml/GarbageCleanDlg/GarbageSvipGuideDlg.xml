@@ -1,0 +1,19 @@
+<layer name="GarbageSvipGuideDlg" width="500" height="324" toolwindow="1" resize="0" translucent="1" ncRect="0,0,0,0" nomaxsize="1">
+	<body>
+		<dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+			<!--标题栏-->
+			<caption pos="0,0,-0,38">
+				<img pos="10,8" skin="common_logo_main"/>
+				<text name="txt_title" pos="39,9" class="cls_dlg_title_text">%str831%</text>
+				<imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+			</caption>
+			
+			<dlg pos="0,37,-0,-0">
+				<dlg pos="0,0,-0,@60">
+					<text name="txt_detail" pos="|-200,|-8,@400,@16" align="center" crtext="333333" font="0000:微软雅黑"></text>
+				</dlg>
+				<buttonex name="btn_guide" pos="10,-224,@480,@214" normal-skin="svipguidedlg_bug_emptydir_img" cursor="hand" animate="1"/>
+			</dlg>
+		</dlg>
+	</body>
+</layer>

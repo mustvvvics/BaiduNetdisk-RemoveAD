@@ -1,0 +1,19 @@
+﻿<layer name="SafeboxQuotaVipGuideDlg"  width="420" height="280" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text name="dlg_title" pos="39,9" class="cls_dlg_title_text"></text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg pos="0,38,-0,-0">
+        <dlg pos="0,0,-0,-0">
+          <text name="text_content" pos="70,15" crtext="333333" align="center"></text>
+          <img name="img_bkg" pos="12,45" skin="safebox_quota_vip_guide_bkskin" />
+        </dlg>
+        <imgbtn name="btn_buy_vip" pos="252,-40,324,-15" cursor="arrow" animate="1" crtext="333333">%str3100%</imgbtn>
+        <imgbtn name="btn_close" pos="334,-40,406,-15" cursor="arrow" class="msgboxbtn">%str3101%</imgbtn>
+      </dlg>
+    </dlg> 
+  </body>
+</layer>

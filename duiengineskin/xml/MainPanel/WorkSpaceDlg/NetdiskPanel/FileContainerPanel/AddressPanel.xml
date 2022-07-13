@@ -1,0 +1,17 @@
+<dlg name="AddressPanel" pos="0,0,-0,-0">
+  <dlg name="PathNavigator" pos="0,0,-60,-0">
+    <link name="lnk_return_parent" pos="20,12" height="16" hoverfont="0002:微软雅黑" class="cls_addresspanel_dirname_link" state="0x10">%str846%</link>
+    <hr pos="[8,14,@1,@12" crgb="333333" mode="vertical"/>
+    <listboxex name="path_nav_item_view" pos="[8,0,-0,-0" itemheight="40" itemwidth="60" horizontal="1" virtual="1">
+      <template>
+        <dlg pos="0,0,-0,-0">
+          <link name="txt_item_name" pos="0,12" height="16" hoverfont="0002:微软雅黑" maxwidth="400" dotted="1" show="1" class="cls_addresspanel_dirname_link"/>
+          <imgbtn name="btn_item_drop" pos="-16,12,@16,@16" skin="mainpanel_addresspanel_pathnavigator_dropright"/>
+        </dlg>
+      </template>
+    </listboxex>
+    <link name="txt_width_calculator" pos="2,8" hoverfont="0002:微软雅黑" maxwidth="400" dotted="1" show="0" class="cls_addresspanel_dirname_link"></link>
+    <imgbtn name="btn_width_calculator" pos="4,7" skin="mainpanel_addresspanel_pathnavigator_dropright" show="0"/>
+  </dlg>
+  <text name="txt_status_tip" pos="-50,11" crtext="999999" font="0000:微软雅黑" align="left"/>
+</dlg>

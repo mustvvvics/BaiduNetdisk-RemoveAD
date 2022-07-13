@@ -1,0 +1,58 @@
+<dlg name="LeftPanel" pos="0,0,-0,-0" crbg="f9fafb">
+    <!--分类面板-->
+    <dlg name="dlg_category" pos="0,0,-0,@360">
+        <listboxex name="category_list" pos="0,6,-1,-1" itemheight="36" virtual="1">
+            <template>
+                <dlg name="dlg_bkg" pos="0,0,-0,-0" crbg="eef0f6" show="0"/>
+                <hr name="hr_line" pos="0,0,@3,-0" crbg="06a8ff" show="0"/>
+                <dlg name="dlg_item" pos="0,0,-0,-0">
+                    <imgbtn name="btn_drop_arrow" pos="16,|-8,@14,@14" skin="leftpanel_list_expand_btn" cursor="arrow" show="0"/>
+                    <img name="img_category" pos="36,|-8,@14,@14" skin="leftpanel_all_normal" cursor="arrow" show="0"/>
+                    <text name="txt_category" pos="36,|-8,-0,@16" class="cls_leftpanel_txt_normal"/>
+                    <img name="img_newfunc" pos="-50,|-8,@38,@16" skin="leftpanel_newfunc_bg" cursor="arrow" show="1"/>
+                    <imgbtn name="btn_back_more" pos="-38,|-8,@16,@16" skin="leftpanel_more_operation_btn" cursor="arrow" show="0"/>
+                </dlg>
+                <hr name="hr_end_line" pos="20,35,@120,@1" crbg="EDEDED" size="1" show="0"/>
+            </template>
+        </listboxex>
+    </dlg>
+
+    <!-- 快捷面板 -->
+    <dlg name="dlg_shortcut" pos="0,[0,-0,-45">
+        <include src="IDR_DUI_SHORTCUT_PANEL"/>
+    </dlg>
+
+    <!--容量超限引导-->
+    <dlg name="dlg_quota_guide" pos="0,-186,@165,@140" skin="leftpanel_quotaguide_bg" show="0">
+        <dlg pos="5,5,-5,-15">
+            <img pos="10,12,@16,@16" skin="leftpanel_quotaguide_warn_icon" show="1"/>
+            <text name="txt_quota_guide_title" pos="[6,10,@70,@20" crtext="030B1A" font="0104:微软雅黑" multilines="1">%str1711%</text>
+            <imgbtn name="btn_guide_close" pos="-30,12,@16,@16" skin="wechatbackup_guide_dlg_close" cursor="arrow"></imgbtn>
+            <text name="txt_guide_detail" pos="10,34,-10,@50" crtext="818999" font="0000:微软雅黑" multilines="1"></text>
+            <imgbtn name="btn_guide_buy" pos="|-50,-36,@100,@30" class="cls_quota_svip_guide_btn"></imgbtn>
+        </dlg>
+    </dlg>
+    
+    <!--容量回收引导-->
+    <dlg name="dlg_capacity_recycle_guide" pos="0,-186,@165,@140" skin="leftpanel_quotaguide_bg" show="0">
+        <dlg pos="5,5,-5,-15">
+            <img pos="10,12,@16,@16" skin="leftpanel_quotaguide_warn_icon" show="1"/>
+            <text name="txt_recycle_guide_title" pos="[6,10,@70,@20" crtext="030B1A" font="0104:微软雅黑" multilines="1">%str1714%</text>
+            <imgbtn name="btn_recycle_guide_close" pos="-30,12,@16,@16" skin="wechatbackup_guide_dlg_close" cursor="arrow"></imgbtn>
+            <text name="txt_recycle_guide_detail" pos="10,36,-10,@50" crtext="818999" font="0000:微软雅黑" multilines="1">%str1712%</text>
+            <imgbtn name="btn_recycle_guide_notice" pos="|-50,-36,@100,@30" skin="usercard_workpackage_btnbg" crtext="ffffff" font="0000:微软雅黑">%str1713%</imgbtn>
+        </dlg>
+    </dlg>
+
+    <!--容量展示面板-->
+    <dlg name="dlg_quota" pos="10,-45,-10,-0">
+        <dlg name="progress_bkg" pos="0,0,-0,@10" class="cls_leftpanel_progress_bkg">
+            <dlg name="progress_frg" pos="0,0,0,-0" class="cls_leftpanel_progress_frg_green"/>
+        </dlg>
+        <dlg pos="0,[6,-0,@18">
+            <text name="txt_quota" pos="0,0,@85,-0" crtext="AFB3BF" align="left"></text>
+            <link name="link_expand" pos="-60,0,-0,-0" class="cls_btn_weblink" align="right">%str1701%</link>
+        </dlg>
+    </dlg>
+    <hr pos="-1,0,-0,-0" size="1" crbg="F1F1F1"/>
+</dlg>

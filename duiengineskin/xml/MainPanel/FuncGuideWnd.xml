@@ -1,0 +1,12 @@
+﻿<layer name="FuncGuideWnd"  width="118" height="57" toolwindow="1" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame" skin="funcguidewnd_bg">
+      <imgbtn name="btn_close" skin="rewardplantipdlg_close_btn" pos="-14,6,-6,14" cursor="arrow" tip="%str250%" animate="0"/>
+      <text name="lock_guide_tip" pos="10,7,@93,@34" multilines="1" class="cls_func_guide_tip_txt">%str3020%</text>
+      <dlg name="autolock_open_tip" pos="0,0,-15,-0" show="0">
+        <text name="autolock_guide_tip" pos="10,7,-0,@34" multilines="1" class="cls_func_guide_tip_txt"></text>
+        <link name="autolock_setting_link" pos="-40,29,@30,@16" class="cls_func_guide_tip_link" cursor="hand">%str3022%</link>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

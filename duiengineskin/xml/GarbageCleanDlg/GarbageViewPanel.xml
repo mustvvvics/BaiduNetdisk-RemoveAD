@@ -1,0 +1,183 @@
+<!--头部操作面板-->
+<dlg name="dlg_title_bar" pos="0,0,-0,@88">
+	<dlg pos="0,0,@650,-0" crtext="ffffff">
+		<text name="txt_scan_info" pos="40,6,-0,@30" align="left" font="1000:微软雅黑"></text>
+		<text name="txt_sel_info" pos="40,[12,-0,@18" align="left" font="0200:微软雅黑"></text>
+	</dlg>
+	<dlg pos="[0,0,-0,-0">
+		<imgbtn name="btn_quick_clean" pos="-210,6,@190,@38" skin="garbageclean_cancelscan_btn" crtext="ffffff" crhover="9ec7fe" font="0600:微软雅黑" 
+			align="center" cursor="arrow" animate="1">%str1240%</imgbtn>
+		<link name="link_unckeck_all" pos="-204,55,@178,@18" align="left" class="cls_garbagecleanview_link">%str1241%</link>
+		<dlg name="dlg_op_dupfile" pos="-140,54,@120,-0" show="0">	
+			<imgbtn name="btn_keep_sel" pos="-82,0,@80,@22" align="left" valign="top" class="cls_garbagecleanview_link" 
+				skin="garbageclean_keep_btn" animate="1" cursor="arrow">%str1242%</imgbtn>
+		</dlg>
+		<dlg name="dlg_op_garbagevideo" pos="-120,54,-0,-0" show="0">
+			<imgbtn name="btn_view_mode" pos="8,0" width="100" height="22" class="cls_garbagecleanview_link"
+				skin="garbageclean_listmode_btn" txtxoffset="21" align="left" valign="top" animate="1" cursor="arrow">%str1280%</imgbtn>
+		</dlg>
+	</dlg>
+</dlg>
+
+<!--视图面板容器-->
+<dlg name="dlg_view" pos="0,88,-0,-36" crbg="ffffff" show="0">
+	<!--重复文件展示面板-->
+	<dlg name="dlg_dupfile" pos="0,0,-0,-0">
+		<dlg name="dlg_dup_category" pos="0,0,@120,-0">
+			<listboxex name="category_list" pos="1,10,-1,-1" itemheight="24" virtual="1">
+				<template>
+					<img name="item_bg" pos="1,0,-1,-0" skin="listitem_hover_bkg" show="0"/>
+					<dlg name="dlg_content" pos="0,0,-0,-0">
+						<img name="img_category" pos="0,|-8,@16,@16" skin="file_category_other"/>
+						<text name="txt_category" pos="[8,|-8,-0,@16" align="left" crtext="333333" cursor="arrow">%str1252%</text>
+					</dlg>
+				</template>
+			</listboxex>
+			<hr pos="-1,0,@1,-0" crbg="f5f5f6" size="1"/>
+		</dlg>
+		<dlg name="dlg_dup_list_view" pos="120,0,-0,-0">
+			<dlg name="listview_container" pos="0,0,-0,-0">
+				<header name="list_header" pos="0,0,-0,@30" checkSkin="listhead_check" itemSkin="listhead_btn" noitemSkin="listhead_bkg" 
+					fixWidth="0" crtext="666666" itemSwapEnable="0" sortHeader="1" check_txt_margin="12" align="left">
+				</header>
+				<listboxex name="list_view" pos="0,30,-0,-0" itemheight="28" virtual="1">
+					<template>
+						<dlg name="dlg_normal" pos="0,0,-0,-0">
+							<img name="item_bg" pos="28,1,-0,-1" skin="listitem_hover_bkg" show="0"/>
+							<dlg name="col_1">
+								<img name="img_group" pos="12,0,@11,-0" skin="garbageclean_groupmid_img"/>
+								<check id="1" name="item_chk" pos="32,|-7,@15,@15" skin="btncheckbox"/>
+								<img name="img_filetype" pos="[5,|-8,@16,@18" skin="other_small_image"/>
+								<link id="2" name="link_filename" pos="[5,|-8" height="16" crtext="333333" font="0000:微软雅黑" curor="arrow" dotted="1"/>
+							</dlg>
+							<dlg name="col_2">
+								<text name="txt_file_size" pos="8,|-8,-0,@16" class="cls_garbageview_txt" dotted="1"/>
+							</dlg>
+							<dlg name="col_3">
+								<link id="3" name="link_parent_path" pos="8,|-8" height="16" class="cls_parentpath_link" dotted="1"/>
+							</dlg>
+							<dlg name="col_4">
+								<text name="txt_modify_time" pos="8,|-8,-0,@16" class="cls_garbageview_txt" dotted="1"/>
+							</dlg>
+						</dlg>
+						<include src="IDR_DUI_NEXTBATCH_PANEL"/>
+					</template>
+				</listboxex>
+			</dlg>
+		</dlg>
+		<!--重复文件空列表视图-->
+		<dlg name="dlg_dup_empty_view" pos="120,0,-0,-0" show="0">
+			<img pos="|-96,|-90,@181,@127" skin="garbageclean_empty_img"/>
+			<text name="txt_dup_empty" pos="|-100,[10,@200,@18" font="0400:微软雅黑" crtext="999999" align="center">%str1303%</text>
+		</dlg>
+	</dlg>
+
+	<!--垃圾视频展示面板-->
+	<dlg name="dlg_garbagevideo" pos="0,0,-0,-0">
+		<!--一键清理面板-->
+		<include src="IDR_DUI_ONEKEYCLEAN_PANEL"/>
+		<!--垃圾视频列表视图-->
+		<dlg name="listview_container" pos="0,54,-0,-0" show="0">
+			<header name="list_header" pos="0,0,-0,@30" checkSkin="listhead_check" itemSkin="listhead_btn" noitemSkin="listhead_bkg" 
+					fixWidth="0" crtext="666666" itemSwapEnable="0" sortHeader="1" check_txt_margin="6" align="left">
+			</header>
+			<listboxex name="list_view" pos="0,30,-0,-0" itemheight="28" virtual="1">
+				<template>
+					<dlg name="dlg_normal" pos="0,0,-0,-0">
+						<img name="item_bg" pos="1,1,-1,-1" skin="listitem_hover_bkg" show="0"/>
+						<dlg name="col_1">
+							<check id="1" name="item_chk" pos="16,|-7,@15,@15" skin="btncheckbox"/>
+							<img name="img_filetype" pos="[5,|-8,@16,@18" skin="other_small_image"/>
+							<link id="2" name="link_filename" pos="[5,|-8" height="16" class="cls_garbageview_link" cursor="hand" dotted="1"/>
+						</dlg>
+						<dlg name="col_2">
+							<text name="txt_file_size" pos="8,|-8,-0,@16" class="cls_garbageview_txt" dotted="1"/>
+						</dlg>
+						<dlg name="col_3">
+							<link id="3" name="link_parent_path" pos="8,|-8" height="16" class="cls_parentpath_link" dotted="1"/>
+						</dlg>
+						<dlg name="col_4">
+							<text name="txt_modify_time" pos="8,|-8,-0,@16" class="cls_garbageview_txt" dotted="1"/>
+						</dlg>
+					</dlg>
+					<include src="IDR_DUI_NEXTBATCH_PANEL"/>
+				</template>
+			</listboxex>
+		</dlg>
+		<!--垃圾视频缩略图视图-->
+		<dlg name="thumbview_container" pos="0,54,-0,-0" show="1">
+			<filethumbview name="thumb_view" pos="3,0,-0,-0" itemheight="124" itemwidth="145">
+				<template>
+					<dlg name="dlg_normal" pos="12,6,-0,-0">
+						<img name="item_bg" pos="0,0,-0,-0" skin="listitem_hover_bkg" show="0"/>
+						<dlg pos="4,4,-4,-24" crbg="000000">
+							<dlg name="video_type_bg" pos="|-45,0,@90,@90" skin="garbageclean_video_img" crborder="999999"/>
+						</dlg>
+						<img name="video_play_img" pos="-38,-54,@24,@24" skin="garbageclean_videoplay_normal"/>
+						<link id="1" name="link_filename" pos="3,-20,-3,-0" class="cls_garbageview_link" cursor="hand" align="center" valign="top" dotted="1"/>
+					</dlg>
+					<dlg name="dlg_next" pos="12,6,-0,-0" show="0">
+						<text name="txt_batch_detail" pos="0,40,-0,@16" class="cls_garbageview_batch_txt">%str1296%</text>
+						<button id="4" name="btn_next_batch" pos="|-51,[10,@102,@30" class="button">%str1295%</button>
+					</dlg>
+				</template>
+			</filethumbview>
+		</dlg>
+	</dlg>
+
+	<!--空文件夹展示面板-->
+	<dlg name="dlg_emptydir" pos="0,0,-0,-0">
+		<!--一键清理面板-->
+		<include src="IDR_DUI_ONEKEYCLEAN_PANEL"/>
+		<!--空文件夹列表视图-->
+		<dlg name="listview_container" pos="0,54,-0,-0">
+			<dlg pos="0,0,-0,30">
+				<header name="list_header" pos="0,0,-0,-0" checkSkin="listhead_check" itemSkin="listhead_btn" noitemSkin="listhead_bkg" 
+					fixWidth="0" crtext="666666" itemSwapEnable="0" sortHeader="1" check_txt_margin="6" align="left">
+				</header>
+			</dlg>
+			<listboxex name="list_view" pos="0,30,-0,-0" itemheight="24" virtual="1">
+				<template>
+					<dlg name="dlg_normal" pos="0,0,-0,-0">
+						<img name="item_bg" pos="1,1,-1,-1" skin="listitem_hover_bkg" show="0"/>
+						<dlg name="col_1">
+							<check id="1" name="item_chk" pos="16,|-7,@15,@15" skin="btncheckbox"/>
+							<img name="img_filetype" pos="[5,|-8,@16,@16" skin="other_small_image"/>
+							<link id="2" name="link_filename" pos="[5,|-8" height="16" class="cls_garbageview_link" cursor="hand" dotted="1"/>
+						</dlg>
+						<dlg name="col_2">
+							<link id="3" name="link_parent_path" pos="8,|-8" height="16" class="cls_parentpath_link" dotted="1"/>
+						</dlg>
+						<dlg name="col_3">
+							<text name="txt_modify_time" pos="8,|-8,-0,@16" class="cls_garbageview_txt" dotted="1"/>
+						</dlg>
+					</dlg>
+					<include src="IDR_DUI_NEXTBATCH_PANEL"/>
+				</template>
+			</listboxex>
+		</dlg>
+	</dlg>
+</dlg>
+
+<!--正在加载面板-->
+<dlg name="dlg_loading" pos="0,88,-0,-36" crbg="ffffff" show="0">
+	<img pos="|-90,|-104,@181,@128" skin="garbageclean_loading_img"/>
+	<text pos="|-200,[40,@400,@20" crtext="999999" font="0600:微软雅黑" align="center">%str1291%</text>
+</dlg>
+
+<!--加载错误面板-->
+<dlg name="dlg_error" pos="0,88,-0,-36" crbg="ffffff" show="0">
+	<img pos="|-90,|-104,@181,@128" skin="garbageclean_error_img"/>
+	<text pos="|-75,|64,@110,@20" crtext="999999" font="0600:微软雅黑" align="center">%str1292%</text>
+	<link name="link_retry" pos="[0,|64,@100,@20" cursor="hand" crtext="1e78d5" crhover="1e78d5" font="0600:微软雅黑" hoverfont="0602:微软雅黑">%str888%</link>
+</dlg>
+
+<!--底部面板-->
+<dlg name="dlg_bottom" pos="0,-36,-0,-0" crbg="ffffff">
+	<hr pos="0,0,-0,@1" crbg="f5f5f6" size="1"/> 
+	<text name="txt_load_info" pos="10,|-8,@300,@16" crtext="3c6889" font="0000:微软雅黑" align="left"></text>
+	<dlg name="dlg_attention" pos="|0,0,-0,-0" show="0">
+		<img pos="-198,|-6,@14,@14" skin="garbageclean_attention_img"/>
+		<text pos="[4,|-8,-0,@16" crtext="3c6889" font="0000:微软雅黑" align="left">%str1276%</text>
+	</dlg>
+</dlg>

@@ -1,0 +1,12 @@
+﻿<layer name="MembershipOrQuotaExpireWnd" width="240" height="130" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="titlepanel_quotatip_bg">
+      <dlg pos="5,9,-5,-5" font="0000:微软雅黑" x-margin="0">
+        <imgbtn name="btn_close" pos="-14,6,@7,@7" skin="titlepanel_tipclose_btn" cursor="arrow" tip="%str250%"></imgbtn>
+        <text name="txt_title" pos="6,14,-6,26" crtext="9d652e" font="0000:微软雅黑" multilines="0" ></text>
+        <text name="txt_tip" pos="6,38,-6,-40" crtext="c58c55" font="0000:微软雅黑" multilines="1" ></text>
+        <imgbtn name="btn_renew" pos="|-50,-32,@100,@25" skin="titlepanel_sviprenew_btn" crtext="9d652e" cursor="arrow"></imgbtn>
+     </dlg>
+  </dlg>
+ </body>
+</layer>

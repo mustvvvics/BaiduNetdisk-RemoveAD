@@ -1,0 +1,11 @@
+<layer name="LoginQrCodeWnd" width="154" height="154" toolwindow="1" ncRect="0,0,0,0" resize="0" translucent="0" nomaxsize="1">
+  <body>
+    <dlg name="dlg_qrcode_frame" pos="0,0,-0,-0" skin="main_panel_frame" crborder="ecedee">
+      <dlg name="dlg_qrcode" pos="10,10,-10,-10" show="0">
+		<img name="img_fail" pos="|-20,35,@39,@39" skin="img_login_qrcode_fail"></img>
+		<text name="txt_error_tip" pos="5,[10,-5,@18" crtext="999999" align="center">%str284%</text>
+		<text name="txt_error_code" pos="5,[5,-5,@18" crtext="999999" align="center"></text>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

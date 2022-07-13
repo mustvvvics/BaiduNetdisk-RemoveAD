@@ -1,0 +1,29 @@
+<dlg name="ShareDetailPanel" pos="0,0,-0,-0">
+  <dlg name="GroupNamePanel" pos="26,10,-35,50">
+    <imgbtn name="back_to_session_btn" pos="0,0" width="46" height="40" class="share_back_btn" show="0">%str365%</imgbtn>
+    <link name="group_display_name" pos="0,0,-30,-0" class="share_panel_username_text"></link>
+    <imgbtn name="update_groupname_btn" pos="[10,10" width="20" height="20" skin="share_update_btn" tip="%str347%"></imgbtn>
+  </dlg>
+  <text name="group_name_calc_size" pos="0,0" class="share_panel_username_text" show="0"></text>
+  <hr pos="1,59,-0,60" crbg="e5e5e5"/>
+  <!--群成员列表-->
+  <dlg name="GroupMemberPanel" pos="5,66,-5,-29">
+    <dlg name="GroupMemberListPanel" pos="0,0,-0,-125">
+      <thumblistview name="group_member_list_view" pos="0,0,-0,-0" itemheight="118" itemwidth="96" show="1">
+        <template>
+          <img name="group_member_item_bkg" pos="0,0,-0,-0" skin="share_memberhover_img" show="0"/>
+          <imgbtn name="add_member_btn" pos="16,16" width="64" height="64" animate="true" cursor="arrow" skin="share_addmemberbtn" show="0"></imgbtn>
+          <img name="member_head" pos="16,16" width="64" height="64" skin="share_userhead_img"/>
+          <img name="group_owner" pos="16,60" width="20" height="20" skin="share_groupowner_img" show="0"/>
+          <imgbtn name="del_member_btn" pos="70,9" width="19" height="19" animate="true" cursor="arrow" skin="share_delmemberbtn" show="0" tip="%str335%"></imgbtn>
+          <link name="member_name" pos="10,89,-10,-9" class="share_panel_member_text"></link>
+        </template>
+      </thumblistview>
+    </dlg>
+    <dlg name="GroupOpPanel" pos="|-133,-125,@266,@125">
+      <imgbtn name="share_group_file_btn" pos="|-133,5" width="266" height="34" class="share_file_btn">%str323%</imgbtn>
+      <imgbtn name="view_group_qrcode_btn" pos="|-133,47" width="266" height="34" class="share_common_btn">%str452%</imgbtn>
+      <imgbtn name="delete_group_btn" pos="|-133,89" width="266" height="34" class="share_common_btn">%str345%</imgbtn>
+    </dlg>
+  </dlg>
+</dlg>

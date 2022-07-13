@@ -1,0 +1,15 @@
+<layer name="WorkspaceSetPathDlg" width="464" height="300" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="dlg_main" pos="0,0,@464,@240" skin="workspace_guide_frame_mask">
+            <caption pos="0,0,-0,@48">
+                <text pos="24,15" font="0200:微软雅黑" crtext="03081A">%str4565%</text>
+            </caption>
+            <text name="sync_title" pos="24,70" font="0200:微软雅黑">%str4566%</text>
+            <richedit name="sync_dir_edit" pos="24,100,@304,@32" y-margin="5" x-margin="2" ncskin="skin_editnc" skin="skin_edit_set" password="0" show="1" maxbuf="255" inset="4,1,2,1" valign="middle" align="left" font="0400:微软雅黑" ></richedit>
+            <imgbtn name="btn_change_dir" pos="[6,100,@104,@32" skin="workspace_guide_btn_bkg_three" font="face:微软雅黑,adding:-3" cursor="hand">%str4567%</imgbtn>
+            <text name="txt_error" pos="24,[8,@300,@38" crtext="FF436A" show="0" multilines="1" >%str6016%</text>
+            <imgbtn name="btn_cancel" pos="91,183,@128,@36" font="0200:微软雅黑" crtext="06A7FF" skin="workspace_guide_btn_bkg_two" cursor="hand">%str4568%</imgbtn>
+            <imgbtn name="btn_create_dir" pos="243,183,@128,@36" font="0200:微软雅黑" crtext="FFFFFF" skin="workspace_guide_btn_bkg_one" cursor="hand">%str4569%</imgbtn>
+        </dlg>
+    </body>
+</layer>

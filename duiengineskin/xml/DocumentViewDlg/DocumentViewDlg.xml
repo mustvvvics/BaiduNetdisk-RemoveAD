@@ -1,0 +1,35 @@
+<layer title="%str3450%" width="1024" height="650" minsize="1024,650" appwin="1" ncRect="4,4,4,4" resize="1" translucent="0" nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption name="dlg_doc_caption" pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text pos="39,9" name="file_name_title" maxwidth="920" class="cls_dlg_title_text">%str3450%</text>
+        <imgbtn name="btn_minimize" skin="btn_sys_minimize" pos="-98,1,@32,@20" cursor="arrow" tip="%str251%" animate="0"/>
+        <imgbtn name="btn_maximize" skin="btn_sys_maximize" pos="-66,1,@32,@20" cursor="arrow" tip="%str1503%" animate="0"/>
+        <imgbtn name="btn_restore" skin="btn_sys_restore" pos="-66,1,@32,@20" cursor="arrow" tip="%str1504%" animate="0" show="0"/>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,@32,@20" cursor="arrow" tip="%str250%" animate="0"/>
+      </caption>
+      <dlg name="dlg_doc_view" pos="1,38,-1,-1">
+        <dlg pos="0,0,-0,-0">
+          <webbrowser name="doc_web_page" pos="0,0,-0,-0" use_ie="0" show="1" reboot_on_render_crash="0"/>
+          <!--不支持类型面板-->
+          <dlg name="LoadingDocErrorPanel" pos="0,0,-0,-0" show="0">
+            <dlg name="viewDocErrTipPanel" pos="|-90,|-100" width="180" height="200">
+              <img pos="|-52,0" skin="doc_dlg_load_error" width="103" height="93" />
+              <text name="errTip" pos="0,110" class="cls_txt_red">%str3451%</text>
+              <imgbtn name="DownBtn" class="defultbtn" pos="|-48,162" width="96" height="34" cursor="arrow">%str3452%</imgbtn>
+            </dlg>
+          </dlg>
+          <!--网络连接错误面板-->
+          <dlg name="NetworkErrorPanel" pos="0,0,-0,-0" show="0">
+            <dlg name="netErrTipPanel" pos="|-90,|-100" width="180" height="200">
+              <img pos="|-52,0" skin="doc_dlg_load_error" width="103" height="93" />
+              <text pos="0,110,-0,130" class="cls_txt_red">%str3453%</text>
+              <imgbtn name="btn_retry" class="defultbtn" pos="|-48,162" width="96" height="34" cursor="arrow">%str3454%</imgbtn>
+            </dlg>
+          </dlg>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

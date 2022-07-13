@@ -1,0 +1,42 @@
+<layer name="ResidentGuide" width="790" height="665" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg skin="workspace_guide_mask" pos="0,0,-0,-0">
+            <dlg name="dlg_main" pos="173,126,@464,@428" skin="workspace_guide_frame">
+                <text name="dlg_title" pos="24,15" font="0200:微软雅黑" animate="1">%str4565%</text>
+                <dlg name="dlg_guide_body" pos="0,44,-0,-0">
+                    <dlg name="dlg_cloudbridge_guide" pos="0,0,-0,194">
+                        <text name="txt_title_sync" pos="24,0" font="0000:微软雅黑">%str6003%</text>
+                        <dlg name="dlg_chose_mode" pos="24,[12,-24,@82">
+                            <imgbtn name="btn_quick_sync" skin="cloudbridge_mode_frame" cursor="hand" pos="0,0,@200,@82">
+                                <img pos="166,0,@34,@16" skin="cloudbridge_svip"></img>
+                                <img name="img_quick_sync" pos="11,15" skin="cloudbridge_unridio"></img>
+                                <text pos="[5,15" font="0000:微软雅黑" crtext="03081A">%str6007%</text>
+                                <text pos="10,36,@182,@34" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6004%</text>
+                            </imgbtn>
+                            <imgbtn pos="108,16,@14,@14" skin="cloudbridge_question" tip="%str6043%"></imgbtn>
+                            <imgbtn name="btn_all_sync" skin="cloudbridge_mode_frame" cursor="hand" pos="216,0,@200,@82">
+                                <img name="img_all_sync" pos="11,15" skin="cloudbridge_unridio"></img>
+                                <text pos="[5,15" font="0000:微软雅黑" crtext="03081A">%str6005%</text>
+                                <text pos="10,36,@182,@34" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6006%</text>
+                            </imgbtn>
+                        </dlg>
+                        <gifplayer pos="24,[10,@416,@72" skin="gif_workspace_guide_quick_sync" bulltimer="1"></gifplayer>
+                    </dlg>
+                    <dlg name="dlg_old_user" pos="24,194,-0,-0" show="0">
+                        <text name="txt_quick_tip" pos="0,0,@416,@55" textmode="40810" crtext="AFB3BF">%str6000%</text>
+                        <imgbtn name="btn_save" pos="144,[24,@128,@36" skin="workspace_guide_btn_bkg_one" crtext="FFFFFF" >%str6001%</imgbtn>
+                    </dlg>
+                    <dlg name="dlg_path_choice" pos="24,194,-0,-0" show="1">
+                        <text name="sync_dir_label" pos="0,0,-0,@12">%str4566%</text>
+                        <richedit name="sync_dir_edit" pos="0,24,@304,@32" y-margin="5" x-margin="2" ncskin="skin_editnc" skin="skin_edit_set" password="0" show="1" maxbuf="255" inset="4,1,2,1" valign="middle" align="left" font="0400:微软雅黑" ></richedit>
+                        <imgbtn name="btn_change_dir" pos="[6,24,@104,@32" skin="workspace_guide_btn_bkg_three" font="face:微软雅黑,adding:-3" cursor="hand">%str4567%</imgbtn>
+                        <text name="error_quick_sync_txt" pos="0,60" crtext="FF436A" show="0">%str6002%</text>
+                        <text name="sync_dir_warnning" pos="0,80,@416,@20" crtext="AFB3BF" multilines="1" animate="1">%str4570%</text>
+                        <imgbtn name="btn_cancel" pos="67,124,@128,@36" font="0200:微软雅黑" crtext="06A7FF" skin="workspace_guide_btn_bkg_two" cursor="hand">%str4568%</imgbtn>                      
+                        <imgbtn name="btn_create_dir" pos="219,124,@128,@36" font="0200:微软雅黑" crtext="FFFFFF" skin="workspace_guide_btn_bkg_one" cursor="hand">%str4569%</imgbtn>
+                    </dlg>
+                </dlg>               
+            </dlg>
+        </dlg>
+    </body>
+</layer>

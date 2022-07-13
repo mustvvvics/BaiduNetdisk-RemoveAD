@@ -1,0 +1,8 @@
+<layer name="MaskSvipGuideDlg" width="900" height="200" toolwindow="1" ncRect="0,0,0,0" translucent="1" nomaxsize="1">
+	<body>
+		<dlg pos="0,0,-0,-0" skin="garbageclean_svipguide_mask">
+			<text name="txt_guide_detail" pos="|-250,50,@500,@20" align="center" crtext="ffffff" font="0800:微软雅黑"></text>
+			<imgbtn name="btn_guide" pos="|-71,100,@142,@40" skin="batch_upload_upgrade_btn" crtext="9d652e" font="0200:微软雅黑" cursor="arrow" animate="1"></imgbtn>
+		</dlg>
+	</body>
+</layer>

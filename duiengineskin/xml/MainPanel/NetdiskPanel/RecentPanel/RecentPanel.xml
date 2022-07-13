@@ -1,0 +1,207 @@
+<dlg name="RecentPanel" pos="0,0,-0,-0">
+  <!--工具栏-->
+  <dlg name="recent_toolbar" pos="0,0,-250,@45">
+    <include src="IDR_DUI_RECENT_PANEL_TOOLBAR"/>
+  </dlg>
+
+  <dlg name="recent_container_searchbox" pos="-250,0,-0,45">
+    <include src="IDR_DUI_FILE_CONTAINER_SEARCHBOX"/>
+  </dlg>
+  
+  <!--地址栏-->
+  <dlg name="recent_address_panel" pos="0,45,-0,@40">
+    <include src="IDR_DUI_FILE_CONTAINER_ADDRESS_PANEL"/>
+  </dlg>
+
+  <!--视图面板容器-->
+  <dlg name="recent_view_container" pos="0,85,-0,-34">
+    <!--最近观看视频记录面板-->
+    <dlg name="recent_video_panel" pos="0,0,-0,@208" show="1">
+      <dlg name="video_record_panel" pos="0,0,-0,@36" show="1">
+        <text pos="13,11,@36,@12" crtext="030B1A" font="0000:微软雅黑">%str2372%</text>
+        <text name="view_subtitle" pos="[8,13,@120,@10" crtext="A2ABBD" font2="facename:微软雅黑;adding:-1" show="0">%str2373%</text>
+        <imgbtn name="btn_view_collapse" skin="recentpanel_videohistory_collapse" pos="-96,2,@56,@30" txtxoffset="8" align="left" crtext="818999" crhover="06A7FF" cursor="arrow">%str4216%</imgbtn>
+        <imgbtn name="btn_view_expand" skin="recentpanel_videohistory_expand" pos="-96,2,@56,@30" txtxoffset="8" align="left" crtext="818999" crhover="06A7FF" cursor="arrow" show="0">%str4215%</imgbtn>
+        <hr name="video_list_split" crbg="f2f5fd" pos="0,37,-0,@1" show="0"></hr>
+      </dlg>
+      <!--历史视频列表视图-->
+      <dlg name="video_record_list_panel" pos="0,36,-0,-0">
+        <filethumbview name="record_video_thumb_view" pos="18,0,-88,-0" itemwidth="150" itemheight="142" frameskin="mainpanel_frame_select_bg">
+          <template>
+            <dlg name="video_record_thumb_item" pos="6,0,-6,-0">
+              <dlg name="detail_thumb_template" pos="0,0,-0,-0" show="1">
+                <img name="item_bkg" pos="0,0,-0,-0" skin="mainpanel_thumbview_item_hover_bg" show="0" cursor="arrow" msgtransparent="0"></img>
+                <dlg name="dlg_video_bg" pos="8,8,@122,@70" crbg="000000" msgtransparent="1" show="0"></dlg>
+                <img name="img_video_type" pos="|-20,15,@40,@40" skin="other_big_image"></img>
+                <img name="img_thumbview" pos="8,8,@122,@70" skin="other_big_image" keep_size="1" show="0"></img>
+                <img name="img_video_mantle" pos="8,8,@122,@70" skin="recentpanel_videohistory_mantle"></img>
+                <img name="img_video_play" pos="57,31,@24,@24" skin="recentpanel_videohistory_videoplay_normal" show="0"></img>
+                <link name="link_videoname" pos="8,84,-8,@34" crtext="030B1A" textmode="40010" msgtransparent="1" cursor="hand"></link>
+                <text name="txt_duration" pos="14,62,@48,@10" crtext="FFFFFF" font2="adding:-1" >%str1417%</text>
+                <text name="txt_progress" pos="8,-18,-8,@14" crtext="666666" font2="adding:-1" >%str2375%</text>
+                <check name="record_thumb_video_check" skin="recentpanel_videohistory_checkbox" focusskin="function_collect_focus_skin" pos="12,12" show="1"></check>
+              </dlg>
+              <dlg name="detail_viewmore_template" pos="7,7,@112,@82" crbg="f6f6f6" show="0">
+                <link name="link_viewmore" pos="6,|-8,-6,@16" crtext="666666" dotted="1" align="center" valign="middle">%str2921%</link>
+              </dlg>
+            </dlg>
+          </template>
+        </filethumbview>
+        <imgbtn name="btn_view_more" skin="recentpanel_videohistory_viewmore" pos="-88,10,@48,@126" txtxoffset="8" align="left" crtext="818999" crhover="06A7FF" cursor="arrow" show="0"></imgbtn>
+      </dlg>
+      <!--空视图-->
+      <dlg name="video_record_empty_panel" pos="0,36,-0,-0" show="0">
+        <img name="empty_view_bg" pos="|-21,34,@42,@42" skin="recentpanel_videohistory_empty"></img>
+        <text name="txt_empty_tip_head" pos="331,96,@120,@18" crtext="495366" font="0000:微软雅黑">%str2378%</text>
+        <link name="txt_empty_tip_link" pos="[4,96,@38,@18" crtext="06A7FF" font="0002:微软雅黑" cursor="hand">%str2379%</link>
+        <text name="txt_empty_tip_tail" pos="[2,96,@38,@18" crtext="495366" font="0000:微软雅黑">%str2380%</text>
+      </dlg>
+
+      <!--正在加载视图-->
+      <dlg name="video_record_loading_panel" pos="0,0,-0,-0" show="1">
+        <gifplayer name="loading_view_gif" pos="|-16,|-16,@32,@32" skin="gif_statuspanel_loading"/>
+        <text name="txt_loading_tip" pos="|-150,[12,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2311%</text>
+      </dlg>
+      <!--错误视图-->
+      <dlg name="video_record_error_panel" pos="0,0,-0,-0" show="0">
+        <img name="error_view_bg" pos="|-90,|-100,@181,@127" skin="mainpanel_emptyview_error"></img>
+        <text name="txt_error_tip" pos="|-150,[8,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2312%</text>
+        <imgbtn name="btn_refresh" pos="|-36,[16,@72,@25" class="defultbtn" crtext="ffffff" cursor="arrow">%str2313%</imgbtn>
+      </dlg>
+    </dlg>
+    
+    <!--最近使用记录面板-->
+    <dlg name="recent_record_panel" pos="0,208,-0,-0" show="1">
+      <!--列表视图-->
+      <dlg name="record_list_panel" pos="0,0,-0,-0" show="0">
+        <dlg name="all_record_list_panel" pos="0,0,-0,-0">
+          <text name="all_title" pos="13,0,@24,@12" crtext="030B1A" font="0000:微软雅黑">%str2374%</text>
+          <header name="record_list_header" pos="0,24,-0,@30" checkSkin="listhead_check" itemSkin="listhead_btn" noitemSkin="listhead_bkg"
+            fixWidth="0" itemSwapEnable="0" sortHeader="1" sortSkin="listhead_arrow" check_txt_margin="12" crtext="757880" align="left">
+          </header>
+          <listboxex name="record_list_view" pos="0,54,-0,-0" itemheight="40" virtual="1">
+            <template>
+              <!--背景-->
+              <img name="item_bkg" pos="1,0,-1,-1" skin="listitem_hover_bkg" show="0"></img>
+              <!--普通项模板-->
+              <include src="IDR_DUI_RECENTNORMAL_TEMPLATE" />
+              <!--缩略图项模板-->
+              <include src="IDR_DUI_RECENTTHUMB_TEMPLATE" />
+              <!--查看更多模板-->
+              <dlg name="ViewMoreTemplate" pos="0,0,-0,-0" show="0">
+                <imgbtn name="btn_viewmore" pos="68,-45,@115,@30" skin="recentpanel_listview_viewmore_btn" crtext="666666" cursor="arrow" tip="%str2912%">%str2912%</imgbtn>
+              </dlg>
+              <!--分隔线-->
+              <hr name="item_sep" crbg="f2f5fd" pos="0,-1,-0,-0" show="0"></hr>
+            </template>
+          </listboxex>
+        </dlg>
+      </dlg>
+      <!--空视图-->
+      <dlg name="record_empty_panel" pos="0,0,-0,-0" show="0">
+        <img name="empty_view_bg" pos="|-90,|-100,@181,@127" skin="mainpanel_emptyview_empty"></img>
+        <text name="txt_empty_tip" pos="|-150,[8,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2934%</text>
+      </dlg>
+      <!--正在加载视图-->
+      <dlg name="record_loading_panel" pos="0,0,-0,-0" show="1">
+        <gifplayer name="loading_view_gif" pos="|-16,|-16,@32,@32" skin="gif_statuspanel_loading"/>
+        <text name="txt_loading_tip" pos="|-150,[12,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2311%</text>
+      </dlg>
+      <!--错误视图-->
+      <dlg name="record_error_panel" pos="0,0,-0,-0" show="0">
+        <img name="error_view_bg" pos="|-90,|-100,@181,@127" skin="mainpanel_emptyview_error"></img>
+        <text name="txt_error_tip" pos="|-150,[8,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2312%</text>
+        <imgbtn name="btn_refresh" pos="|-36,[16,@72,@25" class="defultbtn" crtext="ffffff" cursor="arrow">%str2313%</imgbtn>
+      </dlg>
+    </dlg>
+
+    <!--最近使用详情面板-->
+    <dlg name="recent_detail_panel" pos="0,0,-0,-0" show="0">
+      <!--列表视图-->
+      <dlg name="detail_list_panel" pos="0,0,-0,-0" show="0">
+        <header name="detail_list_header" pos="0,0,-0,@30" checkSkin="listhead_check" itemSkin="listhead_btn" noitemSkin="listhead_bkg"
+            fixWidth="0" itemSwapEnable="0" sortHeader="1" sortSkin="listhead_arrow" check_txt_margin="12" crtext="757880" align="left">
+        </header>
+        <listboxex name="detail_list_view" pos="0,30,-0,-0" itemheight="40" virtual="1">
+          <template>
+            <!--背景-->
+            <img name="item_bkg" pos="1,0,-1,-1" skin="listitem_hover_bkg" show="0"></img>
+            <!--普通项模板-->
+            <include src="IDR_DUI_RECENTNORMAL_TEMPLATE" />
+            <!--查看更多模板-->
+            <dlg name="ViewMoreTemplate" pos="0,0,-0,-0" show="0">
+              <link name="link_viewmore" pos="|-58,|-8,@115,@16" crtext="666666" cursor="arrow" align="center" valign="middle">%str2921%</link>
+            </dlg>
+          </template>
+        </listboxex>
+      </dlg>
+      <!--缩略图视图-->
+      <dlg name="detail_thumb_panel" pos="0,0,-0,-0" show="1">
+        <filethumbview name="detail_thumb_view" pos="0,0,-0,-0" itemwidth="138" itemheight="134" frameskin="mainpanel_frame_select_bg">
+          <template>
+            <dlg name="detail_thumb_item" pos="6,6,-6,-6">
+              <dlg name="detail_thumb_template" pos="0,0,-0,-0" show="1">
+                <img name="item_bkg" pos="0,0,-0,-0" skin="mainpanel_thumbview_item_hover_bg" show="0" cursor="arrow" msgtransparent="0"></img>
+                <dlg name="dlg_video_bg" pos="7,7,@112,@82" crbg="000000" msgtransparent="1" show="0"></dlg>
+                <img name="img_filetype" pos="|-30,20,@60,@60" skin="other_big_image"></img>
+                <img name="img_thumbview" pos="7,7,@112,@82" skin="other_big_image" keep_size="1" show="0"></img>
+                <img name="img_video_play" pos="-41,-66,@30,@30" skin="mainpanel_thumbview_videoplay_normal" show="0"></img>
+                <link name="link_filename" pos="12,-26,-12,@16" crtext="333333" dotted="1" align="center" valign="middle" msgtransparent="1"></link>
+                <check name="detail_thumb_file_check" skin="mainpanel_thumbview_checkbox" focusskin="function_collect_focus_skin" pos="0,1" show="1"></check>
+              </dlg>
+              <dlg name="detail_viewmore_template" pos="7,7,@112,@82" crbg="f6f6f6" show="0">
+                <link name="link_viewmore" pos="6,|-8,-6,@16" crtext="666666" dotted="1" align="center" valign="middle">%str2921%</link>
+              </dlg>
+            </dlg>
+          </template>
+        </filethumbview>
+      </dlg>
+      <!--视频缩略图视图-->
+      <dlg name="detail_video_thumb_panel" pos="0,0,-0,-0" show="1">
+        <filethumbview name="record_video_thumb_view" pos="12,0,-0,-0" itemwidth="162" itemheight="166" frameskin="mainpanel_frame_select_bg">
+          <template>
+            <dlg name="video_record_thumb_item" pos="12,12,-12,-12">
+              <dlg name="detail_thumb_template" pos="0,0,-0,-0" show="1">
+                <img name="item_bkg" pos="0,0,-0,-0" skin="mainpanel_thumbview_item_hover_bg" show="0" cursor="arrow" msgtransparent="0"></img>
+                <dlg name="dlg_video_bg" pos="8,8,@122,@70" crbg="000000" msgtransparent="1" show="0"></dlg>
+                <img name="img_video_type" pos="|-20,15,@40,@40" skin="other_big_image"></img>
+                <img name="img_thumbview" pos="8,8,@122,@70" skin="other_big_image" keep_size="1" show="0"></img>
+                <img name="img_video_mantle" pos="8,8,@122,@70" skin="recentpanel_videohistory_mantle"></img>
+                <img name="img_video_play" pos="57,31,@24,@24" skin="recentpanel_videohistory_videoplay_normal" show="0"></img>
+                <link name="link_videoname" pos="8,84,-8,@34" crtext="030B1A" textmode="40010" msgtransparent="1" cursor="hand"></link>
+                <text name="txt_duration" pos="14,62,@48,@10" crtext="FFFFFF" font2="adding:-1" >%str1417%</text>
+                <text name="txt_progress" pos="8,-18,-8,@10" crtext="666666" font2="adding:-1" >%str2375%</text>
+                <check name="record_thumb_video_check" skin="recentpanel_videohistory_checkbox" focusskin="function_collect_focus_skin" pos="12,12" show="1"></check>
+              </dlg>
+              <dlg name="detail_viewmore_template" pos="7,7,@112,@82" crbg="f6f6f6" show="0">
+                <link name="link_viewmore" pos="6,|-8,-6,@16" crtext="666666" dotted="1" align="center" valign="middle">%str2921%</link>
+              </dlg>
+            </dlg>
+          </template>
+        </filethumbview>
+      </dlg>
+      <!--空视图-->
+      <dlg name="detail_empty_panel" pos="0,0,-0,-0" show="0">
+        <img name="empty_view_bg" pos="|-90,|-100,@181,@127" skin="mainpanel_emptyview_empty"></img>
+        <text name="txt_empty_tip" pos="|-150,[8,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2922%</text>
+      </dlg>
+      <!--正在加载视图-->
+      <dlg name="detail_loading_panel" pos="0,0,-0,-0" show="0">
+        <gifplayer name="loading_view_gif" pos="|-16,|-16,@32,@32" skin="gif_statuspanel_loading"/>
+        <text name="txt_loading_tip" pos="|-150,[12,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2311%</text>
+      </dlg>
+      <!--错误视图-->
+      <dlg name="detail_error_panel" pos="0,0,-0,-0" show="0">
+        <img name="error_view_bg" pos="|-90,|-100,@181,@127" skin="mainpanel_emptyview_error"></img>
+        <text name="txt_error_tip" pos="|-150,[8,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2312%</text>
+        <imgbtn name="btn_refresh" pos="|-36,[16,@72,@25" class="defultbtn" crtext="ffffff" cursor="arrow">%str2313%</imgbtn>
+      </dlg>
+    </dlg>
+  </dlg>
+
+  <!--状态栏-->
+  <dlg name="recent_status_panel" pos="0,-34,-0,-0">
+    <include src="IDR_DUI_FILE_CONTAINER_STATUS_PANEL"/>
+    <text name="txt_video_tip" pos="|-80,|-8,@160,@16" crtext="999999" font="0000:微软雅黑" align="center" show="0">%str2381%</text>
+  </dlg>
+</dlg>

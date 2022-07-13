@@ -1,0 +1,33 @@
+﻿<layer name="ThirdPartyLoginDlgV2" width="580" height="410" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="0" nomaxsize="1">
+  <body> 
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,37">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text name="dlg_title" pos="39,9" class="cls_dlg_title_text">%str3755%</text>
+        <imgbtn name="RefreshBtn" skin="login_third_party_refresh_btn" pos="-64,2,@30,@20" cursor="arrow" tip="%str2213%" animate="0"/>
+        <imgbtn name="CloseBtn" skin="btn_sys_close" pos="-34,2,-2,21" cursor="arrow" tip="%str250%" animate="0"/>
+      </caption> 
+      <dlg pos="1,37,-1,-1">
+        <webbrowser name="thirdWebFrame" pos="0,0,-0,-0" use_ie="0" show="1"/>
+        <!-- 绑定帐号提示页面 -->
+         <dlg name="bindedContentPanel" pos="|-85,|-55,@170,@110" show="0">
+           <text name="bindedTip" pos="0,0,-0,18" class="cls_login_thirdparty_txt"></text>
+           <text name="accountTip" pos="0,[10,-0,@18" class="cls_login_thirdparty_txt"></text>
+           <text pos="0,[10,-0,@18" class="cls_login_thirdparty_txt">%str3756%</text>
+           <imgbtn name="knownBtn" pos="|-40,84,@80,@24" class="defultbtn" cursor="arrow">%str3754%</imgbtn>
+         </dlg>
+        <!-- 登录中页面 -->
+        <dlg name="loginingPanel" pos="|-25,|-22,@50,@44" show="0">
+          <gifplayer pos="|-9,0,@18,@18" skin="loading_gif"></gifplayer>
+          <text pos="0,26,-0,-0" class="cls_login_thirdparty_txt">%str3757%</text>
+        </dlg>
+         <!-- 登录出错页面 -->
+         <dlg name="loginErrPanel" pos="|-82,|-32,@164,@64" show="0">
+           <text name="errorTip" pos="0,0,-0,18" class="cls_login_thirdparty_txt">%str3758%</text>
+           <imgbtn name="ConnectBtn" pos="0,40,@74,@24" class="defultbtn" cursor="arrow">%str204%</imgbtn> 
+           <imgbtn name="CancelBtn" pos="[16,40,@74,@24" class="button"  cursor="arrow">%str501%</imgbtn>
+         </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

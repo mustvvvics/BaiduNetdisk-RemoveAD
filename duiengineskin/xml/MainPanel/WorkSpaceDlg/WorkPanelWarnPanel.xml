@@ -1,0 +1,9 @@
+<dlg name="WorkPanelWarnPanel" pos="0,0,-0,-0" show="1">
+    <!--顶部飘条栏-->
+    <dlg name="dlg_simple_warn_panel" pos="16,8,-16,-0" skin="workspace_guide_text_bkg" show="1">
+        <text name="warn_tip" pos="9,10" font="0000:微软雅黑" crtext="AFB3BF" align="left"></text>
+        <link name="link_warn_tip" pos="[16,12,@56,-12" minwidth="56" crtext="06A7FF" autoCalcWidth="true" cursor="hand" font="0000:微软雅黑">立即更换></link>
+        <imgbtn name="btn_warn_close" pos="-26,11,@16,@16" skin="wechatbackup_guide_dlg_close" crtext="000000"
+            font="0000:微软雅黑" cursor="hand" animate="1"></imgbtn>
+    </dlg>
+</dlg>

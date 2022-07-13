@@ -1,0 +1,38 @@
+﻿<layer name="WorkspaceFileCopyProgressDlg" width="498" height="194" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg name="content" pos="0,0,-0,-0" skin="workspace_filecopy_progress_bg_dlg">
+      <dlg pos="17,17,-17,-17">
+        <caption pos="0,0,-0,@52">
+          <text pos="24,16" crtext="03081A" font="0200:微软雅黑">%str4850%</text>
+          <imgbtn name="btn_close" pos="-40,18,@16,@16" skin="wechatbackup_guide_dlg_close"></imgbtn>
+        </caption>
+        <dlg name="dlg_calc_folder_size" pos="0,52,-0,-0">
+          <img pos="24,32,@45,@45" skin="workspace_filecopy_progress_file_copy"></img>
+          <text pos="[16,32" crtext="03081A" font="0200:微软雅黑" align="center">%str4859%</text>
+          <gifplayer name="gif_progress" pos="85,[11,-33,@6" skin="workspace_filecopy_progress_process_gif" bulltimer="1"/>
+        </dlg>
+        <dlg name="dlg_processing" pos="0,52,-0,-0" show="0">
+          <img pos="24,32,@45,@45" skin="workspace_filecopy_progress_file_copy"></img>
+          <text pos="[16,32" crtext="03081A" font="0200:微软雅黑" align="center">%str4851%</text>
+          <gifplayer name="gif_progress" pos="85,[11,-33,@6" skin="workspace_filecopy_progress_process_gif" bulltimer="1"/>
+        </dlg>
+        <dlg name="dlg_success" pos="0,52,-0,-0" show="0">
+          <img pos="|-22,32,@45,@45" skin="workspace_filecopy_progress_icon_success"></img>
+          <text pos="0,[12,-0,@20" crtext="03081A" font="0200:微软雅黑" align="center">%str4852%</text>
+          <text pos="56,[8,-56,@40" crtext="818999" font="0200:微软雅黑" multilines="1">%str4857%</text>
+          <imgbtn name="btn_ok" pos="|-64,189,@128,@36" skin="wechatbackup_guide_dlg_btn" crtext="ffffff" font="0200:微软雅黑">%str4856%</imgbtn>
+        </dlg>
+        <dlg name="dlg_fail" pos="0,52,-0,-0" show="0">
+          <img pos="|-22,32,@45,@45" skin="workspace_filecopy_progress_icon_error"></img>
+          <text pos="0,[12,-0,@20" crtext="03081A" font="0200:微软雅黑" align="center">%str4853%</text>
+          <imgbtn name="btn_cancel" pos="170,133,@128,@36" skin="wechatbackup_guide_dlg_btn" crtext="ffffff" font="0200:微软雅黑">%str4855%</imgbtn>
+        </dlg>
+        <dlg name="dlg_disk_space_less" pos="0,52,-0,-0" show="0">
+          <img pos="|-22,32,@45,@45" skin="workspace_filecopy_progress_icon_error"></img>
+          <text pos="0,[12,-0,@20" crtext="03081A" font="0200:微软雅黑" align="center">%str4858%</text>
+          <imgbtn name="btn_cancel" pos="170,133,@128,@36" skin="wechatbackup_guide_dlg_btn" crtext="ffffff" font="0200:微软雅黑">%str4855%</imgbtn>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

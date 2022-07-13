@@ -1,0 +1,32 @@
+<dlg name="WorkSpaceFileContainerPanel" pos="0,0,-0,-0">
+    <dlg name="file_container_toolbar" pos="0,0,-0,66">
+      <include src="IDR_DUI_WORKSPACE_FILE_TOOLBAR_PANEL"/>
+    </dlg>
+    <dlg name="file_container_address_panel" pos="0,[0,-0,@40">
+      <include src="IDR_DUI_WORKSPACE_FILE_ADDRESS_PANEL"/>
+    </dlg>
+    <dlg name="file_container_view_panel" pos="0,[0,-0,-34">
+      <include src="IDR_DUI_WORKSPACE_FILE_VIEW_PANEL"/>
+    </dlg>
+    <dlg name="file_container_status_panel" pos="0,[0,-0,-0">
+      <include src="IDR_DUI_WORKSPACE_FILE_STATUS_PANEL"/>
+    </dlg>
+    <dlg name="dlg_file_guide" pos="0,0,-0,-0" show="0">
+      <dlg pos="122,32,@357,@277" skin="navigatepanel_bubble_bg">
+        <dlg pos="20,15,-15,-15">
+          <img pos="|-24,20,@49,@49" skin="workspace_file_guide_icon"/>
+          <imgbtn name="btn_close_first_guide" pos="290,16,@16,@16" skin="wechatbackup_guide_dlg_close" cursor="arrow"/>
+          <text pos="|-36,76" crtext="636D7E" font="0000:Î¢ÈíÑÅºÚ">%str4533%</text>
+          <text pos="|-118,117" crtext="03081A" font="0204:Î¢ÈíÑÅºÚ">%str4654%</text>
+          <text pos="|-114,145" crtext="636D7E" font="0000:Î¢ÈíÑÅºÚ">%str4655%</text>
+          <text pos="|-48,[8" crtext="636D7E" font="0000:Î¢ÈíÑÅºÚ">%str4656%</text>
+          <imgbtn name="btn_open_folder" pos="|-64,195,@128,@36" crtext="ffffff" font="0200:Î¢ÈíÑÅºÚ" skin="wechatbackup_guide_dlg_btn" cursor="arrow">%str4657%</imgbtn>
+        </dlg>
+      </dlg>
+    </dlg>
+    <dlg name="dlg_status_guide" pos="0,0,-0,-0"  show="0">
+        <dlg pos="|-100,-54,@244,@54" skin="workspace_status_guide">
+            <text pos="24,12" crtext="FFFFFF" font="0200:Î¢ÈíÑÅºÚ">%str4660%</text>
+        </dlg>
+    </dlg>
+</dlg>

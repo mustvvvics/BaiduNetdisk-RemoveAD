@@ -1,0 +1,14 @@
+<layer name="ToastDlg" width="100" height="56" toolwindow="1" ncRect="0,0,0,0" resize="0" nomaxsize="1" translucent="1">
+  <body>
+    <dlg name="dlg_bg" pos="0,0,-0,-0" skin="toast_gray_bkg">
+   	  <dlg name="dlg_toast" pos="0,0,-0,-0" skin="toast_gray_bkg">
+        <gifplayer name="gif_operating" pos="12,|-10" width="20" height="20" skin="gif_toast_loading" show="0"/>
+        <img name="img_tip" pos="16,|-8,@16,@16" skin="toast_ok_ico" show="0"></img>
+        <text name="txt_tip" pos="[0,0" height="16" valign="middle" font="0000:微软雅黑" crtext="FFFFFF"  txtalpha="0"/>
+	      <link name="link_tip" pos="[0,0" height="16" valign="middle" class="cls_toast_link"  txtalpha="0"/>
+        <text name="txt_tip2" pos="[0,0" height="16" valign="middle" font="0000:微软雅黑" crtext="FFFFFF"  txtalpha="0"/>
+        <imgbtn name="btn_close" pos="[0,0,@16,@16" skin="toast_btn_white_close" show="1" cursor="arrow"/>
+	    </dlg>
+    </dlg>
+  </body>
+</layer>

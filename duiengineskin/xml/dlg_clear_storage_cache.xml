@@ -1,0 +1,25 @@
+﻿<layer width="420" height="170" appwin="1" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+    <body>
+        <dlg pos="0,0,-0,-0" class="cls_message_box">
+            <caption pos="0,0,-0,38">
+                <img pos="10,8" skin="common_logo_main"></img>
+                <text pos="39,9" class="cls_msgbox_title_text">%str300%</text>
+                <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+            </caption>
+
+            <dlg pos="40,48,-40,100">
+                <text name="text_mline" pos="0,20,-0,60" multilines="1" crtext="000000" show="1" >%str301%</text>
+                <dlg name="content_pane" pos="0,0,-0,-0" show="0">
+                  <dlg name="dlg_progress_bg" pos="0,20,@340,@11" skin="compresspackage_progress_bg">
+                    <dlg name="dlg_progress_fg" pos="0,0,0,-0" skin="compresspackage_progress_fg"/>
+                  </dlg>
+                  <text name="txt_progress" pos="|-67,[12"  font="0000:微软雅黑" crtext="666666" textmode="25"/>
+                </dlg>    
+            </dlg>
+
+            <imgbtn name="btn_release" pos="-176,-28,-96,-3" width="80" height="25" animate="true" cursor="arrow" class="button" show="1" >%str304%</imgbtn>
+            <imgbtn name="btn_cancel" pos="-84,-28,-12,-3" width="72" height="25" animate="true" cursor="arrow"  class="button" show="1" >%str26%</imgbtn>
+            <imgbtn name="btn_ok" pos="-102,-28,-12,-3" width="90" height="25" animate="true" cursor="arrow"  class="button" show="0" >%str305%</imgbtn>
+        </dlg>
+    </body>
+</layer>

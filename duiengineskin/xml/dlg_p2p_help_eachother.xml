@@ -1,0 +1,33 @@
+﻿<layer name="P2pHelpEachotherDlg" width="500" height="410" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <!--标题栏-->
+      <caption pos="1,1,-0,30">
+        <img pos="10,8" skin="common_logo_main"/>
+        <text name="txt_title" pos="39,9" class="cls_dlg_title_text">%str3415%</text>  <!--开通互助提速-->
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg pos="0,30,-0,-0">
+        <text name="p2p_help_eachother_open_title" pos="0,26,@500,@30" align="center" crtext="0FABFE" font="0604:微软雅黑">%str3431%</text> 
+        <text name="p2p_help_eachother_open_introduction" pos="28,[8,@452,@58" align="center" multilines="1" crtext="666666" font="0000:微软雅黑">%str3416%</text> 
+        <dlg pos="28,136,@214,@108" class="cls_p2p_help_eachother_green_frame"> 
+            <text name="p2p_help_eachother_acquire_title" pos="10,6,@120,@20" align="left" crtext="0FABFE" font="0004:微软雅黑">%str3417%</text>  
+            <text name="p2p_help_eachother_acquire_introduction" pos="10,40,@192,@38" align="left" multilines="1" crtext="333333" font="0000:微软雅黑">%str3419%</text> 
+            <text name="p2p_help_eachother_acquire_introduction2" pos="10,90" align="left" multilines="0" crtext="666666"  font2="facename:微软雅黑;adding:-1">%str3428%</text> 
+        </dlg>
+        <dlg pos="[15,136,@214,@108" class="cls_p2p_help_eachother_green_frame"> 
+            <text name="p2p_help_eachother_provide_title" pos="10,6,@120,@20" align="left" crtext="0FABFE" font="0004:微软雅黑">%str3418%</text>  
+            <text name="p2p_help_eachother_provide_introduction" pos="10,40,@192,@38" align="left" multilines="1" crtext="333333" font="0000:微软雅黑">%str3420%</text> 
+            <text name="p2p_help_eachother_provide_introduction2" pos="10,90" align="left" multilines="0" crtext="666666"  font2="facename:微软雅黑;adding:-1">%str3429%</text> 
+        </dlg>
+		    <text name="p2p_help_eachother_attention" pos="24,[10,@460,@28" align="center" multilines="1" crtext="666666" font2="facename:微软雅黑;adding:-1">%str3430%</text> 
+      </dlg>	
+      <dlg pos="0,-90,-0,-0">	 
+        <check name="have_read_protocol_checkbox" pos="142,-74" skin="btncheckbox" class="vcentertext">%str3421%</check>
+        <link name="help_eachother_protocol_link" pos="[2,-74,-0,@16" align="left" class="cls_btn_weblink" dotted="1">%str3422%</link>
+        <link name="none_open_guide_link" pos="431,-35" align="left" class="cls_p2p_help_eachother_link" show="0">%str3433%</link>
+        <imgbtn name="open_help_eachother_btn" pos="146,-48,@214,@30" align="center"  cursor="arrow" crtext="FFFFFF" font="0000:微软雅黑" skin="p2p_help_eachother_green_btn">%str3423%</imgbtn>
+     </dlg>
+    </dlg>
+  </body>
+</layer>

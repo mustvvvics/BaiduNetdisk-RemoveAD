@@ -1,0 +1,37 @@
+﻿<layer width="442" height="172" appwin="0" ncRect="0,0,0,0" translucent="1" resize="0">
+    <body>
+        <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+            <caption pos="0,0,-0,38">
+                <img pos="10,8" skin="common_logo_main"></img>
+                <text pos="39,9" class="cls_dlg_title_text">%str505%</text>
+                <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+            </caption>
+            <dlg pos="0,39,-0,-0" crtext="000000">
+                <text pos="34,25" font="0200:微软雅黑" crtext="06a8ff">%str506%</text>
+                <dlg name="dlg_search_input" pos="34,58,@290,@33" skin="share_addfriend_searchbox_input_bkg">
+                    <embedbutton name="btn_delete_search_text" pos="-38,0,@38,@34" skin="share_addfriend_delete_btn" show="0"/>
+                    <embededit name="edit_search_text" pos="12,3,-38,-3" font="0000:Arial" textmode="24" deftext="%str515%"/>
+                    <gifplayer name="gif_searching" pos="|-8,|-8" skin="loading_gif"  show="0"/>
+                </dlg>
+                <imgbtn name="btn_search" pos="336,59,@72,@32" animate="true" cursor="arrow" class="button" show="1">%str508%</imgbtn>
+                <text name="search_error_tip" crtext="ff002f" pos="34,100" show="0"></text>
+                <dlg name="dlg_search_ok_result" crtext="333333" pos="34,105,408,225" skin="share_addfriend_add_frame_bkg" show="0">
+                    <text name="search_error_tip2" crtext="ff002f" pos="12,12" show="0"></text>
+                    <img name="img_head" pos="12,12,@40,@40"/>
+                    <dlg name="dlg_nonick" pos="64,12,-0,@40" show="0">
+                        <text pos="0,|-8">%str507%</text>
+                        <text name="text_account" pos="60,|-8"></text>
+                        <text name="text_account_tip" pos="[6,|-8" crtext="999999"></text>
+                    </dlg>
+                    <dlg name="dlg_hasnick" pos="64,12,-0,@40" show="1">
+                        <text name="text_nickname" pos="0,2"></text>
+                        <text name="text_account_tip" pos="[6,2" crtext="999999"></text>
+                        <text pos="0,21">%str507%</text>
+                        <text name="text_account" pos="60,21"></text>
+                    </dlg>
+                    <imgbtn name="btn_add_friend" pos="140,72,@92,@34" animate="true" cursor="arrow"  class="button" show="0">%str509%</imgbtn>
+                </dlg>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

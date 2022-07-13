@@ -1,0 +1,8 @@
+﻿<layer name="LeftCategoryDragTip" width="100" height="36" toolwindow="1" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="dragtip_bkg" alpha="192">
+        <img name="img_category" pos="36,|-8,@16,@16" skin="leftpanel_all_normal" cursor="arrow" show="0"/>
+        <text name="txt_category" pos="[11,|-8,-12,@16" class="cls_leftpanel_txt_normal"/>
+    </dlg>
+  </body>
+</layer>

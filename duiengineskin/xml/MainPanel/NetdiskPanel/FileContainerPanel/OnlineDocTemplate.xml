@@ -1,0 +1,21 @@
+<layer name="OnlineDocTemplatePanel" width="540" height="179" appwin="0" ncRect="0,0,0,0" toolwindow="1" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="mainpanel_addresspanel_pathnavigator_subdirpanel_bg">
+      <imgbtn name="btn_create_onlinedoc" pos="16,16,@92,@120" skin="template_new" cursor="hand" show="1"/>
+      <imgbtn name="btn_template1" pos="[12,16,@92,@120" skin="template_empty" cursor="hand" show="1"/>
+      <imgbtn name="btn_template2" pos="[12,16,@92,@120" skin="template_empty" cursor="hand" show="1"/>
+      <imgbtn name="btn_template3" pos="[12,16,@92,@120" skin="template_empty" cursor="hand" show="1"/>
+      <imgbtn name="btn_template_more" pos="[12,16,@92,@120" skin="main_panel_frame" icoskin="template_more" cursor="hand" show="1"/>
+      <imgbtn name="btn_create_onlinedoc_frame" pos="16,16,@92,@120" skin="template_frame" cursor="hand" show="1"/>
+      <imgbtn name="btn_template1_frame" pos="[12,16,@92,@120" skin="template_frame" cursor="hand" show="1"/>
+      <imgbtn name="btn_template2_frame" pos="[12,16,@92,@120" skin="template_frame" cursor="hand" show="1"/>
+      <imgbtn name="btn_template3_frame" pos="[12,16,@92,@120" skin="template_frame" cursor="hand" show="1"/>
+      <imgbtn name="btn_template_more_frame" pos="[12,16,@92,@120" skin="template_frame" cursor="hand" show="1"/>
+      <text name="text_create_onlinedoc" pos="16,146" font="0000:微软雅黑" crtext="000000">%str2192%</text>
+      <text name="text_template1" pos="120,146" font="0000:微软雅黑" crtext="000000">XXX</text>
+      <text name="text_template2" pos="224,146" font="0000:微软雅黑" crtext="000000">XXX</text>
+      <text name="text_template3" pos="328,146" font="0000:微软雅黑" crtext="000000">XXX</text>
+      <text name="text_template_more" pos="432,146" font="0000:微软雅黑" crtext="000000">%str2193%</text>
+    </dlg>
+  </body>
+</layer>

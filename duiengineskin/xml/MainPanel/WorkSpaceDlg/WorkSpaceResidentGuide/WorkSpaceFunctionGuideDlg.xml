@@ -1,0 +1,15 @@
+<layer name="FunctionGuide" width="790" height="665" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg skin="workspace_guide_mask" pos="0,0,-0,-0">
+            <dlg name="dlg_main" pos="165,128,@464,@423" skin="workspace_guide_frame">
+                <text pos="24,20" font="0200:微软雅黑" crtext="03081A">%str4650%</text>
+                <imgbtn name="btn_video_background" pos="32,64,@400,@225" skin="workspace_func_guide_img"></imgbtn>
+                <imgbtn name="imgbtn_video" pos="180,156" skin="workspace_guide_video_play" cursor="hand"></imgbtn>
+                <text pos="32,295,@456,@16" crtext="03081A" font="0004:微软雅黑">%str4673%</text>
+                <text name="text1" pos="32,320,@400,@35" crtext="03081A" textmode="40810">%str4584%</text>
+                <imgbtn name="btn_next_step" pos="132,[8,@200,@36" skin="workspace_guide_btn_bkg_one"
+                    font2="facename:微软雅黑;bold:1;adding:1" crtext="FFFFFF" align="center" cursor="arrow">%str4586%</imgbtn>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

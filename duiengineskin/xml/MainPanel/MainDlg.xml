@@ -1,0 +1,72 @@
+﻿<layer width="1118" height="698" minsize="1024,698" appwin="1" ncRect="12,12,12,12"  resize="1" translucent="1" nomaxsize="0">
+  <body>
+    <dlg name="MainWindowPanel" pos="0,0,-0,-0" skin="main_dlg_frame">
+      <dlg name="MainPanel" pos="9,9,-9,-9" crbg="ffffff">
+        <!--标题栏-->
+        <dlg name="TitlePanel" pos="0,0,-0,50" show="1">
+            <include src="IDR_DUI_TITLE_PANEL"/>
+        </dlg>
+        <!--客户区-->
+        <dlg name="ClientPanel" pos="0,50,-0,-0">
+          
+          <!--首页-->
+          <dlg name="NetdiskContainerPanel" pos="69,0,-0,-0" show="1">
+            <!--侧边栏-->
+            <dlg name="NetdiskLeftPanel" pos="0,0,165,-0">
+              <include src="IDR_DUI_LEFT_PANEL"/>
+            </dlg>
+            <!--最近使用列表视图区域-->
+            <dlg name="RecentUsePanel" pos="165,0,-0,-0" show="0">
+              <include src="IDR_DUI_RECENT_PANEL"/>
+            </dlg>
+            <!--文件列表视图区域-->
+            <dlg name="FileViewPanel" pos="165,0,-0,-0">
+              <include src="IDR_DUI_PAN_CONTAINER_PANEL"/>
+              <include src="IDR_DUI_SAFEBOX_CONTAINER_PANEL"/>
+            </dlg>
+            <!--我的分享链接视图区域-->
+            <dlg name="MySharePanel" pos="165,0,-0,-0" show="0">
+              <include src="IDR_DUI_SHARELIST_PANEL"/>
+            </dlg>
+            <!--回收站区域-->
+            <dlg name="MyRecyclePanel" pos="165,0,-0,-0" show="0">
+            </dlg>
+            <!--隐藏空间激活区域-->
+            <dlg name="SafeboxActivePanel" pos="165,0,-0,-0" show="0">
+              <include src="IDR_DUI_SAFEBOX_ACTIVE_PANEL"/>
+            </dlg>
+          </dlg>
+          <!--传输-->
+          <dlg name="TransContainerPanel" pos="69,0,-0,-0" show="0">
+            <!--侧边栏-->
+            <dlg name="TransLeftPanel" pos="0,0,165,-0">
+              <include src="IDR_DUI_TRANS_LEFT_PANEL"/>
+            </dlg>
+            <!--传输列表视图区域-->
+            <dlg name="TransListPanel" pos="165,0,-0,-0">
+            </dlg>
+          </dlg>
+          <!--分享-->
+          <dlg name="SharePanel" pos="69,0,-0,-0" show="0">
+            <include src="IDR_DUI_SHARE_PANEL"/>
+          </dlg>
+          <!--工具-->
+          <dlg name="FunctionnalBoxPanel" pos="69,0,-0,-0" show="0">
+            <!--功能宝箱入口界面-->
+            <include src="IDR_DUI_FUNCTIONALBOX_PANEL"/>
+            <!--手机忘带界面-->
+            <include src="IDR_DUI_PHONE_PANEL"/>
+            <!--数据线界面-->
+            <include src="IDR_DUI_PT2PT_PANEL"/>
+          </dlg>
+          <!--一级导航栏-->
+          <dlg name="NavigateContainerPanel" pos="0,0,82,-0" show="1">
+            <include src="IDR_DUI_NAVIGATE_PANEL"/>
+          </dlg>
+          <!--顶部操作栏阴影-->
+          <img pos="0,0,-0,75" skin="titlepanel_bgk"/>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

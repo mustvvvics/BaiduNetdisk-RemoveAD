@@ -1,0 +1,22 @@
+<layer name="BandwidthSpeedupDlg" width="464" height="349" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="dlg_main" pos="0,0,-0,-0" skin="workspace_guide_frame_mask">
+        <caption pos="0,0,-0,48">
+          <text name="dlg_title" pos="24,18" font="0204:微软雅黑" animate="1">%str5260%</text>
+          <imgbtn name="btn_close" skin="titlepanel_close_btn" pos="-40,|-8,@15,@16" cursor="arrow" ></imgbtn>
+          <hr pos="15,-2,-15,-1" crbg="F5F6FA" size="1"/>
+        </caption>
+        <dlg pos="0,48,-0,-0">
+            <img name="img_warning" pos="207,32,@50,@50" skin="speedup_package_blue_warninng"/>
+            <text name="text_main_tip" pos="20,94,-20,110" font="0104:微软雅黑" crtext="333333" align="center" multilines="0">%str5261%</text>
+            <text name="text_sub_tip" pos="40,120,-40,140" font="0000:微软雅黑" crtext="495366" align="center" multilines="0">%str5262%</text>
+            <text name="text_third_tip" pos="40,140,-40,160" font="0000:微软雅黑" crtext="495366" align="center" multilines="0">%str5263%</text>
+            
+            <text name="text_phone" pos="112,174,@240,@32" font="0604:微软雅黑" crtext="333333" align="center" multilines="0" ></text>
+            <edit name="edit_phone" pos="112,174,@240,@32" class="cls_edit_set" font="0400:宋体" number="0" deffont="0200:微软雅黑" crdeftext="999999" password="0" deftext="%str5265%" maxbuf="11" show="1"></edit>
+            <text name="text_error_tip" pos="112,214,@300,@14" font="0000:微软雅黑" crtext="FF0000" align="left" multilines="0" show="0"></text>
+            <imgbtn name="btn_confirm" pos="168,236,@128,@36" skin="speedup_package_dark_blue_btn" crtext="FFFFFF" font="0000:微软雅黑">%str500%</imgbtn>
+        </dlg>
+        </dlg>
+    </body>
+</layer>

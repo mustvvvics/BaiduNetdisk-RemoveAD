@@ -1,0 +1,19 @@
+<layer name="CloudbridgeIntroduce" width="484" height="350" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="dlg_main" pos="0,0,-0,-0" skin="main_dlg_frame">
+            <dlg pos="10,10,-10,-10">
+                <caption pos="0,0,-0,@28">
+                    <text pos="24,15" font="0000:微软雅黑" crtext="03081A">%str6018%</text>
+                </caption>
+                <dlg pos="24,61,@208,@210">
+                    <text name="text1" pos="0,0,-0,@20" font="0000:微软雅黑" textmode="40810">%str6019%</text>
+                    <text name="text2" pos="0,[7,-0,@60" crtext="AFB3BF" font="0000:微软雅黑" textmode="40810">%str6020%</text>
+                    <text name="text3" pos="0,[16,-0,@20" font="0000:微软雅黑" textmode="40810">%str6021%</text>
+                    <text name="text4" pos="0,[7,-0,@80" crtext="AFB3BF" font="0000:微软雅黑" textmode="40810">%str6022%</text>
+                </dlg>
+                <gifplayer pos="232,48,@232,@240" skin="gif_workspace_quick_sync" bulltimer="1" />
+                <imgbtn name="btn_known" pos="168,281,@128,@36" font="0200:微软雅黑" crtext="FFFFFF" skin="workspace_guide_btn_bkg_one" cursor="hand">%str752%</imgbtn>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

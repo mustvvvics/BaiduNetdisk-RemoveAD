@@ -1,0 +1,23 @@
+<layer name="EnterpriseSpaceCardWnd" width="340" height="352" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1">
+  <body>
+    <dlg name="dlg_enterprise_space" pos="0,0,-0,-0" skin="usercard_notvip_bg">
+      <listboxex name="list_enterprise_space" pos="14,34,-15,-14" itemheight="75" virtual="1" sbenable="2" show="1">
+        <template>
+          <img name="enterprise_bkg" pos="0,0,-0,-0" skin="enterprise_item_hover" show="0"/>
+          <text name="enterprise_head" pos="16,13,@44,@44" font="0804:微软雅黑" crtext="FFFFFF" align="center" crbg="0065DD" translucent="0"/>
+          <img name="enterprise_head_image" pos="16,13,@44,@44" show="0"/>
+          <img name="personal_space_head" pos="16,13,@44,@44" skin="titlepanel_default_head" show="0"/>
+          <img name="img_enterprise_head_frame" pos="16,13,@44,@44" skin="enterprise_head_frame"/>
+          <img name="enterprise_vip" pos="[-16,[-16,@18,@18" skin="enterprise_vip_mark" show="1"/>
+          <link name="enterprise_name" pos="74,15" crtext="03081A" font="0200:微软雅黑" dotted="1"></link>
+          <text name="txt_enterprise_quota" pos="74,37" font="0000:微软雅黑" crtext="878C9C" sdotted="1"/>
+          <text name="txt_about_expire" pos="74,52" font="0000:微软雅黑" crtext="FF436A" sdotted="1">%str1563%</text>
+          <img name="enterprise_select_mark" pos="-28,|-7" width="14" height="14" skin="enterprise_select_btn" show="0"/>
+        </template>
+      </listboxex>
+    </dlg>
+    <dlg name="dlg_guide" pos="0,0,-0,-0" skin="titlepanel_textad_bgk" show="0" >
+      <imgbtn name="guide_btn" pos="30,34,@300,@190" skin="titlepanel_translucent" cursor="hard" ></imgbtn>
+    </dlg>
+  </body>
+</layer>

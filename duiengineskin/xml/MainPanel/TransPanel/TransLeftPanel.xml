@@ -1,0 +1,55 @@
+<dlg name="dlg_opbtn_list" pos="0,0,-0,-0" crbg="f9fafb">
+  <dlg pos="0,8,-0,@38">
+    <imgbtn name="btn_op_download" pos="0,0,-0,-0" skin="transpanel_left_download_btn" 
+            class="cls_transleftpanel_op_btn" txtxoffset="55">%str1800%</imgbtn>
+    <hr name="hr_line_download" pos="0,0,@3,-0" crbg="06a8ff" show="0"/>
+  </dlg>
+  <dlg pos="0,46,-0,@38">
+    <imgbtn name="btn_op_upload" pos="0,0,-0,-0" skin="transpanel_left_upload_btn" 
+            class="cls_transleftpanel_op_btn"  txtxoffset="55">%str1801%</imgbtn>
+    <hr name="hr_line_upload" pos="0,0,@3,-0" crbg="06a8ff" show="0"/>
+  </dlg>
+  <dlg pos="0,84,-0,@38">
+    <imgbtn name="btn_op_history" pos="0,0,-0,-0" skin="transpanel_left_history_btn" 
+            class="cls_transleftpanel_op_btn"  txtxoffset="55">%str1802%</imgbtn>
+    <hr name="hr_line_history" pos="0,0,@3,-0" crbg="06a8ff" show="0"/>
+  </dlg>
+  <hr name="text_line" pos="30,128,145,129" crbg="ededed"/>
+  <dlg pos="0,133,-0,@38">
+    <imgbtn name="btn_op_cloud" pos="0,0,-0,-0" skin="transpanel_left_cloud_btn" 
+            class="cls_transleftpanel_op_btn"  txtxoffset="55" show="0">%str3750%</imgbtn>
+    <hr name="hr_line_cloud" pos="0,0,@3,-0" crbg="06a8ff" show="0"/>
+  </dlg>
+  <!--广告面板-->
+  <dlg name="dlg_ad" pos="0,0,0,0" show="0">
+    <!--与AdPanel.xml内容一致-->
+    <dlg name="AdPanel" pos="0,0,-0,-0">
+      <gifplayer name="ad_img_bkg" pos="0,0,-0,-0" bulltimer="1"></gifplayer>
+      <imgbtn name="ad_img_btn" pos="0,0,-0,-0"></imgbtn>
+      <imgbtn name="ad_close_btn" pos="-16,0,-0,16" cursor="arrow" tip="关闭" show="0"></imgbtn>
+      <text name="ad_calc_size" pos="0,0" crtext="ffffff" font2="facename:宋体;bold:0;italic:0;underline:0;adding:-1" textmode="40825" show="0"></text>
+      <dlg name="AdTipPanel" pos="-31,-17,-0,-0" msgtransparent="1">
+        <img name="ad_tip_bkg" pos="0,0,-0,-0"></img>
+        <text name="ad_tip" pos="0,0,-0,-0" crtext="ffffff" font2="facename:宋体;bold:0;italic:0;underline:0;adding:-1" textmode="40825"></text>
+      </dlg>
+    </dlg>
+  </dlg>
+  
+  <!--流量包-->
+  <dlg name="dlg_speedup_package" pos="0,-50,-0,-10" > 
+    <dlg name="dlg_svip_speedup_package" pos="0,0,-1,-1" show="0"> 
+        <img pos="10,0,@16,@16" skin="speedup_package_svip_icon"></img>
+        <text pos="[6,2,@90,@12" font="0000:微软雅黑" crtext="664100" align="left">%str5045%</text>
+    </dlg>
+    <dlg name="dlg_no_svip_speedup_package" pos="0,0,-1,-1" show="0"> 
+        <arcctrl name="arcctrl_progress_bgk" pos="10,0,@16,@16" crline="EDEEF4" linewidth="3" angle="360" ></arcctrl>
+        <arcctrl name="arcctrl_progress" pos="10,0,@16,@16" crline="EDEEF4" startangle="270" linewidth="3" ></arcctrl>
+        <text name="txt_package" pos="34,2,@50,@12" font="0000:微软雅黑" crtext="BF8726" align="left">%str5043%</text>
+        <imgbtn name="btn_question" pos="[4,2,@14,@14" skin="speedup_package_question_icon" ></imgbtn>
+        <link name="link_expand" pos="-40,2,@30,@12" font="0000:微软雅黑" crtext="BF8726" cursor="hand" calign="left">%str5044%</link>
+        <text name="txt_detail_info" pos="12,26,@120,-0" font="0000:微软雅黑" crtext="AFB3BF" align="left"></text>
+    </dlg>
+  </dlg>
+  
+  <hr pos="-1,0,-0,-0" size="1" crbg="F1F1F1"/>
+</dlg>

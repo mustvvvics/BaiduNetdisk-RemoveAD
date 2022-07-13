@@ -1,0 +1,168 @@
+<dlg name="Pt2PtContainerPanel" pos="0,0,-0,-0" show="0">
+  <!--用户引导面板-->
+  <dlg name="UserGuidePanel" pos="0,0,-0,-0">
+    <dlg pos="14,14,80,46">
+      <imgbtn name="return_btn" pos="0,0,-0,-0" animate="true" class="btn_try" align="center" txtxoffset="10">%str223%</imgbtn>
+      <img pos="10,8" width="14" height="16" skin="phone_iconback_gray_image"/>
+    </dlg>
+    <imgbtn name="btn_file_from_phone" pos="-124,14,-14,46" animate="true" class="btn_file_from_phone" >%str1%</imgbtn>
+    <dlg name="PhoneTipPanel" pos="|-326,45" width="653" height="54">
+      <text pos="246,0" class="phone_tip_text">%str2%</text>
+      <gifplayer pos="[2,20" width="32" height="6" skin="connnecting_gif"/>
+      <dlg name="ConnectTipPanel" pos="0,40" width="653" height="14">
+        <text pos="0,0" class="datacable_tip_text">%str3%</text>
+        <text name="device_name" pos="[0,0" class="datacable_devicename_text" maxwidth="85"></text>
+        <text pos="[0,0" class="datacable_tip_text">%str4%</text>
+      </dlg>
+    </dlg>
+    <dlg pos="|-106,116" width="212" height="30">
+      <text pos="0,0,-91,-0" class="datacable_discovery_device_text">%str100%</text>
+      <imgbtn name="btn_try" pos="-90,0,-0,-0" width="93" height="30" animate="true" cursor="arrow" class="btn_try" >%str101%</imgbtn>
+    </dlg>
+    <dlg pos="|-316,|-111" width="633" height="263" skin="guide_image">
+      <text pos="142,138" class="datacable_imagetip_text">%str6%</text>
+    </dlg>
+    <dlg pos="-343,-75" width="308" height="66">
+      <img pos="0,0,66,66" skin="qr_code_image" />
+      <text pos="80,26" class="datacable_tip_text">%str5%</text>
+    </dlg>
+  </dlg>
+  <!--连接建立面板-->
+  <dlg name="ConnectedPanel" pos="0,0,-0,-0" show="0">
+    <dlg pos="|-378,|-215" width="225" height="430">
+      <dlg name="PhoneInfoPanel" pos="0,0,225,397" skin="phone_image">
+        <text name="peer_device_name" pos="15,57" width="200,25" class="datacable_peerdevicename_text"></text>
+        <text name="local_time" pos="15,85" width="200,25" class="datacable_time_text"></text>
+        <text name="remain_quota" pos="15,118" width="200,18" class="datacable_quota_text"></text>
+        <dlg name="TransCountPanel" pos="15,320,215,350" show="0">
+          <text pos="10,8" class="datacable_finish_text">%str12%</text>
+          <text name="trans_count" pos="60,0,150,30" class="datacable_trans_count_text"></text>
+          <text pos="-48,8" class="datacable_finish_text">%str13%</text>
+        </dlg>
+      </dlg>
+      <link name="disconnect_link" pos="84,-16" class="datacable_disconnect_link">%str8%</link>
+    </dlg>
+    <dlg pos="|-153,59,|378,-59">
+      <dlg name="RightPanel" pos="88,0,531,-0" skin="framebkg_image">
+        <dlg name="AcceptFile" pos="25,32,415,-90" animate="true" skin="addfile_image">
+          <text pos="121,|-13,275,|13" class="datacable_accept_file_text">%str14%</text>
+        </dlg>
+        <dlg name="TransPanel" pos="25,5,-2,-85" show="0">
+          <listboxex name="trans_list" pos="0,0,-0,-0" itemheight="85" virtual="1">
+            <template>
+              <dlg name="PhoneTransItemPanel" pos="0,0,-0,-0"  show="0">
+                <text name="phone_item_create_time" pos="0,5,-0,20" class="datacable_trans_time_text"></text>
+                <img name="phone_thumb" pos="0,38,24,62" skin="phone_thumb_image" />
+                <!--单个文件时背景-->
+                <dlg name="PhoneFileImagePanel" pos="28,22,356,85" skin="phoneitembkg_file_image" >
+                  <!--显示Hover和down状态-->
+                  <img name="phonefile_item_bkg" pos="0,0,-0,-0" skin="phoneitembkg_file_downimage" show="0"/>
+                </dlg>
+                <!--聚合文件时中间背景-->
+                <dlg name="PhoneFileMiddleImagePanel" pos="34,0,356,85" skin="miditembkg_image" show="0">
+                  <!--显示Hover和down状态-->
+                  <img name="phonefile_middle_item_bkg" pos="0,0,-0,-0" skin="miditembkg_downimage" show="0"/>
+                  <hr pos="40,-1,-12,-0" size="1" mode="horizon" crbg="e7e7e7"/>
+                </dlg>
+                <!--聚合文件时底部背景-->
+                <dlg name="PhoneFileBottomImagePanel" pos="34,0,356,85" skin="bottomitembkg_image" show="0">
+                  <!--显示Hover和down状态-->
+                  <img name="phonefile_bottom_item_bkg" pos="0,0,-0,-0" skin="bottomitembkg_downimage" show="0"/>
+                </dlg>
+                <!--文件夹时背景-->
+                <dlg name="PhoneFolderImagePanel" pos="28,22,356,85" skin="phoneitembkg_folder_image" show="0">
+                  <!--显示Hover和down状态-->
+                  <img name="phonefolder_item_bkg" pos="0,0,-0,-0" skin="phoneitembkg_folder_downimage" show="0"/>
+                </dlg>
+                <dlg name="PhoneContentPanel" pos="28,25,356,85">
+                  <dlg name="PhoneFilePanel" pos="0,0,-0,-0">
+                    <img name="phone_filetype_img" pos="18,7,48,37" skin="other_middle_image"/>
+                    <link name="phone_file_name" pos="56,7,-5,23" class="datacable_trans_filename_text"></link>
+                    <text name="phone_file_size" pos="56,24,-98,38" class="datacable_trans_size_text"></text>
+                    <text name="phone_trans_rate" pos="-98,24" maxwidth="96" class="datacable_trans_size_text"></text>
+                    <dlg name="PhoneFileRunningPanel" pos="20,39,-12,57" show="0">
+                      <progress name="phone_file_prog" pos="0,6,-26,10" bgskin="prog_bkg" posskin="prog_frg" value="0" min="0" max="100"/>
+                      <imgbtn name="btn_del_phone_file" pos="-16,0,-0,16" animate="true" cursor="arrow" skin="del_img_btn" tip="%str20%"></imgbtn>
+                    </dlg>
+                    <dlg name="PhoneFileWaitingPanel" pos="20,39,-12,57" show="0">
+                      <text pos="0,2" maxwidth="200" class="datacable_trans_size_text">%str28%</text>
+                    </dlg>
+                    <dlg name="PhoneFileSuccessPanel" pos="18,38,-12,56" show="0">
+                      <imgbtn name="btn_upload_phone_file" pos="-18,0,-0,18" animate="true" cursor="arrow" skin="upload_img_btn" tip="%str23%"></imgbtn>
+                      <imgbtn name="btn_open_phone_folder" pos="-60,0,-46,16" animate="true" cursor="arrow" skin="openfolder_img_btn" tip="%str22%"></imgbtn>
+                      <imgbtn name="btn_open_phone_file" pos="-101,0,-88,16" animate="true" cursor="arrow" skin="openfile_img_btn" tip="%str21%"></imgbtn>
+                    </dlg>
+                    <dlg name="PhoneFileFailPanel" pos="18,39,-12,57">
+                      <img name="phone_file_error_img" pos="-245,2" skin="error_image"/>
+                      <text name="phone_file_error_text" pos="-227,2" maxwidth="200" class="datacable_trans_error_text"></text>
+                      <link name="phone_retry_link" pos="-25,2" class="datacable_retry_link">%str16%</link>
+                    </dlg>
+                  </dlg>
+                  <dlg name="PhoneFolderPanel" pos="0,0,-0,-0" show="0">
+                    <img pos="18,15,48,45" skin="folder_middle_image"/>
+                    <link name="phone_folder_name" pos="56,22,-5,38" class="datacable_trans_filename_text"></link>
+                  </dlg>
+                </dlg>
+              </dlg>
+              <dlg name="PcTransItemPanel" pos="0,0,-0,-0">
+                <text name="pc_item_create_time" pos="0,5,-0,20" class="datacable_trans_time_text"></text>
+                <img name="pc_thumb" pos="370,38,394,62" skin="pc_thumb_image" />
+                <!--单个文件时背景-->
+                <dlg name="PcFileImagePanel" pos="34,25,362,85" skin="pcitembkg_file_image" >
+                  <!--显示Hover和down状态-->
+                  <img name="pcfile_item_bkg" pos="0,0,-0,-0" skin="pcitembkg_file_downimage" show="0"/>
+                </dlg>
+                <!--聚合文件时中间背景-->
+                <dlg name="PcFileMiddleImagePanel" pos="34,0,356,85" skin="miditembkg_image" show="0">
+                  <!--显示Hover和down状态-->
+                  <img name="pcfile_middle_item_bkg" pos="0,0,-0,-0" skin="miditembkg_downimage" show="0"/>
+                  <hr pos="40,-1,-12,-0" size="1" shadow="1" crbg="e7e7e7"/>
+                </dlg>
+                <!--聚合文件时底部背景-->
+                <dlg name="PcFileBottomImagePanel" pos="34,0,356,85" skin="bottomitembkg_image" show="0">
+                  <!--显示Hover和down状态-->
+                  <img name="pcfile_bottom_item_bkg" pos="0,0,-0,-0" skin="bottomitembkg_downimage" show="0"/>
+                </dlg>
+                <!--文件夹时背景-->
+                <dlg name="PcFolderImagePanel" pos="34,25,362,85" skin="pcitembkg_folder_image" show="0">
+                  <!--显示Hover和down状态-->
+                  <img name="pcfolder_item_bkg" pos="0,0,-0,-0" skin="pcitembkg_folder_downimage" show="0"/>
+                </dlg>
+                <dlg name="PcContentPanel" pos="28,25,356,85">
+                  <dlg name="PcFilePanel" pos="0,0,-0,-0">
+                    <img name="pc_filetype_img" pos="18,7,48,37" skin="other_middle_image"/>
+                    <link name="pc_file_name" pos="56,7,-5,23" class="datacable_trans_filename_text"></link>
+                    <text name="pc_file_size" pos="56,24,-98,38" class="datacable_trans_size_text"></text>
+                    <text name="pc_trans_rate" pos="-98,24" maxwidth="96" class="datacable_trans_size_text" show="0"></text>
+                    <dlg name="PcFileRunningPanel" pos="20,39,-12,57" show="0">
+                      <progress name="pc_file_prog" pos="0,6,-26,10" bgskin="prog_bkg" posskin="prog_frg" value="0" min="0" max="100"/>
+                      <imgbtn name="btn_del_pc_file" pos="-16,0,-0,16" animate="true" cursor="arrow" skin="del_img_btn" tip="%str20%"></imgbtn>
+                    </dlg>
+                    <dlg name="PcFileWaitingPanel" pos="20,39,-12,57" show="0">
+                      <text pos="0,2" maxwidth="200" class="datacable_trans_size_text">%str28%</text>
+                    </dlg>
+                    <dlg name="PcFileSuccessPanel" pos="18,38,-12,56" show="0">
+                      <imgbtn name="btn_upload_pc_file" pos="-18,0,-0,18" animate="true" cursor="arrow" skin="upload_img_btn" tip="%str23%"></imgbtn>
+                      <imgbtn name="btn_open_pc_folder" pos="-60,0,-46,16" animate="true" cursor="arrow" skin="openfolder_img_btn" tip="%str22%"></imgbtn>
+                      <imgbtn name="btn_open_pc_file" pos="-101,0,-88,16" animate="true" cursor="arrow" skin="openfile_img_btn" tip="%str21%"></imgbtn>
+                    </dlg>
+                    <dlg name="PcFileFailPanel" pos="18,39,-12,57">
+                      <img name="pc_file_error_img" pos="-245,2" skin="error_image"/>
+                      <text name="pc_file_error_text" pos="-227,2" maxwidth="200" class="datacable_trans_error_text"></text>
+                      <link name="pc_retry_link" pos="-25,2" class="datacable_retry_link">%str16%</link>
+                    </dlg>
+                  </dlg>
+                  <dlg name="PcFolderPanel" pos="0,0,-0,-0" show="0">
+                    <img pos="18,15,48,45" skin="folder_middle_image"/>
+                    <link name="pc_folder_name" pos="56,22,-5,38" class="datacable_trans_filename_text"></link>
+                  </dlg>
+                </dlg>
+              </dlg>
+            </template>
+          </listboxex>
+        </dlg>
+        <imgbtn name="send_file_btn" pos="25,-54,415,-14" class="btn_send_file" cursor="arrow">%str9%</imgbtn>
+      </dlg>
+    </dlg>
+  </dlg>
+</dlg>

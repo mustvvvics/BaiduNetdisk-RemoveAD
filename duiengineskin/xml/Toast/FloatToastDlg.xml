@@ -1,0 +1,9 @@
+<layer name="FloatToastDlg" width="365" height="74" toolwindow="1" ncRect="0,0,0,0" resize="0" nomaxsize="1" translucent="1">
+  <body>
+    <dlg name="dlg_bg" pos="0,0,-0,-0" skin="toast_blue_bg">
+      <dlg name="dlg_toast" pos="0,0,-0,-0" skin="toast_blue_bg">
+        <text name="txt_tip" pos="20,13" align="center" font="0000:微软雅黑" crtext="FF0000" txtalpha="0"/>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

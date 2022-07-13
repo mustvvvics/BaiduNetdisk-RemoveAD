@@ -1,0 +1,13 @@
+<layer name="SelectScanFolderWnd" width="140" height="58" toolwindow="1" ncRect="0,0,0,0" translucent="1" resize="0" nomaxsize="1">
+	<body>
+		<dlg pos="0,0,-0,-0" skin="compresspackage_list_bg">
+			<listboxex name="scan_list" pos="1,1,-1,-1" itemheight="28" virtual="1">
+				<template>
+					<img name="item_bg" pos="0,0,-0,-0" skin="garbageclean_select_scan_folder_bg"/>
+					<text name="txt_name" pos="8,|-11,-8,@18" crtext="333333" font="0200:微软雅黑" align="left"/>	
+					<hr name="sep" pos="0,-1,-0,-0" size="1" crbg="f5f5f6"/>
+				</template>
+			</listboxex>
+		</dlg>
+	</body>
+</layer>

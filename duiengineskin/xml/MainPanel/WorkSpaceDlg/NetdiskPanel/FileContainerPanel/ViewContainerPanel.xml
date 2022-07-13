@@ -1,0 +1,115 @@
+<dlg pos="0,0,-0,-0">
+  <!--文件列表视图-->
+  <dlg name="dlg_list_view" pos="0,0,-0,-0" show="0">
+    <header name="file_list_header" pos="0,0,-0,@30" checkSkin="listhead_check" itemSkin="listhead_btn" noitemSkin="listhead_bkg"
+            fixWidth="0" itemSwapEnable="0" sortHeader="1" sortSkin="listhead_arrow" check_txt_margin="12" crtext="757880" align="left">
+    </header>
+    <dlg name="dlg_file_list" pos="0,30,-0,-0">
+      <dlg name="workspace_drag_mask_dlg"  pos="0,0,-0,-0" skin="workspace_drag_mask" show="0">
+      </dlg>
+      <listboxex name="file_list_view" pos="0,0,-0,-0" itemheight="40" itemwidth="-1" virtual="1" frameskin="mainpanel_frame_select_bg">
+        <template>
+          <!--背景-->
+          <img name="item_bkg" pos="1,0,-1,-1" skin="listitem_hover_bkg" show="0"></img>
+          <!--文件名列-->
+          <dlg name="col_1">
+            <check name="chk_select" pos="12,|-7,@15,@15" skin="btncheckbox"></check>
+            <img name="img_filetype" pos="[10,|-10,@20,@20" skin="other_small_image">
+              <img name="img_sync_status" pos="10,10,@12,@12" skin="mainpanel_listview_trans_wait" show="0"></img>
+            </img>
+            <link name="link_filename" pos="[10,|-8" height="16" class="cls_mainpanel_filename_link" cursor="hand" dotted="1"></link>
+          </dlg>
+
+          <!--修改时间列-->
+          <dlg name="col_2">
+            <text name="txt_mtime" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+          </dlg>
+
+          <!--所属文件夹列-->
+          <dlg name="col_3">
+            <text name="txt_filelastdir" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+          </dlg>
+
+          <!--文件类型列-->
+          <dlg name="col_4">
+            <text name="txt_filetype" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+          </dlg>
+
+          <!--文件大小列-->
+          <dlg name="col_5">
+            <text name="txt_filesize" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+          </dlg>
+
+          <!--悬浮按钮-->
+          <dlg name="floating_button">
+            <imgbtn name="btn_share" pos="8,|-8,@16,@16" skin="mainpanel_listview_share" cursor="arrow" tip="%str2306%" show="0"></imgbtn>
+            <imgbtn name="btn_del" pos="[18,|-8,@16,@16" skin="mainpanel_listview_del" cursor="arrow" tip="%str2325%" show="0"></imgbtn>
+            <imgbtn name="btn_rename" pos="[18,|-8,@16,@16" skin="mainpanel_listview_rename" cursor="arrow" tip="%str2332%" show="0"></imgbtn>
+            <imgbtn name="btn_ver" pos="[18,|-8,@16,@16" skin="mainpanel_listview_filever" cursor="arrow" tip="%str2162%" show="0"></imgbtn>
+          </dlg>
+        </template>
+      </listboxex>
+        <!--功能引导面板-->
+        <dlg name="dlg_file_list_guide" pos="0,0" show="0">
+            <buttonex name="btn_guide_tip" pos="0,0,-0,@72" normal-skin="mainpanel_guidepanel_zip" cursor="arrow"></buttonex>
+            <img name="img_arrow" pos="0,0,@21,@14" skin="mainpanel_guidepanel_arrow_down"></img>
+        </dlg>
+    </dlg>
+  </dlg>
+  
+  <!--文件缩略图视图-->
+  <dlg name="dlg_thumb_view" pos="0,0,-0,-0" show="0">
+    <dlg name="workspace_drag_mask_dlg"  pos="0,0,-0,-0" skin="workspace_drag_mask" show="0">
+    </dlg>
+    <filethumbview name="file_thumb_view" pos="0,0,-0,-0" itemwidth="144" itemheight="140" frameskin="mainpanel_frame_select_bg">
+      <template>
+        <dlg name="dlg_thumb_item" pos="8,4,-8,-4">
+          <dlg name="dlg_file_item" pos="0,0,-0,-0" show="1">
+            <img name="item_bkg" pos="0,0,-0,-0" skin="workspace_file_thumb_item_bg_hover" show="0" cursor="arrow" msgtransparent="0"></img>
+            <dlg name="dlg_video_bg" pos="11,7,@104,@82" crbg="000000" msgtransparent="1" show="0"></dlg>
+            <img name="img_filetype" pos="34,30,@60,@60" skin="other_big_image"></img>
+            <img name="img_thumbview" pos="32,28,@64,@64" skin="other_big_image" keep_size="1" show="0"></img>
+            <img name="img_videoplay" pos="54,50,@20,@20" skin="mainpanel_thumbview_videoplay_normal" show="0"></img>
+            <img name="img_sync_status" pos="78,70,@20,@20" skin="other_big_image" show="0"></img>
+            <check name="thumb_file_check" pos="8,8,@14,@14" skin="btncheckbox" focusskin="function_collect_focus_skin" show="0"></check>
+            <link name="link_filename" pos="12,100,-12,@18" crtext="333333" dotted="1" align="center" valign="middle" msgtransparent="1" textmode="40825"></link>
+          </dlg>
+        </dlg>
+      </template>
+    </filethumbview>
+  </dlg>
+
+  <!--空文件列表视图-->
+  <dlg name="dlg_empty_view" pos="0,0,-0,-0" show="0">
+    <dlg name="workspace_drag_mask_dlg"  pos="0,0,-0,-0" skin="workspace_drag_mask" show="0">
+    </dlg>
+    <img name="empty_view_bg" pos="|-132,80,@264,@198" skin="workspace_file_empty"></img>
+    <dlg name="dlg_tips" pos="0,0,-0,@44" show="0">
+      <text name="txt_empty_tip" pos="0,0,-0,@22" crtext="333333" font="0200:微软雅黑" align="center">%str2307%</text>
+      <link name="txt_empty_tip_line2" pos="0,[0,-0,@22" crtext="06A7FF" font="0202:微软雅黑" align="center" cursor="hand" show="0"></link>
+    </dlg>
+    <dlg name="dlg_tip_with_links" pos="|-160,289,@320,@94">
+      <text pos="|-166,0,@332,@22" font2="facename:微软雅黑;bold:1;adding:4">%str4904%</text>
+      <text pos="|-172,[5,@345,@17" crtext="818999" font2="facename:微软雅黑;adding:0">%str4905%</text>
+      <text pos="|-98,[11,@84,@22" crtext="636D7E" font2="facename:微软雅黑;bold:0;adding:0">%str4900%</text>
+      <link name="lnk_open_local_dir" pos="[4,[-22,@108,@22" crtext="06A7FF" font2="facename:微软雅黑;bold:0;adding:0;underline:1;" cursor="hand">%str4901%</link>
+      <text pos="0,[0,-0,-0" crtext="636D7E" font2="facename:微软雅黑;bold:0;adding:0" align="center">%str4902%</text>
+    </dlg>
+  </dlg>
+
+  <!--正在加载视图-->
+  <dlg name="dlg_loading_view" pos="0,0,-0,-0" show="1">
+	<gifplayer name="loading_view_gif" pos="|-16,|-16,@32,@32" skin="gif_statuspanel_loading"/>
+    <text name="txt_loading_tip" pos="|-150,[12,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2311%</text>
+  </dlg>
+
+  <!--加载失败视图-->
+  <dlg name="dlg_error_view" pos="0,0,-0,-0" show="0">
+    <img name="error_view_bg" pos="|-90,|-127,@181,@127" skin="mainpanel_emptyview_error"></img>
+    <text name="txt_error_tip" pos="0,220,-0,@22" crtext="333333" font="0200:微软雅黑" align="center">%str2312%</text>
+    <dlg name="dlg_tip_with_lnk" pos="|-50,[0,-0,@22">
+      <text pos="0,0" crtext="333333" font="0200:微软雅黑">%str4613%</text>
+      <link name="lnk_error_refresh" pos="[4,0" crtext="06A7FF" font="0202:微软雅黑" cursor="hand">%str217%</link>
+    </dlg>
+  </dlg>
+</dlg>

@@ -1,0 +1,39 @@
+<layer name="ResidentGuide" width="660" height="665" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg skin="workspace_guide_mask" pos="0,0,-0,-0">
+            <dlg name="dlg_main" pos="|-314,|-224,@628,@449" skin="workspace_guide_frame">
+                <dlg pos="10,10,-10,-10">
+                    <gifplayer name="gif_guide_upload" pos="284,0,@324,@429" skin="gif_workspace_guide_upload" bulltimer="1"></gifplayer>
+                    <gifplayer name="gif_guide_backup" pos="284,0,@324,@429" skin="gif_workspace_guide_backup" show="0" bulltimer="1"></gifplayer>
+                    <gifplayer name="gif_guide_history" pos="284,0,@324,@429" skin="gif_workspace_guide_history" show="0" bulltimer="1"></gifplayer>
+                    <gifplayer name="gif_guide_viptest" pos="284,0,@324,@429" skin="gif_workspace_guide_viptest" show="0" bulltimer="1"></gifplayer>
+                    <dlg pos="0,0,294,-0" skin="workspace_guide_left_frame">
+                        <text name="txt_guide_first" font="0800:微软雅黑" crtext="03081A" pos="24,32">%str4559%</text>
+                        <link name="link_more" font="0002:微软雅黑" crtext="06A7FF" pos="146,[-22" cursor="hand">%str1526%</link>
+                        <dlg pos="24,80,@236,@64">
+                            <imgbtn name="btn_upload" skin="workspace_guide_bkg" icoskin="workspace_guide_upload_select"
+                                    icoxoffset="12" icoyoffset="16" txtxoffset="54" txtyoffset="13" textmode="40820" font="0200:微软雅黑" crtext="03081A" pos="0,0,-0,-0">%str4535%</imgbtn>
+                            <text name="txt_upload" font="0000:微软雅黑" crtext="878C9C" pos="54,35" show="0">%str4536%</text>
+                        </dlg>
+                        <dlg pos="24,152,@236,@64">
+                            <imgbtn name="btn_backup" skin="titlepanel_translucent" icoskin="workspace_guide_backup_normal"
+                                    icoxoffset="12" icoyoffset="16" txtxoffset="54" txtyoffset="13" textmode="40820" font="0200:微软雅黑" crtext="03081A" pos="0,0,-0,-0">%str4537%</imgbtn>
+                            <text name="txt_backup" font="0000:微软雅黑" crtext="878C9C" pos="54,35" show="0">%str4538%</text>
+                        </dlg>
+                        <dlg pos="24,224,@236,@64">
+                            <imgbtn name="btn_history" skin="titlepanel_translucent" icoskin="workspace_guide_history_normal"
+                                    icoxoffset="12" icoyoffset="16" txtxoffset="54" txtyoffset="13" textmode="40820" font="0200:微软雅黑" crtext="03081A" pos="0,0,-0,-0">%str4539%</imgbtn>
+                            <text name="txt_history" font="0000:微软雅黑" crtext="878C9C" pos="54,35" show="0">%str4540%</text>
+                        </dlg>
+                        <dlg pos="24,296,@236,@64">
+                            <imgbtn name="btn_viptest" skin="titlepanel_translucent" icoskin="workspace_guide_viptest_normal"
+                                    icoxoffset="12" icoyoffset="16" txtxoffset="54" txtyoffset="13" textmode="40820" font="0200:微软雅黑" crtext="03081A" pos="0,0,-0,-0">%str4541%</imgbtn>
+                            <text name="txt_viptest" font="0000:微软雅黑" crtext="878C9C" pos="54,35" show="0">%str4542%</text>
+                        </dlg>
+                        <imgbtn name="btn_start" class="cls_titlepanel_vipcenter_btn" pos="|-100,-63,@200,@36" skin="workspace_guide_btn_bkg_one" align="center" crtext="FFFFFF">开始体验</imgbtn>
+                    </dlg>
+                </dlg>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

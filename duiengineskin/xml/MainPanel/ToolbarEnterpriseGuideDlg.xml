@@ -1,0 +1,9 @@
+﻿<layer name="ToolbarEnterpriseDlg" width="298" height="112" toolwin="1" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="15,0,-0,-0" skin="navigatepanel_enterprise_bg">
+      <text pos="23,14,-0,@18" align="left" crtext="FFFFFF" font="0400:微软雅黑">%str4094%</text>
+      <text pos="23,38,-0,@16" align="left" crtext="FFFFFF" font="0200:微软雅黑">%str4095%</text>
+      <imgbtn name="btn_cert" skin="navigatepanel_enterprise_cert_bg" pos="23,69,@80,@26" align="center" crtext="06A7FF" font="0200:微软雅黑">%str4096%</imgbtn>
+    </dlg>
+  </body>
+</layer>

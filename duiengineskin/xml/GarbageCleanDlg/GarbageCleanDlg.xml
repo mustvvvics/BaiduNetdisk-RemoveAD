@@ -1,0 +1,110 @@
+<layer title="%str1200%" name="GarbageCleanDlg" width="900" height="650" appwin="1" ncRect="0,0,0,0" translucent="1" nomaxsize="1">
+	<body>
+		<dlg pos="0,0,-0,-0" skin="garbageclean_bg" font="0000:微软雅黑" crtext="FFFFFF">
+			<!--标题栏-->
+			<caption pos="0,0,-0,38">
+				<dlg name="dlg_logo" pos="0,0,200,-0" show="1" msgtransparent="1">
+					<img pos="10,10" skin="garbageclean_logo"></img>
+					<text name="main_panel_title" pos="39,8" crtext="ffffff" font="0200:微软雅黑">%str1200%</text>
+				</dlg>
+				<imgbtn name="btn_return" pos="15,|-7,@52,@14" skin="garbageclean_back_btn" class="cls_garbageclean_return_link" 
+					txtxoffset="18" cursor="arrow" tip="%str365%" animate="1" show="0">%str365%</imgbtn>
+				<imgbtn name="btn_minimize" skin="garbageclean_minimize_btn" pos="-66,1,-34,21" cursor="arrow" tip="%str251%" animate="1"/>
+				<imgbtn name="btn_close" skin="garbageclean_close_btn" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+			</caption>
+			
+			<!--主面板-->
+			<dlg name="garbage_main_panel" pos="1,38,-1,-1" show="1">
+				<dlg name="panel_header" pos="0,0,-0,@120">
+					<img pos="|-195,-30,@380,@26" skin="garbageclean_txt"/>
+				</dlg>
+				<dlg name="panel_mid" pos="0,[104,-0,@336">
+					<dlg pos="28,0,@272,-0">
+						<buttonex name="btn_scan_dupfile" pos="|-55,0,@110,@110" normal-skin="garbageclean_scandupfile_img" cursor="hand"/>
+						<imgbtn name="dropbtn_scan_dupfile" pos="|-55,142,@124,@20" skin="garbageclean_keep_btn" font="0500:微软雅黑" 
+							crtext="ffffff" crhover="9ec7fe" align="left" valign="middle" cursor="arrow" animate="1">%str1202%</imgbtn> 
+						<text pos="|-130,[12,@260,@18" class="cls_desc_txt">%str1205%</text>
+					</dlg>
+					<dlg pos="[0,0,@300,-0">
+						<buttonex name="btn_scan_garbagevideo" pos="|-55,0,@110,@110" skin="garbageclean_scangarbagevideo_img" cursor="hand"/>
+						<link name="link_scan_garbagevideo" pos="|-60,142,@120,@20" class="cls_scan_link">%str1203%</link>
+						<text pos="|-130,[12,@260,@18" class="cls_desc_txt">%str1206%</text>
+					</dlg>
+					<dlg pos="[0,0,-28,-0">
+						<buttonex name="btn_scan_emptydir" pos="|-55,0,@110,@110" skin="garbageclean_scanemptydir_img" cursor="hand"/>
+						<link name="link_scan_emptydir" pos="|-60,142,@120,@20" class="cls_scan_link">%str1204%</link>
+						<text pos="|-130,[12,@260,@18" class="cls_desc_txt">%str1207%</text>
+					</dlg>
+				</dlg>
+				<dlg name="panel_cleared_info" pos="0,[1,-0,-0">
+					<img name="left_line" pos="45,-37,@216,@1" skin="garbageclean_leftline_img"/>
+					<img name="right_line" pos="-261,-37,@216,@1" skin="garbageclean_rightline_img"/>
+					<text name="txt_cleared_info" pos="|-200,-46" crtext="bdd9fd" align="center" font="0200:微软雅黑">%str1208%</text>
+				</dlg>
+			</dlg>
+			
+			<!--垃圾扫描面板-->
+			<dlg name="garbage_scan_panel" pos="1,38,-1,-1" show="0">
+				<dlg name="scan_scanning_view" pos="0,0,-0,-0" crtext="ffffff" show="1">
+					<img name="img_scan_desc" pos="|-117,56,@234,@26" skin="garbageclean_scandupfile_txt"/>
+					<text name="txt_scan_file" pos="|-250,[15,@500,@18" font="0200:微软雅黑" align="center" dotted="1"></text>
+					<dlg name="dlg_progress" pos="|-200,|-150,@400,@300">
+						<arcctrl name="arcctrl_progress" pos="|-143,|-143,@286,@286" crline="ffffff" linewidth="8" startangle="90" x-deflate="7" y-deflate="7">
+							<img pos="|-140,|-140,@280,@280" skin="garbageclean_scanprogress_bg"/>
+							<text name="txt_progress" pos="|-33,|-60,@66,@120" font="6600:微软雅黑" align="center" valign="middle"></text>
+							<text name="txt_progress_percent" pos="[3,|10" font="1400:微软雅黑" crtext="9ec7fe" align="left" valign="middle">%</text>
+						</arcctrl>
+						<gifplayer name="gif_scan_done" pos="|-140,|-140,@280,@280" skin="garbageclean_scandone_gif" show="0">
+						</gifplayer>
+					</dlg>
+					<imgbtn name="btn_cancel_scan" pos="|-60,-100,@120,@44" skin="garbageclean_cancelscan_btn" crhover="9ec7fe" font="0400:微软雅黑">%str1223%</imgbtn>
+				</dlg>
+				<dlg name="scan_fail_view" pos="0,0,-0,-0" show="0" crbg="ffffff">
+					<img name="img_fail" pos="|-54,|-91,@108,@122" skin="compresspackage_unziplist_empty_img"/>
+					<text name="txt_fail_reason" pos="|-200,[10,@400,@18" crtext="333333" align="center">%str1232%</text>
+					<button name="btn_rescan" pos="|-60,[30,@120,@30" class="defultbtn">%str1224%</button>
+				</dlg>
+				<dlg name="scan_empty_view" pos="0,0,-0,-0" show="0" crbg="ffffff">
+					<img pos="|-110,180,@221,@89" skin="garbageclean_cheer_img"/>
+					<text name="txt_not_found" pos="|-200,[15,@400,@20" font="0200:微软雅黑" crtext="999999" align="center"></text> 
+					<dlg name="dlg_scan_sel" pos="|-150,[20,@300,@32">
+						<button name="btn_scan_full_disk" pos="|-150,0,@142,@32" class="button">%str1225%</button>
+						<button name="btn_scan_sel_dir" pos="|8,0,@142,@32" class="button">%str1226%</button>
+					</dlg>
+					<dlg name="panel_other_clean" pos="0,-115,-0,-0">
+						<img pos="|-391,10,@326,@1" skin="garbageclean_leftline2_img"/>
+						<img pos="|65,10,@326,@1" skin="garbageclean_rightline2_img"/>
+						<text pos="|-100,2,@200,@18" crtext="999999" align="center" font="0200:微软雅黑">%str1227%</text>
+						<button name="btn_scan_other1" pos="|-149,50,@142,@32" class="button">%str1203%</button>
+						<button name="btn_scan_other2" pos="|8,50,@142,@32" class="button">%str1204%</button>
+					</dlg>
+				</dlg>
+			</dlg>
+			
+			<!--垃圾视图面板-->
+			<dlg name="garbage_view_panel" pos="1,38,-1,-1" show="0">
+				<include src="IDR_DUI_GARBAGECLEANVIEW_PANEL"/>
+			</dlg>
+			
+			<!--垃圾清理结果面板-->
+			<dlg name="garbageclean_result_panel" pos="1,38,-1,-1" crbg="ffffff" show="0">
+				<dlg pos="0,0,-0,334">
+					<img pos="|-47,146,@94,@94" skin="garbageclean_done_img"/>
+					<text pos="|-100,[22,@200,@24" crtext="3c6889" font="0800:微软雅黑" align="center">%str1261%</text>
+				</dlg>
+				<dlg pos="0,[0,-0,@60">
+					<img pos="|-84,0,@23,@18" skin="garbageclean_svip_img"/>
+					<text pos="|-59,2,@120,@18" crtext="3c6889" font="0400:微软雅黑" align="center">%str863%</text>
+					<link name="link_clean_detail" pos="|-350,30,@700,@16" crtext="3c6889" crhover="3c6889" font="0400:微软雅黑" align="center"></link>
+				</dlg>
+				<dlg pos="0,-115,-0,-0">
+					<img pos="|-391,10,@326,@1" skin="garbageclean_leftline2_img"/>
+					<img pos="|65,10,@326,@1" skin="garbageclean_rightline2_img"/>
+					<text pos="|-100,2,@200,@18" crtext="999999" align="center" font="0200:微软雅黑">%str1227%</text>
+					<button name="btn_clean_other1" pos="|-149,50,@142,@32" class="button">%str1203%</button>
+					<button name="btn_clean_other2" pos="|8,50,@142,@32" class="button">%str1204%</button>
+				</dlg>
+			</dlg>
+		</dlg>
+	</body>
+</layer>

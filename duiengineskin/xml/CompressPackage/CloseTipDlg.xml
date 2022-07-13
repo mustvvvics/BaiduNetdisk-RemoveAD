@@ -1,0 +1,26 @@
+<layer name="CloseTipDlg" width="420" height="170" toolwindow="1" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+	<body>
+		<dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+			<!--标题栏-->
+	    	<caption pos="0,0,-0,38">
+	        	<img pos="10,8" skin="common_logo_main"/>
+	        	<text name="txt_title" pos="39,9" class="cls_dlg_title_text">%str894%</text>
+	        	<imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+	      	</caption>
+
+	      	<dlg pos="1,38,-1,-1">
+		      	<dlg pos="0,0,-0,-42" crbg="f3fbff">
+		      		<icon pos="40,29,@34,@34" skin="msgbox_information"/>
+		      		<text name="txt_tip" pos="[10,|-8,-20,@16" crtext="333333" font="0000:微软雅黑" cursor="arrow" align="left">%str891%</text>
+		      	</dlg>
+	      
+		      	<hr pos="0,-41,-0,@1" crbg="dae6ed" size="1"/>
+		      	<dlg pos="0,-40,-0,-0" crbg="edf4fc">
+		      		<check name="checkbox_tip" pos="18,12" width="15" height="15" state="0" skin="btncheckbox" focusskin="focuscheckbox"/>
+		      		<text pos="[8,|-10,@200,@20" crtext="333333" font="0000:微软雅黑" cursor="arrow" align="left">%str890%</text>
+		      		<imgbtn name="btn_ok" pos="-86,7,@74,@26" class="button" tip="%str889%" animate="1">%str889%</imgbtn>
+		      	</dlg>
+      		</dlg>
+    </dlg>
+	</body>
+</layer>

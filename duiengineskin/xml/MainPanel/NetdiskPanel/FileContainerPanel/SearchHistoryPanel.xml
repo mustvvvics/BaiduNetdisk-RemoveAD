@@ -1,0 +1,13 @@
+<layer name="SearchHistoryPanel" width="240" height="370" appwin="0" ncRect="0,0,0,0" toolwindow="1" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="mainpanel_addresspanel_searchbox_his_bg">
+        <listboxex name="search_history_item_view" pos="1,1,-1,-1" itemheight="26" virtual="1">
+         <template>
+          <dlg pos="0,0,-0,-0">
+            <link name="txt_item_name" pos="3,|-9" font="0000:微软雅黑" class="cls_addresspanel_searchbox_keyword_link" show="1" textmode="40824"/>
+          </dlg>
+          </template>
+       </listboxex>
+    </dlg>
+  </body>
+</layer>

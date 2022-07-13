@@ -1,0 +1,33 @@
+﻿<layer name="BindPhoneGuideDlg" width="420" height="260" appwin="0" ncRect="0,0,0,0" resize="0" translucent="0" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="bind_phone_dlg_bkg">
+      <!-- 标题栏 -->
+      <caption pos="0,0,-0,@30">
+        <img pos="10,8" skin="bind_phone_logo"/>
+        <text name="txt_title" pos="36,7" font="0000:微软雅黑" crtext="333333">%str3650%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="385,7" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <!-- 用户头像 -->
+      <img name="img_userhead" pos="189,51,@42,@42" skin="titlepanel_default_head">
+        <img pos="0,0,-0,-0" skin="bind_phone_userhead_frame"/>
+      </img>
+      <dlg name="dlg_username" pos="0,101,-0,@20">
+        <!-- 用户名 -->
+        <text name="txt_nickname" pos="190,10" pos2type="center" height="20" font="0200:微软雅黑" crtext="000000"></text>
+        <!-- 会员等级 -->
+        <img name="img_member_level" pos="[3,2" skin="titlepanel_vipclose"/>
+      </dlg>
+      <!-- 提示文本 -->
+      <text name="txt_bind_phone_line1" pos="102,132,@216,@20" font="0000:微软雅黑" crtext="666666" align="center">%str3796%</text>
+      <text name="txt_bind_phone_line2" pos="102,[0,@216,@20" font="0000:微软雅黑" crtext="666666" align="center">%str3797%</text>
+      <text name="txt_change_phone_line1" pos="66,132,@288,@20" font="0000:微软雅黑" crtext="666666" align="center" show="0">%str3794%</text>
+      <text name="txt_change_phone_line2" pos="66,[0,@288,@20" font="0000:微软雅黑" crtext="666666" align="center" show="0">%str3795%</text>
+      <!-- 绑定按钮 -->
+      <imgbtn name="btn_bind_phone" pos="35,199,@170,@36" font="0200:微软雅黑" crtext="ffffff" align="center" skin="btn_default" cursor="arrow">%str3791%</imgbtn>
+      <!-- 换绑按钮 -->
+      <imgbtn name="btn_change_phone" pos="35,199,@170,@36" font="0200:微软雅黑" crtext="ffffff" align="center" skin="btn_default" show="0" cursor="arrow">%str3792%</imgbtn>
+      <!-- 退出登录按钮 -->
+      <imgbtn name="btn_logout" pos="215,199,@170,@36" font="0200:微软雅黑" crtext="666666" align="center" skin="btn_common" cursor="arrow">%str3793%</imgbtn>
+    </dlg>
+  </body>
+</layer>

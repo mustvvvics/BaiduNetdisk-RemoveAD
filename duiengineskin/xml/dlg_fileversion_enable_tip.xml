@@ -1,0 +1,28 @@
+﻿<layer name="FileVersionEnableTipDlg"  width="420" height="214" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="0">
+  <body>
+    <dlg name="frame_dlg" pos="0,0,-0,-0" class="cls_message_box">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text name="dlg_title" pos="39,9" class="cls_dlg_title_text">%str1157%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg pos="0,36,-0,-0">
+        <dlg name="vip_tip_dlg" pos="1,0,-1,32" show="0">
+          <img name="vip_image_type" pos="60,6,@24,@20" skin="compresspackage_vip_img"/>
+          <text name="text_content" pos="90,8" crtext="ef2625">%str1150%</text>
+        </dlg>
+        <dlg pos="0,-135,-0,-35">
+          <img pos="30,25" skin="msgbox_question" />
+          <text name="text_titlet" pos="80,15" crtext="636363">%str1151%</text>
+          <text name="text_content1" pos="80,35" crtext="636363">%str1152%</text>
+          <text name="text_content2" pos="80,55" crtext="636363">%str1153%</text>
+        </dlg>
+        <dlg pos="1,-35,-1,-1">
+          <check name="check_nomoretip" pos="20,8" class="vcentertext">%str1154%</check>
+          <imgbtn name="btn_enable_history_version" pos="220,-30,330,-5" cursor="arrow" animate="1" class="share_file_btn">%str1155%</imgbtn>
+          <imgbtn name="btn_overwrite" pos="340,-30,410,-5" cursor="arrow" class="msgboxbtn">%str1156%</imgbtn>
+        </dlg>
+      </dlg>
+    </dlg> 
+  </body>
+</layer>

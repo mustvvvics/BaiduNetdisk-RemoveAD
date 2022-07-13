@@ -1,0 +1,27 @@
+<layer title="%str3480%" width="1012" height="682" minsize="1012,682" appwin="1" ncRect="4,4,4,4" resize="1" translucent="0" nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption name="dlg_caption" pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text pos="39,9" name="title" maxwidth="920" class="cls_dlg_title_text">%str3480%</text>
+        <imgbtn name="btn_minimize" skin="btn_sys_minimize" pos="-98,1,@32,@20" cursor="arrow" tip="%str251%" animate="0"/>
+        <imgbtn name="btn_maximize" skin="btn_sys_maximize" pos="-66,1,@32,@20" cursor="arrow" tip="%str1503%" animate="0"/>
+        <imgbtn name="btn_restore" skin="btn_sys_restore" pos="-66,1,@32,@20" cursor="arrow" tip="%str1504%" animate="0" show="0"/>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,@32,@20" cursor="arrow" tip="%str250%" animate="0"/>
+      </caption>
+      <dlg name="dlg_cloud_edit_view" pos="1,38,-1,-1">
+        <dlg pos="0,0,-0,-0">
+          <webbrowser name="cloud_edit_web_page" pos="0,0,-0,-0" use_ie="0" show="1" reboot_on_render_crash="0"/>
+          <!--网络连接错误面板-->
+          <dlg name="network_error_panel" pos="0,0,-0,-0" show="0">
+            <dlg name="netErrTipPanel" pos="|-90,|-100" width="180" height="200">
+              <img pos="|-52,0" skin="doc_dlg_load_error" width="103" height="93" />
+              <text pos="0,110,-0,130" class="cls_txt_red">%str3481%</text>
+              <imgbtn name="btn_retry" class="defultbtn" pos="|-48,162" width="96" height="34" cursor="arrow">%str3482%</imgbtn>
+            </dlg>
+          </dlg>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

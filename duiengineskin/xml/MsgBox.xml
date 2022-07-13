@@ -1,0 +1,40 @@
+﻿<layer title="%str18%" width="420" height="170" toolwindow="1" frame_size="40,30,10,80" 
+       minsize="422,172" resize="0" translucent="1">
+    <body>
+		<dlg id="100" pos="0,0,-0,-0" class="cls_message_box">
+		  <!--标题栏-->
+		  <caption id="101" pos="0,0,-0,38">
+			  <img pos="9,9" name="msgcapicon" skin="common_logo_main"/>
+			  <text pos="[5,9" name="msgtitle" class="cls_msgbox_title_text">title</text>
+			  <imgbtn id="2" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+		  </caption>
+		  <dlg pos="5,64,-5,-40">
+			<icon name="msgicon" pos="18,0,52,34" size="34"/>
+			<text name="msgtext" pos="[14,7" font="0000:微软雅黑" crtext="4c4c4c" multilines="1" interhei="0" maxwidth="315"/>
+		  </dlg>
+		  <dlg pos="0,-30,-0,-0" name="btn1panel">
+			<button pos="-88,|-22,-16,|2" class="msgboxbtn" name="button1st">button1</button>
+		  </dlg>
+		  <dlg pos="0,-30,-0,-0" name="btn2panel">
+			<button pos="-166,|-22,-94,|2" class="msgboxbtn" name="button1st">button1</button>
+			<button pos="-88,|-22,-16,|2" class="msgboxbtn" name="button2nd">button2</button>
+		  </dlg>
+		  <dlg pos="0,-30,-0,-0" name="btn3panel">
+			<button pos="-244,|-22,-172,|2" class="msgboxbtn" name="button1st">button1</button>
+			<button pos="-166,|-22,-94,|2" class="msgboxbtn" name="button2nd">button2</button>
+			<button pos="-88,|-22,-16,|2" class="msgboxbtn" name="button3rd">button3</button>
+		  </dlg>
+		  
+		  <!--checkbox面板-->
+		  <dlg pos="0,-30,@160,-0" name="checkboxpanel" show="0">
+			<check name="checkbox" pos="20,|-19" align="left" crtext="757880" class="vcentertext" skin="btncheckbox"></check>
+		  </dlg>
+		  
+		  <!--link面板-->
+		  <dlg pos="0,-30,@160,-0" name="linkpanel" show="0">
+			<link name="link" pos="24,|-19,-0,@18" align="left" class="cls_btn_weblink"></link>
+		  </dlg>
+		</dlg>
+	</body>
+</layer>
+

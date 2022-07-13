@@ -1,0 +1,52 @@
+<layer title="%str3520%" name="AutoBackupDlg" width="900" height="650" appwin="1" ncRect="0,0,0,0" translucent="1" nomaxsize="1">
+    <body>
+        <dlg pos="0,0,-0,-0" skin="autobackupdlg_bg" font="0000:微软雅黑" crtext="FFFFFF">
+            <!--标题栏-->
+            <caption pos="0,0,-0,@38">
+                <dlg name="dlg_logo" pos="0,0,200,-0" show="1" msgtransparent="1">
+                    <img pos="10,10" skin="common_logo_main"></img>
+                    <text name="main_panel_title" pos="39,8" crtext="000000" font="0200:微软雅黑">%str3520%</text>
+                </dlg>
+                <imgbtn name="btn_return" pos="10,10,@52,@14" skin="autobackup_btn_return_bg" crtext="000000" 
+					txtxoffset="18" cursor="arrow" tip="%str365%" animate="1" show="0">%str365%</imgbtn>
+                <imgbtn name="btn_minimize" skin="btn_sys_minimize" pos="-66,4,-34,21" cursor="arrow" tip="%str251%" animate="1"/>
+                <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,4,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+            </caption>
+            
+            <!--功能引导面板-->
+            <dlg name="autobackup_guide_panel" pos="1,38,-1,-1" crbg="FFFFFF" show="0">              
+                <dlg name="guide_panel_function_img" pos="0,0,-0,@400">
+                    <img pos="0,0,-0,@400" skin="auto_backup_function_img"></img>
+                    <text pos="91,133" font="1800:微软雅黑" crtext="000000">%str4186%</text>
+                    <text pos="[0,133" font="1800:微软雅黑" crtext="06A7FF">%str287%</text>
+                    <text pos="91,[0" font="1800:微软雅黑" crtext="000000">%str4187%</text>
+                </dlg>              
+                <dlg name="guide_panel_function_introduction" pos="0,[28,-0,@48">
+                  <img pos="135,7" skin="autobackup_splitter_bg"></img>
+                  <dlg name="intuction_tip_1" pos="148,0,@144,@48">
+                    <text pos="0,0,@100,@24"  crtext="333333" multilines="0" align="left" font="0300:微软雅黑">%str3541%</text>
+                    <text pos="0,[0,@144,@24"  crtext="333333" multilines="0" align="left" font="0300:微软雅黑">%str3542%</text>
+                  </dlg>
+                  <img pos="395,7" skin="autobackup_splitter_bg"></img>
+                  <dlg name="intuction_tip_2" pos="408,0,@128,@48">
+                    <text pos="0,0,@128,@24"  crtext="333333" multilines="0" align="left" font="0300:微软雅黑">%str3543%</text>
+                    <text pos="0,[0,@108,@24"  crtext="333333" multilines="0" align="left" font="0300:微软雅黑">%str3544%</text>
+                  </dlg>
+                  <img pos="655,7" skin="autobackup_splitter_bg"></img>
+                  <dlg name="intuction_tip_3" pos="668,0,@112,@48">
+                    <text pos="0,0,@112,@24"  crtext="333333" multilines="0" align="left" font="0300:微软雅黑">%str3545%</text>
+                    <text pos="0,[0,@112,@24"  crtext="333333" multilines="0" align="left" font="0300:微软雅黑">%str3546%</text>
+                  </dlg>
+                </dlg>
+                <dlg name="guide_panel_bottom" pos="0,[24,-0,-0">
+                  <imgbtn name="btn_try_autobackup" pos="320,0,@258,@82" skin="wechat_backup_dlg_btn_blue" font="0600:微软雅黑" crtext="ffffff">%str3526%</imgbtn>
+                </dlg>
+            </dlg>
+            
+            <!--文件夹自动备份操作面板-->
+            <dlg name="autobackup_manage_panel" pos="1,38,-1,-1" show="0">
+                <include src="IDR_DUI_AUTOBACKUP_VIEW_PANEL"/>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

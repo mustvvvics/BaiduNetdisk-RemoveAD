@@ -1,0 +1,24 @@
+<dlg  name="StatusPanel" pos="0,0,-0,-0">
+  <hr pos="0,0,-0,1" size="1" crbg="F1F1F1"/>
+  <dlg name="sharelist_status" pos="60,1,-174,-0">
+    <pagectrl pos="42,|-9,-40,@18" name="file_list_page" prebtn-skin="pagectrl_prebtn_bkg" nextbtn-skin="pagectrl_nextbtn_bkg"
+    selClr="478de4" class="pagectrl_num"/>
+  </dlg>
+  
+  <dlg name="func_shortcut_panel" pos="-172,1,-10,-0" show="1">
+     <dlg name="func_hide" pos="0,0,-35,-0" show="0">
+        <gifplayer name="gif_self_define_func_1" pos="]-31,5" width="26" height="26" hovergif="1" skin="gif_statuspanel_net" show="0"/>
+        <gifplayer name="gif_self_define_func_2" pos="]-31,5" width="26" height="26" hovergif="1" skin="gif_statuspanel_backup" show="0"/>
+        <gifplayer name="gif_self_define_func_3" pos="]-31,5" width="26" height="26" hovergif="1" skin="gif_statuspanel_lock" show="0"/>
+        <imgbtn name="btn_func_shortcut_manage" pos="]-26,5" width="28" height="28" skin="mainpanel_statuspanel_manage" tip="%str2400%" show="0"/>
+        <gifplayer name="gif_reward_plan" pos="-64,5" width="26" height="26" hovergif="1" skin="gif_statuspanel_rewardplan" tip="%str2407%" show="0"/>
+        <imgbtn name="btn_reward_plan" pos="-64,8" skin="mainpanel_statuspanel_rewardplan_bg" class="cls_statuspanel_rewardplan_txt" tip="%str2408%" show="0">%str2411%</imgbtn>
+        <text name="txt_reward_plan_calc" pos="0,8" class="cls_statuspanel_rewardplan_txt" tip="%str2408%" show="0"/>
+     </dlg>
+    <gifplayer name="gif_portable_device" pos="-65,3" width="26" height="26" hovergif="1" skin="gif_statuspanel_portabledevice" show="0"/>
+  </dlg>
+  <gifplayer name="gif_status" pos="-80,|-10" width="20" height="20" skin="gif_statuspanel_loading" show="0"/>
+  <img name="img_status" pos="-80,|-8,@16,@16" skin="mainpanel_statuspanel_error" show="0"></img>
+  <text name="txt_status_tip" pos="-50,|-9" height="16" crtext="999999" font="0000:微软雅黑" align="left" show="1"/>
+
+</dlg>

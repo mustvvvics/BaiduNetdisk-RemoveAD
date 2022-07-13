@@ -1,0 +1,53 @@
+<layer name="WorkSpaceStatusPanel" width="590" height="337" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+    <body>
+        <!--顶部状态列表-->
+        <dlg name="dlg_list_status" pos="0,0,-0,-0" show="1" skin="main_panel_frame">
+            <hr pos="0,1,-0,1" size="2" crbg="F5F6FA" shadow="1"/>
+            <dlg name="dlg_title_panel" pos="0,0,-0,48">
+                <imgbtn name="btn_syncing" pos="24,14,@56,@20" crtext="06A7FF" font="0200:微软雅黑" skin="titlepanel_translucent" cursor="hand">%str4519%</imgbtn>
+                <hr name="hr_syncing" pos="24,46,@56,@2" crbg="06A7FF" show="1"></hr>
+                <imgbtn name="btn_sync_error" pos="120,14,@56,@20" crtext="03081A" font="0200:微软雅黑" skin="titlepanel_translucent" cursor="hand">%str4527%</imgbtn>
+                <hr name="hr_syn_error" pos="120,47,@56,@2" crbg="06A7FF" show="0"></hr>
+                <dlg name="dlg_error_num" pos="120,5,@56,@20" msgtransparent="1">
+                    <img name="img_errornum" pos="55,0,@28,@16" skin="titlepanel_redbg" show="0">
+                        <text name="txt_errornum" pos="0,|-7,-0,@15" crtext="ffffff" font2="facename:Arial;adding:-1" align="center" valign="middle"></text>
+                    </img>
+                </dlg>
+                <imgbtn name="btn_list_status_close" skin="titlepanel_close_btn" pos="-40,-30,@15,@16" cursor="arrow" tip="%str250%"></imgbtn>
+            </dlg>
+            <hr pos="0,47,-0,@1" size="1" crbg="F5F6FA"></hr>
+            <dlg name="dlg_top_float" pos="10,56,-10,@36" crbg="F5F6FA" show="0">
+                <text name="txt_float_tip" pos="24,9,@280,@18" crtext="878C9C"></text>
+                <link name="link_float" pos="-72,9,@48,@18" crtext="06A7FF" cursor="hand"></link>
+            </dlg>
+            <listboxex name="listbox_sync_list" pos="0,64,-0,-0" show="1" itemheight="72" virtual="1">
+                <template>
+                    <dlg name="dlg_file_item" pos="0,0,-0,-0">
+                        <dlg name="dlg_bkg" pos="0,0,-0,-0" skin="listitem_hover_bkg" cursor="hand" show="0"/>
+                        <img name="img_file_icon" pos="22,21,@30,@30"></img>
+                        <link name="link_file_name" pos="68,19" align="left" hight="16" maxwidth="180" dotted="1" font="0000:微软雅黑"></link>
+                        <text name="txt_file_size" pos="68,41" crtext="AFB3BF" font="0000:微软雅黑"/>
+                        <text name="txt_file_error_time" pos="[12,41" crtext="AFB3BF" font="0000:微软雅黑"/>
+                        <dlg name="dlg_syncing_file" show="1" pos="-232,0,-0,-0">
+                            <dlg name="progress_bkg" pos="-168,25,-24,@4" class="cls_leftpanel_progress_bkg">
+                                <dlg name="progress_frg" pos="0,0,0,-0" class="cls_leftpanel_progress_frg_green"/>
+                            </dlg>
+                            <imgbtn name="inc_operation" pos="-168,38,@16,@16" skin="workspace_status_list_exspeed" cursor="hand" show="0" tip="%str4906%"></imgbtn>
+                            <text name="txt_file_status" pos="-168,40" crtext="AFB3BF" font="0000:微软雅黑"/>                           
+                            <text name="txt_speed" pos="[8,40" crtext="AFB3BF" font="0000:微软雅黑"/>
+                        </dlg>
+                        <dlg name="dlg_sync_error_file" show="0" pos="-355,10,-0,-0" cursor="hand">
+                            <text name="txt_error_msg" pos="0,10,-25,@16" crtext="FF436A" align="right" font="0200:微软雅黑"/>
+                            <imgbtn name="btn_error_svip" pos="-350,30,-25,@12" crtext="BF8726" align="right" font="0000:微软雅黑" skin="titlepanel_translucent" show="0"></imgbtn>
+                        </dlg>
+                    </dlg>
+                </template>
+            </listboxex>
+            <!--空界面-->
+            <dlg name="dlg_empaty_panel" pos="0,48,-0,-0" show="1">
+                <img name="img_empty" pos="|-80,|-70,@181,@127" skin="workspace_status_empty_file"></img>
+                <text name="txt_empty" pos="|-70,|40" crtext="636D7E" font="0000:微软雅黑"></text>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

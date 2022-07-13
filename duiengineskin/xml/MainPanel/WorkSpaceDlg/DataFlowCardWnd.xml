@@ -1,0 +1,29 @@
+<layer name="DataFlowCardWnd" width="340" height="211" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="dlg_main" pos="0,0,-0,-0" skin="usercard_notvip_bg">
+            <dlg pos="15,26,-15,-15">
+                <!--顶部名字显示-->
+                <dlg name="dlg_top" pos="0,0,-0,@30">
+                    <dlg name="dlg_user" pos="0,0,-0,@28">
+                        <link name="link_username" pos="99,22" crtext="03081A" font="0200:微软雅黑" crhover="696969" hoverfont="0200:微软雅黑" maxwidth="250" cursor="hand" dotted="1"/>
+                        <imgbtn name="btn_crown" pos="[8,14,@38,@18" skin="titlepanel_translucent" icoskin="titlepanel_vipclose" cursor="hand"/>
+                    </dlg>
+                </dlg>
+                <hr pos="0,[16,@280,@1" crbg="F5F6FA" size="1"></hr>
+                <!--流量显示-->
+                <dlg name="dlg_dataflow_info" pos="18,[0,-0,-60">
+                    <dlg name="progress_bkg" pos="0,20,@180,@6" class="cls_leftpanel_progress_bkg">
+                        <dlg name="progress_frg" pos="0,0,0,-0" class="cls_leftpanel_progress_frg_green"/>
+                    </dlg>
+                    <text name="txt_used_flow" font="0000:微软雅黑" pos="[14,14" crtext="454D5A" align="left"></text>
+                    <text name="txt_toal_flow" font="0000:微软雅黑" pos="[0,14" crtext="454D5A" align="left"></text>
+                    <link name="link_dataflow" pos="0,-22" multilines="0" dotted="1" show="1" crtext="64360D" font="0000:微软雅黑" align="left"></link>
+                </dlg>
+                <dlg name="dlg_vip_guide" pos="18,-56,@274,@42" skin="usercard_member_notvip_bkg">
+                    <text name="txt_svip_guide" pos="14,15" crtext="64360D"></text>
+                    <imgbtn name="btn_buy" pos="-97,8,@90,@28" skin="usercard_svip_btn" crtext="64360D" font="0000:微软雅黑" cursor="hand"></imgbtn>
+                </dlg>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

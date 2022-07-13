@@ -1,0 +1,22 @@
+﻿<layer name="RewardPlanPathSettingDlg"  width="420" height="170" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text name="dlg_title" pos="39,9" class="cls_dlg_title_text">%str3005%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg pos="0,38,-0,-0">
+        <dlg pos="0,0,-0,-0">
+          <text pos="18,15" crtext="666666" align="left">%str3005%</text>
+          <dlg pos="18,45,@309,@25" skin="rewardplanpathsettingdlg_inputbg">
+            <embededit name="edit_path" pos="1,4,-1,-1" font="0000:Arial" crtext="666666" state="16" textmode="24"/>
+          </dlg>
+          <imgbtn name="btn_browser" pos="334,45,406,70" cursor="arrow" class="msgboxbtn">%str3006%</imgbtn>
+        </dlg>
+        <imgbtn name="btn_confirm" pos="252,-40,324,-15" cursor="arrow" class="msgboxbtn">%str3004%</imgbtn>
+        <imgbtn name="btn_cancel" pos="334,-40,406,-15" cursor="arrow" class="msgboxbtn">%str3003%</imgbtn>
+      </dlg>
+    </dlg> 
+  </body>
+</layer>

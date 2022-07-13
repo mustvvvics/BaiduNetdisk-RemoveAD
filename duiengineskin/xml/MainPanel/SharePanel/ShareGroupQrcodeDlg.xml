@@ -1,0 +1,45 @@
+<layer width="296" height="450" appwin="0" ncRect="0,0,0,0" translucent="0" resize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text pos="39,9" class="cls_dlg_title_text">%str610%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%"/>
+      </caption>
+      <dlg pos="1,37,-1,-1" crbg="f7f7f7">
+        <dlg name="AllGroupInfoPanel" pos="10,15,-10,-55" crbg="ffffff">
+          <!--群头像-->
+          <dlg name="GroupHeadPanel" crbg="e9e9e9" pos="|-30,20,@60,@60">
+              <img name="group_three_head" pos="2,2" width="27" height="27" skin="share_userhead_img"/>
+              <img name="group_four_head" pos="31,2" width="27" height="27" skin="share_userhead_img"/>
+              <img name="group_one_head" pos="2,31" width="27" height="27" skin="share_userhead_img"/>
+              <img name="group_two_head" pos="31,31" width="27" height="27" skin="share_userhead_img"/>
+              <img pos="0,0,-0,-0" skin="share_groupqrcode_dlg_head_mask"/>
+          </dlg>
+          <text name="group_name_txt" pos="20,[8,-20,@20" class="share_groupqrcode_name_txt"></text>
+          <text name="group_member_count_txt" pos="2,[4,-2,@16" class="share_groupqrcode_scantip_text"></text>
+          <text name="group_desc_txt" pos="20,[8,-20,@30" class="share_groupqrcode_desc_txt">%str622%</text>
+          <dlg pos="|-75,-170,@150,@150">
+            <dlg name="GroupQrcodePanel" pos="0,0,-0,-0" show="0">
+              <img name="group_qrcode_img" pos="|-62,0,@124,@124"></img>
+              <text pos="0,-24,-0,-4" class="share_groupqrcode_scantip_text">%str611%</text>
+            </dlg>
+            <dlg name="GroupQrcodeLoadingPanel" pos="0,0,-0,-0" show="1">
+              <gifplayer pos="|-9,53,@18,@18" skin="loading_gif"/>
+              <text pos="0,75,-0,95" class="share_groupqrcode_fail_text">%str614%</text>
+            </dlg>
+            <dlg name="GroupQrcodeFailPanel" pos="0,0,-0,-0" show="0">
+              <img pos="|-62,0,@124,@124" skin="share_groupqrcode_dlg_fail"></img>
+              <text name="qrcode_fail_txt" pos="|-60,46,@120,@40" class="share_groupqrcode_fail_text" show="1">%str615%</text>
+              <text name="group_fail_txt" pos="|-60,46,@120,@40" class="share_groupqrcode_foibidden_text" show="0">%str619%</text>
+              <text pos="0,-20,-0,-0" class="share_groupqrcode_scantip_text">%str611%</text>
+            </dlg>
+          </dlg>
+        </dlg>
+        <text name="op_tip_txt" pos="0,-55,-0,-40" class="share_groupqrcode_tip_text" show="0"/>
+        <imgbtn name="btn_copy2clipboard" pos="35,-40,@100,@28" cursor="arrow" class="share_file_btn">%str612%</imgbtn>
+        <imgbtn name="btn_download_file" pos="-135,-40,@100,@28" cursor="arrow" class="share_file_btn">%str613%</imgbtn>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

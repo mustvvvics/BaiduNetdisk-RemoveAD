@@ -1,0 +1,86 @@
+﻿<layer name="AutoDiagnosisDlg" width="800" height="610" appwin="0" ncRect="0,0,0,0" resize="0" translucent="0" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <dlg pos="1,1,-1,-1">
+        <caption name="dlg_buy_page_caption" pos="0,0,-0,38">
+          <img pos="10,8" skin="common_logo_main"></img>
+          <text pos="39,9" name="buy_page_title" maxwidth="420" class="cls_dlg_title_text">%str3580%</text>
+          <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,@32,@20" cursor="arrow" tip="%str250%" animate="0" />
+        </caption>
+        <!-- 表头 -->
+        <dlg pos="0,[0,-0,@50">
+          <text pos="50,0,@200,-0" font="0600:微软雅黑" crtext="03081A">%str3581%</text>
+          <text pos="[0,0,]0,-0" font="0600:微软雅黑" crtext="03081A">%str3582%</text>
+          <text pos="-200,0,-20,-0" font="0600:微软雅黑" crtext="03081A">%str3583%</text>
+        </dlg>
+        <hr pos="20,[0,-20,@1" crbg="EDEDED" />
+        <scrollview name="scrollview" pos="0,[0,-0,]0" viewwid="778" viewhei="500">
+          <!-- 限速设置 -->
+          <dlg pos="0,0,-0,@50">
+            <text pos="50,0,@200,-0" font="0000:微软雅黑" crtext="03081A" valign="middle">%str3584%</text>
+            <text pos="[0,0,]-40,-0" name="txt_status_1" font="0000:微软雅黑" crtext="03081A"></text>
+            <link name="lnk_suggest_1" pos="-180,0,-0,-0" font="0000:微软雅黑" hoverfont="0002:微软雅黑" crtext="06A7FF" cursor="hand" show="0">%str3602%</link>
+          </dlg>
+          <hr pos="20,[0,-0,@1" crbg="EDEDED" />
+          <!-- 防火墙 -->
+          <dlg pos="0,[0,-0,@50">
+            <text pos="50,0,@200,-0" font="0000:微软雅黑" crtext="03081A" valign="middle">%str3585%</text>
+            <text pos="[0,0,]-40,-0" name="txt_status_2" font="0000:微软雅黑" crtext="03081A"></text>
+            <link name="lnk_suggest_2" pos="-180,0,-0,-0" font="0000:微软雅黑" hoverfont="0002:微软雅黑" crtext="06A7FF" cursor="hand" show="0">%str3603%</link>
+          </dlg>
+          <hr pos="20,[0,-0,@1" crbg="EDEDED" />
+          <!-- 代理 -->
+          <dlg pos="0,[0,-0,@60">
+            <text pos="50,0,@200,-0" font="0000:微软雅黑" crtext="03081A" valign="middle">%str3586%</text>
+            <dlg pos="[0,0,-0,-0">
+              <dlg pos="0,0,-0,@20">
+                <text pos="0,0,@100,-0" name="txt_item_3_1" font="0000:微软雅黑" crtext="03081A" valign="middle" show="0">%str3607%</text>
+                <text pos="[0,0,]-40,-0" name="txt_status_3_1" font="0000:微软雅黑" crtext="03081A" align="right"></text>
+                <link name="lnk_suggest_3_1" pos="-180,0,-0,-0" font="0000:微软雅黑" hoverfont="0002:微软雅黑" crtext="06A7FF" cursor="hand" show="0">%str3604%</link>
+              </dlg>
+              <dlg pos="0,[0,-0,@20">
+                <text pos="0,0,@220,-0" name="txt_item_3_2" font="0000:微软雅黑" crtext="03081A" valign="middle" show="0">%str3608%</text>
+                <text pos="[0,0,]-40,-0" name="txt_status_3_2" font="0000:微软雅黑" crtext="03081A" align="right"></text>
+                <link name="lnk_suggest_3_2" pos="-180,0,-0,-0" font="0000:微软雅黑" hoverfont="0002:微软雅黑" crtext="06A7FF" cursor="hand" show="0">%str3610%</link>
+              </dlg>
+              <dlg pos="0,[0,-0,@20">
+                <text pos="0,0,@100,-0" name="txt_item_3_3" font="0000:微软雅黑" crtext="03081A" valign="middle" show="0">%str3609%</text>
+                <text pos="[0,0,]-40,-0" name="txt_status_3_3" font="0000:微软雅黑" crtext="03081A" align="right"></text>
+                <link name="lnk_suggest_3_3" pos="-180,0,-0,-0" font="0000:微软雅黑" hoverfont="0002:微软雅黑" crtext="06A7FF" cursor="hand" show="0">%str3602%</link>
+              </dlg>
+            </dlg>
+          </dlg>
+          <hr pos="20,[0,-0,@1" crbg="EDEDED" />
+          <!-- 域名连通性 -->
+          <dlg pos="0,[0,-0,@180">
+            <text pos="50,0,@200,-0" font="0000:微软雅黑" crtext="03081A" valign="middle">%str3587%</text>
+            <listboxex name="listbox_server" pos="[0,0,]-40,-0" itemheight="30" virtual="1">
+              <template>
+                <text name="txt_server" pos="0,0,]0,-0" font="0000:微软雅黑" crtext="03081A"></text>
+                <img name="img_status" pos="]-30,|-10,@20,@20" skin="mainpanel_toolbar_bg_transparent" />
+                <img name="img_http_status" pos="]-30,|-10,@20,@20" skin="mainpanel_toolbar_bg_transparent" />
+                <text name="txt_curl_code" pos="-20,0,-0,-0" font="0000:微软雅黑" crtext="03081A" align="right"></text>
+              </template>
+            </listboxex>
+            <link name="lnk_suggest_4" pos="-180,0,-0,-0" font="0000:微软雅黑" hoverfont="0002:微软雅黑" crtext="06A7FF" cursor="hand" show="0">%str3605%</link>
+          </dlg>
+          <hr pos="20,[0,-0,@1" crbg="EDEDED" />
+          <!-- 系统环境 -->
+          <dlg pos="0,[0,-0,-0">
+            <text pos="50,0,@200,-0" font="0000:微软雅黑" crtext="03081A" valign="middle">%str3588%</text>
+            <listboxex name="listbox_dll" pos="[0,0,-0,-0" itemheight="30" virtual="1">
+              <template>
+                <text name="txt_dll" pos="0,0,]0,-0" font="0000:微软雅黑" crtext="03081A"></text>
+                <img name="img_status" pos="]-60,|-10,@20,@20" skin="mainpanel_toolbar_bg_transparent" />
+                <link name="lnk_suggest" pos="-180,0,-0,-0" font="0000:微软雅黑" crtext="06A7FF" cursor="hand" show="0">%str3606%</link>
+              </template>
+            </listboxex>
+          </dlg>
+        </scrollview>
+        <hr pos="20,]-10,-0,@1" crbg="EDEDED" />
+        <imgbtn pos="50,]-50,-50,@40" name="btn_diagnosis" skin="btn_common" font="0404:微软雅黑" crtext="03081A" cursor="arrow">%str3589%</imgbtn>
+        <link pos="0,-30,-0,@20" name="lnk_save_report" align="center" font="0004:微软雅黑" hoverfont="0006:微软雅黑" crtext="03081A" cursor="hand">%str3590%</link>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

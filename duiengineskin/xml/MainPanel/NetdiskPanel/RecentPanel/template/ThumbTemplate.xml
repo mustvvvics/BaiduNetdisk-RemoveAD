@@ -1,0 +1,66 @@
+<dlg name="ThumbTemplate" pos="0,0,-0,-0" show="0">
+  <dlg name="dlg_thumb_record" pos="0,0,-0,40">
+    <!--名称-->
+    <dlg name="col_1">
+      <check name="chk_select" pos="12,|-7,@15,@15" skin="btncheckbox"></check>
+      <img name="img_type" pos="[10,|-10,@20,@20" skin="other_small_image"></img>
+      <link name="link_name" pos="[10,|-8" height="16" class="cls_mainpanel_filename_link" cursor="hand" dotted="1"></link>
+    </dlg>
+    <!--时间-->
+    <dlg name="col_2">
+        <text name="txt_mtime" pos="8,|-8,@102,@16" crtext="666666" align="left" dotted="1"></text>
+    </dlg>
+    <!--来源-->
+    <dlg name="col_3">
+        <text name="txt_source" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+    </dlg>
+    <!--所属文件夹-->
+    <dlg name="col_4">
+        <text name="txt_last_directory" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+    </dlg>
+    <!--类型-->
+    <dlg name="col_5">
+        <text name="txt_type" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+    </dlg>
+    <!--大小-->
+    <dlg name="col_6">
+        <text name="txt_size" pos="8,|-8,-0,@16" crtext="666666" align="left" dotted="1"></text>
+    </dlg>
+    <!--悬浮按钮-->
+    <dlg name="floating_button">
+        <imgbtn name="btn_del_record" pos="8,|-8,@16,@16" skin="recentpanel_listview_delrecord_btn" cursor="arrow" tip="%str2903%" show="0"></imgbtn>
+        <imgbtn name="btn_share" pos="[12,|-8,@16,@16" skin="mainpanel_listview_share" cursor="arrow" tip="%str2904%" show="0"></imgbtn>
+        <imgbtn name="btn_down" pos="[12,|-8,@16,@16" skin="mainpanel_listview_down" cursor="arrow" tip="%str2905%" show="0"></imgbtn>
+        <imgbtn name="btn_del_file" pos="[12,|-8,@16,@16" skin="mainpanel_listview_del" cursor="arrow" tip="%str2906%" show="0"></imgbtn>
+        <imgbtn name="btn_export_onlinedoc" pos="64,|-8,@16,@16" skin="mainpanel_listview_export_onlinedoc" cursor="arrow" tip="%str2363%" show="0"></imgbtn>
+    </dlg>
+  </dlg>
+  <!--缩略图展示-->
+  <dlg name="dlg_thumb_container" pos="66,40,-0,-0">
+    <dlg name="dlg_thumb_0" pos="0,10,@106,@76" cursor="hand" show="0">
+      <include src="IDR_DUI_RECENTINNERTHUMB_TEMPLATE" />
+    </dlg>
+    <dlg name="dlg_thumb_1" pos="[4,10,@106,@76" cursor="hand" show="0">
+      <include src="IDR_DUI_RECENTINNERTHUMB_TEMPLATE" />
+    </dlg>
+    <dlg name="dlg_thumb_2" pos="[4,10,@106,@76" cursor="hand" show="0" >
+      <include src="IDR_DUI_RECENTINNERTHUMB_TEMPLATE" />
+    </dlg>
+    <dlg name="dlg_thumb_3" pos="[4,10,@106,@76" cursor="hand" show="0">
+      <include src="IDR_DUI_RECENTINNERTHUMB_TEMPLATE" />
+    </dlg>
+    <dlg name="dlg_thumb_4" pos="[4,10,@106,@76" cursor="hand" show="0">
+      <include src="IDR_DUI_RECENTINNERTHUMB_TEMPLATE" />
+    </dlg>
+    <dlg name="dlg_thumb_5" pos="[4,10,@106,@76" cursor="hand" show="0">
+      <include src="IDR_DUI_RECENTINNERTHUMB_TEMPLATE" />
+    </dlg>
+    <dlg name="dlg_thumb_6" pos="[4,10,@106,@76" cursor="hand" show="0">
+      <include src="IDR_DUI_RECENTINNERTHUMB_TEMPLATE" />
+    </dlg>
+    <dlg name="dlg_thumb_more" pos="660,10,@106,@76" cursor="hand" show="0">
+      <img name="img_more" pos="0,0,-0,-0" skin="recentpanel_listview_viewmore_img"></img>
+      <text name="txt_more" pos="3,|-14,-3,@28" class="cls_record_viewmore_num"></text>
+    </dlg>
+  </dlg>
+</dlg>

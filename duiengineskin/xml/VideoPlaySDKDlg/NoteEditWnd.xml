@@ -1,0 +1,13 @@
+<layer name="NoteEditWnd" width="150" height="102" toolwindow="1" ncRect="0,0,0,0" resize="0" translucent="0" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="video_note_edit_wnd_bgk">
+      <richedit name="edit_note_content" pos="0,6,@146,@68" skin="video_note_edit_wnd_skin" font="0600:微软雅黑" crtext="FFFFFF" password="0" 
+      show="1" maxbuf="100" inset="4,0,2,0" valign="middle" align="left" multilines="1" wantreturn="1"
+      vscrollbar="1" hscrollbar="0" autovscroll="1" autohscroll="0" transparent="1" wordwrap="1" show_caret="0">
+      </richedit>
+      <text name="text_edit_word_num" pos="0,-20,@50,@16" align="left" crtext="AFB3BF" font="0000:微软雅黑" >%str4214%</text>
+      <imgbtn name="btn_edit_cancel" pos="-58,-20,@26,@16" skin="common_translucent_img" class="cls_video_note_list_txt" >%str26%</imgbtn>
+      <imgbtn name="btn_edit_save" pos="-28,-20,@26,@16" skin="common_translucent_img" class="cls_video_note_list_txt" >%str389%</imgbtn>
+    </dlg>
+  </body>
+</layer>

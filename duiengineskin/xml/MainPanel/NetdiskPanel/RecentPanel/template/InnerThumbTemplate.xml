@@ -1,0 +1,3 @@
+<img name="img_filetype" pos="|-30,|-30,@60,@60" skin="other_big_image"></img>
+<img name="img_thumbview" pos="0,0,-0,-0" skin="other_big_image" keep_size="1"></img>
+<img name="img_videoplay" pos="|-15,|-15,@30,@30" skin="mainpanel_thumbview_videoplay_normal" show="0"></img>

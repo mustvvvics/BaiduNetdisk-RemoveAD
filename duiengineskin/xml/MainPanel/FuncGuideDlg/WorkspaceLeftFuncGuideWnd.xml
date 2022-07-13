@@ -1,0 +1,50 @@
+﻿<layer name="WorkspaceLeftFuncGuideWnd"  width="388" height="306" toolwindow="1" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="1">
+  <body>
+    <dlg name="workspace_left_guide" pos="0,0,-0,-0" >
+      <dlg pos="0,0,-0,-0" name="workspace_receive_file_unused_guide" skin="workspace_guide_bkg_two" show="0">
+          <text pos="38,46,-30,66" align="center" crtext="03081A" font="0200:微软雅黑" >%str5250%</text>
+          <text pos="38,74,-30,94" align="center" crtext="636D7E" font="0200:微软雅黑" >%str5251%</text>
+          <img pos="38,100,@320,@115" skin="workspace_receive_na_file_unused"/>
+          <imgbtn name="btn_ok" skin="wechatbackup_guide_dlg_btn" pos="134,-75,@128,@36" align="center" crtext="FFFFFF" font="0200:微软雅黑">%str4202%</imgbtn>
+      </dlg>
+      <dlg pos="0,0,-0,-0" name="workspace_first_guide" skin="workspace_guide_bkg_two" show="0">
+          <imgbtn name="btn_close" skin="wechatbackup_guide_dlg_close" pos="-62,46,@16,@16" cursor="arrow" tip="%str250%"/>
+          <text name="txt_wfg_title" pos="38,46,-30,66" align="center" crtext="03081A" font="0200:微软雅黑" >%str4614%</text>
+          <text name="txt_wfg_sub_title" pos="38,74,-30,94" align="center" crtext="636D7E" font="0200:微软雅黑" >%str4615%</text>
+          <text name="txt_wfg_content" pos="38,100,-30,120" align="center" crtext="636D7E" font="0200:微软雅黑" >%str4618%</text>
+          <img name="img_wfg_bg" pos="38,120,@320,@94" skin="workspace_guide_img"/>
+          <imgbtn name="btn_ok" skin="wechatbackup_guide_dlg_btn" pos="134,-81,@128,@36" align="center" crtext="FFFFFF" font="0200:微软雅黑">%str4202%</imgbtn>
+      </dlg>
+      <dlg pos="0,0,-0,-0" name="workspace_second_guide" skin="workspace_guide_bkg_two" show="0">
+          <imgbtn name="btn_close" skin="wechatbackup_guide_dlg_close" pos="-62,46,@16,@16" cursor="arrow" tip="%str250%"/>
+          <img pos="161,54" skin="workspace_guide_exspeed"/>
+          <text pos="152,150" align="center" crtext="03081A" font="0204:微软雅黑" >%str4841%</text>
+          <text pos="85,174" maxwidth="230" textmode="11" crtext="636D7E" font="0000:微软雅黑" >%str4842%</text>
+          <imgbtn name="btn_ok" skin="wechatbackup_guide_dlg_btn" pos="134,-81,@128,@36" align="center" crtext="FFFFFF" font="0200:微软雅黑">%str4843%</imgbtn>
+      </dlg>
+      <dlg pos="0,0,-0,-0" name="workspace_receive_file_guide" skin="workspace_guide_receive_file_bkg" show="0">
+          <img pos="53,34" skin="workspace_guide_phone"/>
+          <text pos="85,37" align="left" crtext="636D7E" font="0200:微软雅黑">%str4844%</text>
+      </dlg>
+      <dlg pos="0,0,-0,-0" name="workspace_hover_guide" skin="workspace_left_hover_bkg" show="0">
+          <imgbtn name="btn_close" skin="wechatbackup_guide_dlg_close" pos="-40,20,@16,@16" cursor="arrow" tip="%str250%"/>
+          <dlg name="dlg_sync_status" pos="35,34,-0,74">
+              <img name="img_status" pos="0,8" skin="workspace_left_hover_success"></img>
+              <text name="txt_main_title" pos="38,0" font="0404:微软雅黑" crtext="03081A"></text>
+              <text name="txt_sub_title" pos="38,28" font="0000:微软雅黑" crtext="878C9C"></text>
+          </dlg>
+          <dlg name="dlg_dataflow_info" pos="35,[0,-0,-70">
+              <dlg name="progress_bkg" pos="0,20,@180,@6" class="cls_leftpanel_progress_bkg">
+                  <dlg name="progress_frg" pos="0,0,0,-0" class="cls_leftpanel_progress_frg_green"/>
+              </dlg>
+              <text name="txt_used_flow" font="0000:微软雅黑" pos="[5,14" crtext="454D5A" align="left"></text>
+              <text name="txt_toal_flow" font="0000:微软雅黑" pos="[0,14" crtext="454D5A" align="left"></text>
+          </dlg>
+          <dlg name="dlg_vip_guide" pos="35,-70,@260,@42" skin="usercard_member_notvip_bkg">
+              <text name="txt_svip_guide" pos="14,15" crtext="64360D"></text>
+              <imgbtn name="btn_buy" pos="-90,8,@80,@28" skin="usercard_svip_btn" crtext="64360D" font="0000:微软雅黑" cursor="hand"></imgbtn>
+          </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

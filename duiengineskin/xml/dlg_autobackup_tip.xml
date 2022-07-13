@@ -1,0 +1,8 @@
+﻿ <layer name="AutoBackupTipDlg"  width="260" height="58" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame" skin="autobackuptipdlg_bg">
+      <imgbtn name="btn_close" skin="autobackuptipdlg_close_btn" pos="-14,6,-6,14" cursor="arrow" tip="%str250%" animate="1"/>
+      <text name="text_content" pos="10,7,@230,@34" crtext="06a7ff" multilines="1" align="left">%str3567%</text>
+    </dlg> 
+  </body>
+</layer>

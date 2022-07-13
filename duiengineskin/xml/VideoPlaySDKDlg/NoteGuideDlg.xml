@@ -1,0 +1,17 @@
+<layer name="NoteGuideDlg" width="400" height="230" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <!--标题栏-->
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"/>
+        <text name="txt_title" pos="39,9" class="cls_dlg_title_text">%str4210%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg pos="0,38,-0,-0">
+        <img pos="174,10,@52,@57" name="img_guide" skin="video_note_guide_img"/>
+        <text name="guide_text" pos="0,[10,@400,@20" align="center" crtext="333333" font="0200:微软雅黑" show="1">%str4210%</text>
+        <imgbtn name="btn_svip" pos="120,-76,@160,@36" cursor="arrow" crtext="62360E" font="0000:微软雅黑" skin="video_note_guide_open_btn">%str1476%</imgbtn>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

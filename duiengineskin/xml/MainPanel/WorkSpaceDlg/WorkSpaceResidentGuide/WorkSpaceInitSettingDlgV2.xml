@@ -1,0 +1,71 @@
+<layer name="ResidentGuide" width="790" height="665" appwin="0" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg skin="workspace_guide_mask" pos="0,0,-0,-0">
+            <dlg name="dlg_guide_page_1" pos="163,191,@464,@297" skin="workspace_guide_white_frame" show="0">
+              <text name="dlg_guide_page_1_title" pos="24,15" crtext="03081A" font="0200:微软雅黑" animate="1">%str6060%</text>
+              <imgbtn name="btn_guide_page_1_close" skin="workspace_guide_page_close" pos="-34,18,@16,@16"></imgbtn>
+              <text pos="24,80" crtext="03081A">%str6061%</text>
+              <text pos="24,113,@175,@36" crtext="495366" textmode="40810">%str6062%</text>
+              <img pos="24,194" skin="workspace_guide_page_select_1"></img>
+              <gifplayer pos="231,80,@208,@117" skin="gif_workspace_guide_page_intro_1" bulltimer="1"></gifplayer>
+              <imgbtn name="btn_guide_page_1_next" skin="workspace_guide_btn_bkg_one" pos="136,229,@200,@36" crtext="FFFFFF" >%str6063%</imgbtn>
+            </dlg>
+            <dlg name="dlg_guide_page_2" pos="163,191,@464,@297" skin="workspace_guide_white_frame" show="0">
+              <text name="dlg_guide_page_2_title" pos="24,15" crtext="03081A" font="0200:微软雅黑" animate="1">%str6060%</text>
+              <imgbtn name="btn_guide_page_2_close" skin="workspace_guide_page_close" pos="-34,18,@16,@16"></imgbtn>
+              <text pos="24,80" crtext="03081A">%str6064%</text>
+              <text pos="24,113,@175,@54" crtext="495366" textmode="40810">%str6065%</text>
+              <img pos="24,194" skin="workspace_guide_page_select_2"></img>
+              <gifplayer pos="254,81,@208,@117" skin="gif_workspace_guide_page_intro_2" bulltimer="1"></gifplayer>
+              <imgbtn name="btn_guide_page_2_next" skin="workspace_guide_btn_bkg_one" pos="136,229,@200,@36" crtext="FFFFFF" >%str6063%</imgbtn>
+            </dlg>
+            <dlg name="dlg_guide_page_3" pos="163,191,@464,@440" skin="workspace_guide_white_frame" show="0">
+              <text name="dlg_guide_page_3_title" pos="24,15" crtext="03081A" font="0200:微软雅黑" animate="1">%str6060%</text> 
+              <imgbtn name="btn_guide_page_3_close" skin="workspace_guide_page_close" pos="-34,18,@16,@16"></imgbtn>
+              <dlg name="dlg_guide_page_3_sync_dir_set" pos="0,187,@464,@244" skin="workspace_guide_gray_frame" show="0">
+                  <text name="sync_dir_label" pos="24,58,-0,@12">%str6070%</text>
+                  <richedit name="sync_dir_edit" pos="24,86,@304,@32" y-margin="5" x-margin="2" ncskin="skin_editnc" skin="skin_edit_set" password="0" show="1" maxbuf="255" inset="4,1,2,1" valign="middle" align="left" font="0400:微软雅黑" ></richedit>
+                  <imgbtn name="btn_change_dir" pos="[8,86,@104,@32" skin="workspace_guide_btn_bkg_three" font="face:微软雅黑,adding:-3" cursor="hand">%str6071%</imgbtn>
+                  <text name="error_quick_sync_txt" pos="24,126" crtext="FF436A" show="0">%str6002%</text>
+                  <text name="sync_dir_warnning" pos="24,126,@416,@20" crtext="AFB3BF" multilines="1" animate="1">%str6072%</text>   
+              </dlg>
+              <dlg name="dlg_guide_page_3_intro_content" pos="0,48,@464,@181" skin="workspace_guide_white_frame">
+                  <text pos="24,32" crtext="03081A">%str6066%</text>
+                  <text pos="24,65,@175,@54" crtext="495366" textmode="40810">%str6067%</text>
+                  <img pos="24,146" skin="workspace_guide_page_select_3"></img>
+                  <img pos="231,32,@208,@117" skin="workspace_guide_page_intro_3"></img>
+                  <imgbtn name="btn_guide_page_play_video" skin="workspace_guide_video_play" cursor="hand" pos="284,70,@104,@40"></imgbtn>
+              </dlg>
+              <dlg name="dlg_guide_page_3_cloud_bridge" pos="0,48,@464,@190" skin="workspace_guide_white_frame" show="1">
+                     <imgbtn name="btn_quick_sync" skin="cloudbridge_mode_frame" cursor="hand" pos="24,0,@200,@82">
+                         <img pos="166,0,@34,@16" skin="cloudbridge_svip"></img>
+                         <img name="img_quick_sync" pos="11,15" skin="cloudbridge_unridio"></img>
+                         <text pos="[5,15" font="0000:微软雅黑" crtext="03081A">%str6073%</text>
+                         <text pos="10,36,@182,@34" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6075%</text>
+                     </imgbtn>
+                     <imgbtn name="btn_all_sync" skin="cloudbridge_mode_frame" cursor="hand" pos="240,0,@200,@82">
+                         <img name="img_all_sync" pos="11,15" skin="cloudbridge_unridio"></img>
+                         <text pos="[5,15" font="0000:微软雅黑" crtext="03081A">%str6074%</text>
+                         <text pos="10,36,@182,@34" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6076%</text>
+                     </imgbtn>
+                     <gifplayer pos="24,[10,@416,@72" skin="gif_workspace_guide_quick_sync" bulltimer="1"></gifplayer>
+              </dlg>
+              <imgbtn name="btn_guide_page_start_use" skin="workspace_guide_btn_bkg_one" pos="132,371,@200,@36" crtext="FFFFFF" >%str6069%</imgbtn>
+              <link name="link_advance_set" pos="208,[16" class="cls_sync_init_guide_link">%str6068%</link>
+            </dlg>
+            <dlg name="dlg_guide_page_4" pos="0,0,-0,-0" show="1">
+                <gifplayer pos="315,261,@160,@100" skin="gif_workspace_guide_complete" bulltimer="1"></gifplayer>
+                <text name="dlg_guide_page_4_title" pos="286,377" crtext="FFFFFF" font="0400:微软雅黑" animate="1">%str6077%</text>
+            </dlg>
+            <dlg name="dlg_guide_page_5" pos="163,179,@464,@314" skin="workspace_guide_white_frame" show="0">
+                <text name="dlg_guide_page_2_title" pos="24,15" crtext="03081A" font="0200:微软雅黑" animate="1">%str6078%</text>
+                <imgbtn name="btn_guide_page_5_close" skin="workspace_guide_page_close" pos="-34,18,@16,@16"></imgbtn>
+                <text pos="133,72" crtext="495366" font="0200:微软雅黑">%str6079%</text>
+                <text pos="80,92" crtext="495366" font="0200:微软雅黑">%str6080%</text>
+                <img pos="52,128,@360,@94" skin="workspace_guide_page_restrain"></img>
+                <imgbtn name="btn_guide_page_5_refuse" skin="workspace_guide_btn_bkg_two" pos="96,246,@128,@36" crtext="06a7ff" >%str6081%</imgbtn>
+                <imgbtn name="btn_guide_page_5_start_use" skin="workspace_guide_btn_bkg_one" pos="240,246,@128,@36" crtext="FFFFFF" >%str6069%</imgbtn>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

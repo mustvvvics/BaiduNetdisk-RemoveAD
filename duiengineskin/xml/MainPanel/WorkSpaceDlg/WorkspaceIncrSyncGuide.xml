@@ -1,0 +1,13 @@
+<layer name="WorkSpaceIncreSyncPanel" width="380" height="320" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="dlg_incr_sync" pos="0,0,-0,-0" show="1" skin="workspace_guide_exspeed_bkg">
+            <dlg name="dlg_center_sync" pos="30,30,-30,-30">
+                <imgbtn name="btn_close" skin="titlepanel_close_btn" pos="-40,15,@15,@16" cursor="arrow" tip="%str250%"></imgbtn>
+                <img skin="workspace_guide_exspeed" pos="120,24"></img>
+                <text pos="97,120" height="16" crtext="03081A " font="0204:微软雅黑" align="left" show="1">%str4839%</text>
+                <text pos="42,142,-53,-67" crtext="636D7E" maxwidth="236" textmode="11" font="0000:微软雅黑" show="1">%str4840%</text>
+                <imgbtn name="btn_known" skin="workspace_guide_btn_bkg_one" crtext="FFFFFF" font="0200:微软雅黑" pos="96,-51,@128,@36">%str4962%</imgbtn>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

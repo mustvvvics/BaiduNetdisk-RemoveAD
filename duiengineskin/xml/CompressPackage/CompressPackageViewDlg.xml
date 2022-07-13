@@ -1,0 +1,109 @@
+<layer title="%str839%" name="CompressPackageViewDlg" width="552" height="385" appwin="1" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <!--标题栏-->
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"/>
+        <text name="txt_title" pos="39,9" width="400" dotted="1" align="left" class="cls_dlg_title_text"></text>
+        <imgbtn name="btn_minimize" skin="btn_sys_minimize" pos="-66,1,-34,21" cursor="arrow" tip="%str251%" animate="1"/>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+
+      <!--预解压视图-->
+      <dlg name="dlg_preview" pos="1,38,-1,-1" show="0">
+        <gifplayer pos="|-52,56,@104,@104" width="104" height="104" skin="gif_prepare_unzip"/>
+        <dlg name="dlg_vip_info" pos="0,170,-0,@40" show="0">
+          <img pos="144,0,@24,@20" skin="compresspackage_vip_img"/>
+          <text pos="[4,2" class="preparedlg_vip_font">%str851%</text>
+        </dlg>
+        <dlg name="dlg_supervip_info" pos="0,170,-0,@40" show="1">
+          <img pos="132,0,@24,@20" skin="compresspackage_supervip_img"/>
+          <text pos="[4,2" class="preparedlg_vip_font">%str852%</text>
+        </dlg>
+        <dlg name="dlg_nonvip_info" pos="0,170,-0,@40" show="0">
+          <text pos="144,2" class="preparedlg_vip_font">%str4989%</text>
+        </dlg>
+        <!--进度条-->
+        <dlg name="dlg_progress_bg" pos="|-165,-122,@330,@11" skin="compresspackage_progress_bg">
+          <dlg name="dlg_progress_fg" pos="0,0,0,-0" skin="compresspackage_progress_fg"/>
+        </dlg>
+        <text name="txt_progress" pos="|-36,[12"  font="0000:微软雅黑" crtext="666666" textmode="25"/>
+      </dlg>
+
+      <!--压缩包展开视图-->
+      <dlg name="dlg_view" pos="18,38,-18,-1" show="0">
+        <!--header-->
+        <dlg name="dlg_header" pos="0,0,-0,38">
+          <dlg name="dlg_header_left" pos="0,0,200,-0" show="0">
+            <imgbtn name="btn_back" pos="0,13,@12,@13" skin="compresspackage_back_btn" cursor="arrow"/>
+            <link name="link_back" pos="[2,10" crtext="3c6889" class="cls_btn_weblink">%str846%</link>
+            <hr pos="[5,12,@1,@14" crbg="8d9199"/>
+            <text name="txt_subdir_name" pos="[5,10" dotted="1" maxbuf="150" class="compresspackage_font_lightdark">%str847%</text>
+          </dlg>
+          <text name="txt_load_files_num" pos="-100,10" width="100" align="right" crtext="999999"></text>
+        </dlg>
+
+        <!--压缩文件列表视图-->
+          <dlg name="dlg_content" pos="0,38,-0,-41" skin="compresspackage_list_bg" show="1">
+            <!--压缩文件列表表头-->
+            <dlg name="dlg_list_header" pos="0,0,-0,@36">
+              <check name="select_all_checkbox" pos="12,|-8" width="15" state="0" skin="btncheckbox" focusskin="focuscheckbox"/>
+              <dlg name="dlg_unselect" pos="35,0,-0,-0">
+                <text name="txt_file_name" pos="0,9" class="compresspackage_font_lightdark">%str843%</text>
+                <text name="txt_file_size" pos="401,9" class="compresspackage_font_lightdark">%str844%</text>
+              </dlg>
+              <dlg name="dlg_select" pos="35,0,-0,-0" show="0">
+                <text name="txt_select_count" pos="0,9" class="compresspackage_font_lightdark"/>
+                <imgbtn name="btn_unzipto" pos="[6,|-12" class="button" width="58" height="24" tip="%str849%">%str849%</imgbtn>
+                <imgbtn name="btn_download" pos="[6,|-12" class="button" width="58" height="24" tip="%str842%">%str842%</imgbtn>
+              </dlg>
+              <hr pos="1,-1,-0,-1" size="1" crbg="f5f5f6"/>
+            </dlg>
+          
+            <!--压缩文件列表-->
+            <dlg name="dlg_file_list" pos="0,36,-0,-1">
+              <listboxex name="file_list" pos="0,0,-0,-0" itemheight="36" virtual="1" frameskin="compresspackage_list_frameselect_bg">
+                <template>
+                  <!--Hover和Down状态-->
+                  <img name="list_item_bg" pos="1,0,-1,-0" skin="compresspackage_listitem_normal_bg" show="0"/>
+                  <dlg name="panel_file_item" pos="0,0,-0,-0" show="1">
+                    <check name="file_select_checkbox" pos="12,|-7" width="15" state="0" skin="btncheckbox" focusskin="focuscheckbox"/>
+                    <img name="file_type_img" pos="[10,|-8" width="16" height="16" skin="other_small_image"/>
+                    <link name="file_name_tip" pos="[10,|-9" maxwidth="210" height="18" class="compresspackage_filename_link"/>
+                    <imgbtn name="file_unzipto_btn" pos="284,|-12" class="button" width="58" height="24" tip="%str849%" show="0">%str849%</imgbtn>
+                    <imgbtn name="file_down_btn" pos="[6,|-12" class="button" width="58" height="24" tip="%str842%" show="0">%str842%</imgbtn>
+                    <text name="file_size_tip" pos="436,|-9,@50,@18" align="left" crtext="333333"></text>
+                  </dlg>
+                </template>
+              </listboxex>
+            </dlg>
+        </dlg>
+
+        <!--空列表视图-->
+        <dlg name="dlg_empty" pos="0,38,-0,-41" skin="compresspackage_list_bg" show="0">
+          <img pos="|-54,64,@108,@122" skin="compresspackage_unziplist_empty_img"/>
+          <text pos="|-40,[5" crtext="3c6889" cursor="arrow" font="0200:微软雅黑" textmode="25">%str853%</text>
+        </dlg>
+
+        <!--正在加载视图-->
+        <dlg name="dlg_loading" pos="0,38,-0,-41" skin="compresspackage_list_bg" show="0">
+          <gifplayer name="gif_loading" pos="190,120,@18,@18" width="18" height="18" skin="loading_gif"/>
+          <text name="text_loading" pos="218,118,@150,@20" crtext="3c6889" cursor="arrow" align="left" font="0200:微软雅黑">%str886%</text>
+        </dlg>
+
+        <!--加载失败视图-->
+        <dlg name="dlg_load_error" pos="0,38,-0,-41" skin="compresspackage_list_bg" show="0">
+          <img pos="|-54,64,@108,@122" skin="compresspackage_unziplist_empty_img"/>
+          <text name="text_load_error" pos="|-150,[5,@300,@18" crtext="3c6889" cursor="arrow" textmode="25" font="0200:微软雅黑">%str887%</text>
+          <imgbtn name="btn_retry_load" pos="|-40,[10,@80,@30" font="0200:微软雅黑" class="defultbtn" tip="%str888%">%str888%</imgbtn>
+        </dlg>
+
+        <!--foot-->
+        <dlg name="dlg_foot" pos="0,-42,-0,-0">
+          <imgbtn name="btn_unzip_all" pos="-100,|-13" class="defultbtn" width="100" height="26" tip="%str850%">%str850%</imgbtn>
+        </dlg>
+      </dlg>
+
+    </dlg>
+  </body>
+</layer>

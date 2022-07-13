@@ -1,0 +1,23 @@
+<layer width="392" height="264" appwin="0" ncRect="0,0,0,0" translucent="1" resize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text pos="39,9" class="cls_dlg_title_text">%str600%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%"/>
+      </caption>
+      <dlg pos="20,39,-20,-40">
+        <text pos="0,18,-0,40" font="0000:微软雅黑" crtext="333333">%str601%</text>
+        <dlg pos="0,55,130,-0">
+          <text pos="0,10" font="0600:微软雅黑" crtext="333333">%str602%</text>
+          <text pos="0,[10" font="0000:微软雅黑" crtext="666666">%str603%</text>
+          <text pos="0,[4" font="0000:微软雅黑" crtext="666666">%str604%</text>
+        </dlg>
+        <dlg pos="131,55,-0,-0">
+          <img pos="-120,0,@120,@120" skin="share_groupmanage_dlg_qrcode"/>
+        </dlg>
+      </dlg>
+      <imgbtn name="btn_known" pos="-92,-34,@72,@26" cursor="arrow" class="share_file_btn">%str605%</imgbtn>
+    </dlg>
+  </body>
+</layer>

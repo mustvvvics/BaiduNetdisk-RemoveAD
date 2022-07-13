@@ -1,0 +1,9 @@
+<layer name="EditWnd" width="100" height="22" toolwindow="1" ncRect="0,0,0,0" resize="0" translucent="0" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" crbg="ffffff">
+      <richedit name="edit_filename" pos="0,1,-0,-1" class="cls_wnd_edit" password="0" show="1" maxbuf="255" inset="4,1,2,1" 
+        valign="middle" align="left" multilines="0" wantreturn="1" vscrollbar="0" autovscroll="0" hscrollbar="0">
+      </richedit>
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,36 @@
+<dlg  name="AddressPanel" skin="mainpanel_addresspanel_bkg" pos="0,0,-0,-0">
+  <imgbtn name="btn_back" skin="mainpanel_addresspanel_back" pos="13,12" cursor="arrow"></imgbtn>
+  <imgbtn name="btn_forward" skin="mainpanel_addresspanel_forward" pos="[15,12" cursor="arrow"></imgbtn>
+  <imgbtn name="btn_drop" skin="mainpanel_addresspanel_drop" pos="[7,12" cursor="arrow"></imgbtn>
+  <dlg pos="[0,0,@30,@40">
+    <imgbtn name="btn_refresh" skin="mainpanel_addresspanel_refresh" pos="4,10" cursor="arrow" tip="%str2213%"></imgbtn>
+    <gifplayer name="gif_refreshing" pos="4,|-9" width="18" height="18" skin="gif_addresspanel_refreshing" show="0"/>
+  </dlg>
+  
+  <dlg name ="PathNavigator" skin="mainpanel_addresspanel_pathnavigator_bkg" pos="[2,5,-270,-5">
+    <listboxex name="path_nav_item_view" pos="4,0,-0,-0" itemheight="30" itemwidth="60" horizontal="1" virtual="1">
+      <template>
+        <dlg pos="0,0,-0,-0">
+          <link name="txt_item_name" pos="8,|-9" height="16" maxwidth="400" dotted="1" show="1" class="cls_addresspanel_dirname_link"/>
+          <imgbtn name="btn_item_drop" pos="-16,7" skin="mainpanel_addresspanel_pathnavigator_dropright"/>
+        </dlg>
+      </template>
+    </listboxex>
+    <link name="txt_width_calculator" pos="2,8" maxwidth="400" dotted="1" show="0" class="cls_addresspanel_dirname_link"></link>
+    <imgbtn name="btn_width_calculator" pos="4,7" skin="mainpanel_addresspanel_pathnavigator_dropright" show="0"/>
+  </dlg>
+  <imgbtn name="btn_full_text_search_tip" pos="202,13,@14,@14" skin="mainpanel_addresspanel_search_tip_icon" show="0"/>
+  
+  <dlg name ="OperateTool" pos="-270,3,-2,-3">
+    <dropbutton name="btn_safebox" class="toolbarbtn" drop-skin="mainpanel_toolbar_drop_arrow" textmode="40824" txtxoffset="14" pos="0,2,@170,@30" show="0" cursor="arrow">%str2177%</dropbutton>
+    <imgbtn name="btn_lock" skin="mainpanel_toolbar_lock" pos="-88,8" show="0" cursor="arrow" tip="%str2167%"></imgbtn>
+    <dlg name ="SearchSelectPanel" pos="-190,0,-56,-0" show="0">
+      <check name="btn_select_fulltext_search" pos="0,4,@94,-4" crtext="495366" font="0000:微软雅黑" skin="btncheckbox" state="0" >%str6100%</check>
+      <imgbtn name="btn_apply_fulltext_search" pos="0,4,@95,-4" crtext="BF8726" font="0000:微软雅黑" skin="titlepanel_translucent" show="0">%str6101%</imgbtn>
+      <img name="img_svip" pos="90,0,@29,@15" skin="definition_sviponly_script"></img>
+    </dlg>
+    <imgbtn name="btn_sort" skin="mainpanel_toolbar_sort" pos="-56,10" show="1" cursor="arrow" tip="%str2176%"></imgbtn>
+    <imgbtn name="btn_thumb" skin="mainpanel_toolbar_thumb" pos="-28,10" show="1" cursor="arrow" tip="%str2175%"></imgbtn>
+    <imgbtn name="btn_list" skin="mainpanel_toolbar_list" pos="-28,10" show="0" cursor="arrow" tip="%str2174%"></imgbtn>
+  </dlg>
+</dlg>

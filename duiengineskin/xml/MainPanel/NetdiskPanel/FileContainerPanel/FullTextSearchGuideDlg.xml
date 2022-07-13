@@ -1,0 +1,19 @@
+﻿<layer name="FullTextSearchGuideDlg" width="494" height="510" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="privilege_guide_bgk_v2">
+      <caption pos="0,0,-0,62">
+        <text name="dlg_title" pos="40,30" font="0104:微软雅黑" crtext="333333">%str600%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-55,26,@30,@20" cursor="arrow" tip="%str250%" animate="1"/>
+        <hr pos="15,-2,-15,-1" crbg="F5F6FA" size="1"/>
+      </caption>
+      
+      <dlg name="dlg_guide_content" pos="15,62,-15,-15" >
+        <text name="text_ext_tip" pos="1,20,-1,@14" font="0100:微软雅黑" multilines="0" align="center" crtext="666666"></text>      
+        <text name="text_main_tip" pos="1,[10,-1,@20" font="0204:微软雅黑" multilines="0" align="center" crtext="03081A">%str6103%</text>
+        <img name="img_privilege" pos="92,[22,@280,@241" skin="mainpanel_addresspanel_fulltext_search_guide"/>
+        <imgbtn name="btn_buy" pos="86,[22,@282,@44" cursor="arrow" crtext="64360D" animate="1" font="0304:微软雅黑" textmode="40821" txtyoffset="4" skin="privilege_guide_dlg_buy_svip">%str4301%</imgbtn>
+        <text name="text_price" pos="86,362,@282,@44" font="0000:微软雅黑" crtext="64360D" align="center">%str3779%</text>
+      </dlg>     
+    </dlg> 
+  </body>
+</layer>

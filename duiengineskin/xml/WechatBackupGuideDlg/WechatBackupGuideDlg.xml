@@ -1,0 +1,9 @@
+﻿<layer name="WechatBackupGuideDlg" width="358" height="260" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="navigatepanel_bubble_bg">
+      <imgbtn name="btn_close" skin="wechatbackup_guide_dlg_close" pos="-55,31,@16,@16" cursor="arrow" tip="%str250%" animate="1"/>
+      <img pos="87,29" skin="wechatbackup_guide_dlg_icon"></img>
+      <imgbtn name="btn_try" pos="123,189,@120,@36" crtext="ffffff" font="0200:微软雅黑" skin="wechatbackup_guide_dlg_btn" cursor="arrow">%str3555%</imgbtn>
+    </dlg>
+  </body>
+</layer>

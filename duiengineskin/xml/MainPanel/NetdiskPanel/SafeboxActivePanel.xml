@@ -1,0 +1,42 @@
+<dlg name="SafeboxActivePanel" pos="0,0,-0,-0">
+  <!--启用隐藏空间面板 -->
+  <dlg name="ActivePanel" pos="|-165,|-160,@330,@320">
+    <img pos="|-80,0,@161,@112" skin="mainpanel_safebox_unacttip"></img>
+    <text pos="0,136,-0,156" crtext="333333" font="0200:微软雅黑" textmode="40825">%str2250%</text>
+    <imgbtn name="ActiveBtn" pos="|-107,[24,@214,@38" class="cls_safeboxpanel_act_btn" cursor="arrow">%str2251%</imgbtn>
+    <link name="SafeboxTipLink" pos="|-107,[10" maxwidth="120" class="cls_btn_weblink">%str2256%</link>
+    <dlg name="ThirdPartyAccountGuidePanel" pos="0,268,-0,-0" show="0">
+      <text pos="|-107,0,-0,16" crtext="333333" font="0000:微软雅黑" textmode="40824">%str2252%</text>
+      <text pos="|-107,24,-50,40" crtext="999999" font="0000:微软雅黑" textmode="40824">%str2253%</text>
+      <link name="SafeboxBindLink" pos="-42,24,-0,40" class="cls_btn_weblink">%str2255%</link>
+      <text pos="|-107,48,-0,64" crtext="999999" font="0000:微软雅黑" textmode="40824">%str2254%</text>
+    </dlg>
+    <dlg name="SafeboxTipPanel" pos="0,268,-0,-0">
+      <text pos="|-107,0,-0,16" crtext="999999" font="0000:微软雅黑" textmode="40824">%str2272%</text>
+    </dlg>
+  </dlg>
+  <!-- 进入隐藏空间面板 -->
+  <dlg name="UnlockPanel" pos="|-170,|-160,@340,@320" show="0">
+    <img pos="|-48,0,@97,@100" skin="mainpanel_safebox_lock"></img>
+    <text name="LockTipTxt" pos="0,124,-0,144" crtext="333333" font="0200:微软雅黑" textmode="40825">%str2274%</text>
+    <text name="ErrorTip" pos="|-107,150,-0,170" crtext="ff4040" font="0000:微软雅黑" textmode="40824" show="0"></text>
+    <dlg pos="|-107,178,@214,@34" class="cls_safeboxpanel_edit">
+        <embedbutton pos="8,8" width="12" height="15" normal-skin="mainpanel_safebox_lockico"/>
+        <embededit name="SafeboxPwdEdt" pos="30,2,-29,-2" inset="3,3,-27,3" class="cls_password_edit" vcenter="0" password="1" deftext="%str2267%" maxbuf="32"/>
+        <imgbtn name="ClearPwdBtn" skin="img_login_btn_delpwd" pos="-17,|-4,@9,@9" cursor="arrow" tip="%str277%" show="0"/>
+    </dlg>
+    <link name="SafeboxForgetPwdLink" pos="|117,178,-0,212" class="cls_btn_weblink">%str2268%</link>
+    <dlg name="VCodePanel" pos="|-107,224,-0,258" show="0">
+        <edit name="VcodeEdt" pos="0,0" width="100" height="34" class="cls_safeboxpanel_vcode_edit" font="0000:宋体" password="0" show="1"></edit>
+        <img name="VcodeImg" pos="118,1" width="96" height="32" show="1" skin="mainpanel_safebox_svcode"/>
+        <gifplayer name="LoadingGif" pos="157,8" width="18" height="18" skin="loading_gif" show="0"/>
+        <link name="VcodeChangeLink" pos="224,12" maxwidth="50" class="cls_btn_weblink" show="1">%str2270%</link>
+    </dlg>
+    <imgbtn name="UnlockBtn" pos="|-107,267,@214,@38" class="cls_safeboxpanel_act_btn" cursor="arrow">%str2266%</imgbtn>
+    <!--大写锁定提示区域-->
+    <dlg name="CapKeyTipPanel" pos="|-72,204,@110,@29" show="0">
+      <img pos="0,0,-0,-0" skin="img_login_tip_cap"/>
+      <text pos="0,8,-0,-0" class="logindlg_captip_text">%str276%</text>
+    </dlg>
+  </dlg>
+</dlg>

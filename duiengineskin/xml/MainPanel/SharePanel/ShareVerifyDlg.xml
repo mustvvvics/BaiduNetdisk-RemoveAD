@@ -1,0 +1,38 @@
+<layer width="442" height="272" appwin="0" ncRect="0,0,0,0" translucent="1" resize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text pos="39,9" class="cls_dlg_title_text">%str523%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%"/>
+      </caption>
+      <dlg pos="0,39,-0,91">
+        <img name="img_head" pos="12,12,@40,@40"/>
+        <dlg name="dlg_nonick" pos="64,12,-0,@40" show="0">
+          <text pos="0,|-8" font="0000:微软雅黑" crtext="333333">%str507%</text>
+          <text name="text_account" pos="60,|-8" font="0000:微软雅黑" crtext="333333"></text>
+        </dlg>
+        <dlg name="dlg_hasnick" pos="64,12,-0,@40" show="1">
+          <text name="text_nickname" pos="0,2" font="0000:微软雅黑" crtext="333333"></text>
+          <text pos="0,21" font="0000:微软雅黑" crtext="333333">%str507%</text>
+          <text name="text_account" pos="60,21" font="0000:微软雅黑" crtext="333333"></text>
+        </dlg>
+      </dlg>
+      <dlg name="ShareVerifyPanel" pos="0,110,-0,-55">
+        <dlg pos="12,0,-12,20">
+          <text name="friend_verify_tip" pos="0,0" crtext="333333" font="0000:微软雅黑" textmode="40025">%str521%</text>
+        </dlg>
+        <!--验证消息输入面板-->
+        <dlg pos="12,22,-12,-0">
+          <edit name="verify_input_edt" pos="0,0,-0,-0" class="cls_edit_set" number="0" enabledragdrop="0" autowordsel="0"
+                font="0600:微软雅黑" inset="0,0,0,0" wordwrap="1"
+                multilines="1" wantreturn="1" vscrollbar="0"
+                autovscroll="0" crtext="333333" align="left" hscrollbar="0"
+                autohscroll="0" password="0" show="1" deftext="%str525%" maxbuf="20"></edit>
+        </dlg>
+      </dlg>
+      <imgbtn name="btn_send_verify_msg" pos="-204,-40,@92,@26" cursor="arrow" class="share_file_btn">%str522%</imgbtn>
+      <imgbtn name="btn_cancel" pos="-104,-40,@92,@26" cursor="arrow" class="button">%str524%</imgbtn>
+    </dlg>
+  </body>
+</layer>

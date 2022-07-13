@@ -1,0 +1,9 @@
+﻿<layer name="EnterpriseGuideWnd"  width="260" height="135" toolwindow="1" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="enterprise_guide_img">
+      <text pos="25,30,-30,@16" align="left" crtext="FFFFFF" font="0200:微软雅黑" >%str1557%</text>
+      <text pos="25,52,-30,@16" align="left" crtext="FFFFFF" font="0000:微软雅黑" >%str1558%</text>
+      <imgbtn name="btn_ok" skin="enterprise_guide_dlg_btn" pos="25,82,@80,@26" align="center" crtext="06A7FF" font="0000:微软雅黑">%str1559%</imgbtn>
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,12 @@
+﻿<dlg  name="RecyclePanel" pos="0,0,-0,-0">
+  <!-- 浏览器控件 -->
+  <webbrowser name="browser_recycle_bin" pos="0,0,-0,-0" use_ie="0" load_ignore_cache="1" show="1"/>
+  <!-- 网络连接错误面板 -->
+  <dlg name="NetworkErrorPanel" pos="0,0,-0,-0" show="0">
+    <dlg name="netErrTipPanel" pos="|-90,|-100" width="180" height="200">
+      <img pos="|-52,0" skin="doc_dlg_load_error" width="103" height="93" />
+      <text pos="0,110,-0,130" class="cls_txt_red">%str3453%</text>
+      <imgbtn name="btn_retry" class="defultbtn" pos="|-48,162" width="96" height="34" cursor="arrow">%str3454%</imgbtn>
+    </dlg>
+  </dlg>
+</dlg>

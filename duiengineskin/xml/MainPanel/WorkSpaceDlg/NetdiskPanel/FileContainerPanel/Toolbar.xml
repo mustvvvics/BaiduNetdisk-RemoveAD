@@ -1,0 +1,20 @@
+<dlg name="Toolbar" pos="0,0,-0,-0">
+  <!-- <imgbtn name="btn_upload" pos="24,24,@92,@30" skin="workspace_file_toolbar_darkblue_btn" icoskin="workspace_file_btn_upload" icoxoffset="24" icoyoffset="8" txtxoffset="44" font="0000:微软雅黑" hoverfont="0004:微软雅黑" crtext="ffffff" crdisabled="AFB3BF" textmode="40824" cursor="arrow">%str2150%</imgbtn> -->
+  <dlg name="dlg_buttons" pos="24,24,-210,@30" skin="workspace_file_toolbar_lightblue_btn">
+    <imgbtn name="btn_createdir" pos="0,0,@116,@30" skin="workspace_file_toolbar_bg_transparent" icoskin="workspace_file_btn_newfolder" icoxoffset="24" icoyoffset="8" txtxoffset="44" font="0000:微软雅黑" hoverfont="0004:微软雅黑" crtext="06A7FF" crdisabled="AFB3BF" textmode="40824" cursor="arrow">%str2154%</imgbtn>
+    <imgbtn name="btn_import" pos="[0,0,@128,@30" skin="workspace_file_toolbar_bg_transparent" icoskin="workspace_file_btn_import" icoxoffset="12" icoyoffset="8" txtxoffset="32" font="0000:微软雅黑" hoverfont="0004:微软雅黑" crtext="06A7FF" crdisabled="AFB3BF" textmode="40824" cursor="arrow">%str4600%</imgbtn>
+  </dlg>
+
+  <dlg name="SearchBox" pos="-240,24,-86,-12" skin="workspace_file_toolbar_bg_search">
+    <imgbtn name="btn_search" skin="mainpanel_addresspanel_searchbox_search" pos="12,7,@16,@16" cursor="arrow"></imgbtn>
+    <edit name="search_word_edit" pos="[5,1,-24,@28" x-margin="0" y-margin="0" align="left" crbg="FAFAFC" font="0000:宋体" deffont="0000:微软雅黑" crdeftext="999999" password="0" show="1" deftext="%str2214%" defleftmargin="1"></edit>
+    <imgbtn name="btn_search_clear" skin="mainpanel_addresspanel_searchbox_delete" pos="[0,7,@16,@16" cursor="arrow" show="0"></imgbtn>
+  </dlg>
+  <dlg name="OperateTool" pos="[10,20,-0,-0">
+    <imgbtn name="btn_sort" skin="mainpanel_toolbar_sort" pos="-54,12" show="1" cursor="arrow" tip="%str2176%"></imgbtn>
+    <imgbtn name="btn_thumb" skin="mainpanel_toolbar_thumb" pos="-28,12" show="1" cursor="arrow" tip="%str2175%"></imgbtn>
+    <imgbtn name="btn_list" skin="mainpanel_toolbar_list" pos="-28,12" show="0" cursor="arrow" tip="%str2174%"></imgbtn>
+    <imgbtn name="btn_refresh" skin="mainpanel_addresspanel_refresh" pos="-80,10" cursor="arrow" tip="%str2213%"></imgbtn>
+    <gifplayer name="gif_refreshing" pos="0,10,@18,@18" skin="gif_addresspanel_refreshing" show="0"/>
+  </dlg>
+</dlg>

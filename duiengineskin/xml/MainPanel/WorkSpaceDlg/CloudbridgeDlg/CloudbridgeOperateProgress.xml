@@ -1,0 +1,16 @@
+<layer name="CloudBridgeOperateProgressDlg" width="498" height="194" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="content" pos="0,0,-0,-0" skin="workspace_filecopy_progress_bg_dlg">
+            <dlg pos="17,17,-17,-17">
+                <caption pos="0,0,-0,@52">
+                    <text pos="24,16" crtext="03081A" font="0200:微软雅黑">%str6040%</text>
+                </caption>
+                <dlg name="dlg_processing" pos="0,52,-0,-0" show="1">
+                    <img pos="24,32,@45,@45" skin="workspace_filecopy_progress_file_copy"></img>
+                    <text pos="[16,32" crtext="03081A" font="0200:微软雅黑" align="center">%str6041%</text>
+                    <gifplayer name="gif_progress" pos="85,[11,-33,@6" skin="workspace_filecopy_progress_process_gif" bulltimer="1"/>
+                </dlg>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

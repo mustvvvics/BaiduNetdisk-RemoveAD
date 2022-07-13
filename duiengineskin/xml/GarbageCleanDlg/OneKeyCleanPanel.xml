@@ -1,0 +1,7 @@
+<dlg name="dlg_onekey_clean" pos="0,0,-0,@54">
+	<dlg name="dlg_bg" pos="5,4,-5,-4" crbg="e6f7ee" font="0200:微软雅黑">
+		<text name="txt_onekey_clean" pos="0,|-8,|-8,@16" crtext="0bae4a" align="right"></text>
+		<imgbtn name="btn_onekey_clean" pos="|8,|-16,@140,@32" skin="garbageclean_onekeyclean_btn" crtext="ffffff" align="center" cursor="arrow" animate="1">%str1310%</imgbtn>
+	</dlg>
+	<hr pos="0,-1,-0,@1" crbg="f5f5f6" size="1"/> 
+</dlg>

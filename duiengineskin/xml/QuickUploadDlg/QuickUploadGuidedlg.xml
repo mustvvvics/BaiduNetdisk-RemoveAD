@@ -1,0 +1,13 @@
+<layer name="QuickUploadGuideDlg" width="350" height="355" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="skin_quickupload_guide_bg">
+      <dlg pos="15,24,-15,-15">
+      <text name="guide_title" pos="24,24,@250,@16" align="left" crtext="03081A" font="0200:微软雅黑">%str5109%</text>
+      <text name="guide_subtitle" pos="24,46,@250,@16" align="left" crtext="636D7E" font="0000:微软雅黑">%str5112%</text>
+      <gifplayer name="guide_gif" pos="10,72" width="300" height="170" skin="quickupload_guide_gif" bulltimer="1"/>
+      <imgbtn name="btn_later" pos="54,-60,@98,@36" font="0200:微软雅黑" skin="skin_quickupload_guide_later_btn" crtext="06A7FF" cursor="arrow">%str5107%</imgbtn>
+      <imgbtn name="btn_open" pos="168,-60,@98,@36" font="0200:微软雅黑" skin="skin_quickupload_guide_open_btn" crtext="FFFFFF" cursor="arrow">%str5108%</imgbtn>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

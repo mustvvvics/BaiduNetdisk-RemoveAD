@@ -1,0 +1,4 @@
+<dlg name="dlg_next" pos="0,0,-0,-0" show="0">
+	<text name="txt_batch_detail" pos="0,20,-0,@16" class="cls_garbageview_batch_txt">%str1294%</text>
+	<button id="4" name="btn_next_batch" pos="|-51,[10,@102,@30" class="button">%str1295%</button>
+</dlg>

@@ -1,0 +1,28 @@
+﻿<layer name="PortableDevListDlg" width="414" height="308" appwin="0" ncRect="5,5,5,5"  resize="0" translucent="t"  nomaxsize="0">
+  <body>
+    <dlg name="main_form" pos="0,0,414,308" class="cls_dlg_frame">
+      <caption pos="0,0,-0,89">
+        <img pos="11,11" skin="common_logo_main"></img>
+        <text pos="38,9" name="title" class="portable_device_dialog_title">选择一个设备备份照片</text>
+      </caption>
+
+      <dlg name="list_view_bg" pos="16,63,-16,267" skin="pdb_list_view_bg">
+        <listbox name="device_list_box" pos="1,1,-1,-1" 
+                 hottrack="1"
+                 crtext="333333"
+                 crseltext="333333"
+                 critembg="FFFFFF" critembg2="EDF8FE" critembg3="0000FF" 
+                 critemselbg="def0fd"
+                 itemheight="40"
+                 class="device_list_item_tip" >
+        </listbox>
+
+      </dlg>
+
+      <imgbtn name="btn_ok" pos="223,274, 303, 299" width="80" height="25" animate="true" cursor="arrow"  class="button" >确定</imgbtn>
+      <imgbtn name="btn_cancel" pos="318,274, 398, 299" width="80" height="25" animate="true" cursor="arrow" class="button" >关闭</imgbtn>
+
+
+    </dlg>
+  </body>
+</layer>

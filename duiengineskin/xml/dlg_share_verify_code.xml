@@ -1,0 +1,23 @@
+﻿<layer width="402" height="240" appwin="0" ncRect="0,0,0,0" translucent="1" resize="0">
+    <body>
+        <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+            <caption pos="0,0,-0,38">
+                <img pos="10,8" skin="common_logo_main"></img>
+                <text pos="39,9" class="cls_dlg_title_text">%str502%</text>
+                <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+            </caption>
+            <dlg pos="45,39,-45,-0" crtext="666666">
+                <text name="text_hint" pos="0,15"></text>
+                <dlg pos="0,40,@312,@32" skin="share_addfriend_searchbox_input_bkg">
+                    <embededit name="vcode_edt" pos="12,3,-12,-3" font="0000:Arial" textmode="24" deftext="%str514%"/>
+                </dlg>
+                <text name="text_error_tip" crtext="CC3F37" pos="-100,77" width="100" align="right" show="0"></text>
+                <img name="vcode_img" pos="0,86,@120,@40"/>
+                <gifplayer name="loading_gif" pos="60,100" width="18" height="18" skin="loading_gif" show="0"/>
+                <link name="vcode_change" pos="132,100" class="cls_btn_weblink" dotted="1">%str513%</link>
+            </dlg>
+            <imgbtn name="btn_ok" pos="-219,-44,@80,@28" animate="true" cursor="arrow" class="share_file_btn">%str500%</imgbtn>
+            <imgbtn name="btn_cancel" pos="-125,-44,@80,@28" animate="true" cursor="arrow" class="button">%str501%</imgbtn>
+        </dlg>
+    </body>
+</layer>

@@ -1,0 +1,24 @@
+﻿<layer name="UserTypeGuideDlg"  width="1100" height="680" toolwin="1" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="0">
+	<body>
+    <dlg pos="0,0,-0,-0" name="MaskPanel" skin="backup_update_mask_bg">
+      <dlg name="maindlg" pos="|-210,|-115,@418,@230" class="cls_dlg_frame">
+        <dlg pos="0,0,-0,186" class="guide_dlg_frame">
+          <dlg pos="0,0,-0,29">
+            <img pos="10,10,34,30" skin="common_logo_main" />
+            <text pos="40,10" crtext="333333" font="0000:微软雅黑">%str910%</text>
+            <imgbtn name="btn_close" skin="btn_sys_close" pos="-35,0" tip="%str250%" animate="0"/>
+          </dlg>
+          <dlg pos="0,30,-0,-0">
+            <img pos="30,58,69,91" skin="attention_bkskin" />
+            <text pos="80,53" crtext="ffffff" font="0200:微软雅黑">%str911%</text>
+            <text pos="80,80" crtext="ffffff" font="0200:微软雅黑">%str912%</text>
+          </dlg>
+        </dlg>
+        <dlg pos="0,-42,-0,-0" crbg="fbfcfc">
+          <imgbtn name="buy_enterprise" pos="195,5,320,32" cursor="arrow" crtext="ffffff" class="defultbtn">%str913%</imgbtn>
+          <imgbtn name="modify_pwd" pos="328,5,408,32" cursor="arrow" crtext="333333"  class="msgboxbtn">%str914%</imgbtn>
+        </dlg>
+      </dlg> 
+    </dlg> 
+	</body>
+</layer>

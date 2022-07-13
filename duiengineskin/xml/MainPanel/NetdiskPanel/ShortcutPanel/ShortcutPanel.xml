@@ -1,0 +1,23 @@
+﻿<dlg name="ShortCutPanel" pos="0,0,-0,-0">
+  <imgbtn name="btn_dropdown" pos="0,0,-40,@32" skin="leftpanel_shortcut_btn_bg" crtext="333333" font="0004:微软雅黑" align="left"
+   icoskin="leftpanel_list_expand_btn" icoxoffset="16" icoyoffset="10" txtxoffset="36" txtyoffset="2"
+   cursor="arrow">%str4020%</imgbtn>
+  <imgbtn name="btn_righttop_menu" pos="-40,0,@32,@32" skin="leftpanel_shortcut_btn_bg" icoxoffset="6" icoyoffset="8" icoskin="leftpanel_more_operation_btn" cursor="arrow"/>
+  <dlg name="dlg_accept_drop" pos="0,32,-1,-1">
+    <!-- 引导 -->
+    <dlg name="dlg_guidetip" pos="0,0,-0,-0" show="0">
+      <img pos="20,9,@120,@36" skin="leftpanel_img_add"/>
+    </dlg>
+    <!-- 列表 -->
+    <listboxex name="listview_shortcut" pos="0,0,-0,-0" virtual="1" itemheight="32">
+      <template>
+        <!-- 背景 -->
+        <dlg name="item_bg" pos="0,0,-0,-0" crbg="eef0f6" show="0"/>
+        <dlg name="dlg_item" pos="0,0,-12,-0">
+          <img name="img_item" pos="36,|-8,@16,@16" skin="folder_small_image" cursor="arrow"/>
+          <link name="txt_item_name" pos="[11,|-8,-0,@16" crtext="333333" font="0000:微软雅黑" align="left" dotted="1" textmode="40824"/>
+        </dlg>
+      </template>
+    </listboxex>
+  </dlg>
+</dlg>

@@ -1,0 +1,373 @@
+﻿<layer name="VideoOperationDlg" width="1006" height="568" minsize="1010,568" toolwin="1" ncRect="0,0,0,0"  resize="0" translucent="1">
+	<body>
+    <dlg pos="0,0,-0,-0" skin="video_skin_op_bg">
+      <!--播放列表-->
+      <dlg name="play_list" pos="-240,0,-0,-0" skin="video_skin_bg_temp" show="0">
+        <dlg name="play_list_tab" pos="0,64,-0,96">
+          <buttonex name="btn_default_list" pos="35,2,@56,@32" class="cls_video_playlist_tab_btn" crtext-uncheck="a6a6a6" crtext-check="06a8ff"
+          normal-skin="video_underline_normal" hover-skin="video_underline_normal" down-skin="video_underline_hover"
+          check-skin="video_underline_hover" text-yoffset="-5">%str1397%</buttonex>
+          <buttonex name="btn_history_list" pos="-99,2,@56,@32" class="cls_video_playlist_tab_btn" crtext-uncheck="a6a6a6" crtext-check="06a8ff"
+          normal-skin="video_underline_normal" hover-skin="video_underline_normal" down-skin="video_underline_hover"
+          check-skin="video_underline_hover" text-yoffset="-5">%str1398%</buttonex>
+        </dlg>
+        <dlg name="play_list_default" pos="0,98,-0,-0" show="1">
+           <listboxex name="play_list_default_view" pos="0,0,-0,-0" itemheight="30" itemwidth="-1" virtual="1" sbskin="sb_video">
+             <template>
+              <img name="img_playing" pos="25,|-3,@12,@12" skin="video_imglist_playlist_playing" show="0"></img>
+              <link name="link_filename" pos="25,|-6" height="16" class="cls_video_playlist_filename" maxwidth="160" dotted="1"></link>
+             </template>
+          </listboxex>
+        </dlg>
+        <dlg name="play_list_history" pos="0,98,-0,-0" show="0">
+          <dlg name="play_list_history_op" pos="0,0,-0,60">
+            <imgbtn name="btn_clear_list" pos="20,18,@72,@24" class="cls_txt_video_playlist_control" icoskin="video_imglist_clearhistory" icoxoffset="4" icoyoffset="5" txtxoffset="20" txtyoffset="2" cursor="arrow">%str1395%</imgbtn>
+            <imgbtn name="btn_sort_list" pos="-102,18,@72,@24" class="cls_txt_video_playlist_control" icoskin="video_imglist_sorthistoryasc" icoxoffset="4" icoyoffset="7" txtxoffset="20" txtyoffset="2" cursor="arrow">%str1396%</imgbtn>
+          </dlg>
+          <dlg name="play_list_history_empty" pos="0,0,-0,-0" show="0">
+              <img pos="|-35,|-90,@70,@70" skin="video_playlist_empty"></img>
+              <text name="play_list_empty_text" pos="76,[10" crtext="ffffff" align="center">%str1386%</text>
+          </dlg>
+          <listboxex name="play_list_history_view" pos="0,60,-0,-0" itemheight="30" itemwidth="-1" virtual="1" sbskin="sb_video">
+             <template>
+              <img name="img_playing" pos="25,|-3,@12,@12" skin="video_imglist_playlist_playing" show="0"></img>
+              <link name="link_filename" pos="25,|-6" height="16" class="cls_video_playlist_filename" maxwidth="160" dotted="1"></link>
+              <imgbtn name="btn_delete_his_item" pos="-34,|-1,@9,@9" skin="video_imglist_playlist_delete" cursor="arrow" show="0"></imgbtn>
+            </template>
+          </listboxex>
+        </dlg>
+      </dlg>  
+      <!--视频标注列表-->
+      <dlg name="video_note_list" pos="-296,0,-0,-0" skin="video_skin_bg_temp" show="0">
+        <text pos="20,72" crtext="ffffff" font="0200:微软雅黑" align="left">%str4211%</text> 
+        <text pos="-110,74" crtext="ffffff" font="0000:微软雅黑" align="left">%str4226%</text> 
+        <check name="checkbtn_note_auto_show_switch" pos="244,72,@32,@20" state="4" focusskin="function_collect_focus_skin" skin="video_note_auto_show_switch"></check>          
+        <imgbtn name="btn_add_video_note" pos="20,[14,@256,@32" crtext="ffffff" icoskin="video_note_add_icon" icoxoffset="90" icoyoffset="11" txtxoffset="20" font="0200:微软雅黑" skin="video_note_add_btn" align="center">%str4213%</imgbtn>                   
+        <dlg name="video_note_list_empty_panel" pos="0,160,-0,-0" show="0">
+          <img pos="20,0,@256,@276" skin="video_note_list_empty_img"></img>
+        </dlg>
+        <chatrichedit name="edit_calcul_note_content_size" show="0" number="0" enabledragdrop="0" 
+          font="0600:微软雅黑" inset="0,0,0,0" wordwrap="1" align="left" 
+          pos="98,8,@146,@102" multilines="1" wantreturn="1" readonly="1"
+          autovscroll="0" vscrollbar="0" autowordsel="0" crtext="333333" 
+          autohscroll="0" hscrollbar="0" transparent="1" show_caret="0">
+        </chatrichedit>
+        <dlg name="video_note_list_no_empty_panel" pos="20,160,-0,-0">
+        <listboxex name="video_note_list_view" pos="0,0,-0,-0" itemheight="117" itemwidth="256" virtual="1" sbskin="sb_video">
+          <template>
+            <img name="img_list_hover_bgk" pos="0,4,-0,-4" skin="video_note_list_hover_bgk" show="0"></img>
+            <img name="img_list_edit_bgk" pos="0,4,-0,-4" skin="video_note_list_edit_bgk" show="0"></img>
+            <img name="img_list_locate_frame" pos="0,4,-0,-4" skin="video_note_locate_frame" show="0"></img>
+            
+            <img pos="12,12,@10,@11" skin="video_note_icon"></img>
+            <text name="text_note_time" pos="[8,10" class="cls_video_note_list_txt">%str1416%</text>
+            <hr name="hr_note" pos="87,0,@1,-0" crbg="666666" ></hr>
+            <img pos="83,14,@8,@8" skin="video_slide_thumb" ></img>
+            <chatrichedit name="edit_note_desc" pos="98,8,@146,-44" show="1" number="0" 
+               font="0600:微软雅黑" inset="0,0,0,0" wordwrap="1" maxbuf="100" 
+               multilines="1" wantreturn="1" vscrollbar="0" hscrollbar="0" readonly="1"
+               crtext="FFFFFF" autovscroll="0" autohscroll="0"
+               align="left" transparent="1" show_caret="0">
+            </chatrichedit>   
+            <imgbtn name="btn_unfold" pos="98,-32,@26,@20" class="cls_video_note_list_btn" cursor="hand" skin="common_translucent_img" show="0">%str4215%</imgbtn>
+            <imgbtn name="btn_flod_up" pos="98,-32,@26,@20" class="cls_video_note_list_btn" cursor="hand" skin="common_translucent_img" show="0">%str4216%</imgbtn>          
+            <imgbtn name="btn_edit" pos="-48,-28,@12,@12" skin="video_note_edit_btn" show="0"></imgbtn>
+            <imgbtn name="btn_delete" pos="-24,-28,@12,@12" skin="video_note_delete_btn" show="0"></imgbtn>           
+          </template>
+        </listboxex>
+        </dlg>       
+      </dlg>  
+      <dlg name="play_panel" pos="0,0,-0,-0">
+        <!--窗口左侧拖拽区域-->
+        <dlg name="drag_left" pos="0,64,5,-88" skin="video_drag_left" />
+        <!--窗口右侧拖拽区域-->
+        <dlg name="drag_right" pos="-5,64,-0,-88" skin="video_drag_right" />
+        <!--播放完成提示面板-->
+        <dlg name="play_finish" pos="0,0,-0,-0" width="420" height="120" skin="video_skin_finish_bg" show="0">
+          <imgbtn name="btn_play_more" pos="|-214,|-55,@120,@120" class="cls_txt_video_play_control" icoskin="video_imglist_playmore" icoxoffset="45" icoyoffset="21" txtxoffset="2" txtyoffset="30" cursor="arrow">%str1404%</imgbtn>
+          <imgbtn name="btn_play_pre" pos="|-214,|-55,@120,@120" class="cls_txt_video_play_control" icoskin="video_imglist_playpre" icoxoffset="45" icoyoffset="21" txtxoffset="5" txtyoffset="30" cursor="arrow" show="0">%str1499%</imgbtn>
+          <imgbtn name="btn_replay" pos="|-60,|-55,@120,@120" class="cls_txt_video_play_control" icoskin="video_imglist_replay" icoxoffset="45" icoyoffset="18" txtxoffset="2" txtyoffset="30" cursor="arrow">%str1405%</imgbtn>
+          <imgbtn name="btn_play_next" pos="|94,|-55,@120,@120" class="cls_txt_video_play_control" icoskin="video_imglist_playnext" icoxoffset="45" icoyoffset="21" txtxoffset="5" txtyoffset="30" cursor="arrow">%str1399%</imgbtn>
+        </dlg>
+        <!--播放出错提示面板-->
+        <dlg name="tip_play_error" pos="0,0,-0,-0" skin="video_skin_bg_temp" show="0">
+          <text name="tip_play_error_text" pos="0,|-45,-0,@40" font="0400:微软雅黑" crtext="cccccc" align="center">%str1430%</text>
+          <text name="extra_tip_play_error_text" pos="0,|-10" font="0200:微软雅黑" crtext="cccccc" show="0">%str1430%</text>
+          <text name="play_error_code_text" pos="0,|-10" font="0200:微软雅黑" crtext="cccccc">%str1430%</text>
+          <imgbtn name="btn_play_error_reload" pos="|-61,|30,@120,@38" class="cls_txt_white" skin="video_imglist_reload_bg" cursor="arrow">%str1427%</imgbtn>
+        </dlg>
+        <!--加载中面板-->
+        <dlg pos="0,66,-0,-0" name="ad_panel" show="0">
+          <dlg name="ad_action" pos="-240,0,-26,32" skin="video_skin_skipad_bg">
+            <dlg pos="0,0,-0,-0" skin="video_skin_skipad_bg">
+              <text name="ad_action_text" pos="11,8" class="cls_txt_white" txtalpha="0">%str1420%</text>
+              <link name="link_ad_skip" pos="138,2,204,30" class="cls_txt_red" font="0204:微软雅黑" hoverfont="0206:微软雅黑" cursor="hand" txtalpha="0">%str1421%</link>
+            </dlg>
+          </dlg>
+          <dlg pos="0,-32,-0,-0" skin="video_skin_bg_temp">
+            <text name="ad_tip" pos="10, 8" class="cls_txt_white">%str1422%</text>
+            <text name="ad_load_progress" pos="126, 6" class="cls_txt_white" font="0204:微软雅黑">%str1418%</text>
+          </dlg>
+          <dlg name="video_advideo_crack" pos="|-75,|-76,@150,@106" show="0">
+            <img name="video_aderror_crack_image" pos="0,0,-0,-0" skin="video_default_ad_img"/>
+          </dlg>
+        </dlg>
+        <!--私有文件的右侧操作面板-->
+        <dlg name="toolarea_myfile" pos="-56,|-139,@52,@228" skin="video_skin_toolbar_bg">
+          <imgbtn name="btn_share" pos="10,24,@32,@30" skin="video_imglist_share" cursor="arrow"/>
+          <imgbtn name="btn_download" pos="10,74,@32,@30" skin="video_imglist_download" cursor="arrow"/>
+          <imgbtn name="btn_delete" pos="10,124,@32,@30" skin="video_imglist_delete" cursor="arrow"/>
+          <imgbtn name="btn_setting" pos="10,174,@32,@30" skin="video_imglist_setting" cursor="arrow"/>
+        </dlg>
+         <!--私有文件的右侧操作面板(二)-->
+        <dlg name="toolarea_myfile_two" pos="-56,|100,@52,@52" skin="video_skin_toolbar_bg">
+          <img name="img_toolarea_note_new_icon" pos="-26,0,@26,@12" skin="video_overspeed_new_img" show="0"></img>
+          <img name="img_toolarea_note_free_icon" pos="-26,0,@26,@12" skin="function_free_img" show="1"></img>
+          <imgbtn name="btn_note" pos="12,12,@32,@32" skin="video_note_btn" tip="%str4211%" cursor="arrow"/>
+        </dlg>
+        <!--视频标记自动展示面板-->
+        <dlg name="video_note_auto_show_panel" pos="-280,-150,@208,@60" skin="video_note_list_edit_bgk" show="0">
+          <imgbtn name="btn_note_auto_show_panel" pos="0,0,-0,-0" skin="common_translucent_img" cursor="hand"/>
+          <img pos="12,10,@14,@14" skin="video_note_icon"></img>
+          <hr pos="[8,12,@1,@12" crbg="EDEDED" ></hr>
+          <text name="text_note_auto_show_time" pos="[8,8" multilines="0"  crtext="FFFFFF" font="0100:微软雅黑"></text>
+          <text name="text_note_auto_show_desc" pos="10,32,@190,@20" align="left" multilines="0" dotted="1"  crtext="FFFFFF" font="0100:微软雅黑"></text>
+        </dlg>
+        <!--他人分享文件的右侧操作面板-->
+        <dlg name="toolarea_othershare" pos="-56,|-89,@52,@178" skin="video_skin_toolbar_bg" show="0">
+          <imgbtn name="btn_transfer" pos="10,24,@32,@30" skin="video_imglist_transfer" cursor="arrow"/>
+          <imgbtn name="btn_download_othershare" pos="10,74,@32,@30" skin="video_imglist_download" cursor="arrow"/>
+          <imgbtn name="btn_setting" pos="10,124,@32,@30" skin="video_imglist_setting" cursor="arrow"/>
+        </dlg>
+        <!--底部操作栏-->
+        <dlg name="taskbar" pos="0,-106,-0,-0" skin="video_skin_taskbar_bg">
+          <dlg pos="0,18,-0,-0" skin="video_skin_taskbar_bg">
+            <progress name="progress_bar" pos="0,22,-0,24" bgskin="video_prog_bg" posskin="video_prog_bar" pointskin="video_note_process_bar_point" value="12" min="0" max="100" showpercent="0" show="1"/>
+            <sliderbar name="sliderbar_progress_control" pos="0,16,-0,32" alpha="255" bgskin="video_big_prog_bg" pointskin="video_note_process_bar_big_point" posskin="video_big_prog_bar" thumbskin="video_slide_thumb" value="0" min="0" max="100" show="0"/>
+            <imgbtn name="btn_play" pos="19,44" width="20" height="24" skin="video_imglist_pause" cursor="arrow"/>
+            <imgbtn name="btn_pre" pos="[20,49" width="15" height="14" skin="video_imglist_pre" cursor="arrow"/>
+            <imgbtn name="btn_next" pos="[12,49" width="15" height="14" skin="video_imglist_next" cursor="arrow"/>
+            <text pos="[20,48" class="cls_txt_white" name="play_time_progress" txtalpha="0">%str1416%</text>
+            <!--小喇叭-->
+            <imgbtn name="btn_volum" pos="-474,40" width="32" height="32" skin="video_imglist_volum" cursor="arrow"/>
+            <!--声音进度条-->
+            <sliderbar name="sliderbar_volum_control" pos="-442,46" width="80" height="20" alpha="255" bgskin="video_prog_bg_volum" posskin="video_prog_bar_volum" thumbskin="video_volum_thumb_small" value="0" min="0" max="100"/>
+            <!--标记列表按钮-->
+            <imgbtn name="btn_note_list" pos="-355,38" width="62" height="36" class="cls_video_dlg_words_btn" cursor="arrow" txtalpha="0">%str4211%</imgbtn>
+            <!--倍速-->
+            <imgbtn name="btn_video_overspeed" pos="-289,38" width="62" height="36" class="cls_video_dlg_words_btn" cursor="arrow" txtalpha="0">%str1457%</imgbtn>
+            <imgbtn name="btn_video_model" pos="-289,38" width="62" height="36" class="cls_video_dlg_words_btn" cursor="arrow" txtalpha="0" show="0">%str1402%</imgbtn>
+            <!--清晰度按钮-->
+            <imgbtn name="btn_video_definition_mode" pos="-223,38" width="62" height="36" class="cls_video_definition_dlg_words_btn" cursor="arrow" txtalpha="0">%str1402%</imgbtn>
+            <!--字幕-->
+            <imgbtn name="btn_video_subtitle" pos="-157,38" width="62" height="36" class="cls_video_dlg_words_btn" cursor="arrow" txtalpha="0" show="1">%str1411%</imgbtn>
+            <!--全屏-->
+            <imgbtn name="btn_full_screen" pos="-87,40" width="32" height="32" skin="video_imglist_halfscreen" cursor="arrow"/>
+            <!--列表-->
+            <imgbtn name="btn_play_list" pos="-47,48" width="17" height="15" skin="video_imglist_open_playlist" cursor="arrow"/>  
+            <img name="img_vedio_note_new" pos="-320,40,@26,@12" skin="video_overspeed_new_img" show="1"></img>
+            <img name="img_overspeed_new" pos="-253,40,@26,@12" skin="video_overspeed_new_img" show="1"></img>
+            <img name="img_definition_new" pos="-187,40,@26,@12" skin="video_overspeed_new_img" show="0"></img>
+          </dlg>
+          <img name="img_definition_guide" pos="-293,0,@206,@72" skin="video_definition_guide_img" show="0"></img>
+        </dlg>
+        <!--tip panel begin-->
+        <!--下载Tip-->
+        <dlg name="toolarea_download_tip" pos="-212,|-14,-62,|14" skin="video_skin_tip_bg" show="0">
+          <img name="myfile_download_tip_img" pos="2,0" skin="video_skin_success_icon"></img>
+          <text name="myfile_download_tip" pos="30,4" class="cls_txt_white" txtalpha="0">%str1409%</text>
+        </dlg>
+        <!--加载中Tip-->
+        <dlg name="tip_loading" pos="|-50,|-40" width="100" height="80" show="0">
+          <animateimg name="gif_loading" pos="|-21,0" width="42" height="40" skin="video_skin_loading_png" autostart="1"/>
+          <text name="loading_tip" pos="6,[10" class="cls_txt_white" txtalpha="0">%str1365%</text>
+        </dlg>
+        <!--播放控制Tip-->
+        <dlg name="play_control_tip" pos="10,-102,112,-74" skin="video_skin_tip_bg" show="0">
+          <text name="play_control_tip_text" pos="10,4" class="cls_txt_white" txtalpha="0"/>
+        </dlg>
+        <!--记住播放位置Tip-->
+        <dlg name="tip_history_play" pos="10,-102" width="204" height="28" skin="video_skin_tip_bg" show="0">
+          <text name="tip_history_play_text" pos="10,5" class="cls_txt_white" txtalpha="0">%str1412%</text>
+          <link name="link_replay" pos="144,0" width="50" height="28" crtext="008AFF" font="0000:微软雅黑" hoverfont="0002:微软雅黑" skin="video_skin_op_bg" txtalpha="0" cursor="hand">%str1413%</link>
+        </dlg>
+        <!--反馈卡顿成功Tip-->
+        <dlg name="tip_carlton_feedback" pos="10,-102" width="148" height="28" skin="video_skin_tip_bg" show="0">
+          <text name="tip_carlton_feedback_text" pos="10,5" class="cls_txt_white" txtalpha="0">%str1488%</text>
+          <link name="link_carlton_feedback" pos="70,0" width="50" height="28" crtext="008AFF" font="0000:微软雅黑" hoverfont="0002:微软雅黑" skin="video_skin_op_bg" txtalpha="0" cursor="hand">%str1489%</link>
+          <imgbtn name="close_carlton_feedback_btn" skin="video_imglist_close" pos="116,|-16" cursor="arrow"/>
+        </dlg>
+        <!--原画播放Tip-->
+        <dlg name="tip_carlton_origin" pos="10,-102" width="254" height="28" skin="video_skin_tip_bg" show="0">
+          <text name="tip_carlton_origin_text" pos="10,5" class="cls_txt_white" txtalpha="0">%str1406%</text>
+          <link name="link_quality_switch" pos="218,0" width="24" height="28" crtext="008AFF" font="0000:微软雅黑" hoverfont="0002:微软雅黑" txtalpha="0" skin="video_skin_op_bg" cursor="hand">%str1414%</link>
+        </dlg>
+        <!--流畅播放Tip-->
+        <dlg name="tip_carlton_smooth" pos="10,-102" width="238" height="28" skin="video_skin_tip_bg" show="0">
+          <text name="tip_carlton_smooth_text" pos="10,4" class="cls_txt_white" txtalpha="0">%str1407%</text>
+          <text name="tip_cache_progress_text" pos="204,4" crtext="FFFFFF" font="0004:微软雅黑" txtalpha="0">%str1418%</text>
+        </dlg>
+        <!--网络异常Tip-->
+        <dlg name="tip_network_failed" pos="10,-102" width="189" height="28" skin="video_skin_tip_bg" show="0">
+          <text name="tip_network_failed_text" pos="10,4" class="cls_txt_white" txtalpha="0">%str1408%</text>
+        </dlg>
+        <!--Seek相关Tip-->
+        <dlg name="tip_seek_loading" pos="10,-102" width="162" height="28" skin="video_skin_tip_bg" show="0">
+          <text name="tip_seek_loading_text" pos="10,4" class="cls_txt_white" txtalpha="0">%str1428%</text>
+          <text name="tip_seek_loading_progress_text" pos="126,4" crtext="FFFFFF" font="0004:微软雅黑" txtalpha="0">%str1418%</text>
+        </dlg>
+        <!--清晰度Tip-->
+        <dlg name="tip_definition" pos="10,-102" skin="video_skin_tip_bg" show="0">
+          <img name="tip_definition_img_svip" pos="10,5,@16,@16" skin="video_overspeed_svip_img" show="0"></img>
+          <text name="tip_definition_head" pos="30,4" class="cls_txt_white" txtalpha="0"></text>
+          <text name="tip_definition_middle" pos="[0,4" crtext="FFFFFF" font="0000:微软雅黑" txtalpha="0"></text>
+          <text name="tip_definition_tail" pos="[0,4" class="cls_txt_white" txtalpha="0"></text>
+        </dlg>
+        <!--倍速Tip-->   
+        <dlg name="tip_overspeed" pos="10,-102" skin="video_skin_tip_bg" show="0">
+           <img name="tip_overspeed_img_svip" pos="10,5,@16,@16" skin="video_overspeed_svip_img" show="0"></img>
+           <text name="tip_overspeed_head" pos="30,4" class="cls_txt_white" txtalpha="0"></text>
+           <text name="tip_overspeed_middle" pos="[0,4" crtext="FFFFFF" font="0000:微软雅黑" txtalpha="0"></text>
+           <text name="tip_overspeed_tail" pos="[0,4" class="cls_txt_white" txtalpha="0"></text>
+        </dlg>
+        <!--解码方式Tip-->   
+        <dlg name="tip_decode" pos="10,-102" skin="video_skin_tip_bg" show="0">
+           <text name="tip_decode_text" pos="10,4" class="cls_txt_white" txtalpha="0"></text>
+        </dlg>
+        <!--tip panel end-->
+        <!--鼠标hover进度条提示面板-->
+        <dlg name="tip_progress_time_text" pos="0,-102,-0,-70" show="0">
+          <dlg name="progress_sliderbar_time_dlg" pos="0,0,66,32" skin="video_time_tip_bg">
+            <text name="progress_sliderbar_time_text" pos="8,8" class="cls_txt_white" txtalpha="0">%str1417%</text>
+          </dlg>
+          <hr name="tip_progress_time_line" pos="12,33,13,42" crbg="ffffff"></hr>
+        </dlg>
+        <!--字幕选择面板-->
+        <dlg name="video_subtitle_panel" pos="-370,-266" width="296" height="196" skin="video_time_tip_bg" show="0">
+          <text name="video_subtitle_current_font" pos="24,32" class="cls_video_subtitle_txt_gray">%str1433%</text>
+          <text name="video_subtitle_time" pos="24,86" class="cls_video_subtitle_txt_gray">%str1434%</text>
+          <text name="video_subtitle_size" pos="24,140" class="cls_video_subtitle_txt_gray">%str1435%</text>
+          <imgbtn name="video_subtitle_btn_close" skin="video_subtitle_op_close" pos="-20,8" cursor="arrow"/>
+          <img name="video_subtitle_tip_img" pos="94,60,@12,@12" skin="video_subtitle_op_success" show="0"/>
+          <gifplayer name="video_subtitle_tip_load" pos="94,60,@12,@12" skin="video_subtitle_op_loading_gif" show="1"/>
+          <text name="video_subtitle_tip_text" pos="110,57" class="cls_video_subtitle_txt_white"></text>
+          <imgbtn name="video_subtitle_tip_btn_retry" skin="video_subtitle_op_retry" pos="184,60" show="0" cursor="arrow"/>
+          <combobox name="video_subtitle_select" pos="88,26,@180,@28" dropdown="1"
+                          dropheight="128" font="0000:微软雅黑" crtext="3a8cff" dotted="1" cursel="0"
+                          align="left" tabstop="0" x-margin="4" y-margin="2" richedit="0" 
+                    btnskin="video_subtitle_comboboxbtn" ncskin="video_subtitle_border" itempanel="1" animtime="0">
+            <liststyle x-margin="4" y-margin="0" richedit="0" ncskin="video_subtitle_border" itemheight="32" 
+                       critembg="000000" critemselbg="1c2434" crbg="000000" id_text="1">
+              <template>
+                <text id="1" pos="2,8" crtext="FFFFFF" crhover="008AFF" font="0000:微软雅黑" maxwidth="156" dotted="1" msgtransparent="0"/>
+              </template>
+            </liststyle>
+            <editstyle inset="5,0,5,0" crtext="FFFFFF" align="left" crbg="000000"/>
+            <items>
+            </items>
+          </combobox>
+          <imgbtn name="video_subtitle_sub" pos="88,80" font="0404:微软雅黑" crtext="ffffff" 
+                  width="28" height="28" skin="video_subtitle_sub_btn" tip="%str1450%" cursor="arrow"></imgbtn>
+          <img pos="128,80,@100,@28" skin="video_subtitle_border" />
+          <text name="video_subtitle_time_shift" pos="164,84" class="cls_video_subtitle_txt_blue"></text>
+          <imgbtn name="video_subtitle_add" pos="240,80" font="0404:微软雅黑" crtext="ffffff" 
+                  width="28" height="28" skin="video_subtitle_add_btn" tip="%str1449%" cursor="arrow"></imgbtn>
+          <img pos="94,-52,@162,@2" skin="video_subtitle_size_line"></img>
+          <img pos="91,-54,@8,@8" skin="video_subtitle_size_img_small" />
+          <img pos="145,-54,@8,@8" skin="video_subtitle_size_img_small" />
+          <img pos="200,-54,@8,@8" skin="video_subtitle_size_img_small" />
+          <img pos="253,-54,@8,@8" skin="video_subtitle_size_img_small" />
+          <sliderbar name="video_zise_sliderbar" pos="90,136,@172,@20" alpha="255"
+                     bgskin="video_subtitle_slider_bg" posskin="video_skin_op_bg" thumbskin="video_subtitle_size_img_big"
+                     value="1" min="0" max="3"/>
+          <text name="sutitle_font_small" pos="90,-38" class="cls_video_subtitle_txt_gray">%str1436%</text>
+          <text name="sutitle_font_normal" pos="138,-38" class="cls_video_subtitle_txt_gray">%str1437%</text>
+          <text name="sutitle_font_large" pos="196,-38" class="cls_video_subtitle_txt_gray">%str1438%</text>
+          <text name="sutitle_font_very_large" pos="244,-38" class="cls_video_subtitle_txt_gray">%str1439%</text>
+        </dlg>
+		    <!--清晰度选择面板-->
+        <dlg name="video_definition_panel" pos="-281,-351" width="208" height="281" show="0">
+          <dlg name="video_definition_panel_guide" pos="0,0,-0,-0" skin="video_time_tip_bg">
+            <imgbtn name="video_definition_4000" pos="4,-271,@200,@30" class="cls_video_definition_item_blue_btn" txtalpha="0">%str3309%</imgbtn>
+            <imgbtn name="video_definition_2000" pos="4,-241,@200,@30" class="cls_video_definition_item_blue_btn" txtalpha="0">%str3305%</imgbtn>
+            <imgbtn name="video_definition_1080_hq" pos="4,-211,@200,@30" class="cls_video_definition_item_blue_btn" txtalpha="0">%str3322%</imgbtn>
+            <imgbtn name="video_definition_1080" pos="4,-181,@200,@30" class="cls_video_definition_item_blue_btn" txtalpha="0">%str3304%</imgbtn>        
+            <imgbtn name="video_definition_720" pos="4,-151,@200,@30" class="cls_video_definition_item_blue_btn" txtalpha="0">%str3303%</imgbtn>
+            <imgbtn name="video_definition_480" pos="4,-121,@200,@30" class="cls_video_definition_item_blue_btn" txtalpha="0">%str3302%</imgbtn>
+            <imgbtn name="video_definition_360" pos="4,-91,@200,@30" class="cls_video_definition_item_blue_btn" txtalpha="0">%str3301%</imgbtn>
+            <text name="video_definition_script_txt_4000" pos="145,-262,@30,@12" class="cls_video_definition_script_text" show="0"></text>
+            <text name="video_definition_script_txt_2000" pos="145,-232,@30,@12" class="cls_video_definition_script_text" show="0"></text>
+            <text name="video_definition_script_txt_1080_hq" pos="145,-202,@30,@12" class="cls_video_definition_script_text" show="0"></text>
+            <text name="video_definition_script_txt_1080" pos="145,-172,@30,@12" class="cls_video_definition_script_text" show="0"></text>
+            <text name="video_definition_script_txt_720" pos="145,-142,@30,@12" class="cls_video_definition_script_text" show="0"></text>
+            <dlg name="video_definition_display" pos="0,-53,-0,-0">
+                <hr pos="16,0,-16,1" crbg="333333"></hr>
+                <text name="video_definition_type_tip" pos="20,16" class="cls_txt_white" txtalpha="0">%str3306%</text>
+                <text name="video_definition_type" pos="124,16" font="0000:微软雅黑" align="center" crtext="ffffff" txtalpha="0">%str3308%</text>
+            </dlg>
+          </dlg>
+        </dlg>
+        <!--倍速选择面板-->
+        <dlg name="video_overspeed_panel" pos="-400,-170,@320,@101" skin="video_time_tip_bg" show="0">
+          <dlg name="video_overspeed_guide_svip" pos="0,0,-0,@48" show="1">
+            <img name="video_overspeed_img_svip" pos="20,18,@16,@16" skin="video_overspeed_svip_img"></img>
+            <text name="video_overspeed_guide_head" pos="44,18" class="cls_txt_white" txtalpha="0">%str1465%</text>
+            <imgbtn name="video_overspeed_svip" pos="-98,10" width="78" height="28" class="cls_video_overspeed_vip_btn" txtalpha="0">%str1464%</imgbtn>
+            <hr pos="16,47,-16,@1" crbg="333333"></hr>
+          </dlg>
+          <dlg name="video_overspeed_panel" pos="0,48,-0,@48" show="0">
+            <imgbtn name="video_overspeed_75" pos="20,12,@46,@30" class="cls_video_overspeed_item_white_btn" txtalpha="0">%str1458%</imgbtn>
+            <imgbtn name="video_overspeed_100" pos="[0,12,@46,@30" class="cls_video_overspeed_item_white_btn" txtalpha="0">%str1459%</imgbtn>
+            <imgbtn name="video_overspeed_125" pos="[0,12,@46,@30" class="cls_video_overspeed_item_white_btn" txtalpha="0">%str1460%</imgbtn>
+            <imgbtn name="video_overspeed_150" pos="[0,12,@46,@30" class="cls_video_overspeed_item_white_btn" txtalpha="0">%str1461%</imgbtn>
+            <imgbtn name="video_overspeed_200" pos="[0,12,@46,@30" class="cls_video_overspeed_item_white_btn" txtalpha="0">%str1462%</imgbtn>
+            <hr pos="[0,20,@1,@14" crbg="333333"></hr>
+            <imgbtn name="video_overspeed_custom" pos="[10,12,@46,@30" class="cls_video_overspeed_item_white_btn" txtalpha="0">%str1379%</imgbtn>
+          </dlg>
+          <dlg name="video_overspeed_customs_panel" pos="0,48,-0,@92" show="0">
+            <hr pos="16,[0,-16,@1" crbg="333333"></hr>
+            <text name="video_overspeed_custom_text" pos="20,15,@60,@12" class="cls_txt_white" txtalpha="0">%str1467%</text>
+            <text name="video_overspeed_custom_values" pos="-70,15,@38,@12"  crtext="F9D680" font="0000:微软雅黑" txtalpha="0">%str1465%</text>
+            <text pos="[0,15,@12,@12" skin="video_prog_speed_arrow"></text>
+            <sliderbar name="sliderbar_overspeed_customs" pos="20,35,@280,@20" width="280" height="20" alpha="255" bgskin="video_prog_bg_volum" posskin="video_prog_bar_speed" thumbskin="video_speed_thumb_small" value="100" min="50" max="300"/>
+            <text name="video_overspeed_text_50" pos="20,-30,@24,@12" font="0004:微软雅黑" class="cls_txt_white" txtalpha="0">%str1381%</text>
+            <text name="video_overspeed_text_100" pos="65,-30,@24,@12" font="0004:微软雅黑" class="cls_txt_white" txtalpha="0">%str1382%</text>
+            <text name="video_overspeed_text_150" pos="120,-30,@24,@12" font="0004:微软雅黑" class="cls_txt_white" txtalpha="0">%str1461%</text>
+            <text name="video_overspeed_text_200" pos="175,-30,@24,@12" font="0004:微软雅黑" class="cls_txt_white" txtalpha="0">%str1462%</text>
+            <text name="video_overspeed_text_250" pos="230,-30,@24,@12" font="0004:微软雅黑" class="cls_txt_white" txtalpha="0">%str1377%</text>
+            <text name="video_overspeed_text_300" pos="280,-30,@24,@12" font="0004:微软雅黑" class="cls_txt_white" txtalpha="0">%str1380%</text>
+          </dlg>
+        </dlg>
+        <!--设置面板-->
+        <dlg name="video_decode_panel" pos="-346,|-139" width="288" height="239" skin="video_time_tip_bg" show="0">
+          <imgbtn name="video_decode_btn_close" skin="video_subtitle_op_close" pos="-25,16" cursor="arrow"/>
+          <text name="video_decode_title" pos="18,18" crtext="FFFFFF" font="0000:微软雅黑" crdisabled="4c4c4c">%str1362%</text>
+          <imgbtn name="btn_hardware_decode" pos="18,39,@72,@24" crtext="FFFFFF" crhover="FFFFFF" font="0000:微软雅黑" skin="btn_default" cursor="arrow" show="1">%str1360%</imgbtn>
+          <imgbtn name="btn_software_decode" pos="[6,39,@72,@24" crtext="FFFFFF" crhover="FFFFFF" font="0000:微软雅黑" skin="video_gray_set_btn" cursor="arrow" show="1">%str1361%</imgbtn>
+          <text name="video_renderer_title" pos="18,81" crtext="FFFFFF" font="0000:微软雅黑" crdisabled="4c4c4c">%str1347%</text>
+          <imgbtn name="btn_normal_render" pos="18,102,@72,@24" crtext="FFFFFF" crhover="FFFFFF" font="0000:微软雅黑" skin="video_gray_set_btn" cursor="arrow" show="1">%str1348%</imgbtn>
+          <imgbtn name="btn_direct3d9" pos="[6,102,@85,@24" crtext="FFFFFF" crhover="FFFFFF" font="0000:微软雅黑" skin="btn_default" cursor="arrow" show="1">%str1349%</imgbtn>
+          <imgbtn name="btn_direct3d11" pos="[6,102,@83,@24" crtext="FFFFFF" crhover="FFFFFF" font="0000:微软雅黑" skin="video_gray_set_btn" cursor="arrow" show="1">%str1350%</imgbtn>
+          <imgbtn name="btn_opengl" pos="18,135,@70,@24" crtext="FFFFFF" crhover="FFFFFF" font="0000:微软雅黑" skin="video_gray_set_btn" cursor="arrow" show="1">%str1351%</imgbtn>
+          <imgbtn name="btn_opengles2" pos="[8,135,@93,@24" crtext="FFFFFF" crhover="FFFFFF" font="0000:微软雅黑" skin="video_gray_set_btn" cursor="arrow" show="1">%str1352%</imgbtn>
+          <text name="audio_output_title" pos="18,177" crtext="FFFFFF" font="0000:微软雅黑" crdisabled="4c4c4c">%str1353%</text>
+          <imgbtn name="btn_direct_sound" pos="18,197,@97,@24" crtext="FFFFFF" crhover="FFFFFF" font="0000:微软雅黑" skin="btn_default" cursor="arrow" show="1">%str1354%</imgbtn>
+          <imgbtn name="btn_winmm" pos="[6,197,@66,@24" crtext="FFFFFF" crhover="FFFFFF" font="0000:微软雅黑" skin="video_gray_set_btn" cursor="arrow" show="1">%str1355%</imgbtn>
+          <imgbtn name="btn_wasapi" pos="[6,197,@70,@24" crtext="FFFFFF" crhover="FFFFFF" font="0000:微软雅黑" skin="video_gray_set_btn" cursor="arrow" show="1">%str1356%</imgbtn>
+        </dlg>
+      </dlg>
+      <!--标题栏-->
+      <dlg name="caption" pos="0,0,-0,64" skin="video_skin_captionbar_bg" show="1">
+        <dlg name="filename_panel" pos="130,0,-130,64">
+          <text pos="0,24,-0,-8" crtext="ffffff" font="0404:微软雅黑" name="filename" textmode="40821" txtalpha="0"></text>
+        </dlg>
+        <dlg name="btn_panel" pos="-130,0,-0,64">
+          <imgbtn name="btn_close" skin="video_imglist_close" pos="-42,16" cursor="arrow"/>
+          <imgbtn name="btn_max" skin="video_imglist_maxsize_normal" pos="-82,16" animate="1" cursor="arrow"/>
+          <imgbtn name="btn_max_recover" skin="video_imglist_maxsize_recover"  pos="-82,16" show="0" animate="1" cursor="arrow"/>
+          <imgbtn name="btn_minimize" skin="video_imglist_minsize" pos="-122,16" animate="1" cursor="arrow"/>
+        </dlg>
+      </dlg>
+    </dlg>
+	</body>
+</layer>

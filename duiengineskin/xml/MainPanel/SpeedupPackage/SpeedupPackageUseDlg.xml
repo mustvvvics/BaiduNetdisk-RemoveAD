@@ -1,0 +1,17 @@
+<layer name="SpeedupPackageUseDlg" width="464" height="272" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="dlg_main" pos="0,0,-0,-0" skin="workspace_guide_frame">
+        <caption pos="0,0,-0,48">
+          <text name="dlg_title" pos="24,18" font="0204:微软雅黑" animate="1">%str5040%</text>
+          <hr pos="15,-2,-15,-1" crbg="F5F6FA" size="1"/>
+        </caption>
+        <dlg pos="0,48,-0,-0">
+            <img name="img_warning" pos="207,18,@50,@50" skin="speedup_package_blue_warninng"/>
+            <text name="text_main_tip" pos="20,80,-20,100" font="0104:微软雅黑" crtext="4F526C" align="center" multilines="0">%str4566%</text>
+            <text name="text_sub_tip" pos="40,106,-40,130" font="0000:微软雅黑" crtext="666666" align="center" multilines="1">%str4566%</text>
+            <imgbtn name="btn_no_use" pos="96,160,@128,@36" skin="speedup_package_light_blue_btn" crtext="06A7FF" font="0000:微软雅黑">%str4201%</imgbtn>
+            <imgbtn name="btn_use" pos="[16,160,@128,@36" skin="speedup_package_dark_blue_btn" crtext="FFFFFF" font="0000:微软雅黑">%str4202%</imgbtn>
+        </dlg>
+        </dlg>
+    </body>
+</layer>

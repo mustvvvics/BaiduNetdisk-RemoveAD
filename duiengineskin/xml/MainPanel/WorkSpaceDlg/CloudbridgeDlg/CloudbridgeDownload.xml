@@ -1,0 +1,29 @@
+<layer name="CloudBridgeDownloadDlg" width="498" height="235" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="content" pos="0,0,-0,-0" skin="workspace_filecopy_progress_bg_dlg">
+            <dlg pos="17,17,-17,-17">
+                <caption pos="0,0,-0,@52">
+                    <text pos="24,16" crtext="03081A" font="0200:微软雅黑">%str6027%</text>
+                    <imgbtn name="btn_minimize" skin="workspace_titlepanel_minmize_btn" pos="-84,|-8,@15,@16" cursor="arrow"/>
+                    <imgbtn name="btn_close" pos="-40,18,@16,@16" skin="wechatbackup_guide_dlg_close"></imgbtn>
+                </caption>
+                <dlg name="dlg_cloudbridge_download" pos="0,52,-0,-0">
+                    <img pos="24,32,@45,@45" skin="mixfile_middle_image"></img>
+                    <link name="link_file_name" pos="[16,32" crtext="03081A" maxwidth="250" dotted="1" font="0200:微软雅黑" align="left"></link>
+                    <dlg name="progress_bkg" pos="85,[25,375,@6" class="cls_leftpanel_progress_bkg">
+                        <dlg name="progress_frg" pos="0,0,0,-0" class="cls_leftpanel_progress_frg_green"/>
+                    </dlg>
+                    <text name="txt_file_size" pos="85,[10"></text>
+                    <text name="txt_download_count" pos="170,[15" crtext="878C9C" align="left"></text>
+                </dlg>
+                <dlg name="dlg_cloudbridge_error" pos="0,52,-0,-0" show="0">
+                    <img pos="24,32,@45,@45" skin="mixfile_middle_image"></img>
+                    <text name="txt_success" pos="[16,32" crtext="03081A" font="0200:微软雅黑" align="center">%str6029%</text>
+                    <text name="txt_fail" pos="[0,32" crtext="FF436A" font="0200:微软雅黑" align="center">%str6030%</text>
+                    <text pos="85,57" crtext="03081A" font="0200:微软雅黑" align="center">%str6031%</text>
+                    <link name="link_fail_resion" pos="[0,57,@300,@18" crtext="03081A" font="0200:微软雅黑" maxwidth="250" dotted="1" textmode="40810"></link>
+                </dlg>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

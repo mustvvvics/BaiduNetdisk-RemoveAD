@@ -1,0 +1,177 @@
+﻿<layer name="LoginDlg" width="662" height="442" appwin="1" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg name="login_form" pos="0,0,-0,-0" skin="main_panel_frame" crborder="999999">
+      <caption pos="1,1,-1,76" crbg="eff2f6">
+        <img pos="|-69,|-16,@138,@32" skin="img_login_logo" />
+		<imgbtn name="btn_net_setting" skin="btn_sys_setting" pos="-102,8,@32,@20" cursor="arrow" tip="%str252%" animate="1"/>
+        <imgbtn name="btn_minimize" skin="btn_sys_minimize" pos="[0,8,@32,@20" cursor="arrow" tip="%str251%" animate="1"/>
+		<imgbtn name="btn_close" skin="btn_sys_close" pos="[0,8,@32,@20" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+
+      <dlg pos="1,76,-1,-1">
+        <!--扫码登录面板-->
+        <dlg name="dlg_qrcode_login" pos="5,0,@310,-0">
+          <img name="img_qrcode" pos="106,36,@13,@13" skin="img_login_qrcode"/>
+          <text name="txt_qrcode_login" pos="[5,31,@84,@22" crtext="000000" font="0400:微软雅黑" valign="middle">%str278%</text>
+          <dlg name="dlg_scanapp_guide" pos="20,82,-20,@20">
+            <text name="txt_scanapp_prefix" pos="59,0" crtext="666666" font="0200:微软雅黑" align="left">%str280%</text>
+            <link name="link_scanapp_name" pos="[0,0" cursor="hand" crtext="06a8ff" crhover="06a8ff" font="0200:微软雅黑" hoverfont="0202:微软雅黑" align="left">%str281%</link>
+            <text name="txt_scanapp_surfix" pos="[0,0" crtext="666666" font="0200:微软雅黑" align="left">%str282%</text>
+          </dlg>
+
+          <!--二维码面板-->
+          <dlg name="dlg_qrcode" pos="|-77,119,@154,@154" msgtransparent="1">
+          </dlg>
+		  <!--扫码引导-->
+          <img name="img_qrcode_guide" pos="182,129,@112,@138" skin="img_login_qrcode_guide" show="0"/>
+          <!--错误提示-->
+		  <dlg name="dlg_qrcode_tip" pos="|-77,275,@160,@16" show="0">
+		    <img pos="2,0,@16,@16" skin="img_login_errortip_icon"/>
+			<text name="txt_qrcode_error" pos="[2,|-8" crtext="ff4040" dotted="1"/>
+		  </dlg>
+          <imgbtn name="btn_refresh_qrcode" pos="|-48,293,@96,@30" skin="img_login_btn_reg" crtext="06a8ff" cursor="arrow">%str283%</imgbtn>
+          <hr pos="-1,0,@1,-0" crbg="bcbcbc" show="0"></hr>
+        </dlg>
+
+        <!--百度账号登陆面板-->
+        <dlg name="dlg_baiduaccount_login" pos="310,0,-0,-0">
+          <!--百度账号登陆文案-->
+          <text name="txt_login_type" pos="30,31,@100,@22" crtext="000000" font="0400:微软雅黑" valign="middle">%str279%</text>
+          <link name="link_login_type" pos="-132,35,@100,@16" crtext="06a8ff" crhover="06a8ff" font="0200:微软雅黑" hoverfont="0202:微软雅黑" align="right" valign="middle" cursor="hand">%str2800%</link>
+				
+		  <!--账号登录-->
+		  <dlg name="dlg_account_login" pos="0,60,-0,@260" show="1">
+			  <!--输入区域-->
+			  <dlg name="accountRegion" pos="24,0,-24,@260" show="1">
+				<!--账号-->
+				<accountcombobox name="account" show="1" pos="|-145,26,@290,@40" dropdown="0" dropheight="100" class="cls_edit" valign="middle"
+						dotted="0" cursel="0" itempanel="1" id_text="1" id_icon="2" crbg="FFFFFF">
+				  <liststyle class="cls_edit" crbg="FFFFFF" itemheight="30" id_text="1" id_icon="2">
+					<template skin="img_login_list_item_bg" x-margin="0" y-margin="0" crtext="000000" crhover="ffffff">
+					  <text id="1" pos="8,2,-27,-2" font="0200:宋体"></text>
+					  <imgbtn id="2" pos="-26,|-8,-10,|8" skin="img_login_btn_deleteaccount" tip="%str263%"/>
+					</template>
+				  </liststyle>
+				  <editstyle crtext="000000" textmode="40024" vcenter="1" font="0200:宋体" x-margin="8" y-margin="0" inset="3,3,-0,-0" deftext="%str270%"/>
+				</accountcombobox>
+
+				<!--密码-->
+				<dlg pos="|-145,[18,@290,@40" class="cls_edit_set">
+				  <embedbutton pos="8,|-9" width="18" height="18" normal-skin="img_login_icon_password" hover-skin="img_login_icon_password" down-skin="img_login_icon_password" />
+				  <embededit name="net_cfg_pswd_edt" pos="36,|-12,-25,@24" inset="2,3,-27,3" class="cls_password_edit" vcenter="0" password="1" deftext="%str265%"/>
+				  <imgbtn name="btn_clear_pwd" skin="img_login_btn_delpwd" pos="-18,|-4,@9,@9" cursor="arrow" tip="%str277%" show="0"/>
+				</dlg>
+
+				<!--登录设置区：记住密码，自动登录，忘记密码-->
+				<dlg name="login_setting_region" pos="6,144,-6,@30">
+				  <check name="remember_checkbox" pos="0,0" class="vcentertext" state="4">%str260%</check>
+				  <check name="auto_login_checkbox" pos="95,0" class="vcentertext" state="4">%str261%</check>
+				  <link name="forgot_password" pos="-80,0,-0,@16" align="right" class="cls_btn_weblink" dotted="1">%str262%</link>
+				</dlg>
+
+				<!--大写锁定提示区域-->
+				<dlg name="capKeyTipPanel" pos="38,108,@110,@29" show="0">
+				  <img pos="0,0,-0,-0" skin="img_login_tip_cap"/>
+				  <text pos="0,8,-0,-0" class="logindlg_captip_text">%str276%</text>
+				</dlg>
+			  </dlg>
+		  </dlg>
+		  
+		  <!--短信登录-->
+		  <dlg name="dlg_smsdpass_login" pos="0,60,-0,@260" show="0">
+			<!--手机号-->
+			<dlg pos="|-145,26,@290,@40" class="cls_edit_set">
+			  <embedbutton pos="8,|-9" width="18" height="18" normal-skin="img_login_icon_phone" hover-skin="img_login_icon_phone" down-skin="img_login_icon_phone"/>
+			  <embededit name="smsdpass_phone_edt" pos="36,|-12,-25,@24" inset="3,3,-27,-3" class="cls_password_edit" vcenter="0" password="0" number="1" maxbuf="11" deftext="%str2815%"/>
+			  <imgbtn name="btn_clear_phone" skin="img_login_btn_delpwd" pos="-18,|-4,@9,@9" cursor="arrow" tip="%str2812%" show="0"/>
+			</dlg>
+			
+			<!--短信动态密码-->
+			<dlg pos="|-145,84,@154,@40" class="cls_edit_set">
+			  <embedbutton pos="8,|-9" width="18" height="18" normal-skin="img_login_icon_shortmessage" hover-skin="img_login_icon_shortmessage" down-skin="img_login_icon_shortmessage" />
+			  <embededit name="smsdpass_password_edt" pos="36,|-12,-25,@24" inset="3,3,-0,-3" class="cls_password_edit" vcenter="0" password="0" maxbuf="32" deftext="%str2802%"/>
+			</dlg>
+			
+			<!--获取动态密码按钮-->
+			<imgbtn name="btn_get_smsdpass" pos="[18,84,@118,@40" skin="img_login_btn_getsmsdpass" crtext="06a8ff" crdisabled="999999" font="0200:微软雅黑" cursor="arrow">%str2803%</imgbtn>
+			
+			<!--验证码区域-->
+			<dlg name="smsdpass_vcode_dlg" pos="30,[15,-30,@40" show="0">
+			  <edit name="smsdpass_vcode_edt" pos="0,0,@112,@40" class="cls_edit_set" font="0200:宋体" password="0" show="1"></edit>
+			  <img name="smsdpass_vcode_img" pos="[6,0,@98,@40" show="1"/>
+			  <gifplayer name="smsdpass_loading_gif" pos="158,|-9,@18,@18" skin="loading_gif" show="0"/>
+			  <link name="smsdpass_vcode_change" pos="-50,|-9,@50,@18" maxwidth="50" class="cls_btn_weblink" dotted="1" align="right" show="1">%str266%</link>
+		    </dlg>
+		  </dlg>
+
+		  <!--错误提示区域-->
+		  <dlg name="tip_dlg" pos="30,63,-30,@20" show="0">
+			<img pos="0,|-8,@16,@16" skin="img_login_errortip_icon"/>
+			<text name="errortip" pos="20,|-8" crtext="ff4040"></text>
+			<link name="bindtip" pos="[2,|-8" maxwidth="50" class="cls_btn_weblink" show="0">%str273%</link>
+			<text name="bindtip1" pos="[2,|-8" crtext="ff4040" show="0">%str274%</text>
+		  </dlg>
+		  
+		  <!--验证码区域-->
+		  <dlg name="vcode_dlg" pos="30,200,-30,@40" show="0">
+			<edit name="vcode_edt" pos="0,0,@112,@40" class="cls_edit_set" font="0200:宋体" password="0" show="1"></edit>
+			<img name="vcode_img" pos="[6,0,@98,@40" show="1"/>
+			<gifplayer name="loading_gif" pos="158,|-9,@18,@18" skin="loading_gif" show="0"/>
+			<link name="vcode_change" pos="-50,|-9,@50,@18" maxwidth="50" class="cls_btn_weblink" dotted="1" align="right" show="1">%str266%</link>
+		  </dlg>
+
+		  <!--正在登录提示区域-->
+		  <dlg name="loginingTipRegion" pos="30,98,-30,@142" show="0">
+			<img name="img_logining_tip_morning" pos="|-51,0,@102,@102" skin="img_login_ing" show="1"/>
+			<dlg name="dlg_login_tip" pos="0,[0,-0,-0">
+			  <text name="text_login_tip_name" pos="0,0" class="logindlg_tip_text" align="right" dotted="1"></text>
+			  <text name="text_login_tip_op" pos="[0,0" class="logindlg_tip_text" align="left"></text>
+			</dlg>
+		  </dlg>
+		  
+		  <!--登录按钮-->
+		  <imgbtn name="btn_login" pos="|-145,246,@290,@40" class="logindlg_login_btn" cursor="arrow">%str256%</imgbtn>
+		  
+		  <dlg name="dlg_smsdpass_protocol" pos="|-145,[8,@290,@16" show="0">
+			<text pos="|-88,0" crtext="666666" height="16" align="right" valign="middle">%str2816%</text>
+			<link name="link_user_protocol" pos="[1,0" height="16" class="cls_btn_weblink" align="left" valign="middle" maxwidth="120" dotted="1">%str2817%</link>
+		  </dlg>
+		  
+		  <!--选择登录方式区域-->
+		  <dlg name="loginWayRegion" pos="30,80,-30,@240" show="0">
+			<text pos="|-80,0,@160,@20" class="logindlg_tip1_text">%str267%</text>
+			<imgbtn name="btn_account_login" pos="|-110,[42,@220,@40" class="logindlg_button">%str268%</imgbtn>
+			<imgbtn name="btn_phone_login" pos="|-110,[26,@220,@40" class="logindlg_button">%str269%</imgbtn>
+		  </dlg>
+			  
+          <!--第三方帐号登录按钮区域-->
+          <dlg name="bottom_region" pos="30,328,-24,-5" show="1">
+		    <!--注册帐号-->
+			<link name="btn_login_reg" pos="0,0" cursor="hand" crtext="06a8ff" crhover="06a8ff" font="0200:微软雅黑" hoverfont="0202:微软雅黑">%str254%</link>
+
+            <!--微信登陆-->
+            <imgbtn pos="-96,0,@20,@20" tip="%str259%" name="btn_toolbox_wechat" skin="thirdparty_wechat"></imgbtn>
+
+            <!--微博登录-->
+            <imgbtn pos="[18,0,@20,@20" tip="%str257%" name="btn_toolbox_sinaweibo" skin="thirdparty_sinaweibo"></imgbtn>
+
+            <!--QQ登录-->
+            <imgbtn pos="[18,0,@20,@20" tip="%str258%" name="btn_toolbox_qq" skin="thirdparty_qq"></imgbtn>
+          </dlg>
+        </dlg>
+      </dlg>
+    </dlg>
+
+    <dlg name="third_login_form" pos="0,0,-0,-0" show="0">
+      <caption pos="0,0,-0,29" crbg="eff2f6">
+        <imgbtn name="btn_close_third" skin="btn_sys_close" pos="-45,0" tip="close" animate="0"/>
+      </caption>
+      <realwnd pos="10,51,-10,-10" name="IDC_DUICHILD" wndclass="DUI"/>
+      <!--browser name="thirdparty_login_webview" pos="1,29,-1,-1" url="http://www.baidu.com"></browser-->
+    </dlg>
+
+    <dlg name="cartoon" pos="0,0,-0,-0" show="0">
+      <!--image3dview pos="0,0,-0,-0" name="image3dview"  rotate-y="30" offset-z="0"/-->
+    </dlg>
+  </body>
+</layer>

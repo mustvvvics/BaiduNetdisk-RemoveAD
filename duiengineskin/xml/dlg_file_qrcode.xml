@@ -1,0 +1,47 @@
+﻿<layer name="FileQrCodeDlg" width="485" height="232" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+      <img pos="10,8" skin="common_logo_main"></img>
+      <text name="text_file_property_title" pos="39,9" class="cls_dlg_title_text">%str3500%</text>
+      <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+
+      <dlg pos="25,49,335,-24">
+        <dlg name="panel_guide_tip" pos="0,0,@260,@82">
+          <text pos="3,0" crtext="333333" class="cls_file_qrcode_dlg_big_text">%str3501%</text>
+          <text pos="3,47" crtext="999999" class="cls_file_qrcode_dlg_middle_text">%str3502%</text>
+          <link name="link_app_name_from_guide" pos="28,47" class="cls_file_qrcode_dlg_link">%str3508%</link>
+          <text pos="117,47" crtext="999999" class="cls_file_qrcode_dlg_middle_text">%str3509%</text>
+          <text pos="0,75" crtext="999999">%str3512%</text>
+        </dlg>
+        <dlg name="panel_preview_tip" pos="3,4,@260,@82">
+          <text pos="0,0" crtext="333333" class="cls_file_qrcode_dlg_big_text">%str3510%</text>
+          <text pos="0,28" crtext="333333" class="cls_file_qrcode_dlg_big_text">%str3511%</text>
+          <text pos="0,69" crtext="999999" class="cls_file_qrcode_dlg_middle_text">%str3502%</text>
+          <link name="link_app_name_from_preview" pos="25,69" class="cls_file_qrcode_dlg_link">%str3508%</link>
+          <text pos="114,69" crtext="999999" class="cls_file_qrcode_dlg_middle_text">%str3509%</text>
+          <text pos="158,72" crtext="999999">%str3512%</text>
+        </dlg>
+        <hr pos="3,103,280,103" size="1" crbg="f2f5fd"/>
+        <link name="text_file_name" pos="3,112" maxwidth="300" font2="facename:微软雅黑;bold:1;italic:0;underline:0;adding:2" textmode="40024" crtext="333333"></link>
+        <text name="text_file_size" pos="3,136" crtext="999999">%str3503%</text>
+      </dlg>
+      <dlg pos="332,49,-0,-0">
+        <dlg name="panel_file_qrcode" pos="0,9,@133,@133">
+          <img name="img_file_qrcode" pos="0,0,-0,-0"/>
+        </dlg>
+        <dlg name="panel_file_qrcode_loading" pos="6,15,@120,@120" skin="fileqrcodedlg_qrcode_bg">
+          <gifplayer name="gif_loading" pos="33,22,@54,@54" width="54" height="54" skin="fileqrcodedlg_loading_gif"/>
+          <text pos="40,81" crtext="333333">%str3507%</text>
+        </dlg>
+        <dlg name="panel_file_qrcode_fail" pos="6,15,@120,@150">
+          <img pos="0,0,@120,@120" skin="fileqrcodedlg_qrcode_bg"/>
+          <img name="img_file_qrcode_fail" pos="42,30,@36,@36" skin="fileqrcodedlg_load_error"/>
+          <text pos="24,80" name="text_error" crtext="333333">%str3507%</text>
+          <link name="link_retry" pos="36,127" class="cls_btn_weblink">%str3506%</link>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,7 @@
+﻿<layer name="ToolbarBubbleAdDlg" width="340" height="250" toolwin="1" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="navigatepanel_bubble_bg">
+      <img name="img_ad_content" pos="|-119,|-80,@238,@160" skin="navigatepanel_bubble_content_default"/>
+    </dlg>
+  </body>
+</layer>

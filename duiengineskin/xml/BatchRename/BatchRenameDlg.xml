@@ -1,0 +1,24 @@
+﻿<layer name="BatchRenameDlg" width="964" height="640" appwin="0" ncRect="0,0,0,0" resize="0" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text pos="39,9" maxwidth="420" class="cls_dlg_title_text">%str4402%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,@32,@20" cursor="arrow" tip="%str250%" animate="0"/>
+      </caption>
+      <dlg name="dlg_webview" pos="1,38,-1,-1">
+        <dlg pos="0,0,-0,-0">
+          <webbrowser name="web_page" pos="0,0,-0,-0" use_ie="0" show="1"/>
+          <!--网络连接错误面板-->
+          <dlg name="NetworkErrorPanel" pos="0,0,-0,-0" show="0">
+            <dlg name="netErrTipPanel" pos="|-90,|-100" width="180" height="200">
+              <img pos="|-52,0" skin="web_load_error" width="103" height="93" />
+              <text name="errTip" pos="0,110,-0,130" class="cls_txt_red">%str3453%</text>
+              <imgbtn name="btn_retry" class="defultbtn" pos="|-48,162" width="96" height="34" cursor="arrow">%str3454%</imgbtn>
+            </dlg>
+          </dlg>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

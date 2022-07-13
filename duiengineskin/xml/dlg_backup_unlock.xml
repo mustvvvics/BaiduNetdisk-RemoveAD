@@ -1,0 +1,30 @@
+﻿<layer name="BackupUnlockDlg" width="504" height="322" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" name="UpgradeGuidePanel" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text name="text_unlock_title" pos="39,9" class="cls_dlg_title_text">%str763%</text>
+        <imgbtn name="btn_close_guide" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+
+      <dlg pos="0,37,-0,-0">
+        <img name="img_backup_unlock" pos="1,0,503,284" skin="backup_unlock_guide_image"/>
+        <imgbtn name="btn_ok" pos="183, 219, 321, 267" cursor="arrow" skin="backup_unlock_upgrade_btn"></imgbtn>
+        <link name="link_view_detail" pos="-80,-34,-16,-16" class="backup_unlock_dlg_link">%str768%</link>
+      </dlg>
+    </dlg>
+    <dlg pos="0,0,-0,-0" name="UpgradeConfirmPanel" class="cls_message_box" show="0">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text pos="39,9" class="cls_dlg_title_text">%str753%</text>
+        <imgbtn name="btn_close_confirm" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg name="UpgradeTipPanel" pos="0,38,-0,-0">
+        <img pos="30,33,@34,@34" skin="msgbox_question"/>
+        <text pos="74,40,-10,58" crtext="666666">%str754%</text>
+        <imgbtn name="btn_upgrade_suc" pos="-164,-27,-92,-3" class="msgboxbtn">%str755%</imgbtn>
+        <imgbtn name="btn_upgrade_cancel" pos="-82,-27,-10,-3" class="msgboxbtn">%str756%</imgbtn>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

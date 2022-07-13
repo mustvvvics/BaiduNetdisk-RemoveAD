@@ -1,0 +1,17 @@
+<dlg  name="SafeboxContainerPanel" pos="0,0,-0,-0" show="0">
+  <dlg name="safebox_container_toolbar" pos="0,0,-250,45">
+    <include src="IDR_DUI_SAFEBOX_CONTAINER_TOOLBAR"/>
+  </dlg>
+  <dlg name="safebox_container_searchbox" pos="-250,0,-0,45">
+    <include src="IDR_DUI_FILE_CONTAINER_SEARCHBOX"/>
+  </dlg>
+  <dlg name="safebox_container_address_panel" pos="0,45,-0,@40">
+    <include src="IDR_DUI_FILE_CONTAINER_ADDRESS_PANEL"/>
+  </dlg>
+  <dlg name="safebox_container_view_panel" pos="0,85,-0,-34">
+    <include src="IDR_DUI_FILE_VIEWCONTAINER_PANEL"/>
+  </dlg>
+  <dlg name="safebox_container_status_panel" pos="0,-34,-0,-0">
+    <include src="IDR_DUI_FILE_CONTAINER_STATUS_PANEL"/>
+  </dlg>
+</dlg>

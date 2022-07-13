@@ -1,0 +1,48 @@
+<layer name="PrivilegeGuideDlgV2" width="494" height="514" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>     
+    <dlg name="dlg_main_guide" pos="0,0,-0,-0" skin="privilege_guide_bgk_v2">
+      <caption pos="0,0,-0,62">
+        <text name="dlg_title" pos="40,30" font="0104:微软雅黑" crtext="333333">%str4301%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-55,25,@30,@20" cursor="arrow" tip="%str250%" animate="1"/>
+        <hr pos="15,-2,-15,-1" crbg="F5F6FA" size="1"/>
+      </caption>
+      
+      <dlg name="dlg_loading" pos="0,62,-0,-0" show="1">
+        <gifplayer name="gif_loading" pos="|-16,|-60,@32,@32" skin="gif_statuspanel_loading"/>
+        <text name="txt_loading_tip" pos="|-150,[12,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str4768%</text>
+      </dlg>
+  
+      <dlg name="dlg_guide_content" pos="15,62,-15,-15" show="0">
+        <text name="text_ext_tip" pos="1,2,-1,@14" font="0100:微软雅黑" multilines="0" align="center" crtext="666666" show="0"></text>      
+        <text name="text_main_tip" pos="1,[10,-1,@20" font="0204:微软雅黑" multilines="0" align="center" crtext="03081A"></text>
+        <img name="img_privilege" pos="92,[16,@280,@241" skin="privilege_guide_svip_img_v2"/>
+        
+        <dlg name="dlg_buy_btn_panel" pos="50,320,-0,-54" show="1">
+          <imgbtn name="btn_buy" pos="0,18,@176,@44" cursor="arrow" crtext="64360D" animate="1" font="0200:微软雅黑" skin="privilege_guide_dlg_buy_svip">%str4301%</imgbtn>
+          <dlg name="dlg_coupon" pos="150,0,@69,@20" skin="privilege_guide_dlg_coupon" show="0">
+            <text name="text_coupon" pos="6,2" font2="facename:微软雅黑;adding:-1" align="left" crtext="ffffff" show="1"></text>
+          </dlg>
+          <text name="text_price" pos="0,30,@176,@44" font="0000:微软雅黑" crtext="FFFFFF" align="center" show="0"></text>
+        </dlg>
+                
+        <dlg name="dlg_second_buy_btn_panel" pos="238,320,-0,-54" show="0">
+          <imgbtn name="btn_buy_second" pos="0,18,@176,@44" cursor="arrow" animate="1" crtext="FFFFFF" font="0200:微软雅黑" skin="btn_default_round_angle"></imgbtn>
+          <dlg name="dlg_coupon_second" pos="150,0,@69,@22" skin="privilege_guide_dlg_coupon" show="0">
+            <text name="text_coupon_second" pos="6,2" font2="facename:微软雅黑;adding:-1" align="left" crtext="ffffff" show="1"></text>
+          </dlg>
+          <text name="text_second_product_price" pos="0,30,@176,@44" font="0000:微软雅黑" align="center" crtext="FFFFFF"></text>
+        </dlg>
+        
+        <!--第三个按钮-->
+        <imgbtn name="btn_buy_third" pos="140,-38,@200,@20" cursor="hand" crtext="666666" skin="titlepanel_translucent" font="0100:微软雅黑" align="center" show="0"></imgbtn>
+      </dlg>
+      <dlg name="dlg_payoff_qr_code" pos="50,160,@220,@250" skin="video_guide_bubble" show="0">   
+        <text name="text_qr_code_title" pos="54,30" align="left" font="0204:微软雅黑" crtext="03081A"></text>
+        <text name="text_qr_code_title2" pos="[0,30" align="left" font="0204:微软雅黑" crtext="FF6500"></text>       
+        <img name="img_qr_code" pos="50,50,@125,@125"/>
+        <text name="text_qr_code_bottom" pos="0,-100,-0,-26" align="center" multilines="0" font="0000:微软雅黑" crtext="A3ACBD"></text>
+        <text name="text_qr_code_bottom2" pos="0,-80,-0,-6" align="center" multilines="0" font="0000:微软雅黑" crtext="A3ACBD"></text>
+      </dlg> 
+    </dlg>         
+  </body>
+</layer>

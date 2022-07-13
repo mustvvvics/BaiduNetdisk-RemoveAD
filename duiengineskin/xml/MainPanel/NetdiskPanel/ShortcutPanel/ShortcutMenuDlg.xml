@@ -1,0 +1,18 @@
+﻿<layer name="ShortcutMenuDlg" width="165" height="200" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg name="content" pos="0,0,-0,-0" skin="main_panel_frame" crborder="999999">
+      <!-- 列表 -->
+      <listboxex name="listview_shortcut" pos="1,1,-1,-1" virtual="1" itemheight="32">
+        <template>
+          <!-- 背景 -->
+          <dlg name="item_bg" pos="0,0,-0,-0" crbg="eef0f6" show="0"/>
+          <dlg name="dlg_item" pos="0,0,-0,-0">
+            <check name="chk_item" pos="16,|0" pos2type="center" skin="item_remove"/>
+            <img name="img_item" pos="32,|-8,@14,@16" skin="folder_small_image" cursor="arrow"/>
+            <link name="txt_item_name" pos="[13,|-8,-0,@16" class="cls_leftpanel_txt_normal" dotted="1" textmode="40824"/>
+          </dlg>
+        </template>
+      </listboxex>
+    </dlg>
+  </body>
+</layer>

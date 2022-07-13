@@ -1,0 +1,46 @@
+﻿<layer name="PortableDeviceBackupDlg" width="550" height="502" appwin="0" ncRect="5,5,5,5"  resize="0" translucent="1"  nomaxsize="0">
+  <body>
+    <dlg name="main_form" pos="0,0,550,502" class="cls_dlg_frame">
+      <caption pos="0,0,-0,89">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text pos="38,9" name="title" class="portable_device_dialog_title">%str1900%</text>
+        <imgbtn id="1" name="btn_close" skin="btn_sys_close" cursor="arrow" pos="-32,0" tip="%str1909%" animate="0"/>
+        <imgbtn id="5" name="btn_minimize" skin="btn_sys_minimize" cursor="arrow" pos="-64,0" animate="1" show="0" />
+      </caption>
+
+      <dlg name="has_picture_video" show="0" pos="15,62" width="400" height="32">
+        <text name="backup_file_count_tip" pos="0,3" class="portable_device_backcount_text">%str1901%</text>
+        <text name="backup_file_picture_count" pos="[5,4" width="50" align="center" class="portable_device_number_text">22</text>
+        <text name="backup_file_picture_tip" pos="[2,3" class="portable_device_backcount_text">%str1902%</text>
+        <text name="backup_file_video_count" pos="[5,4" width="50" align="center" class="portable_device_number_text">0</text>
+        <text name="backup_file_video_tip" pos="[2,3" class="portable_device_backcount_text">%str1903%</text>
+        <text name="backup_file_total_tip" pos="[1,3" class="portable_device_backcount_text">%str1904%</text>
+      </dlg>
+
+      <dlg name="has_picture_or_video" show="0" pos="15,62" width="400" height="32">
+        <text name="backup_file_count_tip" pos="0,3" class="portable_device_backcount_text">%str1901%</text>
+        <text name="backup_file_count" pos="[5,4" width="50" align="center" class="portable_device_number_text"></text>
+        <text name="backup_file_count_unit_tip" pos="[2,3" class="portable_device_backcount_text">%str1910%</text>
+        <text name="backup_file_total_tip" pos="[1,3" class="portable_device_backcount_text">%str1904%</text>
+      </dlg>
+      
+      <imgbtn name="btn_onekey_backup" pos="439,52" width="94" height="32" animate="true" cursor="arrow" skin="btn_onekey_backup" >%str1905%</imgbtn>
+      <text pos="15,97" class="portable_device_backtip_text">%str1906%</text>
+
+      <dlg name="list_view_bg" pos="15,116,-15,462" skin="pdb_list_view_bg">
+      <thumblistview name="file_list_view" pos="6,6,-6,-6" itemheight="82" itemwidth="82" show="1" >
+        <template deselected-skin="pdb_list_item_deselected" selected-skin="pdb_list_item_selected" hover-skin="pdb_list_item_hover">
+          <img name="thumb" pos="3,3" width="76" height="76" skin="pdb_list_item_default_image"/>
+          <text name="video_date" pos="16,54" class="portable_device_list_item_text" align="middle" show="0" crtext="ffffff"></text>
+          <text name="video_time" pos="20,65" class="portable_device_list_item_text" align="middle" show="0" crtext="ffffff"></text>
+        </template>
+      
+      </thumblistview>
+      </dlg>
+
+      <link name="link_select_all" pos="15,466" maxwidth="60" class="cls_btn_weblink" dotted="1" >%str1907%</link>
+      <link name="link_deselect_all" pos="70,466" maxwidth="60" class="cls_btn_weblink" dotted="1" >%str1908%</link>
+      
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,26 @@
+<layer name="MemberCerterCardWnd" width="388" height="287" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+  <body> 
+    <dlg name="dlg_member_center" pos="0,0,-0,-0" skin="member_center_card_bgk" >   
+      <dlg name="dlg_member_privilege" pos="0,0,160,-0">  
+        <text name="text_privilege_list_title" pos="40,46" font="0204:微软雅黑" crtext="000000"></text>
+        <text name="text_privilege_list_title2" pos="[0,46" font="0204:微软雅黑" crtext="D6A652"></text>
+        <img name="img_privilege_item1" pos="40,84,@21,@21" skin="privilege_guide_svip_5t_space"/>
+        <text name="text_privilege_item1" pos="[8,86,@60,@16" font="0000:微软雅黑" crtext="000000" align="left">%str4313%</text>
+        <img name="img_privilege_item2" pos="40,116,@21,@21" skin="privilege_guide_svip_cloud_uncompress"/>
+        <text name="text_privilege_item2" pos="[8,118,@60,@16" font="0000:微软雅黑" crtext="000000" align="left">%str4309%</text>
+        <img name="img_privilege_item3" pos="40,148,@21,@21" skin="privilege_guide_svip_pdf_to_word"/>
+        <text name="text_privilege_item3" pos="[8,150,@60,@16" font="0000:微软雅黑" crtext="000000" align="left">%str4310%</text>
+        <img name="img_privilege_item4" pos="40,180,@21,@21" skin="privilege_guide_svip_batch_upload"/>
+        <text name="text_privilege_item4" pos="[8,182,@60,@16" font="0000:微软雅黑" crtext="000000" align="left">%str4315%</text>
+        <link name="link_view_more_priv" pos="40,230" crtext="878C9C" font="0000:微软雅黑" hoverfont="0002:微软雅黑" align="left" valign="middle" cursor="hand">%str4290%</link>
+      </dlg>    
+      <dlg name="dlg_payoff_qr_code" pos="183,36,-30,-30" skin="member_center_card_qr_bgk">   
+        <text name="text_qr_code_title" pos="30,10" align="left" font="0204:微软雅黑" crtext="64360D"></text>
+        <text name="text_qr_code_title2" pos="[0,10" align="left" font="0204:微软雅黑" crtext="FE4244"></text>       
+        <img name="img_qr_code" pos="25,38,@125,@125"/>
+        <text name="text_qr_code_bottom" pos="0,-46,-0,-26" align="center" multilines="0" font="0000:微软雅黑" crtext="B09679"></text>
+        <text name="text_qr_code_bottom2" pos="0,-26,-0,-6" align="center" multilines="0" font="0000:微软雅黑" crtext="B09679"></text>
+      </dlg>          
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,243 @@
+﻿<layer title="%str4172%" name="WechatBackupDlg" width="900" height="650" appwin="1" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="wechat_backup_dlg_bg">
+      <!--标题栏-->
+      <caption pos="0,0,-0,@38">
+        <dlg name="dlg_logo" pos="0,0,200,-0" show="1" msgtransparent="1">
+            <img pos="10,10" skin="common_logo_main"></img>
+            <text name="main_panel_title" pos="39,8" crtext="000000" font="0200:微软雅黑">%str4172%</text>
+        </dlg>
+        <imgbtn name="btn_minimize" skin="btn_sys_minimize" pos="-66,4,-34,21" cursor="arrow" tip="%str251%" animate="1"/>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,4,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      
+      <dlg name="dlg_backup_not_open_txt"  pos="0,72,-0,200">
+        <text pos="72,0" crtext="03081A" font="0a00:微软雅黑">%str4190%</text>
+        <text pos="[0,0" crtext="00A9FF" font="0a00:微软雅黑">%str4191%</text>
+        <text pos="72,36" crtext="03081A" font="0a00:微软雅黑">%str4192%</text>
+        <text pos="[0,36" crtext="00A9FF" font="0a00:微软雅黑">%str4193%</text>
+        <text pos="[0,36" crtext="03081A" font="0a00:微软雅黑">%str4194%</text>
+      </dlg>
+      <dlg name="dlg_backup_opened_txt" pos="0,72,-0,200" show="0">
+        <text pos="72,0" crtext="03081A" font="0a00:微软雅黑">%str4173%</text>
+        <text pos="[0,0" crtext="00A9FF" font="0a00:微软雅黑">%str4155%</text>
+        <text pos="72,36" crtext="03081A" font="0a00:微软雅黑">%str4174%</text>
+        <text pos="[0,36" crtext="00A9FF" font="0a00:微软雅黑">%str4156%</text>
+      </dlg>
+      
+      <link name="lnk_goto_backup_progress" pos="54,215" font="0200:微软雅黑" crtext="06A7FF" hoverfont="0202:微软雅黑" cursor="hand">%str3536%</link>
+      <text pos="170,215" font="0200:微软雅黑" crtext="AFB3BF">%str4175%</text>
+      <!-- 微信 -->
+      <dlg name="dlg_wechat_backup_settings" pos="35,245,@830,@152">
+        <dlg pos="15,0,@800,@122" skin="wechat_backup_dlg_setting_bg">
+          <img pos="22,14,@28,@28" skin="wechat_backup_dlg_ico_wechat"></img>
+          <text pos="53,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000">%str4141%</text>
+          <text name="txt_wechat_backup_status" pos="[0,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000"></text>
+          <check name="chk_wechat_backup" pos="762,22,@18,@16" state="4" skin="wechat_backup_dlg_chk_switch" focusskin="function_collect_focus_skin"></check>
+  
+          <text pos="53,54" font="0000:微软雅黑" crtext="000000">%str4177%</text>
+          <link name="lnk_wechat_backup_dir" pos="141,52" font="0200:微软雅黑" crtext="03081A" hoverfont="0202:微软雅黑" cursor="hand"></link>
+          <img name="img_wechat_account_tip" pos="39,86,@10,@10" skin="wechat_backup_dlg_img_question"></img>
+          <text pos="53,82" font="0000:微软雅黑" crtext="000000">%str4178%</text>
+          <text name="txt_wechat_account" pos="117,80" font="0200:微软雅黑" crtext="000000"></text>
+          <dlg name="wechat_account_select_dlg" pos="113,74,@180,@33" skin="wechat_backup_dlg_combobox_border">
+            <combobox name="wechat_account_select" pos="0,0,@180,@32" dropdown="1"
+              font="0200:微软雅黑" crtext="000000" cursel="0"
+              valign="middle" tabstop="0" richedit="0" x-margin="4"
+              btnskin="wechat_backup_dlg_ico_dropdown" itempanel="1" animtime="160">
+              <liststyle class="cls_edit" itemheight="30" x-margin="1" y-margin="1" ncskin="wechat_backup_dlg_combobox_border" crbg="ffffff" id_text="1">
+                <template skin="wechat_backup_dlg_bg_listitem" crtext="000000" crhover="ffffff">
+                  <text id="1" pos="4,0,-0,-0" crtext="000000" font="0200:微软雅黑" align="left" cursor="arrow"/>
+                </template>
+              </liststyle>
+              <editstyle x-margin="15" inset="3,3,-0,-0" font="0200:微软雅黑" crtext="000000" vcenter="1" crbg="ffffff"/>
+              <items>
+              </items>
+            </combobox>
+          </dlg>
+          <!-- 管理备份 -->
+          <imgbtn name="btn_change_wechat_settings" pos="682,76,@98,@30" font="0200:微软雅黑" crtext="06A7FF" skin="wechat_backup_dlg_btn_border" cursor="arrow" show="0">%str4150%</imgbtn>
+          <!-- 立即开启 -->
+          <imgbtn name="btn_open_wechat_backup" pos="672,61,@118,@60" font="0200:微软雅黑" crtext="FFFFFF" skin="wechat_backup_dlg_btn_blue_small" cursor="arrow" show="0">%str4140%</imgbtn>
+        </dlg>
+      </dlg>
+      <!-- 未开启微信备份 -->
+      <dlg name="dlg_wechat_backup_not_open" pos="35,245,@830,@152" show="0">
+        <dlg pos="15,0,@800,@122" skin="wechat_backup_dlg_setting_bg">
+          <img pos="22,14,@28,@28" skin="wechat_backup_dlg_ico_wechat"></img>
+          <text pos="53,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000">%str4141%</text>
+          <text pos="[0,18" class="cls_wechat_backup_dlg_bold_txt" crtext="FF436A">%str4143%</text>
+
+          <text pos="53,54" font="0000:微软雅黑" crtext="000000">%str4184%</text>
+          <!-- 立即开启 -->
+          <imgbtn name="btn_open_wechat_backup" pos="672,61,@118,@60" font="0200:微软雅黑" crtext="FFFFFF" skin="wechat_backup_dlg_btn_blue_small" cursor="arrow">%str4140%</imgbtn>
+        </dlg>
+      </dlg>
+      <!-- 未安装微信 -->
+      <dlg name="dlg_wechat_not_found" pos="35,245,@830,@152" show="0">
+        <dlg pos="15,0,@800,@122" skin="wechat_backup_dlg_setting_bg">
+          <img pos="22,14,@28,@28" skin="wechat_backup_dlg_ico_wechat"></img>
+          <text pos="53,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000">%str4141%</text>
+          <text pos="[0,18" class="cls_wechat_backup_dlg_bold_txt" crtext="FF436A">%str4143%</text>
+
+          <text pos="53,54" font="0000:微软雅黑" crtext="000000">%str4188%</text>
+          <link name="lnk_wechat_setting_tip" pos="[0,54" font="0000:微软雅黑" crtext="06A7FF" show="0">%str4147%</link>
+          <text pos="[0,54" font="0000:微软雅黑" crtext="000000" show="0">%str4148%</text>
+          <text pos="53,[4" font="0000:微软雅黑" crtext="000000" show="0">%str4152%</text>
+        </dlg>
+      </dlg>
+      <!-- 微信路径tip -->
+      <dlg name="dlg_wechat_filepath_tip" pos="384,316,@245,@66" skin="wechat_backup_dlg_bubble_bg_wechat" show="0">
+        <text pos="20,20" font2="facename:微软雅黑;adding:-1" crtext="ffffff">%str4162%</text>
+        <text name="txt_wechat_dir" pos="|0,44" pos2type="center" font2="facename:微软雅黑;adding:-1" crtext="ffffff"></text>
+      </dlg>
+
+      <!-- QQ -->
+      <dlg name="dlg_qq_backup_settings" pos="35,383,@830,@152">
+        <dlg pos="15,0,@800,@122" skin="wechat_backup_dlg_setting_bg">
+          <img pos="22,14,@28,@28" skin="wechat_backup_dlg_ico_qq"></img>
+          <text pos="53,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000">%str4144%</text>
+          <text name="txt_qq_backup_status" pos="[0,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000"></text>
+          <check name="chk_qq_backup" pos="762,22,@18,@16" state="4" skin="wechat_backup_dlg_chk_switch" focusskin="function_collect_focus_skin"></check>
+  
+          <text pos="53,54" font="0000:微软雅黑" crtext="000000">%str4177%</text>
+          <link name="lnk_qq_backup_dir" pos="141,52" font="0200:微软雅黑" crtext="03081A" hoverfont="0202:微软雅黑" cursor="hand"></link>
+          <text pos="53,82" font="0000:微软雅黑" crtext="000000">%str4178%</text>
+          <text name="txt_qq_account" pos="117,80" font="0200:微软雅黑" crtext="000000"></text>
+          <dlg name="qq_account_select_dlg" pos="113,74,@180,@33" skin="wechat_backup_dlg_combobox_border">
+            <combobox name="qq_account_select" pos="0,0,@180,@32" dropdown="1"
+              font="0200:微软雅黑" crtext="000000" cursel="0"
+              valign="middle" tabstop="0" richedit="0" x-margin="4"
+              btnskin="wechat_backup_dlg_ico_dropdown" itempanel="1" animtime="160">
+              <liststyle class="cls_edit" itemheight="30" x-margin="1" y-margin="1" ncskin="wechat_backup_dlg_combobox_border" crbg="ffffff" id_text="1">
+                <template skin="wechat_backup_dlg_bg_listitem" crtext="000000" crhover="ffffff">
+                  <text id="1" pos="4,0,-0,-0" crtext="000000" font="0200:微软雅黑" align="left" cursor="arrow"/>
+                </template>
+              </liststyle>
+              <editstyle x-margin="15" inset="3,3,-0,-0" font="0200:微软雅黑" crtext="000000" vcenter="1" crbg="ffffff"/>
+              <items>
+              </items>
+            </combobox>
+          </dlg>
+          <!-- 管理备份 -->
+          <imgbtn name="btn_change_qq_settings" pos="682,76,@98,@30" font="0200:微软雅黑" crtext="06A7FF" skin="wechat_backup_dlg_btn_border" cursor="arrow" show="0">%str4150%</imgbtn>
+          <!-- 立即开启 -->
+          <imgbtn name="btn_open_qq_backup" pos="672,61,@118,@60" font="0200:微软雅黑" crtext="FFFFFF" skin="wechat_backup_dlg_btn_blue_small" cursor="arrow" show="0">%str4140%</imgbtn>
+        </dlg>
+      </dlg>
+      <!-- 未开启QQ备份 -->
+      <dlg name="dlg_qq_backup_not_open" pos="35,383,@830,@152" show="0">
+        <dlg pos="15,0,@800,@122" skin="wechat_backup_dlg_setting_bg">
+          <img pos="22,14,@28,@28" skin="wechat_backup_dlg_ico_qq"></img>
+          <text pos="53,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000">%str4144%</text>
+          <text pos="[0,18" class="cls_wechat_backup_dlg_bold_txt" crtext="FF436A">%str4143%</text>
+
+          <text pos="53,54" font="0000:微软雅黑" crtext="000000">%str4184%</text>
+          <!-- 立即开启 -->
+          <imgbtn name="btn_open_qq_backup" pos="672,61,@118,@60" font="0200:微软雅黑" crtext="FFFFFF" skin="wechat_backup_dlg_btn_blue_small" cursor="arrow">%str4140%</imgbtn>
+        </dlg>
+      </dlg>
+      <!-- 未安装QQ -->
+      <dlg name="dlg_qq_not_found" pos="35,383,@830,@152" show="0">
+        <dlg pos="15,0,@800,@122" skin="wechat_backup_dlg_setting_bg">
+          <img pos="22,14,@28,@28" skin="wechat_backup_dlg_ico_qq"></img>
+          <text pos="53,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000">%str4144%</text>
+          <text pos="[0,18" class="cls_wechat_backup_dlg_bold_txt" crtext="FF436A">%str4143%</text>
+
+          <text pos="53,54" font="0000:微软雅黑" crtext="000000">%str4189%</text>
+          <link name="lnk_qq_setting_tip" pos="[0,54" font="0000:微软雅黑" crtext="06A7FF" show="0">%str4147%</link>
+          <text pos="[0,54" font="0000:微软雅黑" crtext="000000" show="0">%str4148%</text>
+          <text pos="53,[4" font="0000:微软雅黑" crtext="000000" show="0">%str4152%</text>
+        </dlg>
+      </dlg>
+      <dlg name="dlg_qq_filepath_tip" pos="329,456,@343,@66" skin="wechat_backup_dlg_bubble_bg_qq" show="0">
+        <text pos="|0,27" pos2type="center" font2="facename:微软雅黑;adding:-1" crtext="ffffff">%str4163%</text>
+        <text name="txt_qq_dir" pos="|0,44" pos2type="center" font2="facename:微软雅黑;adding:-1" crtext="ffffff"></text>
+      </dlg>
+
+      <!-- 云端路径 -->
+        <dlg name="dlg_backup_server_path_center" pos="0,536,-0,@20">
+          <text name="txt_wechat_backup_serverpath" pos="0,0" font="0200:微软雅黑" crtext="AFB3BF"></text>
+          <link name="lnk_change_serverpath" pos="[10,0" hoverfont="0202:微软雅黑" cursor="hand" font="0200:微软雅黑" crtext="06A7FF">%str4151%</link>
+        </dlg>
+      
+      <!-- 一键开启备份 -->
+      <imgbtn name="btn_start_backup" pos="321,555,@258,@82" skin="wechat_backup_dlg_btn_blue" font="0600:微软雅黑" crtext="FFFFFF" crdisabled="ffffff" cursor="arrow">%str4181%</imgbtn>
+      <imgbtn name="btn_open_backup_serverpath" pos="321,555,@258,@82" skin="wechat_backup_dlg_btn_blue" show="0" font="0600:微软雅黑" crtext="FFFFFF" crdisable="ffffff" cursor="arrow">%str4158%</imgbtn>
+
+      <!-- 微信备份设置 -->
+      <dlg name="dlg_wechat_manage_settings" pos="0,0,-0,-0" skin="wechat_backup_dlg_bg_gray" show="0">
+        <dlg pos="50,245,@800,@122" skin="wechat_backup_dlg_bg_light">
+          <img pos="22,14,@28,@28" skin="wechat_backup_dlg_ico_wechat"></img>
+          <text pos="53,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000">%str4141%</text>
+          <text name="txt_wechat_backup_status2" pos="[0,18" fclass="cls_wechat_backup_dlg_bold_txt" crtext="000000" show="0"></text>
+          <check name="chk_wechat_backup2" state="4" pos="762,22,@18,@16" skin="wechat_backup_dlg_chk_switch" focusskin="function_collect_focus_skin"></check>
+
+          <text pos="53,54" font="0000:微软雅黑" crtext="000000">%str4177%</text>
+          <link name="lnk_wechat_backup_dir2" pos="141,52" font="0200:微软雅黑" crtext="03081a" hoverfont="0202:微软雅黑" cursor="hand"></link>
+
+          <img name="img_wechat_account_tip2" pos="39,86,@10,@10" skin="wechat_backup_dlg_img_question"></img>
+          <text pos="53,82" font="0000:微软雅黑" crtext="000000">%str4178%</text>
+          <text name="txt_wechat_account2" pos="117,80" font="0200:微软雅黑" crtext="000000"></text>
+          <dlg name="wechat_account_select_dlg2" pos="113,74,@180,@33" skin="wechat_backup_dlg_combobox_border">
+            <combobox name="wechat_account_select2" pos="0,0,@180,@32" dropdown="1"
+            font="0200:微软雅黑" crtext="000000" cursel="0"
+            valign="middle" tabstop="0" richedit="0" x-margin="4"
+            btnskin="wechat_backup_dlg_ico_dropdown" itempanel="1" animtime="160">
+            <liststyle class="cls_edit" itemheight="30" x-margin="1" y-margin="1" ncskin="wechat_backup_dlg_combobox_border" crbg="ffffff" id_text="1">
+              <template skin="wechat_backup_dlg_bg_listitem" crtext="000000" crhover="ffffff">
+                <text id="1" pos="4,0,-0,-0" crtext="000000" font="0200:微软雅黑" align="left" cursor="arrow"/>
+              </template>
+            </liststyle>
+            <editstyle x-margin="15" inset="3,3,-0,-0" font="0200:微软雅黑" crtext="000000" vcenter="1" crbg="ffffff"/>
+            <items>
+            </items>
+            </combobox>
+          </dlg>
+          <!-- 完成 -->
+          <imgbtn name="btn_apply_wechat_settings" pos="672,61,@118,@60" skin="wechat_backup_dlg_btn_blue_small" font="0200:微软雅黑" crtext="FFFFFF" cursor="arrow">%str4149%</imgbtn>
+        </dlg>
+      </dlg>
+      <!-- 微信号提示 -->
+      <dlg name="wechat_head_tip" pos="23,343,@184,@101" skin="wechat_backup_dlg_bubble_bg_head" show="0">
+        <text pos="20,15" font2="facename:微软雅黑;adding:-1" crtext="ffffff">%str4161%</text>
+        <text pos="20,35" font2="facename:微软雅黑;adding:-1" crtext="ffffff">%str4195%</text>
+        <img pos="20,57,@36,@36" skin="wechat_backup_dlg_ico_wechat_big"></img>
+        <text pos="62,58" font="0000:微软雅黑" crtext="ffffff">%str4159%</text>
+        <text pos="62,78" font2="facename:微软雅黑;adding:-2" crtext="ffffff">%str4160%</text>
+      </dlg>
+      <!-- QQ备份设置 -->
+      <dlg name="dlg_qq_manage_settings" pos="0,0,-0,-0" skin="wechat_backup_dlg_bg_gray" show="0">
+        <dlg pos="50,383,@800,@122" skin="wechat_backup_dlg_bg_light">
+          <img pos="22,14,@28,@28" skin="wechat_backup_dlg_ico_qq"></img>
+          <text pos="53,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000">%str4144%</text>
+          <text name="txt_qq_backup_status2" pos="[0,18" class="cls_wechat_backup_dlg_bold_txt" crtext="000000" show="0"></text>
+          <check name="chk_qq_backup2" state="4" pos="762,22,@18,@16" skin="wechat_backup_dlg_chk_switch" focusskin="function_collect_focus_skin"></check>
+  
+          <text pos="53,54" font="0000:微软雅黑" crtext="000000">%str4177%</text>
+          <link name="lnk_qq_backup_dir2" pos="141,52" font="0200:微软雅黑" crtext="03081a" hoverfont="0202:微软雅黑" cursor="hand"></link>
+  
+          <text pos="53,82" font="0000:微软雅黑" crtext="000000">%str4178%</text>
+          <text name="txt_qq_account2" pos="117,80" font="0200:微软雅黑" crtext="000000"></text>
+          <dlg name="qq_account_select_dlg2" pos="113,74,@180,@33" skin="wechat_backup_dlg_combobox_border">
+            <combobox name="qq_account_select2" pos="0,0,@180,@32" dropdown="1"
+            font="0200:微软雅黑" crtext="000000" cursel="0"
+            valign="middle" tabstop="0" richedit="0" x-margin="4"
+            btnskin="wechat_backup_dlg_ico_dropdown" itempanel="1" animtime="160">
+            <liststyle class="cls_edit" itemheight="30" x-margin="1" y-margin="1" ncskin="wechat_backup_dlg_combobox_border" crbg="ffffff" id_text="1">
+              <template skin="wechat_backup_dlg_bg_listitem" crtext="000000" crhover="ffffff">
+                <text id="1" pos="4,0,-0,-0" crtext="000000" font="0200:微软雅黑" align="left" cursor="arrow"/>
+              </template>
+            </liststyle>
+            <editstyle x-margin="15" inset="3,3,-0,-0" font="0200:微软雅黑" crtext="000000" vcenter="1" crbg="ffffff"/>
+            <items>
+            </items>
+            </combobox>
+          </dlg>
+          <!-- 完成 -->
+          <imgbtn name="btn_apply_qq_settings" pos="672,61,@118,@60" skin="wechat_backup_dlg_btn_blue_small" font="0200:微软雅黑" crtext="FFFFFF" cursor="arrow">%str4149%</imgbtn>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

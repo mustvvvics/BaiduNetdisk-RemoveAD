@@ -1,0 +1,43 @@
+<caption name="CaptionPanel" pos="0,0,-0,-0" crbg="06A7FF">
+    <!--logo-->
+    <img pos="21,10,@30,@30" skin="workspace_logo"></img>
+    <text pos="64,15,@90,@20" crtext="FFFFFF" font="0204:微软雅黑">%str4533%</text>
+    <img pos="-173,0,@173,@50" skin="workspace_right_bkg"></img>
+
+    <!--快速上手-->
+    <imgbtn name="btn_guide" skin="workspace_tutorial_quick_start" cursor="hand" pos="-420,11,@84,@28" show="0"></imgbtn>
+    <!--用户头像-->
+    <img name="img_userhead" pos="-320,|-15,@30,@30" skin="titlepanel_default_head">
+        <img name="img_userhead_frame" pos="0,0,-0,-0" skin="workspace_titlepanel_headframe"/>
+        <img name="img_userhead_cert_status" pos="16,18,@13,@13" skin="titlepanel_cert_status_icon" show="0"/>
+        <!--会员身份标识-->
+        <imgbtn name="btn_crown" pos="20,22,@11,@10" skin="titlepanel_translucent" icoskin="workspace_vip_expired" cursor="hand"/>
+    </img>
+    <!--用户流量条-->
+    <dlg name="dlg_dataflow_progress" pos="-298,10,@140,@50">
+        <dlg name="dlg_no_svip" pos="10,0,-0,-0" show="0">
+            <dlg name="dlg_normal" pos="0,0,-0,-0">
+                <text name="txt_flow_available" font="0000:微软雅黑" pos="10,7" crtext="FFFFFF"></text>
+                <text name="txt_used_flow" font="0000:微软雅黑" pos="[6,7" crtext="FFFFFF" align="left"></text>
+                <text name="txt_toal_flow" font="0000:微软雅黑" pos="[0,7" crtext="FFFFFF" align="left"></text>
+            </dlg>
+            <dlg name="dlg_workpackage" pos="15,0,-0,-0">
+                <text name="txt_workpackage" font="0000:微软雅黑" pos="10,7" crtext="FFFFFF">%str4551%</text>
+            </dlg>
+        </dlg>
+        <dlg name="dlg_svip" pos="0,0,-0,-0" show="0">
+            <imgbtn name="btn_flow_svip" pos="0,0,@139,@32" skin="workspace_titlepanel_svip_btn" txtxoffset="10" icoxoffset="9" icoyoffset="8" icoskin="workspace_title_lightning" crtext="64360D">%str4511%</imgbtn>
+        </dlg>
+    </dlg>
+    <!--用户反馈-->
+    <imgbtn name="btn_workspace_feedback" pos="-144,|-8,@15,@16" skin="workspace_feedback" cursor="arrow" tip="%str4550%"></imgbtn>
+    <!--设置-->
+    <imgbtn name="btn_workspace_setting" pos="-122,|-8,@15,@16" skin="workspace_titlepanel_setting_btn" cursor="arrow" tip="%str1507%"></imgbtn>
+    
+    <!--窗口属性-->
+    <hr pos="-98,|-8,@1,@16" size="1" crbg="d6d8dd"/>
+    <imgbtn name="btn_minimize" skin="workspace_titlepanel_minmize_btn" pos="-84,|-8,@15,@16" cursor="arrow" tip="%str251%"/>
+    <imgbtn name="btn_maximize" skin="workspace_titlepanel_maximize_btn" pos="-56,|-8,@15,@16" cursor="arrow" tip="%str1503%"/>
+    <imgbtn name="btn_restore" skin="workspace_titlepanel_restore_btn" pos="-56,|-8,@15,@16" cursor="arrow" tip="%str1504%" show="0"/>
+    <imgbtn name="btn_close" skin="workspace_titlepanel_close_btn" pos="-30,|-8,@15,@16" cursor="arrow" tip="%str250%"></imgbtn>
+</caption>

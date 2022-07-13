@@ -1,0 +1,9 @@
+<dlg name="Toolbar" skin="mainpanel_toolbar_bkg" pos="16,0,-0,-0">
+  <dlg name="dlg_buttons" pos="0,0,0,0" crbg="ffffff" skin="mainpanel_toolbar_lightblue_btn"></dlg>
+  <dropbutton name="btn_add" class="toolbarbtn" skin="mainpanel_toolbar_darkblue_btn" font="0000:微软雅黑" hoverfont="0004:微软雅黑" crtext="ffffff" crhover="ffffff" crdisabled="AFB3BF" textmode="40824"  icoskin="mainpanel_toolbar_add" drop-skin="safebox_arrow_drop_down" icoxoffset="24" icoyoffset="8" txtxoffset="44" pos="5,7,@102,@32" cursor="arrow">%str2163%</dropbutton>
+  <imgbtn name="btn_download" class="toolbarbtn" skin="mainpanel_toolbar_bg_transparent" font="0000:微软雅黑" hoverfont="0004:微软雅黑" crtext="06A7FF" crdisabled="AFB3BF" textmode="40824" icoskin="mainpanel_toolbar_download" icoxoffset="12" icoyoffset="8" txtxoffset="32" pos="[5,7,@70,@32" cursor="arrow">%str2151%</imgbtn>
+  <imgbtn name="btn_createdir" class="toolbarbtn" skin="mainpanel_toolbar_bg_transparent" font="0000:微软雅黑" hoverfont="0004:微软雅黑" crtext="06A7FF" crdisabled="AFB3BF" textmode="40824" icoskin="mainpanel_toolbar_createdir" icoxoffset="12" icoyoffset="8" txtxoffset="32" pos="[5,7,@100,@32" cursor="arrow" show="0">%str2154%</imgbtn>
+  <imgbtn name="btn_moveout" class="toolbarbtn" skin="mainpanel_toolbar_bg_transparent" font="0000:微软雅黑" hoverfont="0004:微软雅黑" crtext="06A7FF" crdisabled="AFB3BF" textmode="40824" icoskin="mainpanel_toolbar_moveout" icoxoffset="12" icoyoffset="8" txtxoffset="32" pos="[5,7,@120,@32" cursor="arrow" show="0">%str2166%</imgbtn>
+  
+  <imgbtn name="btn_export_onlinedoc" class="toolbarbtn" icoskin="mainpanel_toolbar_export_onlinedoc" icoxoffset="10" icoyoffset="5" txtxoffset="18" pos="89,4,@75,@32" cursor="arrow" show="0">%str2363%</imgbtn>
+</dlg>

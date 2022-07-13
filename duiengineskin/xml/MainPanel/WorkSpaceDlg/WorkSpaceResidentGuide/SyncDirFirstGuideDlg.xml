@@ -1,0 +1,12 @@
+<layer name="ResidentGuide" width="280" height="170" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg pos="0,0,@280,@170" skin="navigatepanel_sync_dir_icon_bubble_bg">
+            <dlg pos="20,20,-20,-20">
+                <text pos="32,24,@200,@16" crtext="FFFFFF" font2="facename:微软雅黑;bold:1;adding:4">%str4669%</text>
+                <text pos="32,[8,@182,@16" crtext="FFFFFF" font2="facename:微软雅黑;adding:2">%str4670%</text>
+                <imgbtn name="btn_close" pos="32,[15,@80,@26" skin="workspace_guide_btn_bkg_two" crtext="06A7FF"
+                    font2="facename:微软雅黑;adding:1" cursor="arrow">%str4581%</imgbtn>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

@@ -1,0 +1,25 @@
+﻿<layer name="FileUploadTipDlg"  width="390" height="180" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text name="dlg_title" pos="39,9" class="cls_dlg_title_text">%str3400%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg pos="0,38,-0,-0">
+        <dlg pos="0,0,-0,40">
+          <img name="img_file_type" pos="20,12" skin="doc_small_image" />
+          <link name="text_file_name" pos="[5,15" maxwidth="325" dotted="1" crtext="333333" align="center"></link>
+        </dlg>
+        <dlg pos="0,40,-0,80">
+          <text name="text_file_upload_target" pos="20,5" crtext="333333" align="center">%str3401%</text>
+          <text name="text_file_upload_tip" pos="20,28" crtext="999999" align="center">%str3404%</text>
+        </dlg>
+        <dlg pos="0,80,-0,120">
+          <check name="check_close_tip" pos="20,24" class="vcentertext" crtext="333333" state="0">%str3402%</check>
+        </dlg>
+        <imgbtn name="btn_known" pos="-108,-41,-20,-20" cursor="arrow" animate="1" skin="btn_default" crtext="ffffff">%str3403%</imgbtn>
+      </dlg>
+    </dlg> 
+  </body>
+</layer>

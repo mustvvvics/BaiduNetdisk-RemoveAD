@@ -1,0 +1,7 @@
+<layer name="DragTip" width="142" height="30" toolwindow="1" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+	<body>
+		<dlg pos="0,0,-0,-0" skin="dragtip_bkg">
+			<link pos="2,|-9,-2,@18" name="txt_tip" class="cls_dragdrop_link"></link>
+		</dlg>
+	</body>
+</layer>

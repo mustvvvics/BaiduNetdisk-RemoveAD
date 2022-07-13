@@ -1,0 +1,82 @@
+<dlg  name="ShareListPanel" pos="0,0,-0,-0">
+  
+  <!--列表视图-->
+  <dlg pos="0,0,-0,-38" show="1">
+    <dlg name="share_list_toolbar" pos="0,0,-0,40">
+      <imgbtn name="btn_share_list_copy" pos="7,3,@86,@31" skin="sharelist_copy_btn" crtext="333333"
+              crhover="3a8cff" font="0000:微软雅黑" txtxoffset="25" cursor="arrow">%str2003%</imgbtn>
+      <imgbtn name="btn_share_list_cancel" pos="[10,3,@86,@31" skin="sharelist_cancel_btn" crtext="333333"
+              crhover="3a8cff" font="0000:微软雅黑" txtxoffset="25" cursor="arrow">%str2004%</imgbtn>
+      <hr pos="0,-1,-0,-0" size="1" crbg="eaecf2"/>
+    </dlg>
+    <!--分享文件列表视图-->
+    <dlg name="sharelistpanel_list" pos="0,40,-0,-0" show="0">
+      <header name="share_list_header" pos="0,0,-0,@30" checkSkin="listhead_check" itemSkin="listhead_btn" noitemSkin="listhead_bkg"
+            fixWidth="0" crtext="666666" itemSwapEnable="0" sortHeader="1" check_txt_margin="12" align="left">
+      </header>
+      <listboxex name="share_list_view" pos="0,30,-0,-0" itemheight="40" virtual="1">
+        <template>
+          <img name="item_bg" pos="1,0,-1,-1" skin="sharelist_itembg_img" show="0"/>
+          <dlg name="col_1" pos="0,0,364,-0">
+            <check name="item_chk" pos="16,12,@15,@15" skin="btncheckbox"/>
+            <img name="img_lock" pos="[6,15,@8,@10" skin="sharelist_private_img"/>
+            <img name="img_filetype" pos="[6,10,@20,@20" skin="other_small_image"/>
+            <text name="txt_error_tip" pos="[10,12" crtext="ff0000" font="0000:微软雅黑" align="left" show="0"/>
+            <link name="link_filename" pos="[10,12" crtext="333333" font="0000:微软雅黑" align="left" curor="arrow" maxwidth="270" dotted="1"/>
+            <imgbtn name="btn_share_list_item_copy" pos="-51,14,@16,@16" skin="sharelist_copy_btn_small" tip="%str2005%" cursor="arrow"/>
+            <imgbtn name="btn_share_list_item_cancel" pos="-24,14,@16,@16" skin="sharelist_cancel_btn_small" tip="%str2006%" cursor="arrow"/>
+          </dlg>
+          <dlg name="col_2" pos="364,0,514,-0">
+            <text name="txt_share_time" pos="8,12" crtext="666666" font="0000:微软雅黑" dotted="1"/>
+          </dlg>
+          <dlg name="col_3" pos="514,0,616,-0">
+            <text name="txt_expire_time" pos="8,12" crtext="666666" font="0000:微软雅黑" dotted="1"/>
+          </dlg>
+          <dlg name="col_4" pos="616,0,691,-0">
+            <text name="txt_view_cnt" pos="8,12" crtext="666666" font="0000:微软雅黑"/>
+          </dlg>
+          <dlg name="col_5" pos="691,0,766,-0">
+            <text name="txt_trans_cnt" pos="8,12" crtext="666666" font="0000:微软雅黑"/>
+          </dlg>
+          <dlg name="col_6" pos="766,0,841,-0">
+            <text name="txt_download_cnt" pos="8,12" crtext="666666" font="0000:微软雅黑"/>
+          </dlg>
+          <dlg name="dlg_expand" pos="0,45,-0,-0" show="0">
+            <link name="link_share_url" pos="81,6" class="cls_btn_weblink"/>
+            <text name="txt_share_password" pos="[24,6" crtext="333333" show="0"/>
+            <imgbtn name="btn_share_list_copy_link" pos="[10,3,@72,@24" class="cls_sharelist_panel_copy_button" cursor="arrow">%str2007%</imgbtn>
+          </dlg>
+        </template>
+      </listboxex>
+    </dlg>
+    <!--空视图-->
+    <dlg name="sharelistpanel_empty" pos="0,0,-0,-38" show="0">
+      <img pos="|-90,|-64,@181,@128" skin="sharelist_empty_img"/>
+      <text pos="|-136,|70" crtext="333333" font="0200:微软雅黑">%str2022%</text>
+    </dlg>
+
+    <!--正在加载视图-->
+    <dlg name="sharelistpanel_loading" pos="0,0,-0,-38" show="1">
+      <img pos="|-90,|-64,@181,@128" skin="sharelist_normal_img"/>
+      <text pos="|-200,|70,@400,@20" crtext="333333" font="0200:微软雅黑" textmode="40825">%str1291%</text>
+    </dlg>
+
+    <!--错误视图-->
+    <dlg name="sharelistpanel_error" pos="0,0,-0,-38" show="0">
+      <img pos="|-54,|-77,@108,@122" skin="sharelist_error_img"/>
+      <text name="error_tip" pos="|-200,|50,@400,@20" crtext="333333" font="0200:微软雅黑" textmode="40825">%str2021%</text>
+      <imgbtn name="btn_share_list_retry" pos="|-50,|75,@100,@32" class="defultbtn" cursor="arrow">%str2023%</imgbtn>
+    </dlg>
+  </dlg>
+  
+  <!--底部状态栏-->
+  <dlg name="sharelist_bottom" pos="0,-38,-0,-0" crbg="fbfbfb">
+    <hr pos="0,0,-0,@1" crbg="eaecf2"/>
+    <dlg name="sharelist_status" pos="0,1,-0,-0">
+      <text name="sharelist_count_tip" pos="-40,|-9,-0,@18" crtext="4c4c4c" font="0000:微软雅黑"></text>
+      <pagectrl pos="42,|-9,-40,@18" name="share_list_page" prebtn-skin="pagectrl_prebtn_bkg" nextbtn-skin="pagectrl_nextbtn_bkg"
+      selClr="478de4" class="pagectrl_num"/>
+    </dlg>
+  </dlg>
+  
+</dlg>

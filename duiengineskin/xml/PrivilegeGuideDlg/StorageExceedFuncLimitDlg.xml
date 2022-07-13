@@ -1,0 +1,39 @@
+﻿<layer name="StorageExceedFuncLimitDlg" width="490" height="528" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>     
+    <dlg pos="0,0,-0,-0" skin="privilege_guide_bgk_v2">
+    
+      <caption pos="0,0,-0,62">
+        <text name="dlg_title" pos="40,30" font="0104:微软雅黑" crtext="333333">%str2507%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-55,25,@30,@20" cursor="arrow" tip="%str250%" animate="1"/>
+        <hr pos="15,-2,-15,-1" crbg="F5F6FA" size="1"/>
+      </caption>
+  
+      <dlg name="dlg_main_content" pos="15,62,-15,-15" >
+        <img name="img_warning" pos="100,24,@20,@20" skin="leftpanel_quotaguide_warn_icon"/>
+        <text name="text_main_warning" pos="[6,24,-1,@20" font="0604:微软雅黑" multilines="0" crtext="03081A">%str5020%</text>      
+        <text name="text_sub_warning1" pos="1,[14,-1,@14" font="0100:微软雅黑" multilines="0" align="center" crtext="818999">%str5021%</text>
+        <text name="text_sub_warning2" pos="1,[10,-1,@14" font="0100:微软雅黑" multilines="0" align="center" crtext="818999">%str5022%</text>
+        
+        <dlg name="dlg_quota_info_panel" pos="60,148,-60,310" skin="privilege_guide_bgk_v2">
+          <text name="user_name" pos="15,40,-15,60" font="0000:微软雅黑" crtext="03081A" dotted="1" align="center"></text>
+          <text name="quota_used_tip1" pos="100,70,@74,@20" font="0004:微软雅黑" crtext="03081A" align="left">%str5024%</text>
+          <text name="quota_used_tip2" pos="[0,70,@80,@20" font="0004:微软雅黑" crtext="FF436A" align="left"></text>
+          <dlg name="progress_bkg" pos="28,100,@288,@8" class="cls_leftpanel_progress_bkg" />
+          <dlg name="progress_frg" pos="28,100,@288,@8" class="cls_leftpanel_progress_frg_red" /> 
+          <text pos="28,118,@48,@12" font="0000:微软雅黑" crtext="333333" align="left">%str5027%</text>
+          <text name="txt_quota" pos="-110,118,@110,@12" font="0000:微软雅黑" crtext="333333" align="left"></text>
+        </dlg>
+        
+         <!--用户头像-->
+        <img name="img_userhead" pos="205,120,@50,@50" skin="titlepanel_default_head" />
+        <img name="img_userhead_frame" pos="205,120,@50,@50" skin="titlepanel_headframe" />
+                
+        <imgbtn name="btn_switch_account" pos="96,334,@128,@36" crtext="06A7FF" font="0200:微软雅黑" cursor="arrow" skin="privilege_light_blue_btn">%str5028%</imgbtn> 
+        <imgbtn name="btn_buy_quota" pos="[16,334,@128,@36" crtext="FFFFFF" font="0200:微软雅黑" cursor="arrow" skin="privilege_dark_blue_btn">%str5029%</imgbtn>
+        <imgbtn name="btn_refresh_quota" pos="170,[20,@128,@14" cursor="hand" crtext="A2ABBD" skin="titlepanel_translucent" font="0100:微软雅黑" align="center">%str5026%</imgbtn>        
+        <imgbtn name="btn_feedback" pos="390,-42,@54,@20" cursor="hand" crtext="06A7FF" skin="titlepanel_translucent" font="0100:微软雅黑" align="center">%str1489%</imgbtn>
+      </dlg>
+
+    </dlg>         
+  </body>
+</layer>

@@ -1,0 +1,16 @@
+<layer name="SubDirectoryPanel" width="150" height="370" appwin="0" ncRect="0,0,0,0" toolwindow="1" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="mainpanel_addresspanel_pathnavigator_subdirpanel_bg">
+        <listboxex name="sub_dir_item_view" pos="1,1,-1,-1" itemheight="23" virtual="1">
+         <template>
+          <dlg pos="0,0,-0,-0">
+            <img name="img_item_type" skin="mainpanel_addresspanel_pathnavigator_subdirpanel_directory" pos="5,3"></img>
+            <link name="txt_item_name" pos="35,0,-0,-0" class="cls_sub_director_panel_txt" show="1"/>
+          </dlg>
+          </template>
+       </listboxex>
+    </dlg>
+  </body>
+</layer>
+
+

@@ -1,0 +1,16 @@
+<layer name="FAT32Guide" width="464" height="300" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="dlg_main" pos="0,0,@464,@265" skin="workspace_guide_frame_mask">
+            <caption pos="0,0,-0,@48">
+                <text pos="24,15" font="0200:微软雅黑" crtext="03081A">%str4565%</text>
+            </caption>
+            <text pos="24,65,@416,@36" font="0000:微软雅黑" textmode="40810">%str6013%</text>
+            <imgbtn name="btn_tip" pos="210,83,@200,@17" skin="function_collect_focus_skin" crtext="06A7FF" cursor="arrow" tip="%str6014%" font="0000:微软雅黑">%str6015%</imgbtn>
+            <edit name="sync_dir_edit" pos="24,117,@304,@32"  class="cls_edit_set" font2="facename:微软雅黑;adding:5" vcenter="1"></edit>
+            <imgbtn name="btn_change_dir" pos="[6,117,@104,@32" skin="workspace_guide_btn_bkg_three" font="face:微软雅黑,adding:-3" cursor="hand">%str4567%</imgbtn>
+            <text name="txt_error" pos="24,[8" crtext="FF436A" show="0">%str6016%</text>
+            <imgbtn name="btn_cancel" pos="91,193,@128,@36" font="0200:微软雅黑" crtext="06A7FF" skin="workspace_guide_btn_bkg_two" cursor="hand">%str4568%</imgbtn>
+            <imgbtn name="btn_create_dir" pos="243,193,@128,@36" font="0200:微软雅黑" crtext="FFFFFF" skin="workspace_guide_btn_bkg_one" cursor="hand">%str4569%</imgbtn>
+        </dlg>
+    </body>
+</layer>

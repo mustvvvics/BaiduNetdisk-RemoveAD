@@ -1,0 +1,46 @@
+﻿<layer name="GameCenterDlg" width="1012" height="682" minsize="1012,682" appwin="0" ncRect="4,4,4,4" resize="1" translucent="0" nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" crbg="ffffff" crborder="999999">
+      <dlg name="content" pos="0,0,-0,-0">
+        <caption name="titlebar" pos="1,1,-1,@48">
+          <img pos="26,10,@28,@28" skin="titlepanel_game_center_skin"/>
+          <text pos="64,14" name="txt_title" crtext="030B1A" font="0200:微软雅黑">%str4970%</text>
+          <listboxex name="tab_headers" pos="172,0,@176,@48" itemwidth="176" horizontal="1" virtual="1" sbwid="10">
+            <template>
+              <dlg name="dlg_item" pos="0,0,-0,-0" crbg="ffffff">
+                <hr pos="0,|-12,@1,@24" size="1" crbg="DCDFE6"/>
+                <link name="txt_item" pos="16,18,-42,30" dotted="1" crtext="030B1A" font="0000:微软雅黑" align="left" cursor="arrow"></link>
+                <imgbtn name="btn_item_close" pos="-30,|-8,@15,@16" skin="titlepanel_close_btn" cursor="arrow" show="0"/>
+              </dlg>
+            </template>
+          </listboxex>
+          <imgbtn name="btn_refresh" skin="gamecenter_dlg_btn_refresh" pos="-128,|-8,@15,@16" cursor="arrow" tip="%str217%"/>
+          <hr pos="-98,|-6,@1,@12" size="1" crbg="DCDFE6"/>
+          <imgbtn name="btn_minimize" skin="titlepanel_minmize_btn" pos="-84,|-8,@15,@16" cursor="arrow" tip="%str251%"/>
+          <imgbtn name="btn_maximize" skin="titlepanel_maximize_btn" pos="-56,|-8,@15,@16" cursor="arrow" tip="%str1503%"/>
+          <imgbtn name="btn_restore" skin="titlepanel_restore_btn" pos="-56,|-8,@15,@16" cursor="arrow" tip="%str1504%" show="0"/>
+          <imgbtn name="btn_close" skin="titlepanel_close_btn" pos="-30,|-8,@15,@16" cursor="arrow" tip="%str250%"/>
+        </caption>
+        <dlg name="dlg_pages" pos="1,[0,-1,-1">
+          <tabctrl name="tab_pages" pos="0,0,-0,-0" tabalign="top" cursel="0">
+            <tab pos="0,0,-0,-0" title="%str4970%">
+              <hr pos="0,0,-0,@1" size="1" crbg="F1F3F8"/>
+              <listboxex name="tab_second_headers" pos="0,[0,-0,@40" itemwidth="72" horizontal="1" virtual="1">
+                <template>
+                  <dlg pos="0,0,-0,-0">
+                    <link name="txt_item" pos="0,14,-0,@12" crtext="030B1A" font="0000:微软雅黑" align="center" cursor="hand"></link>
+                    <hr name="hr_select" pos="|-6,-6,@12,@2" crbg="FF6600"/>
+                  </dlg>
+                </template>
+              </listboxex>
+              <tabctrl name="tab_second_pages" pos="0,[0,-0,-0" tabalign="top" cursel="0">
+                <tab pos="0,0,-0,-0">
+                </tab>
+              </tabctrl>
+            </tab>
+          </tabctrl>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

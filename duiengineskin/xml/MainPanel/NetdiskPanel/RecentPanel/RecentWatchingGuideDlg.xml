@@ -1,0 +1,10 @@
+﻿<layer name="RecentWatchingGuideDlg" width="361" height="254" toolwindow="1" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="recentpanel_videohistory_guide_bg">
+        <text name="guide_title" pos="46,39,@196,@14" align="left" crtext="03081A" font="0200:微软雅黑">%str2376%</text>
+        <text name="guide_subtitle" pos="46,61,@156,@12" align="left" crtext="636D7E" font="0000:微软雅黑">%str2377%</text>
+        <img pos="46,91,@296,@70" skin="recentpanel_videohistory_guide_img"></img>
+        <imgbtn name="btn_ok" pos="|-64,-77,@128,@36" font="0200:微软雅黑" skin="skin_quickupload_guide_open_btn" crtext="FFFFFF" cursor="arrow">%str752%</imgbtn>
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,6 @@
+<dlg  name="StatusPanel" pos="0,0,-0,-0">
+  <dlg name="sharelist_status" pos="60,1,-174,-0">
+    <pagectrl pos="42,|-9,-40,@18" name="file_list_page" prebtn-skin="pagectrl_prebtn_bkg" nextbtn-skin="pagectrl_nextbtn_bkg"
+    selClr="478de4" class="pagectrl_num"/>
+  </dlg>
+</dlg>

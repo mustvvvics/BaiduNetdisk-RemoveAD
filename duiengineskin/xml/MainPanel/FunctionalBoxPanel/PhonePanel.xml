@@ -1,0 +1,93 @@
+<dlg name="PhoneContainerPanel" pos="0,0,-0,-0" show="0">
+  <!--无连接引导面板-->
+  <dlg name="GuidePanel" pos="0,0,-0,-0" show="1">
+    <dlg pos="14,14" width="70" height="32">
+      <imgbtn name="return_btn" pos="0,0,-0,-0" animate="true" class="btn_try" align="center" txtxoffset="10">%str223%</imgbtn>
+      <img pos="10,8" width="14" height="16" skin="phone_iconback_gray_image"/>
+    </dlg>
+    <dlg  pos="|-280,48" width="560" height="60">
+      <dlg pos="0,0,-0,24">
+        <text pos="5,0" class="phone_panel_tip2_text">%str220%</text>
+        <text pos="[0,0" class="phone_panel_tip1_text">%str201%</text>
+        <text pos="[0,0" class="phone_panel_tip2_text">%str221%</text>
+      </dlg>
+      <text pos="145,40" class="phone_panel_tip3_text">%str222%</text>
+    </dlg>
+    <dlg name="PhoneTipPanel" pos="|-314,|-132" width="628" height="264">
+      <img pos="0,0,627,263" skin="phone_guide_image" />
+      <imgbtn name="connect_phone_btn" pos="345,116,535,163" animate="true" class="btn_connect_phone" >%str200%</imgbtn>
+    </dlg>
+  </dlg>
+  <!--手机短信通话记录面板-->
+  <dlg name="PhoneInfoPanel" pos="0,0,-0,-0" show="0">
+    <!--操作栏面板-->
+    <dlg name="phone_op_panel" pos="0,0,-0,40" skin="phone_op_panel">
+      <imgbtn name="phone_call_tabbtn" pos="0,0,114,39" animate="true" class="phone_tabsel_btn" cursor="arrow">%str205%</imgbtn>
+      <img name="phone_new_call" pos="78,5,90,17" skin="phone_new_image" show="0"/>
+      <imgbtn name="phone_msg_tabbtn" pos="115,0,229,39" animate="true" class="phone_tabunsel_btn" cursor="arrow">%str206%</imgbtn>
+      <img name="phone_new_msg" pos="182,5,194,17" skin="phone_new_image" show="0" />
+      <dlg name="PhoneSwitchPanel" pos="-367,0" width="262" height="40">
+        <img pos="]-32,7" skin="phone_android_image" />
+        <link name="phone_type_name_link" pos="-0,10" maxwidth="230" class="phone_panel_link" tip="%str216%" pos2type="righttop"></link>
+      </dlg>
+      <imgbtn name="phone_refresh_btn" pos="-80,10,-66,28" animate="true" skin="phone_refresh_btn" cursor="arrow" tip="%str217%"></imgbtn>
+      <imgbtn name="disconnect_phone_btn" pos="-46,10,-32,28" animate="true" cursor="arrow" skin="phone_disconnect_btn" tip="%str213%"></imgbtn>
+    </dlg>
+    <!--底部分割线-->
+    <hr pos="0,-31,-0,-30" size="1" crbg="f3f3f3"/>
+    <!--中间面板-->
+    <dlg name="PhoneCallEmptyPanel" pos="|-200,|-98" width="400" height="196" show="0">
+      <img pos="110,0,291,127" skin="phone_empty_image" />
+      <text pos="44,160" class="phone_panel_tip4_text">%str207%</text>
+    </dlg>
+    <dlg name="PhoneMsgEmptyPanel" pos="|-200,|-98" width="400" height="196" show="0">
+      <img pos="110,0,291,127" skin="phone_empty_image" />
+      <text pos="50,160" class="phone_panel_tip4_text">%str208%</text>
+    </dlg>
+    <dlg name="PhoneLoadingPanel" pos="|-200,|-98" width="400" height="196" show="0">
+      <img pos="110,0,291,128" skin="phone_loading_image" />
+      <text name="phone_loading_text" pos="150,160" class="phone_panel_tip4_text">%str202%</text>
+      <gifplayer pos="[2,170" width="32" height="6" skin="connnecting_gif"/>
+    </dlg>
+    <dlg name="PhoneErrorPanel" pos="|-200,|-98" width="400" height="196" >
+      <img pos="110,0,291,127" skin="phone_error_image" />
+      <text name="phone_error_text" pos="195,160" class="phone_panel_tip4_text" pos2type="righttop">%str203%</text>
+      <imgbtn name="phone_retry_btn" pos="210,150,270,182" animate="true" class="btn_file_from_phone" >%str204%</imgbtn>
+    </dlg>
+    <!--短信列表-->
+    <dlg name="PhoneMsgListPanel" pos="0,41,-0,-0" show="0">
+      <listboxex name="phone_msg_list" pos="0,0,-0,-31" itemheight="56" virtual="1">
+        <template>
+          <!--显示Hover和down状态-->
+          <img name="phone_msg_item_bkg" pos="0,0,-0,-0" skin="phone_hoveritem_image" show="0"/>
+          <img pos="21,|-10" width="20" height="20" skin="phone_msg_image"/>
+          <text name="phone_msg_name_and_num" pos="57,5,-150,23" class="phone_panel_name_text"></text>
+          <text name="phone_msg_content" pos="57,28,-150,-10" class="phone_panel_msg_text"></text>
+          <text name="phone_msg_time" pos="-140,|-8" width="110" height="16" class="phone_panel_time_text"></text>
+          <imgbtn name="phone_copymsg_btn" pos="-95,|-8" width="15" height="17" animate="true" cursor="arrow" skin="phone_copymsg_btn" tip="%str214%" show="0"></imgbtn>
+          <hr pos="0,-1,-0,-0" size="1" crbg="e7e7e7"/>
+        </template>
+      </listboxex>
+      <dlg pos="2,-31,-2,-0">
+        <pagectrl pos="0,7,-0,-8" name="phone_msg_page" prebtn-skin="pagectrl_prebtn_bkg" nextbtn-skin="pagectrl_nextbtn_bkg" selClr="449cde" class="pagectrl_num"/>
+      </dlg>
+      <text name="phone_msg_calcsize" pos="57,0,-150,-31" class="phone_panel_calcsize_text" multilines="1" show="0"></text>
+    </dlg>
+    <!--通话记录列表-->
+    <dlg name="PhoneCallListPanel" pos="0,41,-0,-0" show="0">
+      <listboxex name="phone_call_list" pos="0,0,-0,-31" itemheight="44" virtual="1">
+        <template>
+          <!--显示Hover和down状态-->
+          <img name="phone_call_item_bkg" pos="0,0,-0,-0" skin="phone_hoveritem_image" show="0"/>
+          <img name="phone_call_type" pos="21,12,41,32" skin="phone_callin_image"/>
+          <text name="phone_call_name_and_num" pos="53,13,-150,31" class="phone_panel_name_text"></text>
+          <text name="phone_call_time" pos="-140,15,-30,31" class="phone_panel_time_text"></text>
+          <hr pos="0,-1,-0,-0" size="1" crbg="e7e7e7"/>
+        </template>
+      </listboxex>
+      <dlg pos="2,-31,-2,-0">
+        <pagectrl pos="0,7,-0,-8" name="phone_call_page" prebtn-skin="pagectrl_prebtn_bkg" nextbtn-skin="pagectrl_nextbtn_bkg" selClr="449cde" class="pagectrl_num"/>
+      </dlg>
+    </dlg>
+  </dlg>
+</dlg>
