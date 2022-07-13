@@ -3,7 +3,7 @@
   <img pos="20,12,@122,@26" skin="titlepanel_logo"></img>
   
   <!--文字运营位-->
-  <link name="link_header_ad" pos="-0,|-0，,@0,@0" crtext="C9A566" font="0000:微软雅黑" align="left" maxwidth="200" cursor="hand" dotted="1" show="0"></link>
+  <link name="link_header_ad" pos="-0,|-0，@0,@0" crtext="C9A566" font="0000:微软雅黑" align="left" maxwidth="200" cursor="hand" dotted="1" show="0"></link>
   
   <!--icon广告-->
   <!-- <imgbtn name="btn_icon_ad" pos="-588,|-14,@28,@28" skin="titlepanel_ad_skin" cursor="hand" show="0"></imgbtn>  -->
