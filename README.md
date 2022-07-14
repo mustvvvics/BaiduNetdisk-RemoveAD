@@ -29,7 +29,7 @@ C:\Users\UserName\AppData\Roaming\baidu\BaiduNetdisk\skin\duiengineskin\xml\Main
 
 ### 1.3 关闭自动更新
 
-防止升级后修改的文件丢失
+防止网盘自动升级后，本地修改的文件被更新。
 
 【需手动】将 C:\Users\UserName\AppData\Roaming\baidu\BaiduNetdisk 中的\AutoUpdate文件更名。
 
