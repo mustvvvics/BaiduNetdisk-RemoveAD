@@ -1,0 +1,171 @@
+<layer name="ResidentGuide" width="790" height="665" appwin="0" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg skin="workspace_guide_mask" pos="0,0,-0,-0">
+          <dlg name="dlg_guide_page_0" pos="163,170,@464,@400" skin="workspace_guide_white_frame" show="0">
+            <text name="dlg_guide_page_0_title" pos="24,15" crtext="03081A" font="0180:微软雅黑" animate="1">%str6091%</text>
+            <imgbtn name="btn_guide_page_close" skin="workspace_guide_page_close" pos="-27,18,@16,@16"></imgbtn>
+            <hr pos="1,48,-1,49" crbg="f0f0f0"></hr>
+            <img pos="92,73" skin="workspace_guide_normal_page_1"></img>
+            <imgbtn name="btn_all_sync_0" skin="cloudbridge_mode_frame" cursor="hand" pos="24,131,@200,@82">
+              <img name="img_all_sync_0" pos="8,12" skin="cloudbridge_unridio"></img>
+              <text pos="[5,12" font="0000:微软雅黑" crtext="03081A">%str6083%</text>
+              <text pos="10,34,@182,@36" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6076%</text>
+            </imgbtn>
+            <imgbtn name="btn_quick_sync_0" skin="cloudbridge_mode_frame" cursor="hand" pos="24,222,@200,@82">
+              <img pos="166,0,@34,@16" skin="cloudbridge_svip"></img>
+              <img name="img_quick_sync_0" pos="8,12" skin="cloudbridge_unridio"></img>
+              <text pos="[5,12" font="0000:微软雅黑" crtext="03081A">%str6088%</text>
+              <text pos="10,34,@182,@36" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6075%</text>
+            </imgbtn>
+            <gifplayer pos="236,131,@204,@173" skin="gif_workspace_quick_sync" bulltimer="1"></gifplayer>
+            <imgbtn name="btn_normal_next_page" skin="workspace_guide_btn_bkg_one" pos="132,340,@200,@36" crtext="FFFFFF" >%str6090%</imgbtn>
+          </dlg>
+          <dlg name="dlg_guide_page_1" pos="163,170,@464,@400" skin="workspace_guide_white_frame" show="0">
+            <text name="dlg_guide_page_1_title" pos="24,15" crtext="03081A" font="0180:微软雅黑" animate="1">%str6091%</text>
+            <imgbtn name="btn_guide_page_close" skin="workspace_guide_page_close" pos="-27,18,@16,@16"></imgbtn>
+            <hr pos="1,48,-1,49" crbg="f0f0f0"></hr>
+              <img pos="92,73" skin="workspace_guide_normal_page_1"></img>
+            <imgbtn name="btn_all_path_1" skin="cloudbridge_mode_frame" cursor="hand" pos="24,131,@200,@82">
+              <img name="img_all_path_1" pos="8,12" skin="cloudbridge_unridio"></img>
+              <text pos="[5,12" font="0000:微软雅黑" crtext="03081A">%str6084%</text>
+              <text pos="10,34,@182,@36" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6085%</text>
+            </imgbtn>
+            <imgbtn name="btn_selective_path_1" skin="cloudbridge_mode_frame" cursor="hand" pos="24,222,@200,@82">
+              <img pos="166,0,@34,@16" skin="cloudbridge_svip"></img>
+              <img name="img_selective_path_1" pos="8,12" skin="cloudbridge_unridio"></img>
+              <text pos="[5,12" font="0000:微软雅黑" crtext="03081A">%str6086%</text>
+              <imgbtn name="btn_selective_path_question_1" skin="workspace_guide_btn_question" pos="[5,15,@12,@12"></imgbtn>
+              <text pos="10,34,@182,@36" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6087%</text>
+            </imgbtn>
+            <gifplayer pos="236,131,@204,@173" skin="gif_workspace_selective_path" bulltimer="1"></gifplayer>
+            <imgbtn name="btn_normal_next_page" skin="workspace_guide_btn_bkg_one" pos="132,340,@200,@36" crtext="FFFFFF" >%str6090%</imgbtn>
+          </dlg>
+          <dlg name="dlg_guide_page_2" pos="163,170,@464,@400" skin="workspace_guide_white_frame" show="0">
+            <text name="dlg_guide_page_2_title" pos="24,15" crtext="03081A" font="0180:微软雅黑" animate="1">%str6091%</text>
+            <imgbtn name="btn_guide_page_close" skin="workspace_guide_page_close" pos="-27,18,@16,@16"></imgbtn>
+            <hr pos="1,48,-1,49" crbg="f0f0f0"></hr>
+            <img pos="92,73" skin="workspace_guide_normal_page_2"></img>
+            <dlg name="dlg_guide_page_3_sync_dir_set" pos="0,97,@464,@244" show="1">
+              <text name="sync_dir_label" pos="24,58,-0,@12">%str6070%</text>
+              <richedit name="sync_dir_edit_2" pos="24,86,@304,@32" y-margin="5" x-margin="2" ncskin="skin_editnc" skin="skin_edit_set" password="0" show="1" maxbuf="255" inset="4,1,2,1" valign="middle" align="left" font="0400:微软雅黑" ></richedit>
+              <imgbtn name="btn_change_dir" pos="[8,86,@104,@32" skin="workspace_guide_btn_bkg_three" font="face:微软雅黑,adding:-3" cursor="hand">%str6071%</imgbtn>
+              <text name="error_quick_sync_txt_2" pos="24,126" crtext="FF436A" show="0">%str6002%</text>
+              <text name="sync_dir_warnning_2" pos="24,126,@416,@20" crtext="AFB3BF" multilines="1" animate="1">%str6072%</text>
+            </dlg>
+            <imgbtn name="btn_bridge_page_2_pre" skin="workspace_guide_btn_bkg_two" pos="90,332,@128,@36" crtext="06A7FF" >%str6089%</imgbtn>
+            <imgbtn name="btn_bridge_page_2_finish" skin="workspace_guide_btn_bkg_one" pos="234,332,@128,@36" crtext="FFFFFF" >%str6082%</imgbtn>
+          </dlg>
+          <dlg name="dlg_guide_page_3" pos="163,170,@464,@400" skin="workspace_guide_white_frame" show="0">
+            <text name="dlg_guide_page_3_title" pos="24,15" crtext="03081A" font="0180:微软雅黑" animate="1">%str6091%</text>
+            <imgbtn name="btn_guide_page_close" skin="workspace_guide_page_close" pos="-27,18,@16,@16"></imgbtn>
+            <hr pos="1,48,-1,49" crbg="f0f0f0"></hr>
+            <img pos="24,73" skin="workspace_guide_bridge_page_1"></img>
+            <imgbtn name="btn_all_sync_3" skin="cloudbridge_mode_frame" cursor="hand" pos="24,131,@200,@82">
+              <img name="img_all_sync_3" pos="8,12" skin="cloudbridge_unridio"></img>
+              <text pos="[5,12" font="0000:微软雅黑" crtext="03081A">%str6083%</text>
+              <text pos="10,34,@182,@36" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6076%</text>
+            </imgbtn>
+            <imgbtn name="btn_quick_sync_3" skin="cloudbridge_mode_frame" cursor="hand" pos="24,222,@200,@82">
+              <img pos="166,0,@34,@16" skin="cloudbridge_svip"></img>
+              <img name="img_quick_sync_3" pos="8,12" skin="cloudbridge_unridio"></img>
+              <text pos="[5,12" font="0000:微软雅黑" crtext="03081A">%str6088%</text>
+              <imgbtn name="btn_quick_sync_question_3" skin="workspace_guide_btn_question" pos="[5,15,@12,@12"></imgbtn>
+              <text pos="10,34,@182,@36" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6075%</text>
+            </imgbtn>
+            <gifplayer pos="236,131,@204,@173" skin="gif_workspace_quick_sync" bulltimer="1"></gifplayer>
+            <imgbtn name="btn_bridge_page_3_next" skin="workspace_guide_btn_bkg_one" pos="132,340,@200,@36" crtext="FFFFFF" >%str6090%</imgbtn>
+          </dlg>
+          <dlg name="dlg_guide_page_4" pos="163,170,@464,@400" skin="workspace_guide_white_frame" show="0">
+            <text name="dlg_guide_page_4_title" pos="24,15" crtext="03081A" font="0180:微软雅黑" animate="1">%str6091%</text>
+            <imgbtn name="btn_guide_page_close" skin="workspace_guide_page_close" pos="-27,18,@16,@16"></imgbtn>
+            <hr pos="1,48,-1,49" crbg="f0f0f0"></hr>
+            <img pos="24,73" skin="workspace_guide_bridge_page_2"></img>
+            <imgbtn name="btn_all_path_4" skin="cloudbridge_mode_frame" cursor="hand" pos="24,131,@200,@82">
+              <img name="img_all_path_4" pos="8,12" skin="cloudbridge_unridio"></img>
+              <text pos="[5,12" font="0000:微软雅黑" crtext="03081A">%str6084%</text>
+              <text pos="10,34,@182,@36" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6085%</text>
+            </imgbtn>
+            <imgbtn name="btn_selective_path_4" skin="cloudbridge_mode_frame" cursor="hand" pos="24,222,@200,@82">
+              <img pos="166,0,@34,@16" skin="cloudbridge_svip"></img>
+              <img name="img_selective_path_4" pos="8,12" skin="cloudbridge_unridio"></img>
+              <text pos="[5,12" font="0000:微软雅黑" crtext="03081A">%str6086%</text>
+              <imgbtn name="btn_selective_path_question_4" skin="workspace_guide_btn_question" pos="[5,15,@12,@12"></imgbtn>
+              <text pos="10,34,@182,@36" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6087%</text>
+            </imgbtn>
+            <gifplayer pos="236,131,@204,@173" skin="gif_workspace_selective_path" bulltimer="1"></gifplayer>
+            <imgbtn name="btn_bridge_page_4_pre" skin="workspace_guide_btn_bkg_two" pos="90,332,@128,@36" crtext="06A7FF" >%str6089%</imgbtn>
+            <imgbtn name="btn_bridge_page_4_next" skin="workspace_guide_btn_bkg_one" pos="234,332,@128,@36" crtext="FFFFFF" >%str6090%</imgbtn>
+          </dlg>
+          <dlg name="dlg_guide_page_5" pos="163,170,@464,@400" skin="workspace_guide_white_frame" show="0">
+            <text name="dlg_guide_page_5_title" pos="24,15" crtext="03081A" font="0180:微软雅黑" animate="1">%str6091%</text>
+            <imgbtn name="btn_guide_page_close" skin="workspace_guide_page_close" pos="-27,18,@16,@16"></imgbtn>
+            <hr pos="1,48,-1,49" crbg="f0f0f0"></hr>
+            <img pos="24,73" skin="workspace_guide_bridge_page_3"></img>
+            <dlg name="dlg_guide_page_3_sync_dir_set" pos="0,97,@464,@244" show="1">
+              <text name="sync_dir_label" pos="24,58,-0,@12">%str6070%</text>
+              <richedit name="sync_dir_edit_5" pos="24,86,@304,@32" y-margin="5" x-margin="2" ncskin="skin_editnc" skin="skin_edit_set" password="0" show="1" maxbuf="255" inset="4,1,2,1" valign="middle" align="left" font="0400:微软雅黑" ></richedit>
+              <imgbtn name="btn_change_dir" pos="[8,86,@104,@32" skin="workspace_guide_btn_bkg_three" font="face:微软雅黑,adding:-3" cursor="hand">%str6071%</imgbtn>
+              <text name="error_quick_sync_txt_5" pos="24,126" crtext="FF436A" show="0">%str6002%</text>
+              <text name="sync_dir_warnning_5" pos="24,126,@416,@20" crtext="AFB3BF" multilines="1" animate="1">%str6072%</text>
+            </dlg>
+            <imgbtn name="btn_bridge_page_5_pre" skin="workspace_guide_btn_bkg_two" pos="90,332,@128,@36" crtext="06A7FF" >%str6089%</imgbtn>
+            <imgbtn name="btn_bridge_page_5_finish" skin="workspace_guide_btn_bkg_one" pos="234,332,@128,@36" crtext="FFFFFF" >%str6082%</imgbtn>
+          </dlg>
+          <dlg name="dlg_guide_page_6" pos="0,0,-0,-0" show="1">
+            <img pos="31,490" skin="workspace_guide_mask_line"></img>
+            <imgbtn name="btn_guide_page_jump_to_close" skin="workspace_guide_mask_btn_jump" pos="119,378"></imgbtn>
+            <imgbtn name="btn_guide_page_open_local" skin="workspace_guide_mask_btn_open" pos="13,560"></imgbtn>
+            <img pos="7,424" skin="workspace_guide_mask_buddle"></img>
+            <text name="guide_page_jump_out" font="0000:微软雅黑" crtext="06A7FF" pos="135,386,-0,@12">%str6227%</text>
+            <text name="guide_page_open_local" font="0200:微软雅黑" crtext="FFFFFF" textmode="40810" pos="23,432,@150,@60">%str6228%</text>
+          </dlg>
+          <dlg name="dlg_guide_page_7" pos="163,120,@464,@440" skin="workspace_guide_white_frame" show="0">
+              <text name="dlg_guide_page_7_title" pos="24,15" crtext="03081A" font="0200:微软雅黑" animate="1">%str6091%</text>
+              <imgbtn name="btn_guide_page_close" skin="workspace_guide_page_close" pos="-34,18,@16,@16"></imgbtn>
+              <dlg name="dlg_guide_page_7_sync_dir_set" pos="0,187,@464,@244" skin="workspace_guide_gray_frame" show="1">
+                <text name="sync_dir_label" pos="24,58,-0,@12">%str6070%</text>
+                <richedit name="sync_dir_edit" pos="24,86,@304,@32" y-margin="5" x-margin="2" ncskin="skin_editnc" skin="skin_edit_set" password="0" show="1" maxbuf="255" inset="4,1,2,1" valign="middle" align="left" font="0400:微软雅黑" ></richedit>
+                <imgbtn name="btn_change_dir" pos="[8,86,@104,@32" skin="workspace_guide_btn_bkg_three" font="face:微软雅黑,adding:-3" cursor="hand">%str6071%</imgbtn>
+                <text name="error_quick_sync_txt_7" pos="24,126" crtext="FF436A" show="0">%str6002%</text>
+                <text name="sync_dir_warnning_7" pos="24,126,@416,@20" crtext="AFB3BF" multilines="1" animate="1">%str6072%</text>
+              </dlg>
+              <dlg name="dlg_guide_page_7_intro_content" pos="0,48,@464,@181" skin="workspace_guide_white_frame">
+                <text pos="24,32" crtext="03081A">%str6066%</text>
+                <text pos="24,65,@175,@54" crtext="495366" textmode="40810">%str6067%</text>
+                <img pos="24,146" skin="workspace_guide_page_select_3"></img>
+                <img pos="231,32,@208,@117" skin="workspace_guide_page_intro_3"></img>
+                <imgbtn name="btn_guide_page_play_video" skin="workspace_guide_video_play" cursor="hand" pos="284,70,@104,@40"></imgbtn>
+              </dlg>
+              <dlg name="dlg_guide_page_7_cloud_bridge" pos="0,48,@464,@190" skin="workspace_guide_white_frame" show="1">
+                <imgbtn name="btn_quick_sync_7" skin="cloudbridge_mode_frame" cursor="hand" pos="24,0,@200,@82">
+                  <img pos="166,0,@34,@16" skin="cloudbridge_svip"></img>
+                  <img name="img_quick_sync_7" pos="11,15" skin="cloudbridge_unridio"></img>
+                  <text pos="[5,15" font="0000:微软雅黑" crtext="03081A">%str6088%</text>
+                  <text pos="10,36,@182,@34" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6075%</text>
+                </imgbtn>
+                <imgbtn name="btn_all_sync_7" skin="cloudbridge_mode_frame" cursor="hand" pos="240,0,@200,@82">
+                  <img name="img_all_sync_7" pos="11,15" skin="cloudbridge_unridio"></img>
+                  <text pos="[5,15" font="0000:微软雅黑" crtext="03081A">%str6083%</text>
+                  <text pos="10,36,@182,@34" font="0000:微软雅黑" crtext="818999" textmode="40810">%str6076%</text>
+                </imgbtn>
+                <gifplayer pos="24,[10,@416,@72" skin="gif_workspace_guide_quick_sync" bulltimer="1"></gifplayer>
+              </dlg>
+              <imgbtn name="btn_guide_page_start_use" skin="workspace_guide_btn_bkg_one" pos="132,371,@200,@36" crtext="FFFFFF" >%str6069%</imgbtn>
+          </dlg>
+          <dlg name="dlg_guide_page_8" pos="163,179,@464,@314" skin="workspace_guide_white_frame" show="0">
+            <text name="dlg_guide_page_8_title" pos="24,15" crtext="03081A" font="0200:微软雅黑" animate="1">%str6092%</text>
+            <imgbtn name="btn_guide_page_8_close" skin="workspace_guide_page_close" pos="-34,18,@16,@16"></imgbtn>
+            <text pos="133,72" crtext="495366" font="0200:微软雅黑">%str6093%</text>
+            <text pos="80,92" crtext="495366" font="0200:微软雅黑">%str6094%</text>
+            <img pos="52,128,@360,@94" skin="workspace_guide_page_restrain"></img>
+            <imgbtn name="btn_guide_page_8_refuse" skin="workspace_guide_btn_bkg_two" pos="96,246,@128,@36" crtext="06a7ff" >%str6081%</imgbtn>
+            <imgbtn name="btn_guide_page_8_start_use" skin="workspace_guide_btn_bkg_one" pos="240,246,@128,@36" crtext="FFFFFF" >%str6069%</imgbtn>
+          </dlg>
+          <dlg name="dlg_guide_page_9" pos="0,0,-0,-0" show="1">
+            <gifplayer pos="315,261,@160,@100" skin="gif_workspace_guide_complete" bulltimer="1"></gifplayer>
+            <text name="dlg_guide_page_6_title" pos="286,377" crtext="FFFFFF" font="0400:微软雅黑" animate="1">%str6077%</text>
+          </dlg> 
+
+        </dlg>
+    </body>
+</layer>

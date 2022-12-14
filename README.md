@@ -1,6 +1,6 @@
 # BaiduNetdisk-Remove-AD
 去除百度网盘广告。
-Act on BaiduNetdisk:7.17.6
+Act on BaiduNetdisk:7.23.0
 
 ⭐使用：下载 duiengineskin.zip 替换掉自己本地的。
 
@@ -40,4 +40,4 @@ C:\Users\UserName\AppData\Roaming\baidu\BaiduNetdisk\skin\duiengineskin\xml\Main
 
 黑框只在本README中起遮挡信息作用。
 
-![Snipaste_220713_103046](README.assets/Snipaste_220713_103046.png)
+![Snipaste_221214_203641](README.assets/Snipaste_221214_203641.png)

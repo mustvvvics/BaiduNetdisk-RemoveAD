@@ -1,0 +1,29 @@
+<layer name="WorkspaceSelectSync" width="642" height="518" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg pos="0,0,-0,-0" skin="select_sync_frame">
+            <dlg name="dlg_main" pos="17,17,-17,-17">
+                <caption pos="0,0,-0,@48">
+                    <text pos="262,17,@150,@14" crtext="000000" font="0200:微软雅黑">%str6355%</text>
+                    <imgbtn name="btn_close" pos="-40,18,@16,@16" skin="wechatbackup_guide_dlg_close"></imgbtn>
+                </caption>
+                <dlg pos="0,[0,@608,@60" crbg="F5F6FA">
+                    <text pos="24,10,@560,@60" textmode="10" font="0200:微软雅黑">%str6356%</text>
+                    <link pos="130,35" name="link_know_sync_select" font="0202:微软雅黑;underline:0" cursor="hand" crtext="1e78d5">%str6357%</link>
+                </dlg>
+                <dlg name="panel_myfile_tab" pos="10,[10,@608,@262" show="1">
+                    <include src="IDR_DUI_DIRTREEVIEW"/>
+                </dlg>
+                <dlg pos="0,[0,@608,@36">
+                    <imgbtn name="btn_cancel" pos="323,10,@120,@36" font="0200:微软雅黑" crtext="06A7FF" skin="workspace_guide_btn_bkg_two" cursor="hand">%str6358%</imgbtn>
+                    <imgbtn name="btn_confirm" pos="464,10,@120,@36" font="0200:微软雅黑" crtext="FFFFFF" skin="workspace_guide_btn_bkg_one" cursor="hand">%str6359%</imgbtn>
+                    <img pos="550,0,@34,@16" skin="select_svip"/>
+                </dlg>
+                <dlg name="svip_guide" pos="0,-40,@608,@40" skin="select_svip_frame" show="0">
+                    <img pos="32,15,@11,@10" skin="workspace_svip"/>
+                    <text pos="50,12" font="0000:微软雅黑" crtext="664100">%str6362%</text>
+                    <link pos="512,12" name="svip_link" font="0000:微软雅黑" crtext="664100">%str6363%</link>
+                </dlg>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

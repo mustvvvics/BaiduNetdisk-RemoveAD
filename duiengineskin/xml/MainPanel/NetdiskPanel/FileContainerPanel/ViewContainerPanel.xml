@@ -1,18 +1,50 @@
 <dlg pos="0,0,-0,-0">
+
+  <dlg name="dlg_file_list_search_file_tip" pos="12,0,-12,@40" show="0">
+    <img name="search_yun_file_list_tip_bkg" pos="0,2,-0,-0" skin="common_tip_bgk_gray" show="1"/>
+    <img name="search_yun_file_list_tip_icon" pos="16,13,@16,@16" skin="search_yun_file_failed_tip_icon" show="1"/>
+    <text name="search_yun_file_list_tip_txt" pos="40,13" crtext="664100" font="0000:微软雅黑" align="left">%str4404%</text>
+    <imgbtn name="search_yun_file_list_tip_buy_btn" pos="-110,6,@80,@28" cursor="arrow" crtext="442203" font="0000:微软雅黑" skin="mainpanel_guidepanel_yellow_btn" show="0"></imgbtn>
+    <imgbtn name="search_yun_file_list_tip_close_btn" pos="-26,14,@16,@16" cursor="arrow" skin="mainpanel_guidepanel_tip_close_btn"></imgbtn>
+  </dlg>
+  
+  <!--OCR搜索结果视图-->
+  <dlg name="dlg_ocr_search_thumb_view" pos="10,0,-0,@175" show="0">
+      <text pos="20,10" crtext="030B1A" font="0004:微软雅黑">%str6503%</text>
+      <text name="ocr_search_key" pos="[0,10" crtext="06A7FF" font="0004:微软雅黑"></text>
+      <text name="ocr_search_text" pos="[0,10" crtext="000000" font="0004:微软雅黑">%str6504%</text>
+      <imgbtn name="btn_view_collapse" skin="recentpanel_videohistory_collapse" pos="-96,4,@56,@30" txtxoffset="8" align="left" crtext="818999" crhover="06A7FF" cursor="arrow">%str4216%</imgbtn>
+      <imgbtn name="btn_view_expand" skin="recentpanel_videohistory_expand" pos="-110,4,@56,@30" txtxoffset="8" align="left" crtext="818999" crhover="06A7FF" cursor="arrow" show="0">%str4215%</imgbtn>
+      <hr name="ocr_view_split" crbg="f2f5fd" pos="0,34,-0,@1" show="0"></hr>  
+    <filethumbview name="ocr_thumb_view" pos="20,26,-110,-20" itemwidth="118" itemheight="118" frameskin="mainpanel_frame_select_bg">
+      <template>
+        <dlg name="dlg_thumb_item" pos="6,6,-6,-6">
+          <dlg name="dlg_file_item" pos="0,0,-0,-0" show="1">
+            <img name="item_bkg" pos="0,0,-0,-0" skin="mainpanel_thumbview_item_hover_bg" show="1" cursor="arrow" msgtransparent="0"></img>
+            <img name="img_filetype" pos="20,14,@64,@64" skin="other_big_image" show="0"></img>
+            <img name="img_thumbview" pos="20,14,@64,@64" skin="other_big_image" keep_size="1" show="0"></img>
+            <img name="img_mask" pos="20,14,@64,@64" skin="ocr_thumbview_img_mask_normal"></img>
+            <check name="thumb_file_check" skin="mainpanel_thumbview_checkbox" focusskin="function_collect_focus_skin" pos="10,6" show="1"></check>
+            <link name="link_filename" pos="12,-22,-12,@16" crtext="333333" dotted="1" align="center" valign="middle" msgtransparent="1" textmode="40825"></link>
+          </dlg>
+        </dlg>
+      </template>
+    </filethumbview>   
+    <imgbtn name="btn_view_more" skin="ocr_thumbview_view_more" pos="-100,44,@40,@83" txtxoffset="8" align="left" crtext="818999" crhover="06A7FF" cursor="arrow" ></imgbtn>
+    <dlg name="dlg_ocr_search_bottom" pos="0,-20,-0,-0"> 
+     <text pos="20,0" crtext="030B1A" font="0004:微软雅黑">%str6508%</text>
+     <text name="search_key" pos="[0,0" crtext="06A7FF" font="0004:微软雅黑"></text>
+     <text name="search_text" pos="[0,0" crtext="000000" font="0004:微软雅黑">%str6509%</text>   
+   </dlg>   
+  </dlg>
+
+<dlg name="dlg_file_content" pos="0,0,-0,-0" show="1">
   <!--文件列表视图-->
   <dlg name="dlg_list_view" pos="0,0,-0,-0" layout="hbox" show="0">
     <header name="file_list_header" pos="0,0,-0,@30" checkSkin="listhead_check" itemSkin="listhead_btn" noitemSkin="listhead_bkg"
             fixWidth="0" itemSwapEnable="0" sortHeader="1" sortSkin="listhead_arrow" check_txt_margin="12" crtext="757880" align="left">
     </header>
-	<dlg name="dlg_file_list_search_file_tip" pos="12,30,-12,@40" show="0">
-      <img name="search_yun_file_list_tip_bkg" pos="0,2,-0,-0" skin="common_tip_bgk_gray" show="1"/>
-      <img name="search_yun_file_list_tip_icon" pos="16,13,@16,@16" skin="search_yun_file_failed_tip_icon" show="1"/>
-      <text name="search_yun_file_list_tip_txt" pos="40,13" crtext="664100" font="0000:微软雅黑" align="left">%str4404%</text>
-      <imgbtn name="search_yun_file_list_tip_buy_btn" pos="-110,6,@80,@28" cursor="arrow" crtext="442203" font="0000:微软雅黑" skin="mainpanel_guidepanel_yellow_btn" show="0"></imgbtn>
-      <imgbtn name="search_yun_file_list_tip_close_btn" pos="-26,14,@16,@16" cursor="arrow" skin="titlepanel_close_btn"></imgbtn>
-	</dlg>
-	<gifplayer name="file_list_loading_gif" pos="|-16,|-16,@32,@32" skin="gif_statuspanel_loading" show="0"/>
-    <text name="file_list_loading_txt_tip" pos="|-150,[12,@300,@18" crtext="333333" font="0200:微软雅黑" align="center" show="0">%str2311%</text>
+
     <dlg name="dlg_file_list" pos="0,30,-0,-0">
         <listboxex name="file_list_view" pos="0,0,-0,-0" itemheight="40" itemwidth="-1" virtual="1" frameskin="mainpanel_frame_select_bg">
           <template>
@@ -72,15 +104,6 @@
 
   <!--文件缩略图视图-->
   <dlg name="dlg_thumb_view" pos="14,0,-0,-0" show="0">
-	<gifplayer name="file_thumb_loading_gif" pos="|-16,|-16,@32,@32" skin="gif_statuspanel_loading" show="0"/>
-    <text name="file_thumb_loading_txt_tip" pos="|-150,[12,@300,@18" crtext="333333" font="0200:微软雅黑" align="center" show="0">%str2311%</text>
-    <dlg name="dlg_file_thumb_search_file_tip" pos="0,0,-12,40" show="0">
-      <img name="search_yun_file_thumb_tip_bkg" pos="0,2,-0,-0" skin="common_tip_bgk_gray"/>
-      <img name="search_yun_file_thumb_tip_icon" pos="16,13,@16,@16" skin="search_yun_file_failed_tip_icon"/>
-      <text name="search_yun_file_thumb_tip_txt" pos="40,13" crtext="664100" font="0000:微软雅黑" align="left">%str4404%</text>
-      <imgbtn name="search_yun_file_thumb_tip_buy_btn" pos="-110,6,@80,@28" cursor="arrow" crtext="442203" font="0000:微软雅黑" skin="mainpanel_guidepanel_yellow_btn" show="0"></imgbtn>
-      <imgbtn name="search_yun_file_thumb_tip_close_btn" pos="-26,14,@16,@16" cursor="arrow" skin="titlepanel_close_btn"></imgbtn>
-    </dlg>
     <filethumbview name="file_thumb_view" pos="0,0,-0,-0" itemwidth="138" itemheight="134" frameskin="mainpanel_frame_select_bg">
       <template>
         <dlg name="dlg_thumb_item" pos="6,6,-6,-6">
@@ -133,7 +156,8 @@
     <text name="txt_error_tip" pos="|-255,[8,@510,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2312%</text>
     <imgbtn name="btn_refresh" pos="|-36,[16,@72,@25" class="defultbtn" crtext="ffffff" cursor="arrow">%str2313%</imgbtn>
   </dlg>
-
+ </dlg>
+ 
   <!--运营位图标-->
   <dlg name="dlg_operate_pos" pos="-90,-190,@80,@100" show="0">
     <dlg name="dlg_op_max" pos="0,0,@80,@100">

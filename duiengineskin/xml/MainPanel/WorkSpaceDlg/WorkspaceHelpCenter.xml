@@ -1,0 +1,14 @@
+<layer name="HelpCenter" width="148" height="128" appwin="0" ncRect="0,0,0,0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg name="functionintroductionPanel" pos="0,0,-0,-0" skin="brandworkspaceguide_helpcenterbk" show="1">
+      <dlg name="teachercenterdlg" pos="16,18,@112,@40" skin="workspace_bg_wide">
+        <img pos="8,8,@24,@24" skin="workspace_guide_teachcenter"></img>
+        <imgbtn name="teachercenterbtn" pos="[8,10,@56,@20" cursor="hand" crtext="030B1A" font="0200:微软雅黑" skin="titlepanel_translucent" >%str1513%</imgbtn>
+      </dlg>
+      <dlg name="producetionPanel" pos="16,62,@112,@40" skin="workspace_bg_wide">
+        <img pos="8,8,@24,@24" skin="workspace_guide_producetion"></img>
+        <imgbtn name="producetionbtn" pos="[8,10,@56,@20" cursor="hand" crtext="030B1A" font="0200:微软雅黑" skin="titlepanel_translucent" >%str1576%</imgbtn>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

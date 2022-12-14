@@ -12,7 +12,7 @@
           <img name="img_userhead_frame" pos="0,0,-0,-0" skin="logindevicestatus_dlg_head_frame"/>
         </img>
         <text name="text_account_name" pos="459,21" crtext="69737e" font="0000:微软雅黑" align="left" cursor="arrow" maxwidth="89" dotted="1"></text>
-        <img name="img_account_member_type" pos="[5,22" skin="titlepanel_vipclose" show="1"/>
+        <imgbtn name="img_account_member_type" pos="[5,22,@42,@14" skin="titlepanel_translucent" icoskin="titlepanel_vipclose" show="1"/>
         <link name="link_logout" pos="[12,21,@60,@16" class="cls_login_device_status_dlg_gray_link">%str3700%</link>
         
         <text pos="222,74" class="cls_login_device_status_dlg_big_text">%str3701%</text>
@@ -57,7 +57,7 @@
               <img name="img_userhead_frame" pos="0,0,-0,-0" skin="logindevicestatus_dlg_head_frame"/>
             </img>
             <text name="text_cheat_account_name" pos="[8,4" crtext="69737e" font="0000:微软雅黑" align="left" cursor="arrow" maxwidth="89" dotted="1"></text>
-            <img name="img_cheat_account_member_type" pos="[5,4" skin="titlepanel_vipclose" show="1"/>
+            <imgbtn name="img_cheat_account_member_type" pos="[5,4,@42,@14" skin="titlepanel_translucent" icoskin="titlepanel_vipclose" show="1"/>
           </dlg>
           <dlg name="panel_device_cheat_appeal_start" pos="95,64,-0,-0">
             <text pos="0,0" crtext="666665" >%str3717%</text>

@@ -1,0 +1,30 @@
+<!--正常视图-->
+<dlg name="normal_view" pos="0,0,-0,-0" show="1">
+    <dlg pos="0,0,-0,@18">
+        <text name="txt_tip" pos="15,|-9,-15,@18" crtext="eb5347" align="left" valign="middle" dot="1"></text>
+    </dlg>
+    <check name="all_select" pos="5,18" skin="select_sync_checkbox" crtext="03081A" focusskin="function_collect_focus_skin">%str6367%</check>
+    <treectrl name="dir_tree" pos="10,40,-10,-1" indent="20" itemhei="32" critemtext="757880" critemseltext="437ae8" critemselbg="F2FAFF"
+        checkbox="1" checkskin="select_sync_checkbox" toggleskin="select_sync_toggle" iconskin="folder_small_image"
+        icon-x-offset="4" autocollsibling="0" checkparent="0" textmode="40824" show="1">
+    </treectrl>
+</dlg>
+
+<!--空视图-->
+<dlg name="empty_view" pos="0,0,-0,-0" show="0">
+    <text pos="156,|-8" height="16" crtext="bcbcbc" font="0000:微软雅黑">%str6370%</text>
+    <link name="link_refresh" pos="[2,|-8" height="16" class="cls_btn_weblink">%str217%</link>
+</dlg>
+
+<!--正在加载视图-->
+<dlg name="loading_view" pos="0,0,-0,-0" show="0">
+    <gifplayer skin="loading_gif" pos="156,|-8" width="16" height="16"/>
+    <text pos="[6,|-9" crtext="bcbcbc" font="0000:微软雅黑">%str6368%</text>
+</dlg>
+
+<!--加载失败视图-->
+<dlg name="error_view" pos="0,0,-0,-0" show="0">
+    <img skin="web_load_error" pos="220,|-50" width="103" height="93"/>
+    <text pos="190,[2" height="16" crtext="bcbcbc" font="0000:微软雅黑">%str6369%</text>
+    <link name="link_retry" pos="[2,191" height="16" class="cls_btn_weblink">%str16%</link>
+</dlg>

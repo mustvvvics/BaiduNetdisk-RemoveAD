@@ -1,0 +1,24 @@
+<layer title="%str6970%" width="368" height="568" minsize="368,568" appwin="1" ncRect="4,4,4,4" resize="1" translucent="0" nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_video_ai_note">
+      <caption name="dlg_note_caption" pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text pos="39,9" name="file_name_title" maxwidth="300" class="cls_dlg_title_text">%str6970%</text>
+        <imgbtn name="btn_close" skin="video_ai_note_close" pos="-30,6,@24,@24" cursor="arrow" tip="%str250%" animate="0"/>
+      </caption>
+      <dlg name="dlg_note_view" pos="10,38,-10,-36">
+        <dlg pos="0,0,-0,-0">
+          <webbrowser name="ai_web_page" pos="0,0,-0,-0" use_ie="0" show="1" reboot_on_render_crash="0"/>
+          <!--网络连接错误面板-->
+          <dlg name="network_error_panel" pos="0,0,-0,-0" show="0">
+            <dlg name="network_error_tip_panel" pos="|-90,|-100" width="180" height="200">
+              <img pos="|-52,0" skin="doc_dlg_load_error" width="103" height="93" />
+              <text pos="0,110,-0,130" class="cls_txt_red">%str6952%</text>
+              <imgbtn name="btn_retry" class="defultbtn" pos="|-48,162" width="96" height="34" cursor="arrow">%str6953%</imgbtn>
+            </dlg>
+          </dlg>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

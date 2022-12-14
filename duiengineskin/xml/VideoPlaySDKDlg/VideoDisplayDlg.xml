@@ -1,4 +1,4 @@
-﻿<layer name="VideoOpertionDlg" width="1006" height="568" minsize="1010,568" toolwin="1" ncRect="0,0,0,0"  resize="0" translucent="0">
+﻿<layer name="VideoOpertionDlg" width="1006" height="568" minsize="800,500" toolwin="1" ncRect="0,0,0,0"  resize="0" translucent="0">
 	<body>
     <dlg pos="0,0,-0,-0" class="cls_video_dlg_frame">
       

@@ -1,0 +1,9 @@
+﻿<layer name="SearchApplyDlg" width="360" height="174" appwin="0" ncRect="0,0,0,0" toolwindow="1" translucent="1" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="mainpanel_addresspanel_search_apply_dlg_bgk">
+      <text name="main_txt" pos="20,60,-20,80" crtext="03081A" font="0004:微软雅黑" align="center">%str6507%</text>
+      <imgbtn name="btn_cancel" pos="40,100,@128,@36" crtext="664100" skin="btn_default_light_yellow_round_angle" font="0004:微软雅黑" >%str26%</imgbtn>
+      <imgbtn name="btn_apply" pos="[16,100,@128,@36" crtext="664100" skin="btn_default_dark_yellow_round_angle" font="0004:微软雅黑" >%str6107%</imgbtn>
+    </dlg>
+  </body>
+</layer>

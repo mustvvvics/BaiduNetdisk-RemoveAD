@@ -15,7 +15,7 @@
         <!-- 用户名 -->
         <text name="txt_nickname" pos="190,10" pos2type="center" height="20" font="0200:微软雅黑" crtext="000000"></text>
         <!-- 会员等级 -->
-        <img name="img_member_level" pos="[3,2" skin="titlepanel_vipclose"/>
+        <imgbtn name="img_member_level" pos="[3,2,@42,@14" skin="titlepanel_translucent" icoskin="titlepanel_vipclose"/>
       </dlg>
       <!-- 提示文本 -->
       <text name="txt_bind_phone_line1" pos="102,132,@216,@20" font="0000:微软雅黑" crtext="666666" align="center">%str3796%</text>

@@ -50,6 +50,9 @@
           <dlg name="SharePanel" pos="69,0,-0,-0" show="0">
             <include src="IDR_DUI_SHARE_PANEL"/>
           </dlg>
+          <!--可配置选项-->
+          <dlg name="MemberChannelPanel" pos="69,0,@0,-0" show="0">
+          </dlg>
           <!--工具-->
           <dlg name="FunctionnalBoxPanel" pos="69,0,-0,-0" show="0">
             <!--功能宝箱入口界面-->

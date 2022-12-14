@@ -21,14 +21,23 @@
   </dlg>
   <imgbtn name="btn_full_text_search_tip" pos="202,13,@14,@14" skin="mainpanel_addresspanel_search_tip_icon" show="0"/>
   
-  <dlg name ="OperateTool" pos="-270,3,-2,-3">
-    <dropbutton name="btn_safebox" class="toolbarbtn" drop-skin="mainpanel_toolbar_drop_arrow" textmode="40824" txtxoffset="14" pos="0,2,@170,@30" show="0" cursor="arrow">%str2177%</dropbutton>
-    <imgbtn name="btn_lock" skin="mainpanel_toolbar_lock" pos="-88,8" show="0" cursor="arrow" tip="%str2167%"></imgbtn>
-    <dlg name ="SearchSelectPanel" pos="-190,0,-56,-0" show="0">
-      <check name="btn_select_fulltext_search" pos="0,4,@94,-4" crtext="495366" font="0000:微软雅黑" skin="btncheckbox" state="0" >%str6100%</check>
-      <imgbtn name="btn_apply_fulltext_search" pos="0,4,@95,-4" crtext="BF8726" font="0000:微软雅黑" skin="titlepanel_translucent" show="0">%str6101%</imgbtn>
-      <img name="img_svip" pos="90,0,@29,@15" skin="definition_sviponly_script"></img>
+  <dlg name ="OperateTool" pos="-380,3,-2,-3">
+     <dlg name ="OperateTool" pos="-280,0,-56,-0">
+      <dropbutton name="btn_safebox" class="toolbarbtn" drop-skin="mainpanel_toolbar_drop_arrow" textmode="40824" txtxoffset="14" pos="0,2,@180,@30" show="0" cursor="arrow">%str2177%</dropbutton>
+      <imgbtn name="btn_lock" skin="mainpanel_toolbar_lock" pos="[10,8" show="0" cursor="arrow" tip="%str2167%"></imgbtn>
+    </dlg>  
+    <dlg name ="SearchSelectPanel" pos="0,0,-56,-0" show="0">    
+      <text name="search_text" pos="0,10,@54,@12" crtext="495366" font="0000:微软雅黑">%str6501%</text>
+      <dlg name ="FulltextSearchPanel" pos="[0,0,@124,-0">
+        <check name="btn_select_fulltext_search" pos="6,4,@94,-4" crtext="495366" font="0000:微软雅黑" skin="btncheckbox" state="0" >%str6100%</check>
+        <img pos="96,0,@29,@15" skin="definition_sviponly_script"></img>     
+      </dlg>  
+      <dlg name ="OCRSearchPanel" pos="178,0,-0,-0">
+        <check name="btn_select_ocr_search" pos="12,4,@92,-4" crtext="495366" font="0000:微软雅黑" skin="btncheckbox" state="0" >%str6502%</check>
+        <img pos="102,0,@29,@15" skin="definition_sviponly_script"></img>
+      </dlg>
     </dlg>
+    
     <imgbtn name="btn_sort" skin="mainpanel_toolbar_sort" pos="-56,10" show="1" cursor="arrow" tip="%str2176%"></imgbtn>
     <imgbtn name="btn_thumb" skin="mainpanel_toolbar_thumb" pos="-28,10" show="1" cursor="arrow" tip="%str2175%"></imgbtn>
     <imgbtn name="btn_list" skin="mainpanel_toolbar_list" pos="-28,10" show="0" cursor="arrow" tip="%str2174%"></imgbtn>

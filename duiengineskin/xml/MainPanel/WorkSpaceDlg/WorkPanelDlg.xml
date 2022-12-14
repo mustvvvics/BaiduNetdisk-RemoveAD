@@ -8,35 +8,41 @@
                 </dlg>
                 <!--客户区-->
                 <dlg name="ClientPanel" pos="0,50,-0,-0">
+                  <!--新手引导品宣页-->
+                  <dlg name="newuserguide" pos="0,0,-0,-0" show="0">
+                    <include src="IDR_DUI_WORKSPACE_NEWGUIDE_PANEL"/>
+                  </dlg>
+                  <dlg name="workspacecontent" pos="0,0,-0,-0" show="0">
                     <!--左侧导航栏-->
                     <dlg name="LeftNavigatePanel" pos="0,0,68,-0" show="1">
-                        <include src="IDR_DUI_WORKSPACE_NAVIGATE_PANEL"/>
+                      <include src="IDR_DUI_WORKSPACE_NAVIGATE_PANEL"/>
                     </dlg>
                     <dlg pos="[0,0,-0,-0">
-                        <dlg name="WorkSpaceWarnPanel" pos="0,0,-0,@0" show="0">
-                            <include src="IDR_DUI_WORKSPACE_WARN_PANEL"/>
+                      <dlg name="WorkSpaceWarnPanel" pos="0,0,-0,@0" show="0">
+                        <include src="IDR_DUI_WORKSPACE_WARN_PANEL"/>
+                      </dlg>
+                      <!--文件列表区-->
+                      <dlg name="NetdiskContainerPanel" pos="0,[0,-0,-49">
+                        <!--文件-->
+                        <dlg name="WorkSpaceFilePanel" pos="0,0,-0,-0" show="1">
+                          <include src="IDR_DUI_WORKSPACE_FILE_PANEL"/>
                         </dlg>
-                        <!--文件列表区-->
-                        <dlg name="NetdiskContainerPanel" pos="0,[0,-0,-49">
-                            <!--文件-->
-                            <dlg name="WorkSpaceFilePanel" pos="0,0,-0,-0" show="1">
-                                <include src="IDR_DUI_WORKSPACE_FILE_PANEL"/>
-                            </dlg>
-                            <!--记录-->
-                            <dlg name="RecordContainerPanel" pos="0,0,-0,-0" show="0">
-                                <include src="IDR_DUI_WORKSPACE_RECORD_PANEL"/>
-                            </dlg>
-                            <!--回收站-->
-                            <dlg name="RecycleContainerPanel" pos="0,0,-0,-0" show="0"/>
+                        <!--记录-->
+                        <dlg name="RecordContainerPanel" pos="0,0,-0,-0" show="0">
+                          <include src="IDR_DUI_WORKSPACE_RECORD_PANEL"/>
                         </dlg>
-                        <!--同步状态栏-->
-                        <dlg name="StatusDisplayPanel" pos="0,[0,-0,-0" show="1">
-                            <include src="IDR_DUI_WORKSPACE_STATUSDISPLAY_PANEL"/>
-                        </dlg>
-                    </dlg>
+                        <!--回收站-->
+                        <dlg name="RecycleContainerPanel" pos="0,0,-0,-0" show="0"/>
+                      </dlg>
+                      <!--同步状态栏-->
+                      <dlg name="StatusDisplayPanel" pos="0,[0,-0,-0" show="1">
+                        <include src="IDR_DUI_WORKSPACE_STATUSDISPLAY_PANEL"/>
+                      </dlg>
+                    </dlg>  
                     <!--顶部操作栏阴影-->
                     <img pos="0,0,-0,75" skin="titlepanel_bgk"/>
-                </dlg>
+                  </dlg> 
+                </dlg>               
             </dlg>
         </dlg>
     </body>

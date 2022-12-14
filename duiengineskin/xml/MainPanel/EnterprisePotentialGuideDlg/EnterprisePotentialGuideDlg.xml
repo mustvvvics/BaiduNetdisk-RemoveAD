@@ -1,0 +1,11 @@
+<layer name="EnterprisePotentGuideDlg" width="1118" height="698" toolwindow="1" ncRect="0,0,0,0" resize="0" nomaxsize="1" translucent="1">
+  <body>
+    <dlg name="Mantle" pos="9,9,-9,-9" skin="workspace_guide_mask"/>
+    <dlg name="dlg_main" pos="|-304,|-200,@608,@401" skin="mainpanel_enterprisepotential_guidepanel_bg">
+      <imgbtn name="btn_close" skin="btn_sys_close" pos="-57,18,-25,38" cursor="arrow" tip="%str250%" animate="1"/>
+      <text pos="217,74" crtext="0065dd" font="0C04:微软雅黑">%str1579%</text>
+      <img pos="10,132,@588,@200" skin="mainpanel_enterprisepotential_guidepanel_fuction"/>
+      <imgbtn name="create_btn" pos="229,334,@156,@37" skin="mainpanel_enterprisepotential_guidepanel_create_btn" crtext="ffffff" font="0200:微软雅黑">%str1580%</imgbtn>
+    </dlg>
+  </body>
+</layer>

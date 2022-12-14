@@ -1,0 +1,144 @@
+<layer name="MemberLifeCycleCardWnd" width="385" height="376" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+  <body>
+    <dlg name="dlg_main" pos="0,0,-0,-0" skin="member_life_cycle_card_bg_short">
+      <dlg name="dlg_main2" pos="10,15,-10,-15" show="1">
+	      
+        <!--顶部面板-->
+		    <dlg name="dlg_title" pos="0,0,-0,@48">
+          <text name="text_discount" pos="0,0,-0,-0" align="center" valign="middle" crtext="664100" font="0404:微软雅黑">%str6702%</text>
+		      <imgbtn name="btn_close" pos="333,16,@14,@14" skin="member_life_cycle_card_btn_close" cursor="hand" tip="%str6711%"/>
+		    </dlg>
+        
+        <!--中间区域-->
+        <dlg name="dlg_mid" pos="16,48,@331,@174" skin="member_life_cycle_card_bg_mid">
+          <!--优惠倒计时区域-->
+          <dlg name="dlg_countdown" pos="85,12,@161,@18">
+            <text pos="0,1,@70,@14" crtext="FF6600" font="0200:微软雅黑">%str6704%</text>
+            <text name="txt_countdown_hour" pos="78,0,@21,@18" align="center" valign="middle" crtext="FF6600" crbg="FFE7CB" font="0000:微软雅黑">00</text>
+            <text pos="102,1,@4,@12" crtext="FF6600" valign="middle" font="0000:微软雅黑">%str6705%</text>
+            <text name="txt_countdown_minute" pos="109,0,@21,@18" align="center" valign="middle" crtext="FF6600" crbg="FFE7CB" font="0000:微软雅黑">59</text>
+            <text pos="133,1,@4,@12" crtext="FF6600" valign="middle" font="0000:微软雅黑">%str6705%</text>
+            <text name="txt_countdown_second" pos="140,0,@21,@18" align="center" valign="middle" crtext="FF6600" crbg="FFE7CB" font="0000:微软雅黑">59</text>
+          </dlg>
+          <!--一个商品区域-->
+          <dlg name="dlg_goods_list_one" pos="0,34,@316,@108" show="0">
+            <imgbtn name="btn_goods_list_1" pos="77,0,@177,@108" skin="member_life_cycle_card_bg_goods_1" cursor="hand">
+              <img name="icon_selected" pos="22,22,@12,@12" skin="member_life_cycle_card_icon_not_selected" show="0" />
+              <text name="txt_goods_name" pos="89,29" pos2type="center" align="center" height="14" ccrtext="664100" font="0104:微软雅黑"></text>
+              <text name="txt_goods_symbol_rmb" pos="40,61" pos2type="center" height="12" align="right" valign="bottom" crtext="AC4500" font="0004:微软雅黑">%str6710%</text>
+              <text name="txt_goods_price" pos="94,56" pos2type="center" height="24" align="left" crtext="AC4500" font="0B04:微软雅黑"></text>
+              <text name="txt_goods_price_origin" pos="89,80" pos2type="center" height="12" align="center" crtext="C2A674" font="0000:微软雅黑"></text>
+              <hr name="txt_goods_strikethrough" pos="89,80" pos2type="center" width="34" height="1" align="center" crbg="C2A674"/>
+            </imgbtn>
+          </dlg>
+          <!--两个商品区域-->
+          <dlg name="dlg_goods_list_two" pos="0,34,@316,@108" show="0">
+            <imgbtn name="btn_goods_list_1" pos="1,0,@169,@108" skin="member_life_cycle_card_bg_goods_2" cursor="hand">
+              <img name="icon_selected" pos="22,22,@12,@12" skin="member_life_cycle_card_icon_not_selected" show="0" />
+              <text name="txt_goods_name" pos="85,29" pos2type="center" align="center" height="14" crtext="495366" font="0104:微软雅黑"></text>
+              <text name="txt_goods_symbol_rmb" pos="40,61" pos2type="center" height="12" align="right" valign="bottom" crtext="FF6600" font="0004:微软雅黑">%str6710%</text>
+              <text name="txt_goods_price" pos="90,56" pos2type="center" height="24" align="left" crtext="FF6600" font="0B04:微软雅黑"></text>
+              <text name="txt_goods_price_origin" pos="85,80" pos2type="center" height="12" align="center" crtext="B3B6BA" font="0000:微软雅黑"></text>
+              <hr name="txt_goods_strikethrough" pos="85,80" pos2type="center" width="34" height="1" align="center" crbg="B3B6BA"/>
+            </imgbtn>
+            <imgbtn name="btn_goods_list_2" pos="162,0,@169,@108" skin="member_life_cycle_card_bg_goods_2" cursor="hand">
+              <img name="icon_selected" pos="22,22,@12,@12" skin="member_life_cycle_card_icon_not_selected" show="0" />
+              <text name="txt_goods_name" pos="85,29" pos2type="center" align="center" height="14" crtext="495366" font="0104:微软雅黑"></text>
+              <text name="txt_goods_symbol_rmb" pos="40,61" pos2type="center" height="12" align="right" valign="bottom" crtext="FF6600" font="0004:微软雅黑">%str6710%</text>
+              <text name="txt_goods_price" pos="90,56" pos2type="center" height="24" align="left" crtext="FF6600" font="0B04:微软雅黑"></text>
+              <text name="txt_goods_price_origin" pos="85,80" pos2type="center" height="12" align="center" crtext="B3B6BA" font="0000:微软雅黑"></text>
+              <hr name="txt_goods_strikethrough" pos="85,80" pos2type="center" width="34" height="1" align="center" crbg="B3B6BA"/>
+            </imgbtn>
+          </dlg>
+          <!--三个商品区域-->
+          <dlg name="dlg_goods_list_three" pos="0,34,@316,@108" show="1">
+            <imgbtn name="btn_goods_list_1" pos="0,0,@116,@108" skin="member_life_cycle_card_bg_goods_3" cursor="hand">
+              <img name="icon_selected" pos="18,23,@12,@12" skin="member_life_cycle_card_icon_not_selected" show="0" />
+              <text name="txt_goods_name" pos="58,29" pos2type="center" align="center" height="14" crtext="495366" font="0104:微软雅黑"></text>
+              <text name="txt_goods_symbol_rmb" pos="36,61" pos2type="center" height="12" align="right" valign="bottom" crtext="FF6600" font="0004:微软雅黑">%str6710%</text>
+              <text name="txt_goods_price" pos="59,56" pos2type="center" height="24" align="left" crtext="FF6600" font="0B04:微软雅黑"></text>
+              <text name="txt_goods_price_origin" pos="58,80" pos2type="center" height="12" align="center" crtext="B3B6BA" font="0000:微软雅黑"></text>
+              <hr name="txt_goods_strikethrough" pos="58,80" pos2type="center" width="34" height="1" align="center" crbg="B3B6BA"/>
+            </imgbtn>
+            <imgbtn name="btn_goods_list_2" pos="108,0,@116,@108" skin="member_life_cycle_card_bg_goods_3" cursor="hand">
+              <img name="icon_selected" pos="18,23,@12,@12" skin="member_life_cycle_card_icon_not_selected" show="0" />
+              <text name="txt_goods_name" pos="58,29" pos2type="center" align="center" height="14" crtext="495366" font="0104:微软雅黑"></text>
+              <text name="txt_goods_symbol_rmb" pos="36,61" pos2type="center" height="12" align="right" valign="bottom" crtext="FF6600" font="0004:微软雅黑">%str6710%</text>
+              <text name="txt_goods_price" pos="59,56" pos2type="center" height="24" align="left" crtext="FF6600" font="0B04:微软雅黑"></text>
+              <text name="txt_goods_price_origin" pos="58,80" pos2type="center" height="12" align="center" crtext="B3B6BA" font="0000:微软雅黑"></text>
+              <hr name="txt_goods_strikethrough" pos="58,80" pos2type="center" width="34" height="1" align="center" crbg="B3B6BA"/>
+            </imgbtn>
+            <imgbtn name="btn_goods_list_3" pos="216,0,@116,@108" skin="member_life_cycle_card_bg_goods_3" cursor="hand">
+              <img name="icon_selected" pos="18,23,@12,@12" skin="member_life_cycle_card_icon_not_selected" show="0" />
+              <text name="txt_goods_name" pos="58,29" pos2type="center" align="center" height="14" crtext="495366" font="0104:微软雅黑"></text>
+              <text name="txt_goods_symbol_rmb" pos="36,61" pos2type="center" height="12" align="right" valign="bottom" crtext="FF6600" font="0004:微软雅黑">%str6710%</text>
+              <text name="txt_goods_price" pos="59,56" pos2type="center" height="24" align="left" crtext="FF6600" font="0B04:微软雅黑"></text>
+              <text name="txt_goods_price_origin" pos="58,80" pos2type="center" height="12" align="center" crtext="B3B6BA" font="0000:微软雅黑"></text>
+              <hr name="txt_goods_strikethrough" pos="58,80" pos2type="center" width="34" height="1" align="center" crbg="B3B6BA"/>
+            </imgbtn>
+          </dlg>
+          
+          <!--开通会员引导区域-->
+          <dlg name="dlg_buy_svip" pos="7,146,@316,@12">
+            <text name="txt_title_tip" pos="0,0,@180,-0" align="left" crtext="A2ABBD" font="0000:微软雅黑">%str6706%</text>
+            <link name="link_view_more_goods" pos="256,0,@48,-0" align="right" crtext="A2ABBD" font="0000:微软雅黑" hoverfont="0002:微软雅黑" cursor="hand">%str6707%</link>
+            <img pos="304,0,@12,@12" skin="member_life_cycle_card_icon_more_goods" />
+          </dlg>
+        </dlg>
+        
+        <!--联合会员商品区域-->
+        <dlg name="dlg_union" pos="24,218,@315,@36" show="0">
+          <text pos="0,|-6,@72,@12" align="left" crtext="664100" font="0000:微软雅黑">%str6708%</text>
+          <dlg name="dlg_union_right" pos="82,0,-0,-0" skin="member_life_cycle_card_bg_union_selected" cursor="hand">
+            <text name="txt_union_name" pos="16,12,@120,@12" align="left" crtext="664100" font="0000:微软雅黑"></text>
+            <text name="txt_union_price_now" pos="-55,12" height="12" pos2type="righttop" align="right" crtext="FF6600" font="0000:微软雅黑"></text>
+            <text name="txt_union_price_origin" pos="-52,12" height="12" pos2type="lefttop" align="left" crtext="A2ABBD" font="0000:微软雅黑"></text>
+            <hr pos="-52,18,@33,@1" align="left" crbg="A2ABBD"/>
+          </dlg>
+        </dlg>
+        
+        <!--支付区域-->
+        <dlg name="dlg_pay" pos="18,221,@327,@108" show="1">
+          <!--二维码面板-->
+          <dlg name="dlg_qrcode" pos="0,0,@108,@108" skin="member_life_cycle_card_bg_qccode">
+            <img name="img_qr_code" pos="7,7,@94,@94" />
+            <gifplayer name="gif_qr_code_loading" pos="54,54" pos2type="center" height="30" width="30" skin="fileqrcodedlg_loading_gif" show="0"/>
+          </dlg>
+          <text pos="117,15,@28,@18" align="left" crtext="495366" font="0000:微软雅黑">%str6709%</text>
+          <text pos="[0,9,@10,@24" align="left" crtext="FF6600" valign="bottom" font="0004:微软雅黑">%str6710%</text>
+          <text name="txt_real_price" pos="[0,4" align="left" crtext="FF6600" font="0B04:微软雅黑"></text>
+          <text name="txt_decrease_price" pos="[9,15" align="left" crtext="495366" font="0000:微软雅黑"></text>
+          <img name="icon_pay_0" pos="117,43,@14,@14" skin="common_logo_icon_zfb" keep_size="1"/>
+          <img name="icon_pay_1" pos="135,43,@14,@14" skin="common_logo_icon_wx" keep_size="1"/>
+          <img name="icon_pay_2" pos="153,43,@14,@14" skin="common_translucent_img" keep_size="1"/>
+          <text name="txt_pay_statement" pos="171,44,@170,@12" maxwidth="170" dotted="1" align="left" crtext="495366" font="0000:微软雅黑">%str6713%</text>
+          <link name="link_illustrate_auto" pos="117,87" height="12" crtext="A2ABBD" font="0000:微软雅黑" hoverfont="0002:微软雅黑" cursor="hand"></link>
+          <link name="link_illustrate_vip" pos="[8,87" height="12" crtext="A2ABBD" font="0000:微软雅黑" hoverfont="0002:微软雅黑" cursor="hand"></link>
+        </dlg>
+	  
+      </dlg>
+
+      <dlg name="dlg_main_pay_result" pos="10,15,-10,-15" show="0">
+        
+        <!--上方支付结果提示-->
+        <dlg name="dlg_pay_result" pos="0,0,-0,@129">
+          <imgbtn name="btn_close" pos="333,16,@14,@14" skin="member_life_cycle_card_btn_close" cursor="hand" tip="%str6711%"/>
+          <img name="icon_pay_result" pos="117,48,@36,@36" skin="member_life_cycle_card_icon_pay_success"/>
+          <text name="text_pay_result" pos="[14,52" align="left" valign="middle" height="28" maxwidth="160" crtext="03081A" font="0804:微软雅黑">%str6714%</text>
+        </dlg>
+
+        <hr pos="23,129,@317,@1" crbg="F1F2F4"/>
+        
+        <!--下方订单详情提示-->
+        <dlg name="dlg_pay_detail" pos="0,130,-0,@131">
+          <text name="text_goods_name_static" pos="23,30" align="left" valign="middle" height="14" maxwidth="77" crtext="A2ABBD" font="0200:微软雅黑">%str6715%</text>
+          <text name="text_goods_name_real" pos="340,30" pos2type="righttop" align="right" valign="middle" height="14" maxwidth="240" crtext="A2ABBD" font="0200:微软雅黑" dotted="1"></text>
+          <text name="text_end_time_static" pos="23,54" align="left" valign="middle" height="14" maxwidth="77" crtext="A2ABBD" font="0200:微软雅黑">%str6716%</text>
+          <text name="text_end_time_real" pos="340,54" pos2type="righttop" align="right" valign="middle" height="14" maxwidth="240" crtext="A2ABBD" font="0200:微软雅黑" dotted="1"></text>
+          <text name="text_goods_price_static" pos="23,78" align="left" valign="middle" height="14" maxwidth="77" crtext="A2ABBD" font="0200:微软雅黑">%str6717%</text>
+          <text name="text_goods_price_real" pos="340,78" pos2type="righttop" align="right" valign="middle" height="14" maxwidth="240" crtext="A2ABBD" font="0200:微软雅黑" dotted="1"></text>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

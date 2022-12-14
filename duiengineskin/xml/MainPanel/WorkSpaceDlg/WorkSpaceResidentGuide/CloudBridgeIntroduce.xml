@@ -1,0 +1,12 @@
+<layer name="CloudBridgeIntroduce" width="328" height="216" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+  <body> 
+    <dlg name="dlg_member_center" pos="0,0,-0,-0" skin="workspace_guide_introduce_bk" >
+      <dlg name="dlg_member_privilege" pos="16,13,-16,-20">
+        <text name="dlg_title" pos="12,12,@200,@12" font="0004:微软雅黑" crtext="03081A" align="left">%str6852%</text>
+        <text name="dlg_introdue" pos="12,[8,@272,@48" font="0000:微软雅黑" multilines="1" crtext="AFB3BF" align="center">%str6853%</text>
+        <text name="dlg_title" pos="12,[10,@200,@12" font="0004:微软雅黑" crtext="03081A" align="left">%str6854%</text>
+        <text name="dlg_introdue" pos="12,[8,@272,@60" font="0000:微软雅黑" multilines="1" crtext="AFB3BF" align="center">%str6855%</text>
+      </dlg>          
+    </dlg>
+  </body>
+</layer>

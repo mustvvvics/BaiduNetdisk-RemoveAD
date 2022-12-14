@@ -1,0 +1,22 @@
+<layer name="Cloudbridgedeletefile" width="464" height="390" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg name="dlg_main" pos="0,0,-0,-0" skin="mainbase_dlg">
+      <caption pos="0,0,-0,@35">
+        <text name="title" pos="24,15,@140,@18" font="0200:微软雅黑" crtext="03081A">%str6790%</text>
+        <imgbtn name="btn_close" pos="-26,19,@11,@11" skin="wechatbackup_guide_dlg_close"></imgbtn>
+      </caption>
+        <text pos="24,73,@208,@20" font="0000:微软雅黑" crtext="03081A">%str6019%</text>
+        <text pos="24,101,@196,@60" crtext="AFB3BF" font="0000:微软雅黑" multilines="1">%str6793%</text>
+        <text pos="24,177,@208,@20" font="0000:微软雅黑"  crtext="03081A">%str6789%</text>
+        <text pos="24,205,@196,@60" crtext="AFB3BF" font="0000:微软雅黑" multilines="1">%str6787%</text>
+        <gifplayer name="gif_intro" pos="232,54,@232,@232" skin="gif_workspace_quick_sync" show="1" />
+        <imgbtn name="btn_CloudBridge" pos="168,294,@128,@36" font="0200:微软雅黑" crtext="FFFFFF">%str4202%</imgbtn>
+        <img name ="svip" pos="267,288,@34,@16" skin="video_subtitle_vip" show="0"></img>
+      <dlg pos ="0,354,@464,@36" skin="bottom">
+        <img pos="25,14,@12,@10" skin="bottomsvip"></img>
+        <text name ="bottomtext" pos="47,10,@312,@17" crtext="664100" font="0000:微软雅黑"></text>
+      </dlg>
+      
+    </dlg>
+  </body>
+</layer>

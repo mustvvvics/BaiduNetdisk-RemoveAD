@@ -17,11 +17,22 @@
       </img>
     </dlg>
 
+    <!--同步空间-->
+    <imgbtn name="btn_workspace" pos="0,160,-0,@80" skin="main_panel_frame" icoxoffset="13" icoyoffset="15"
+        crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_workspace_btn"
+        txtyoffset="50" cursor="arrow" show="0">%str7063%</imgbtn>
+    <img name="img_workspace_reddot" pos="50,[-60,@8,@8" skin="titlepanel_reddot" show="0"/>
+      
     <!--好友-->
     <imgbtn name="btn_share" pos="0,160,-0,@80" skin="main_panel_frame" icoxoffset="13" icoyoffset="15" 
     crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_share_btn" 
-    txtyoffset="50" cursor="arrow">%str1652%</imgbtn>
+    txtyoffset="50" cursor="arrow">%str1655%</imgbtn>
     <img name="img_share_reddot" pos="50,[-60,@8,@8" skin="titlepanel_reddot" show="0"/>
+    
+    <!--可配置入口-->
+    <imgbtn name="btn_configurable" pos="0,240,-0,@80" skin="main_panel_frame" icoxoffset="13" icoyoffset="15"
+    crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_share_btn" show="0"
+    txtyoffset="50" cursor="arrow">会员</imgbtn>
       
     <dlg name="dlg_invalid_area" pos="0,320,-1,-100">
       <dlg name="dlg_tools" pos="0,-187,-1,@181">
@@ -30,7 +41,7 @@
         <listboxex name="listview_tools" pos="0,[1,-0,@180" virtual="1" itemheight="65">
           <template>
             <dlg pos="0,0,-0,-0">
-              <imgbtn name="item_img_tool" pos="19,14,@32,@32" skin="function_lock_img" 
+              <imgbtn name="item_img_tool" pos="19,14,@32,@32" skin="common_translucent_img" icoskin="common_translucent_img" 
               cursor="arrow"/>
               <dlg name="dlg_sync_status" pos="0,0,@25,@16" msgtransparent="1">
                   <img name="img_sync_num" pos="43,8,@20,@16" skin="titlepanel_redbg" show="0">

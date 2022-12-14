@@ -9,7 +9,7 @@
     <!--用户头像-->
     <img name="img_userhead" pos="-320,|-15,@30,@30" skin="titlepanel_default_head">
         <img name="img_userhead_frame" pos="0,0,-0,-0" skin="workspace_titlepanel_headframe"/>
-        <img name="img_userhead_cert_status" pos="16,18,@13,@13" skin="titlepanel_cert_status_icon" show="0"/>
+        <img name="img_userhead_cert_status" pos="16,18,@15,@15" skin="titlepanel_cert_status_icon" show="0"/>
         <!--会员身份标识-->
         <imgbtn name="btn_crown" pos="20,22,@11,@10" skin="titlepanel_translucent" icoskin="workspace_vip_expired" cursor="hand"/>
     </img>
@@ -26,7 +26,7 @@
             </dlg>
         </dlg>
         <dlg name="dlg_svip" pos="0,0,-0,-0" show="0">
-            <imgbtn name="btn_flow_svip" pos="0,0,@139,@32" skin="workspace_titlepanel_svip_btn" txtxoffset="10" icoxoffset="9" icoyoffset="8" icoskin="workspace_title_lightning" crtext="64360D">%str4511%</imgbtn>
+            <imgbtn name="btn_flow_svip" pos="0,0,@119,@32" font="0004:微软雅黑" skin="workspace_titlepanel_svip_btn" txtxoffset="10" icoxoffset="9" icoyoffset="8" icoskin="workspace_title_lightning" crtext="64360D">%str4511%</imgbtn>
         </dlg>
     </dlg>
     <!--用户反馈-->

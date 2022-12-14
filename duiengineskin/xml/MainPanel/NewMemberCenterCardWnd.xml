@@ -1,0 +1,14 @@
+<layer name="MemberCerterCardWnd" width="320" height="298" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+  <body> 
+    <dlg name="dlg_member_center" pos="0,0,-0,-0" skin="member_center_card_bgk" >   
+      <dlg name="dlg_member_privilege" pos="0,0,320,-0">
+        <imgbtn name="btn_close" skin="autobackuptipdlg_close_btn" pos="-39,40,-31,48" cursor="arrow" tip="%str250%" animate="1"/>
+        <img name="img_privilege_info" pos="70,37,@177,@152" skin="member_center_card_img_bgk"/>
+        <img name="img_privilege_left" pos="47,203,@60,@1" skin="usercard_svip_line"/>
+        <text name="text_privilege_item" pos="108,197,@105,@12" font="0000:微软雅黑" crtext="BF8726" align="center">%str6700%</text>
+        <img name="img_privilege_right" pos="214,203,@60,@1" skin="usercard_svip_line_reverse"/>
+        <imgbtn name="btn_get_it_now" pos="61,224,@198,@42" skin="btn_default_yellow_round_angle" crtext="773200" font="0004:微软雅黑" cursor="hand">%str6701%</imgbtn>
+      </dlg>          
+    </dlg>
+  </body>
+</layer>

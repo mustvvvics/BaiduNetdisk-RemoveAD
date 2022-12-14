@@ -1,0 +1,20 @@
+﻿<layer name="ViedeoPlayBuySvip" width="464" height="475" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg name="viedeo_play_buy_svip" pos="0,0,-0,-0" skin="video_buy_svip_backgroud">
+      <caption pos="0,0,-0,@48">
+        <text name="dlg_title" pos="24,14" font="0104:微软雅黑" crtext="333333">%str5007%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="424,12,@30,@20" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+
+      <dlg name="dlg_content" pos="0,48,-0,-0" >
+        <text name="text_main_tip" pos="0,24,-0,@14" font="0204:微软雅黑" multilines="0" align="center" crtext="03081A">%str5005%</text>
+        <text name="text_ext_tip" pos="0,[12,-0,@12" font="0000:微软雅黑" multilines="0" align="center" crtext="666666">%str5006%</text>
+        <dlg name="privilege_content" pos="92,86,@280,@240" >
+          <img name="img_privilege_show" pos="0,0,-0,-0" skin="video_buy_svip_privilege_show"/>
+          <text name="text_privilege_count" pos="0,8,-0,@20" font="0204:微软雅黑" multilines="0" align="center" crtext="64360D"></text>
+        </dlg>
+        <imgbtn name="btn_buy" pos="144,[25,@176,@44" cursor="hand" crtext="64360D" animate="1" font="0204:微软雅黑" textmode="40825" skin="privilege_guide_dlg_buy_svip">%str5007%</imgbtn>
+      </dlg>
+    </dlg>
+  </body>
+</layer>                                        

@@ -1,0 +1,21 @@
+<layer name="SvipGuide" width="504" height="311" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg pos="0,0,-0,-0" skin="cloudbridge_svip_frame">
+            <dlg name="dlg_main" pos="20,20,-20,-20">
+                <caption pos="0,0,-0,@48">
+                    <text pos="24,16" crtext="03081A" font="0200:微软雅黑">%str751%</text>
+                    <imgbtn name="btn_close" pos="-40,18,@16,@16" skin="wechatbackup_guide_dlg_close"></imgbtn>
+                </caption>
+                <hr pos="2,46,@460,@1" crbg="F5F6FA" size="1"></hr>
+                <img pos="80,65,@60,@60" skin="cloudbridge_file"></img>
+                <text name="text1" pos="152,73" font="0200:微软雅黑">%str2341%</text>
+                <text name="guide_txt" pos="152,[4" font="0200:微软雅黑">%str6008%</text>
+                <dlg pos="40,143,@384,@36" skin="cloudbridge_yellow_frame">
+                    <text pos="22,12,@130,@12" crtext="64360D">%str6009%</text>
+                    <text pos="[0,12,@260,@12" crtext="64360D">%str6010%</text>
+                </dlg>
+                <imgbtn name="btn_svip" pos="140,199,@184,@40" font="0200:微软雅黑" crtext="664100" skin="cloudbridge_yellow_btn" cursor="hand">%str6011%</imgbtn>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

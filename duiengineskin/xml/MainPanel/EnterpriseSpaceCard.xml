@@ -15,9 +15,23 @@
           <img name="enterprise_select_mark" pos="-28,|-7" width="14" height="14" skin="enterprise_select_btn" show="0"/>
         </template>
       </listboxex>
+      <dlg name="dlg_txt" pos="14,[0,@300,@12" skin="enterprise_head_frame">
+        <link name="btn_cert_link" pos="0,0,-0,@12"  font="0004:微软雅黑" crtext="0065DD" cursor="hand" align="center">%str1571%</link>
+      </dlg>
     </dlg>
-    <dlg name="dlg_guide" pos="0,0,-0,-0" skin="titlepanel_textad_bgk" show="0" >
-      <imgbtn name="guide_btn" pos="30,34,@300,@190" skin="titlepanel_translucent" cursor="hard" ></imgbtn>
+    <dlg name="dlg_guide" pos="0,0,-0,-0" skin="usercard_notvip_bg">
+      <dlg pos="20,34,@320,@70" skin="usercard_notvip_bg">
+        <imgbtn name="btn_group" pos="0,0,@320,@70"  skin="enterprise_guide_list" cursor="hand"></imgbtn>
+        <img pos="12,12,@42,@42" skin="enterprise_group"></img>
+        <text pos="66,16" class="cls_usercard_channel_title_txt">%str1564%</text>
+        <text pos="66,36" class="cls_usercard_channel_subtitle_txt">%str1565%</text>
+      </dlg>
+      <dlg pos="20,[0,@320,@70" skin="usercard_channel_info_bgk">
+        <imgbtn name="btn_cert" pos="0,0,-1,-1"  skin="enterprise_guide_list" cursor="hand"></imgbtn>
+        <img pos="12,12,@42,@42" skin="enterprise_cert"></img>
+        <text pos="66,16" class="cls_usercard_channel_title_txt">%str1566%</text>
+        <text pos="66,36" class="cls_usercard_channel_subtitle_txt">%str1567%</text>
+      </dlg>
     </dlg>
   </body>
 </layer>

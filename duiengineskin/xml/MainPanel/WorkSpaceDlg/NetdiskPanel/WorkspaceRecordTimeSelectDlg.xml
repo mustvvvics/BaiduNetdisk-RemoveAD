@@ -1,0 +1,27 @@
+<layer name="CloudbridgeIntroduce" width="361" height="360" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="dlg_main" pos="219,0,-0,281" skin="common_panel_bkg3">
+            <dlg pos="17,17,-17,-17">
+                <listboxex name="record_time_select_list_view" pos="0,0,135,-0"
+                           itemheight="26" virtual="1" sbenable="3" frameskin="mainpanel_frame_select_bg">
+                    <template>
+                        <text name="txt_time_range" pos="11,4"></text>
+                        <img name="img_select" pos="89,3,@14,@14" skin="common_check_mark"></img>
+                    </template>
+                </listboxex>
+                <hr pos="8,137,@94,@1" crbg="F5F6FA"></hr>
+                <text pos="12,143" crtext="000000">%str7060%</text>
+                <text pos="12,168" crtext="AAAAAA">%str7058%</text>
+                <imgbtn name="btn_from_date" skin="record_un_select_panel" crtext="A2ABBD" pos="[3,168,@69,@18"></imgbtn>
+                <text pos="12,190" crtext="AAAAAA">%str7059%</text>
+                <imgbtn name="btn_to_date" skin="record_un_select_panel" crtext="A2ABBD" pos="[3,190,@69,@18"></imgbtn>
+                <imgbtn name="btn_known" pos="21,216,@62,@23" font="0200:微软雅黑" crtext="FFFFFF" skin="record_confirm_panel" cursor="hand">%str7061%</imgbtn>
+            </dlg>
+        </dlg>
+        <dlg name="dlg_calender" pos="0,129,@230,@231" show="0" skin="dlg_panel_bkg_img">
+            <calendar name="cal_select" titleHeight="30" crTitleBack="03081A" crDay="FFFFFF" showSeletPanel="1"
+                         seletPanelHeight="25" crDayBack="06A7FF" crWeekend="03081A" outDaySkin="function_collect_focus_skin" pos="5,5,@219,@231">
+            </calendar>
+        </dlg>
+    </body>
+</layer>

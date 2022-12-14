@@ -1,0 +1,17 @@
+﻿<layer name="AuthenticationDlg" width="420" height="360" appwin="0" ncRect="0,0,0,0" resize="0" translucent="0" nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+      <img pos="10,8" name="img_logo" skin="common_logo_main"></img>
+      <text pos="39,9" name="text_title" class="cls_dlg_title_text">%str3727%</text>
+      <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,8" cursor="arrow" tip="%str250%" animate="1" show="1"/>
+      </caption>
+
+      <dlg name="panel_device_cheat" pos="1,38,-1,-1">
+        <dlg name="panel_device_cheat_appeal_page" pos="0,0,-0,-0">
+          <webbrowser name="appeal_web_page" pos="0,0,-0,-0" use_ie="0" show="1"/>
+        </dlg>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

@@ -1,0 +1,15 @@
+<!--同步空间品宣页-->
+<text pos="|-80,20,@160,@20," crtext="03081A" font="0802:微软雅黑" align="center" vlign="middle">%str6060%</text>
+  <listboxex name="workspace_guide_list" pos="|-403,60,-0,-60" scrollspeed="20" itemheight="400" itemwidth="806" virtual="1">
+    <template>
+        <dlg name="workspace_brand" pos="0,0,-0,-0">
+            <gifplayer name="workspace_newguide_img" pos="|-250,50,@500,@240" bulltimer="1"></gifplayer>
+            <text name="workspace_newguide_title" pos="0,[25,-0,@20" crtext="03081A" font="0200:微软雅黑" align="center" vlign="middle"></text>
+            <text name="workspace_newguide_text" pos="0,[8,-0,@20" crtext="495366" font="0200:微软雅黑" align="center" vlign="middle"></text>
+            <link name="workspace_newguide_link" pos="0,[8,-0,@20" crtext="495366" align="center" vlign="middle" cursor="hand">%str1578%</link>
+        </dlg>
+    </template>
+  </listboxex>
+<imgbtn name="btn_workspace_setbtn" pos="|-208,-50,@200,@36" skin="workspace_newguide_lessbtn" font="0200:微软雅黑" crtext="06A7FF" show="1">%str6068%</imgbtn>
+<imgbtn name="btn_workspace_newguide"  pos="[16,-50,@200,@36" skin="workspace_newguide_btn" font="0200:微软雅黑" crtext="FFFFFF" show="1">%str6373%</imgbtn>
+<imgbtn name="btn_workspace_ontinuese"  pos="|-100,-50,@200,@36" skin="workspace_newguide_btn" font="0200:微软雅黑" crtext="FFFFFF" show="0">%str1577%</imgbtn>

@@ -1,0 +1,7 @@
+<layer width="195" height="80" minsize="195,80" appwin="1" ncRect="0,0,0,0" resize="1" translucent="1" nomaxsize="0">
+  <body>
+    <dlg name="functionintroductionPanel" pos="0,0,-0,-0" skin="ainote_guide_img" show="1">
+      <img pos="0,0,-0,-0" skin="ainote_guide_img"/>
+    </dlg>
+  </body>
+</layer>

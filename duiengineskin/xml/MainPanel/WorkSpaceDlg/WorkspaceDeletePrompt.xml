@@ -1,22 +1,18 @@
-<layer name="WorkspaceDeletePromptDlg" width="464" height="338" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
-    <body>
-        <dlg name="content" pos="0,0,-0,-0" skin="workspace_guide_frame_mask">
-            <dlg pos="8,8,-8,-8">
-                <caption pos="0,0,-0,@48">
-                    <img pos="16,8,@32,@32" skin="workspace_logo_icon"/>
-                    <text pos="[10,14" crtext="333333" font="0200:微软雅黑">%str4500%</text>
-                    <imgbtn name="btn_close" pos="-40,18,@16,@16" skin="wechatbackup_guide_dlg_close"></imgbtn>
-                    <hr pos="0,48,-0,@1" crbg="EDEDED"></hr>
-                </caption>
-                <dlg name="dlg_main" pos="0,48,-0,-0" show="1">
-                    <img pos="207,32,@50,@50" skin="workspace_attention"></img>
-                    <text pos="131,[12" crtext="03081A" font="0200:微软雅黑" align="center">%str5202%</text>
-                    <text pos="66,[8,@354,@59" name="txt_delete_file" crtext="666666" font="0200:微软雅黑" align="center" textmode="40811">%str5200%</text>
-                    <imgbtn name="btn_open_recycle" crtext="06A7FF" skin="workspace_guide_btn_bkg_two" font="0200:微软雅黑" pos="96,192,@128,@36">%str5203%</imgbtn>
-                    <imgbtn name="btn_known" skin="workspace_guide_btn_bkg_one" crtext="FFFFFF" font="0200:微软雅黑" pos="[16,192,@128,@36">%str4962%</imgbtn>
-                    <check name="check_no_show" pos="192,240" skin="btncheckbox" show="1">%str5204%</check>
-                </dlg>
-            </dlg>
-        </dlg>
-    </body>
+<layer name="WorkspaceDeletePromptDlg" width="464" height="244" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg name="content" pos="0,0,-0,-0" skin="mainbase_dlg">
+      <caption pos="0,0,-0,@35">
+        <text pos="24,14,@196,@20" crtext="03081A" font="0200:微软雅黑">%str6780%</text>
+        <imgbtn name="btn_close" pos="-26,18,@11,@11" skin="wechatbackup_guide_dlg_close"></imgbtn>
+      </caption>
+      <text name="txt_delete_file" pos="60,80,@384,@20" crtext="495366" font="0200:微软雅黑" multilines="1"></text>
+      <text pos="60,100" crtext="495366" font="0200:微软雅黑" >%str6783%</text>
+      <link name="lnk_goto_recycle" pos="[0,100" font="0200:微软雅黑" crtext="06A7FF">%str6782%</link>
+      <imgbtn name="btn_noTip" pos="96,148,@128,@36" skin="deletefilebuttonbk" crtext="06A7FF" font="0200:微软雅黑" >%str890%</imgbtn>
+      <imgbtn name="btn_known" pos="240,148,@128,@36" skin="workspace_guide_btn_bkg_one" crtext="FFFFFF" font="0200:微软雅黑" >%str4962%</imgbtn>
+      <img pos="0,208,@464,@36" skin="deletefilebk"></img>
+      <text pos="24,218,@264,@17" crtext="818999" font="0000:微软雅黑" >%str6784%</text>
+      <link name="lnk_goto_Know" pos="392,218" font="0000:微软雅黑" crtext="06A7FF">%str6786%</link>
+    </dlg>
+  </body>
 </layer>

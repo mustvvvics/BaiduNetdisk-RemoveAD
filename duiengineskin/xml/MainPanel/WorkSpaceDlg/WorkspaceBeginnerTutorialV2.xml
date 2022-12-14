@@ -1,0 +1,20 @@
+<layer name="WorkSpaceBeginnerTutorialPanelV2" width="790" height="665" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+  <body>
+    <dlg name="dlg_tutorial_sync_v2"  pos="0,0,-0,-0" show="1" skin="workspace_guide_mask">
+      <dlg name="dlg_open_dir_guide" pos="163,179,@464,@315" show="1">
+        <img skin="workspace_tutorial_white_large" pos="0,0,-0,-0"></img>
+        <img skin="workspace_tutorial_white_small" pos="0,0,@464,@47"></img>
+        <text pos="24,14" maxwidth="168" textmode="10" crtext="03081A " font2="facename:微软雅黑;bold:1;italic:0;underline:0;" align="left" show="1">%str6222%</text>
+        <imgbtn name="btn_close" skin="titlepanel_close_btn" pos="426,18,@11,@11" cursor="arrow" tip="%str250%"></imgbtn>
+        <text name="txt_flow_1" pos="65,80" maxwidth="400" textmode="10" crtext="03081A " font="0000:微软雅黑" align="left" show="0">%str6223%</text>
+        <text name="txt_flow_2" pos="[4,80" maxwidth="400" textmode="10" crtext="06A7FF " font="0000:微软雅黑" align="left" show="0"></text>
+        <text name="txt_flow_3" pos="[17,80" maxwidth="400" textmode="10" crtext="03081A " font="0000:微软雅黑" align="left" show="0">%str6224%</text>
+        <text name="txt_flow_4" pos="65,78" maxwidth="400" textmode="10" crtext="03081A " font="0000:微软雅黑" align="left" show="0">%str6225%</text>
+        <img name="img_workspace_multi" skin="workspace_tutorial_multi" pos="60,124,@360,@110"></img>
+        <text name="txt_open_dir_hint" pos="89,156" maxwidth="129" textmode="10" crtext="03081A " font="0000:微软雅黑" align="left" show="1">%str6226%</text>
+        <imgbtn name="btn_open_syncdir" skin="workspace_guide_btn_opendir" crtext="FFFFFF" font="0000:微软雅黑" pos="132,258,@200,@36">%str6212%</imgbtn>
+        <img name="img_workspace_screenshot" skin="workspace_tutorial_screenshot" pos="60,100,-50,-5" show="0"></img>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

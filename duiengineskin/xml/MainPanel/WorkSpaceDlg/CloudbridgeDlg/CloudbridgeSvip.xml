@@ -1,21 +1,18 @@
-<layer name="SvipGuide" width="504" height="311" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
-    <body>
-        <dlg pos="0,0,-0,-0" skin="cloudbridge_svip_frame">
-            <dlg name="dlg_main" pos="20,20,-20,-20">
-                <caption pos="0,0,-0,@48">
-                    <text pos="24,16" crtext="03081A" font="0200:微软雅黑">%str751%</text>
-                    <imgbtn name="btn_close" pos="-40,18,@16,@16" skin="wechatbackup_guide_dlg_close"></imgbtn>
-                </caption>
-                <hr pos="2,46,@460,@1" crbg="F5F6FA" size="1"></hr>
-                <img pos="80,65,@60,@60" skin="cloudbridge_file"></img>
-                <text name="text1" pos="152,73" font="0200:微软雅黑">%str2341%</text>
-                <text name="text2" pos="152,[4" font="0200:微软雅黑">%str6008%</text>
-                <dlg pos="40,143,@384,@36" skin="cloudbridge_yellow_frame">
-                    <text pos="22,12,@130,@12" crtext="64360D">%str6009%</text>
-                    <text pos="[0,12,@260,@12" crtext="64360D">%str6010%</text>
-                </dlg>
-                <imgbtn name="btn_svip" pos="140,199,@184,@40" font="0200:微软雅黑" crtext="664100" skin="cloudbridge_yellow_btn" cursor="hand">%str6011%</imgbtn>            
-            </dlg>
+<layer name="GuidUserBuySvipDlg" width="466" height="503" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="1">
+  <body>
+    <dlg name="guid_user_buy_svip" pos="0,20,-0,-0" skin="cloudbridge_svip_frame">
+      <caption pos="0,0,-0,@48">
+        <text name="dlg_title" pos="34,40" font="0104:微软雅黑" crtext="333333">%str5007%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="414,40,@30,@20" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg name="dlg_content" pos="0,58,-0,-0" >
+        <text name="text_main_tip" pos="0,24,-0,@14" font="0204:微软雅黑" multilines="0" align="center" crtext="03081A">%str6900%</text>
+        <dlg name="privilege_content" pos="92,62,@280,@240" >
+          <img name="img_privilege_show" pos="0,0,-0,-0" skin="video_buy_svip_privilege_show"/>
+          <text name="text_privilege_count" pos="0,8,-0,@20" font="0204:微软雅黑" multilines="0" align="center" crtext="64360D"></text>
         </dlg>
-    </body>
+        <imgbtn name="btn_svip" pos="144,[25,@176,@44" cursor="hand" crtext="64360D" animate="1" font="0204:微软雅黑" textmode="40825" skin="privilege_guide_dlg_buy_svip">%str5007%</imgbtn>
+      </dlg>
+    </dlg>
+  </body>
 </layer>

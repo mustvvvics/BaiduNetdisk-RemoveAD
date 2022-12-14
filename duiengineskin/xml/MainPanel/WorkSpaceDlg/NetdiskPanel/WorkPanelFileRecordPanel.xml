@@ -1,11 +1,37 @@
 <dlg name="WorkSpaceFileRecordContainerPanel" pos="0,0,-0,-0">
-  <!--文件列表视图-->
-    <dlg name="dlg_file_record_list_view" pos="0,0,-0,-0" show="0">
-      <text name="text_filename_calcul" pos="58,28" class="cls_operation_record_filename" show="0"></text>
-      <header name="file_record_list_header" pos="0,0,-0,@36"  fixWidth="0" itemSkin="listhead_btn_two" 
-        itemSwapEnable="0" sortHeader="1" check_txt_margin="12" crtext="757880" align="left">
-      </header>
-      <dlg pos="0,36,-0,-0">
+    <!--顶部操作栏-->
+    <dlg name="dlg_file_record_toolbar" pos="0,0,-0,142">
+        <dlg name="dlg_seach" pos="0,20,-0,60">
+            <text name="dlg_text" pos="24,13,@204,@17" crtext="A2ABBD">%str7052%</text>
+            <dlg name="SearchBox" pos="-240,4,-86,@32" skin="workspace_file_toolbar_bg_search">
+                <imgbtn name="btn_search" skin="mainpanel_addresspanel_searchbox_search" pos="12,7,@16,@16" cursor="arrow"></imgbtn>
+                <edit name="search_word_edit" pos="[5,1,-24,@28" x-margin="0" y-margin="0" align="left" crbg="FAFAFC" font="0000:宋体" deffont="0000:微软雅黑" crdeftext="999999" password="0" show="1" deftext="%str7053%" defleftmargin="1"></edit>
+                <imgbtn name="btn_search_clear" skin="mainpanel_addresspanel_searchbox_delete" pos="[0,7,@16,@16" cursor="arrow" show="0"></imgbtn>
+            </dlg>
+            <dlg name="OperateTool" pos="[10,0,-0,-0">
+                <imgbtn name="btn_sort" skin="mainpanel_toolbar_sort" pos="-54,12" show="0" cursor="arrow" tip="%str2176%"></imgbtn>
+                <imgbtn name="btn_thumb" skin="mainpanel_toolbar_thumb" pos="-28,12" show="0" cursor="arrow" tip="%str2175%"></imgbtn>
+                <imgbtn name="btn_list" skin="mainpanel_toolbar_list" pos="-28,12" show="0" cursor="arrow" tip="%str2174%"></imgbtn>
+                <imgbtn name="btn_refresh" skin="mainpanel_addresspanel_refresh" pos="-80,10" cursor="arrow" tip="%str2213%"></imgbtn>
+                <gifplayer name="gif_refreshing" pos="0,10,@18,@18" skin="gif_addresspanel_refreshing" show="0"/>
+            </dlg>
+        </dlg>
+        <dlg name ="dlg_path_navigator" skin="mainpanel_addresspanel_pathnavigator_bkg" pos="0,[6,-270,@40">
+            <link name="link_all_record" pos="24,14,@72,@12" cursor="hand" crtext="03081A">%str7050%</link>
+            <img name="img_width_calculator" pos="[4,11" skin="mainpanel_addresspanel_pathnavigator_dropright" show="0"/>
+            <link name="link_serach_name" pos="[5,11" crtext="03081A" show="0"></link>
+        </dlg>
+        <dlg name="dlg_record_list_header" pos="0,106,-0,-0">
+            <text name="text_filename_calcul" pos="58,28" class="cls_operation_record_filename" show="0"></text>
+            <header name="file_record_list_header" pos="0,0,-0,@36"  fixWidth="0" itemSkin="listhead_btn_two"
+            itemSwapEnable="0" sortHeader="1" check_txt_margin="12" sortSkin="pagectrl_arrow_bkg" crtext="757880" sort_img_follow_txt="1" align="left">
+            </header>
+        </dlg>
+    </dlg>
+    
+    <!--文件列表视图-->
+    <dlg name="dlg_file_record_list_view" pos="0,142,-0,-0" show="0">
+      <dlg pos="0,0,-0,-0">
         <listboxex name="file_record_list_view" pos="0,0,-0,-0" itemheight="70" virtual="1" sbenable="3" frameskin="mainpanel_frame_select_bg">
           <template>
               <dlg name="dlg_record_info_item" pos="0,0,-0,-0">
@@ -66,19 +92,19 @@
     </dlg>
   
     <!--空文件列表视图-->
-    <dlg name="dlg_file_record_empty_view" pos="0,0,-0,-0" show="0">
+    <dlg name="dlg_file_record_empty_view" pos="0,142,-0,-0" show="0">
       <img name="empty_view_bg" pos="|-90,|-80,@181,@127" skin="workspace_file_empty"></img>
       <text name="txt_loading_tip" pos="|-146,[2,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str4545%</text>
     </dlg>
 
     <!--正在加载视图-->
-    <dlg name="dlg_file_record_loading_view" pos="0,0,-0,-0" show="0">
+    <dlg name="dlg_file_record_loading_view" pos="0,142,-0,-0" show="0">
       <gifplayer name="gif_loading_view" pos="|-16,|-16,@32,@32" skin="gif_statuspanel_loading"/>
       <text name="txt_loading_tip" pos="|-150,[12,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2311%</text>
     </dlg>
 
     <!--加载失败视图-->
-    <dlg name="dlg_file_record_error_view" pos="0,0,-0,-0" show="0">
+    <dlg name="dlg_file_record_error_view" pos="0,142,-0,-0" show="0">
       <img name="error_view_bg" pos="|-90,|-64,@180,@128" skin="mainpanel_emptyview_error"></img>
       <text name="txt_error_tip" pos="|-146,[0,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2312%</text>
       <dlg name="link_error_dlg" pos="|-44,|84,-0,@22">

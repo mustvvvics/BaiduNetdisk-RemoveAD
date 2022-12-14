@@ -1,0 +1,25 @@
+<layer name="FloatingDlgV2" width="198" height="107"  appwin="0" toolwindow="1" ncRect="0,0,0,0" nomaxsize="1" translucent="1">
+    <body>
+        <dlg name="dlg_bg" pos="0,0,@128,@32" skin="floating_frame">
+            <img name="img_panel" pos="0,0,@36,@32" skin="floating_left_blue"/>
+            <img name="img_logo" pos="5,3,@26,@26" skin="floating_netdisk"/>
+            <img name="img_status" pos="21,17,@12,@12" skin="workspace_success" show="0"/>
+            <gifplayer name="gif_syncing" pos="0,0,@36,@32" skin="floating_syncing_gif" show="0"/>
+            <dlg pos="36,0,@128,@35">
+                <dlg name="dlg_progress" pos="0,0,0,-0" skin="floating_frame_progress"/>
+                <text pos="19,7,-0,-0" name="txt_speed" textmode="20" crtext="06A7FF" font="0000:微软雅黑"></text>
+                <img pos="6,10,@9,@12" name="img_trans" skin="floating_arrow_down" show="0"/>
+            </dlg>
+        </dlg>
+        <dlg name="dlg_guide" pos="0,40,@198,@67" skin="floating_new_guide" show="0">
+            <dlg pos="1,1,1,1">
+                <img pos="8,21,@32,@32" skin="workspace_logo_icon"></img>
+                <text pos="[2,21,@146,@34" textmode="40810">%str6612%</text>
+            </dlg>
+        </dlg>
+        <dlg name="dlg_svip_guide" pos="0,34,@128,@28" skin="floating_frame_vip" show="0">
+            <text name="txt_guide" pos="12,2,@128,@28" crtext="BF8726" font="0000:微软雅黑"></text>
+        </dlg>
+    
+    </body>
+</layer>

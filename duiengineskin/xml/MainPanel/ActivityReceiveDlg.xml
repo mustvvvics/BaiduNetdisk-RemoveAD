@@ -1,4 +1,4 @@
-﻿<layer name="ActivityReceiveDlg" width="474" height="526" appwin="0" ncRect="0,0,0,0" resize="0" translucent="0" nomaxsize="1">
+﻿<layer name="ActivityReceiveDlg" width="474" height="526" minsize="474,526" appwin="0" ncRect="12,12,12,12"  resize="1" translucent="0" nomaxsize="0">
     <body>
         <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
             <caption name="dlg_activity_caption" pos="0,0,-0,38">

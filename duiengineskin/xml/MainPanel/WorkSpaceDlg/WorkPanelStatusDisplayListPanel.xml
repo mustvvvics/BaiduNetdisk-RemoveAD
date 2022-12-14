@@ -26,6 +26,7 @@
                         <dlg name="dlg_bkg" pos="0,0,-0,-0" skin="listitem_hover_bkg" cursor="hand" show="0"/>
                         <img name="img_file_icon" pos="22,21,@30,@30"></img>
                         <link name="link_file_name" pos="68,19" align="left" hight="16" maxwidth="180" dotted="1" font="0000:微软雅黑"></link>
+                        <img name="img_incredownload" pos="[10,19,@48,@16" skin="workspace_file_incredownloadai" show="0"></img>
                         <text name="txt_file_size" pos="68,41" crtext="AFB3BF" font="0000:微软雅黑"/>
                         <text name="txt_file_error_time" pos="[12,41" crtext="AFB3BF" font="0000:微软雅黑"/>
                         <dlg name="dlg_syncing_file" show="1" pos="-232,0,-0,-0">

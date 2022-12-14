@@ -1,7 +1,7 @@
-﻿<layer name="FullTextSearchTip" width="280" height="170" toolwindow="1" ncRect="0,0,0,0" resize="0" translucent="1"  nomaxsize="1">
+﻿<layer name="FullTextSearchTip" width="280" height="200" toolwindow="1" ncRect="0,0,0,0" resize="0" translucent="1"  nomaxsize="1">
   <body>
     <dlg pos="0,0,-0,-0" skin="mainpanel_addresspanel_searchbox_full_text_tip_bgk">
-       <text name="tip_content" pos="20,14,-10,-10" align="center" crtext="FFFFFF" font="0100:微软雅黑" multilines="1" ></text>
+       <text name="tip_content" pos="20,8,-10,-10" align="center" crtext="FFFFFF" font="0100:微软雅黑" multilines="1" ></text>
     </dlg>
   </body>
 </layer>
