@@ -1,4 +1,4 @@
-<layer name="GameListWnd" width="320" height="360" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1">
+<!-- <layer name="GameListWnd" width="320" height="360" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1">
   <body>
     <dlg name="dlg_game_center" pos="0,0,-0,-0" skin="game_center_bg">
       <listboxex name="list_game_center" pos="14,34,-0,-0" itemheight="120" virtual="1" sbenable="2" show="1" >
@@ -13,4 +13,4 @@
     <imgbtn name="btn_left" crtext="333333" pos="36,[20,@120,@20" textmode="40824" font="0000:微软雅黑" skin="game_center_btn_bg" cursor="hand">%str1581%</imgbtn>
     <imgbtn name="btn_right" crtext="333333" pos="186,[20,@120,@20" textmode="40824" font="0000:微软雅黑" skin="game_center_btn_bg" cursor="hand">%str1556%</imgbtn>
   </body>
-</layer>
+</layer> -->

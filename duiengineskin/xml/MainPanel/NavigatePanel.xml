@@ -19,14 +19,14 @@
 
     <!--同步空间-->
     <imgbtn name="btn_workspace" pos="0,160,-0,@80" skin="main_panel_frame" icoxoffset="13" icoyoffset="15"
-        crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_workspace_btn"
-        txtyoffset="50" cursor="arrow" show="0">%str7063%</imgbtn>
+    crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_workspace_btn"
+    txtyoffset="50" cursor="arrow" show="0" >%str7063%</imgbtn>
     <img name="img_workspace_reddot" pos="50,[-60,@8,@8" skin="titlepanel_reddot" show="0"/>
       
     <!--好友-->
     <imgbtn name="btn_share" pos="0,160,-0,@80" skin="main_panel_frame" icoxoffset="13" icoyoffset="15" 
     crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_share_btn" 
-    txtyoffset="50" cursor="arrow">%str1655%</imgbtn>
+    txtyoffset="50" cursor="arrow" >%str1655%</imgbtn>
     <img name="img_share_reddot" pos="50,[-60,@8,@8" skin="titlepanel_reddot" show="0"/>
     
     <!--可配置入口-->
