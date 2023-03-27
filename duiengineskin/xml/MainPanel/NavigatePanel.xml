@@ -1,36 +1,36 @@
 <dlg name="NavigatePanel" pos="0,0,-0,-0" skin="navigatepanel_bg">
-  <dlg pos="0,0,-13,-0">
+  <dlg pos="0,4,-13,-0">
     <!--首页-->
-    <imgbtn name="btn_home" pos="0,0,-0,@80" skin="main_panel_frame" icoxoffset="13" icoyoffset="15" 
+    <imgbtn name="btn_home" pos="0,0,-0,@64" skin="main_panel_frame" icoxoffset="13" icoyoffset="10" 
     crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_home_btn" 
     txtyoffset="50" cursor="arrow">%str1650%</imgbtn>
     <!--传输-->
-    <imgbtn name="btn_trans" pos="0,80,-0,@80" skin="main_panel_frame" icoxoffset="13" icoyoffset="15" 
+    <imgbtn name="btn_trans" pos="0,64,-0,@64" skin="main_panel_frame" icoxoffset="13" icoyoffset="10" 
     crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_transfer_btn" 
     txtyoffset="50" cursor="arrow">%str1651%</imgbtn>
-    <gifplayer name="gif_trans" pos="13,95,@42,@42" skin="gif_navigatepanel_transfer_gray" bulltimer="1" show="0" msgtransparent="1"/>
-    <img name="img_trans_pause" pos="13,95,@42,@42" skin="navigatepanel_transfer_pause_gray" show="0"/>
+    <gifplayer name="gif_trans" pos="13,73,@42,@42" skin="gif_navigatepanel_transfer_gray" bulltimer="1" show="0" msgtransparent="1"/>
+    <img name="img_trans_pause" pos="13,73,@42,@42" skin="navigatepanel_transfer_pause_gray" show="0"/>
     <!-- 数量角标 -->
-    <dlg name="dlg_transnum" pos="0,80,-0,@80" msgtransparent="1">
+    <dlg name="dlg_transnum" pos="0,64,-0,@64" msgtransparent="1">
       <img name="img_transnum" pos="40,16,@16,@16" skin="titlepanel_redbg" show="0">
         <text name="txt_transnum" pos="0,|-7,-0,@15" crtext="ffffff" font2="facename:Arial;adding:-1" align="center" valign="middle"></text>
       </img>
     </dlg>
 
     <!--同步空间-->
-    <imgbtn name="btn_workspace" pos="0,160,-0,@80" skin="main_panel_frame" icoxoffset="13" icoyoffset="15"
-    crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_workspace_btn"
-    txtyoffset="50" cursor="arrow" show="0" >%str7063%</imgbtn>
-    <img name="img_workspace_reddot" pos="50,[-60,@8,@8" skin="titlepanel_reddot" show="0"/>
+    <imgbtn name="btn_workspace" pos="0,128,-0,@64" skin="main_panel_frame" icoxoffset="13" icoyoffset="10"
+        crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_workspace_btn"
+        txtyoffset="50" cursor="arrow" show="0">%str7063%</imgbtn>
+    <img name="img_workspace_reddot" pos="50,[-44,@8,@8" skin="titlepanel_reddot" show="0"/>
       
     <!--好友-->
-    <imgbtn name="btn_share" pos="0,160,-0,@80" skin="main_panel_frame" icoxoffset="13" icoyoffset="15" 
+    <imgbtn name="btn_share" pos="0,128,-0,@64" skin="main_panel_frame" icoxoffset="13" icoyoffset="10" 
     crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_share_btn" 
-    txtyoffset="50" cursor="arrow" >%str1655%</imgbtn>
-    <img name="img_share_reddot" pos="50,[-60,@8,@8" skin="titlepanel_reddot" show="0"/>
+    txtyoffset="50" cursor="arrow">%str1655%</imgbtn>
+    <img name="img_share_reddot" pos="50,[-44,@8,@8" skin="titlepanel_reddot" show="0"/>
     
     <!--可配置入口-->
-    <imgbtn name="btn_configurable" pos="0,240,-0,@80" skin="main_panel_frame" icoxoffset="13" icoyoffset="15"
+    <imgbtn name="btn_configurable" pos="0,192,-0,@64" skin="main_panel_frame" icoxoffset="13" icoyoffset="10"
     crtext="636D7E" font="0000:微软雅黑" icoskin="navigatepanel_share_btn" show="0"
     txtyoffset="50" cursor="arrow">会员</imgbtn>
       

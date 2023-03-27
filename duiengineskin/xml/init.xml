@@ -50,7 +50,7 @@
         <imgframe name="toast_ok_ico" src="IDP_TOAST_OK_ICO"/>
         <imgframe name="toast_fail_ico" src="IDP_TOAST_FAIL_ICO"/>
         <imgframe name="toast_svip_icon" src="IDP_TOAST_SVIP_ICON"/>
-      <gif name="gif_toast_loading" src="IDP_TOAST_LOADING"/>
+        <gif name="gif_toast_loading" src="IDP_TOAST_LOADING"/>
 
         <imgframe name="pagectrl_prebtn_bkg" src="IDP_PAGECTRL_PREBTN" subwidth="16"/>
         <imgframe name="pagectrl_nextbtn_bkg" src="IDP_PAGECTRL_NEXTBTN" subwidth="16"/>
@@ -254,11 +254,13 @@
         <imgframe name="function_cloud_edit_img" src="IDP_IMG_FUNTION_CLOUD_EDIT" subwidth="31"/>
         <imgframe name="function_enterprise_customize_img" src="IDP_IMG_FUNTION_ENTERPRISE_CUSTOMIZE" subwidth="31"/>
         <imgframe name="function_text_extract_img" src="IDP_IMG_FUNTION_TEXT_EXTRACT" subwidth="31"/>
+        <imgframe name="function_icon_loading_img" src="IDP_IMG_FUNTION_ICON_LOADING" subwidth="36"/>
 
       <!--视频清晰度皮肤定义-->
         <imgframe name="definition_sviponly_script" src="IDP_IMG_DEFINITION_SVIPONLY_SCRIPT" />
         <imgframe name="definition_free_script" src="IDP_IMG_DEFINITION_FREE_SCRIPT"  />
         <imgframe name="definition_script" src="IDP_IMG_DEFINITION_SCRIPT"  />
+        <imgframe name="definition_newbg" src="IDP_IMG_DEFINITION_NEWBG"  />
         <!--文件类型相关皮肤定义-->
         <imgframe name="video_middle_image" src="IDP_IMG_FILETYPE_MIDDLE_VIDEO"/>
         <imgframe name="audio_middle_image" src="IDP_IMG_FILETYPE_MIDDLE_AUDIO"/>
@@ -452,34 +454,43 @@
         <imglst name="svipguidedlg_upgrade_dupfile_img" src="IDP_UPGRADEVIP_DUPFILE"/>
         <!--视频播放器相关皮肤定义-->
         <imglst name="video_skin_bg_temp" src="IDP_VIDEO_BK_BG"/>
-        <imglst name="video_imglist_play" src="IDP_VIDEO_BTN_PLAY" subwidth="20"/>
-        <imglst name="video_imglist_pause" src="IDP_VIDEO_BTN_PAUSE" subwidth="20"/>
-        <imglst name="video_imglist_pre" src="IDP_VIDEO_BTN_PRE" subwidth="15"/>
-        <imglst name="video_imglist_next" src="IDP_VIDEO_BTN_NEXT" subwidth="15"/>
+        <imglst name="video_playlist_hr" src="IDP_VIDEO_PLAYLIST_HR"/>
+        <imglst name="video_ainote_text" src="IDP_VIDEO_AINOTE_TEXT"/>
+        <imglst name="video_imglist_play" src="IDP_VIDEO_BTN_PLAY" subwidth="44"/>
+        <imglst name="video_imglist_pause" src="IDP_VIDEO_BTN_PAUSE" subwidth="44"/>
+        <imglst name="video_imglist_pre" src="IDP_VIDEO_BTN_PRE" subwidth="44"/>
+        <imglst name="video_imglist_next" src="IDP_VIDEO_BTN_NEXT" subwidth="44"/>
         <imglst name="video_small_next" src="IDP_VIDEO_SMALL_NEXT" subwidth="36"/>
         <imglst name="video_small_play" src="IDP_VIDEO_SMALL_PLAY" subwidth="35"/>
         <imglst name="video_small_pause" src="IDP_VIDEO_SMALL_PAUSE" subwidth="36"/>
-        <imglst name="video_small" src="IDP_VIDEO_SMALL" subwidth="24"/>
+        <imglst name="video_small" src="IDP_VIDEO_SMALL" subwidth="28"/>
         <imglst name="video_small_close" src="IDP_VIDEO_SMALL_CLOSE" subwidth="24"/>
         <imglst name="video_small_restore" src="IDP_VIDEO_SMALL_RESTORE" subwidth="24"/>
-        <imglst name="video_imglist_volum" src="IDP_VIDEO_BTN_VOLUM" subwidth="32"/>
-        <imglst name="video_imglist_volum_disable" src="IDP_VIDEO_BTN_VOLUM_DISABLE" subwidth="32"/>
+        <imglst name="video_imglist_volum" src="IDP_VIDEO_BTN_VOLUM" subwidth="24"/>
+        <imglst name="video_imglist_volum_disable" src="IDP_VIDEO_BTN_VOLUM_DISABLE" subwidth="24"/>
         <imglst name="video_imglist_share" src="IDP_VIDEO_BTN_SHARE" subwidth="32"/>
         <imglst name="video_imglist_transfer" src="IDP_VIDEO_BTN_TRANSFER" subwidth="32"/>
         <imglst name="video_imglist_delete" src="IDP_VIDEO_BTN_DELETE" subwidth="32"/>
         <imglst name="video_imglist_download" src="IDP_VIDEO_BTN_DOWNLOAD" subwidth="32"/>
         <imglst name="video_imglist_setting" src="IDP_VIDEO_BTN_SETTING" subwidth="32"/>
-        <imglst name="video_download" src="IDP_VIDEO_DOWNLOAD" subwidth="30"/>
-        <imglst name="video_share" src="IDP_VIDEO_SHARE" subwidth="30"/>
-        <imglst name="video_set_topmost" src="IDP_VIDEO_TOPMOST" subwidth="24"/>
-        <imglst name="video_no_topmost" src="IDP_VIDEO_NO_TOPMOST" subwidth="24"/>
+        <imglst name="video_imglist_bottom_setting" src="IDP_VIDEO_BTN_BOTTOM_SETTING" subwidth="24"/>
+        <imglst name="video_download" src="IDP_VIDEO_DOWNLOAD" subwidth="28"/>
+        <imglst name="video_share" src="IDP_VIDEO_SHARE" subwidth="28"/>
+        <imglst name="video_set_topmost" src="IDP_VIDEO_TOPMOST" subwidth="28"/>
+        <imglst name="video_set_topmost_small" src="IDP_VIDEO_TOPMOST_SMALL" subwidth="24"/>
+        <imglst name="video_no_topmost" src="IDP_VIDEO_NO_TOPMOST" subwidth="28"/>
+        <imglst name="video_no_topmost_small" src="IDP_VIDEO_NO_TOPMOST_SMALL" subwidth="24"/>
         <imgframe name="video_topline" src="IDP_VIDEO_TOLINE"/>
-        <imglst name="video_imglist_halfscreen" src="IDP_VIDEO_BTN_HALFSCREEN" subwidth="32"/>
-        <imglst name="video_imglist_fullscreen" src="IDP_VIDEO_BTN_FULLSCREEN" subwidth="32"/>
+        <imglst name="video_imglist_halfscreen" src="IDP_VIDEO_BTN_HALFSCREEN" subwidth="24"/>
+        <imglst name="video_imglist_fullscreen" src="IDP_VIDEO_BTN_FULLSCREEN" subwidth="24"/>
         <imglst name="video_imglist_open_playlist" src="IDP_VIDEO_BTN_PLAYLIST_OPEN" subwidth="17"/>
         <imglst name="video_imglist_close_playlist" src="IDP_VIDEO_BTN_PLAYLIST_CLOSE" subwidth="17"/>
         <imgframe name="video_prog_bg" src="IDP_VIDEO_PROG_BG" left="5"/>
         <imgframe name="video_big_prog_bg" src="IDP_VIDEO_BIG_PROG_BG"/>
+        <imgframe name="video_overspeed_prog_bg" src="IDP_VIDEO_OVERSPEED_PROG_BG"/>
+        <imgframe name="video_overspeed_prog_bigbg" src="IDP_VIDEO_OVERSPEED_PROG_BIGBG"/>
+        <imgframe name="video_overspeed_cursor_grey" src="IDP_VIDEO_OVERSPEED_CURSOR_GREY"/>
+        <imgframe name="video_overspeed_cursor_white" src="IDP_VIDEO_OVERSPEED_CURSOR_WHITE"/>
         <imgframe name="video_prog_bg_volum" src="IDP_VIDEO_PROG_BG_VOLUM" left="5"/>
         <imgframe name="video_prog_bar" src="IDP_VIDEO_PROG_BAR" left="3"/>
         <imgframe name="video_big_prog_bar" src="IDP_VIDEO_BIG_PROG_BAR"/>
@@ -488,15 +499,20 @@
         <imgframe name="video_prog_speed_arrow" src="IDP_VIDEO_PROG_SPEED_ARROW" subwidth="12"/>
         <imglst name="video_slide_thumb" src="IDP_VIDEO_SLIDE_THUMB" subwidth="17"/>
         <imglst name="video_skin_op_bg" src="IDP_VIDEO_OP_BG"/>
+        <imglst name="video_playlist_splite" src="IDP_VIDEO_PLAYLIST_SPLITE"/>
         <imglst name="video_skin_mask_bg" src="IDP_VIDEO_MASK_BG"/>
-        <imglst name="video_imglist_close" src="IDP_VIDEO_BTN_CLOSE" subwidth="32"/>
-        <imglst name="video_imglist_maxsize_normal" src="IDP_VIDEO_BTN_MAXSIZE_NORMAL" subwidth="32"/>
-        <imglst name="video_imglist_maxsize_recover" src="IDP_VIDEO_BTN_MAXSIZE_RECOVER" subwidth="32"/>
-        <imglst name="video_imglist_minsize" src="IDP_VIDEO_BTN_MINSIZE" subwidth="32"/>
+        <imgframe name="video_shortcut_guide_bg" src="IDP_VIDEO_SHORTCUT_GUIDE_BG"/>
+        <imgframe name="video_shortcut_guide_content" src="IDP_VIDEO_SHORTCUT_GUIDE_CONTENT"/>
+        <imglst name="video_shortcut_guide_ok_btn_bg" src="IDP_VIDEO_SHORTCUT_GUIDE_OK_BTN_BG" subwidth="150"/>
+        <imglst name="video_imglist_close" src="IDP_VIDEO_BTN_CLOSE" subwidth="28"/>
+        <imglst name="video_imglist_close_tip" src="IDP_VIDEO_BTN_CLOSE_TIP" subwidth="32"/>
+        <imglst name="video_imglist_maxsize_normal" src="IDP_VIDEO_BTN_MAXSIZE_NORMAL" subwidth="28"/>
+        <imglst name="video_imglist_maxsize_recover" src="IDP_VIDEO_BTN_MAXSIZE_RECOVER" subwidth="28"/>
+        <imglst name="video_imglist_minsize" src="IDP_VIDEO_BTN_MINSIZE" subwidth="28"/>
         <imglst name="video_imglist_words_btn" src="IDP_VIDEO_TASKBAR_BTN_WORDS" subwidth="62"/>
         <imglst name="video_skin_taskbar_bg" src="IDP_VIDEO_TASKBAR_BG"/>
         <imglst name="video_skin_captionbar_bg" src="IDP_VIDEO_CAPTIONBAR_BG"/>
-        <imglst name="video_skin_senior" src="IDP_VIDEO_BTN_SENIOR" subwidth="30"/>
+        <imglst name="video_skin_senior" src="IDP_VIDEO_BTN_SENIOR" subwidth="28"/>
         <imgframe name="video_skin_seniorclose" src="IDP_VIDEO_TOP_SENIORCLOSE"/>
         <imgframe name="video_next_play" src="IDP_VIDEO_NEXT_PLAY_BG"/>
         <imgframe name="video_skin_topsetting_bg" src="IDP_VIDEO_TOP_SETTING_BG"/>
@@ -513,7 +529,12 @@
         <imgframe name="video_skin_toolbar" src="IDP_VIDEO_TOOLBAR"/>
         <imgframe name="video_skin_skipad_bg" src="IDP_VIDEO_SKIPAD_BG" left="4" top="4" right="4" bottom="4"/>
         <imgframe name="video_skin_tip_bg" src="IDP_VIDEO_TIP_BG" left="4" top="4" right="4" bottom="4"/>
+        <imgframe name="video_skin_tip_bg_2" src="IDP_VIDEO_TIP_BG_2" left="6" top="6" right="6" bottom="6"/>
+        <imgframe name="video_play_status_play" src="IDP_VIDEO_PLAY_STATUS_PLAY"/>
+        <imgframe name="video_play_status_pause" src="IDP_VIDEO_PLAY_STATUS_PAUSE"/>
+        <imgframe name="video_overspeed_tip_shortcut_press" src="IDP_VIDEO_OVERSPEED_TIP_SHORTCUT_PRESS"/>
         <imgframe name="video_time_tip_bg" src="IDP_VIDEO_TIME_TIP_BG" left="4" top="4" right="4" bottom="4"/>
+        <imgframe name="video_bg" src="IDP_VIDEO_BG"/>
         <imgframe name="video_skin_success_icon" src="IDP_VIDEO_SUCCESS_ICON"/>
         <imgframe name="video_skin_finish_bg" src="IDP_VIDEO_FINISH_BG"/>
         <imgframe name="video_playlist_empty" src="IDP_VIDEO_PLAYLIST_EMPTY"/>
@@ -534,6 +555,7 @@
         <imgframe name="video_volum_thumb_big" src="IDP_VIDEO_VOLUM_THUMB_BIG"/>
         <imgframe name="video_volum_thumb_small" src="IDP_VIDEO_VOLUM_THUMB_SMALL"/>
         <imgframe name="video_speed_thumb_small" src="IDP_VIDEO_SPEED_THUMB_SMALL"/>
+        <imgframe name="video_speed_thumb_big" src="IDP_VIDEO_SPEED_THUMB_BIG"/>
         <imgframe name="video_drag_left" src="IDP_VIDEO_DRAG_LEFT"/>
         <imgframe name="video_drag_right" src="IDP_VIDEO_DRAG_RIGHT"/>
         <imgframe name="video_volume_adjust_bg" src="IDP_VIDEO_VOLUME_ADJUST_BG"/>
@@ -562,12 +584,16 @@
         <imglst name="video_overspeed_blue_btn" src="IDP_VIDEO_OVERSPEED_BLUE_BTN" subwidth="200"/>
         <imglst name="video_overspeed_yellow_btn" src="IDP_VIDEO_OVERSPEED_YELLOW_BTN" subwidth="200"/>
         <imglst name="video_overspeed_svip_btn" src="IDP_VIDEO_OVERSPEED_SVIP_BTN" subwidth="78"/>
+        <imgframe name="video_overspeed_customs" src="IDP_VIDEO_OVERSPEED_CUSTOMS"/>
         <imgframe name="video_overspeed_svip_img" src="IDP_VIDEO_OVERSPEED_SVIP_IMG"/>
         <imgframe name="video_overspeed_new_img" src="IDP_VIDEO_OVERSPEED_NEW_IMG"/>
         <imgframe name="video_definition_guide_img" src="IDP_VIDEO_DEFINITION_GUIDE_IMG"/>
+        <imgframe name="video_delete" src="IDP_VIDEO_DELETE_IMG" subwidth="16"/>
+        <imgframe name="video_question" src="IDP_VIDEO_QUESTION_IMG" subwidth="16"/>
         <imgframe name="subtitle_guide_top_img" src="IDP_SUBTLTLE_GUIDE_TOP_IMG"/>
         <imgframe name="subtitle_guide_log_img" src="IDP_SUBTLTLE_GUIDE_LOG_IMG"/>
         <imgframe name="subtitle_produce_dlg_bg_img" src="IDP_SUBTLTLE_PRODUCE_DLG_BG_IMG" left="4" top="4" right="4" bottom="4"/>
+        <imgframe name="vip_new_img" src="IDP_VIP_NEW_IMG"/>
         <imgframe name="aidoc_produce_dlg_bg_img" src="IDP_AIDOC_PRODUCE_DLG_BG_IMG" left="4" top="4" right="4" bottom="4"/>
         <imgframe name="subtitle_language_btn_img" src="IDP_SUBTITLE_LANGUAGE_BTN_IMG"/>
         <imgframe name="subtitle_produce_close_btn_img" src="IDP_SUBTITLE_PRODUCE_CLOSE_BTN_IMG"/>
@@ -603,6 +629,8 @@
         <imglst name="video_note_process_bar_point" src="IDP_VIDEO_NOTE_PROCESS_BAR_POINT_IMG"/>
         <imglst name="video_note_process_bar_big_point" src="IDP_VIDEO_NOTE_PROCESS_BAR_BIG_POINT_IMG"/>
         <imglst name="video_note_add_icon" src="IDP_VIDEO_NOTE_ADD_ICON"/>
+        <imglst name="video_close_list_btn" src="IDP_VIDEO_CLOSE_LIST_BTN" subwidth="20"/>
+        <imglst name="video_open_list_btn" src="IDP_VIDEO_OPEN_LIST_BTN" subwidth="20"/>
         <!--视频特权引导-->
         <imgframe name="video_guide_img" src="IDP_VIDEO_GUIDE_IMG"  />
         <imgframe name="video_guide_btn_yellow" src="IDP_VIDEO_GUIDE_BTN_YELLOW" subwidth="176"/>
@@ -615,6 +643,21 @@
         <!--视频SVIP购买引导界面-->
         <imgframe name="video_buy_svip_backgroud" src="IDP_VIDEO_BUY_SVIP_BACKGROUND"/>
         <imgframe name="video_buy_svip_privilege_show" src="IDP_VIDEO_BUY_SVIP_PRIVILEGE_SHOW" />
+        <!--视频侧边栏-->
+        <imgframe name="video_playlist_back" src="IDP_VIDEOPLAYLIST_BACK"/>
+        <imgframe name="video_playlist_close" src="IDP_VIDEOPLAYLIST_CLOSE"/>
+        <imgframe name="video_playlist_homepage_right" src="IDP_VIDEOPLAYLIST_HOMEPAGE_RIGHT"/>
+        <imgframe name="video_playlist_bg" src="IDP_VIDEOPLAYLIST_BG"/>
+        <imgframe name="video_playlist_captionbg" src="IDP_VIDEOPLAYLIST_CAPTIONBG"/>
+        <imgframe name="video_playlist_featurecollectionbg" src="IDP_VIDEOPLAYLIST_FEATURECOLLECTIONBG"/>
+        <imgframe name="video_playlist_featuredisplaysource" src="IDP_VIDEOPLAYLIST_FEATUREDISPLAYSOURCE"/>
+        <imgframe name="video_playlist_videobg" src="IDP_VIDEOPLAYLIST_VIDEO_BK"/>
+        <gif name="video_playlist_playing" src="IDP_VIDEOPLAYLIST_VIDEO_PLAYING"/>
+        <imgframe name="video_playlist_itemback" src="IDP_VIDEOPLAYLIST_ITEM_BACK"/>
+        <imgframe name="video_playlist_defaultpicture" src="IDP_VIDEOPLAYLIST_DEFAULT_PICTURE"/>
+        <imgframe name="video_playlist_error_tip" src="IDP_VIDEOPLAYLIST_ERROR_TIP"/>
+        <gif name="video_playlist_gif_loading" src="IDP_VIDEOPLAYLIST_GIF_LOADING"/>
+      
       <!--标题栏皮肤-->
         <imglst name="titlepanel_default_head" src="IDP_TITLEPANEL_HEAD"/>
         <imglst name="titlepanel_vipclose" src="IDP_TITLEPANEL_VIPCLOSE"/>
@@ -814,6 +857,7 @@
         <imgframe name="mainpanel_toolbar_pdftoword" src="IDP_MAINPANEL_TOOLBAR_PDFTOWORD" subwidth="16"/>
         <imgframe name="mainpanel_toolbar_mobileview" src="IDP_MAINPANEL_TOOLBAR_MOBILEVIEW" subwidth="16"/>
         <imgframe name="mainpanel_toolbar_cloudedit" src="IDP_MAINPANEL_TOOLBAR_CLOUDEDIT" subwidth="16"/>
+        <imgframe name="mainpanel_toolbar_cloudprint" src="IDP_MAINPANEL_TOOLBAR_CLOUDPRINT" subwidth="16"/>
         <imgframe name="mainpanel_toolbar_drop_arrow" src="IDP_MAINPANEL_TOOLBAR_DROPDOWN" subwidth="16"/>
         <imgframe name="mainpanel_toolbar_offlinedownload" src="IDP_MAINPANEL_TOOLBAR_OFFLINEDOWNLOAD" subwidth="16"/>
         <imgframe name="mainpanel_toolbar_more" src="IDP_MAINPANEL_TOOLBAR_MORE" subwidth="16"/>
@@ -871,10 +915,13 @@
         <imgframe name="mainpanel_addresspanel_search_apply_dlg_bgk" src="IDP_MAINPANEL_ADDRESSPANEL_SEARCH_APPLY_BGK" left="15" top="20" right="15" bottom="15"/>
         <imgframe name="mainpanel_addresspanel_searchbox_hisitem_hover" src="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HISITEM_HOVER" left="4" top="0" right="4" bottom="0"/>
         <imgframe name="mainpanel_addresspanel_searchbox_hisitem_normal" src="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HISITEM_NORMAL" left="4" top="4" right="4" bottom="4"/>
-        <imgframe name="mainpanel_addresspanel_searchbox_his_bg" src="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HIS_BG" left="4" top="0" right="4" bottom="0"/>
+        <imgframe name="mainpanel_addresspanel_searchbox_his_bg" src="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HIS_BG" left="22" top="22" right="22" bottom="22"/>
+        <imgframe name="mainpanel_addresspanel_searchbox_his_whole_search_icon" src="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HIS_WHOLE_SEARCH_ICON"/>
+        <imglst name="mainpanel_addresspanel_searchbox_his_bwhole_search_arrow" src="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HIS_WHOLE_SEARCH_ARROW" subwidth="12"/>
         
-      <gif name="gif_addresspanel_refreshing" src="IDP_MAINPANEL_ADDRESSPANEL_REFRESHING"/>
+        <gif name="gif_addresspanel_refreshing" src="IDP_MAINPANEL_ADDRESSPANEL_REFRESHING"/>
         <imgframe name="mainpanel_addresspanel_search_guide" src="IDP_MAINPANEL_ADDRESSPANEL_SEARCH_GUIDE" />
+        <imgframe name="mainpanel_pan_panel_brower_search_icon" src="IDP_MAINPANEL_ADDRESSPANEL_BROWER_SEARCH_ICON" />
         <!--主面板状态栏-->
         <gif name="gif_statuspanel_portabledevice" src="IDP_GIF_STATUSPANEL_PORTABLE_DEVICE"/>
         <gif name="gif_statuspanel_lock" src="IDP_GIF_STATUSPANEL_LOCK"/>
@@ -898,6 +945,7 @@
         <imgframe name="mainpanel_listview_doc_to_onlinedoc" src="IDP_MAINPANEL_LISTVIEW_DOC_TO_ONLINEDOC" subwidth="16"/>
         <imgframe name="mainpanel_listview_rename" src="IDP_MAINPANEL_LISTVIEW_RENAME" subwidth="16"/>
         <imgframe name="mainpanel_listview_filever" src="IDP_MAINPANEL_LISTVIEW_FILEVER" subwidth="16"/>
+        <imgframe name="mainpanel_listview_img_extract_text" src="IDP_MAINPANEL_LISTVIEW_IMG_EXTRACT_TEXT" subwidth="16"/>
         <imglst name="mainpanel_listview_trans_fail" src="IDP_MAINPANEL_LISTVIEW_TRANS_FAIL"/>
         <imglst name="mainpanel_listview_trans_pause" src="IDP_MAINPANEL_LISTVIEW_TRANS_PAUSE"/>
         <imglst name="mainpanel_listview_trans_upload" src="IDP_MAINPANEL_LISTVIEW_TRANS_UPLOAD"/>
@@ -970,6 +1018,7 @@
         <imglst name="imageviewpanel_btn_share" src="IDP_IMAGEPANEL_BTN_SHARE" subwidth="24"/>
         <imglst name="imageviewpanel_btn_download" src="IDP_IMAGEPANEL_BTN_DOWNLOAD" subwidth="24"/>
         <imglst name="imageviewpanel_btn_delete" src="IDP_IMAGEPANEL_BTN_DELETE" subwidth="24"/>
+        <imglst name="imageviewpanel_btn_extract_text" src="IDP_IMAGEPANEL_BTN_EXTRACT_TEXT" subwidth="24"/>
         <imglst name="imageviewpanel_btn_detail" src="IDP_IMAGEPANEL_BTN_DETAIL" subwidth="24"/>
         <imglst name="imageviewpanel_btn_cloudedit" src="IDP_IMAGEPANEL_BTN_CLOUDEDIT" subwidth="24"/>
         <imglst name="imageviewpanel_btn_bottom_left" src="IDP_IMAGEPANEL_BTN_BOTTOM_LEFT" subwidth="9"/>
@@ -983,6 +1032,7 @@
         <imgframe name="imageviewpanel_bottom_sel" src="IDP_IMAGEPANEL_BOTTOM_SEL"/>
         <imgframe name="imageviewpanel_bottom_sel_hover" src="IDP_IMAGEPANEL_BOTTOM_SEL_HOVER"/>
         <imgframe name="imageviewpanel_bottom_mask" src="IDP_IMAGEPANEL_BOTTOM_MASK"/>
+        <imgframe name="imageviewpanel_tip_extract_text" src="IDP_IMAGEPANEL_TIP_EXTRACT_TEXT" />
         <gif name="imageviewpanel_bottom_img_failed" src="IDP_IMAGEPANEL_BOTTOM_IMG_FAILED"/>
         <gif name="imageviewpanel_img_failed" src="IDP_IMAGEPANEL_IMG_FAILED"/>
         <imgframe name="imageviewpanel_zoom_view_bg" src="IDP_IMAGEPANEL_ZOOM_VIEW_BG"/>
@@ -1145,6 +1195,7 @@
         <imgframe name="navigatepanel_transfer_pause_gray" src="IDP_NAVIGATEPANEL_PAUSE_TRANSFER_GRAY"/>
         <imgframe name="navigatepanel_bg" src="IDP_NAVIGATEPANEL_BG" left="10" right="20" top="5" bottom="5"/>
         <imgframe name="navigatepanel_enterprise_cert_bg" src="IDP_NAVIGATEPANEL_ENTERPRISE_CERT_BG" subwidth="80"/>
+        <imgframe name="navigatepanel_im_guide_bg" src="IDP_NAVIGATEPANEL_BG_IM_GUIDE"/>
 
         <!-- 企业空间 -->
         <imglst name="enterprise_up_btn" src="IDP_ENTERPRISE_BTN_UP"/>
@@ -1433,16 +1484,23 @@
         <imgframe name="workspace_tutorial_screenshot" src="IDP_DUI_WORKSPACE_TUTORIAL_WORKSPACE_SCREENSHOT"/>
         <imgframe name="workspace_tutorial_multi" src="IDP_DUI_WORKSPACE_TUTORIAL_MULTI_BG"/>
 
-        <!-- 游戏中心 -->
-        <imgframe name="gamecenter_dlg_btn_refresh" src="IDP_DUI_GAMECENTER_BTN_REFRESH" subwidth="15"/>
+        <!-- 浏览器刷新 -->
+        <imgframe name="browser_dlg_btn_refresh" src="IDP_DUI_GAMECENTER_BTN_REFRESH" subwidth="15"/>
+        <imgframe name="browser_item_hover_bg" src="IDR_DUI_BROWSER_HVOVER_ITEM_BG" left="15" right="15" top="15" bottom="4"/>
+        <imgframe name="browser_item_selected_bg" src="IDR_DUI_BROWSER_SELECT_ITEM_BG" left="15" right="15" top="15" bottom="4"/>
+        <imgframe name="browser_item_normal_bg" src="IDR_DUI_BROWSER_NORMAL_ITEM_BG" left="15" right="15" top="15" bottom="4"/>
+        <imgframe name="browser_item_btn_close" src="IDR_DUI_BROWSER_ITEM_CLOSE" subwidth="20"/>
         <!--云桥-->
         <imgframe name="cloudbridge_blue_btn" src="IDR_DUI_CLOUDBRIDGE_BLUE_BTN" subwidth="184"/>
         <imgframe name="cloudbridge_file" src="IDR_DUI_CLOUDBRIDGE_FILE"/>
         <imgframe name="cloudbridge_svip" src="IDR_DUI_CLOUDBRIDGE_SVIP"/>
+        <imgframe name="cloudbridge_new_svip" src="IDR_DUI_CLOUDBRIDGE_NEW_SVIP"/>
+        <imgframe name="cloudbridge_float_svip" src="IDR_DUI_CLOUDBRIDGE_FLOAT_SVIP"/>
         <imgframe name="cloudbridge_mode_frame" src="IDR_DUI_CLOUDBRIDGE_MODE_FRAME" subwidth="200"/>
         <imgframe name="cloudbridge_yellow_btn" src="IDR_DUI_CLOUDBRIDGE_YELLOW_BRN" subwidth="184"/>
         <imgframe name="cloudbridge_yellow_frame" src="IDR_DUI_CLOUDBRIDGE_YELLOW_FRAME"/>
         <imgframe name="cloudbridge_svip_frame" src="IDR_DUI_CLOUDBRIDGE_SVIP_FRAME"/>
+        <imgframe name="cloudbridge_guide_frame" src="IDR_DUI_CLOUDBRIDGE_GUIDE_FRAME"/>
         <imgframe name="cloudbridge_unridio" src="IDR_DUI_CLOUDBRIDGE_UNRIDIO"/>
         <imgframe name="cloudbridge_inridio" src="IDR_DUI_CLOUDBRIDGE_INRIDIO"/>
         <imgframe name="cloudbridge_question" src="IDR_DUI_CLOUDBRIDGE_QUESTION" subwidth="14"/>
@@ -1514,15 +1572,19 @@
         <imgframe name="floating_arrow_up" src="IDP_DUI_FLOAT_DLG_ARROW_UP"/>
 
         <!--视频智能笔记-->
-        <imgframe name="video_ai_note_dlg_frame" src="IDP_VIDEO_AI_NOTE_DLG_FRAME" left="10" right="10" top="10" bottom="10"/>
-        <imgframe name="video_ai_note_open_folder" src="IDP_VIDEO_AI_NOTE_OPEN_FOLDER" subwidth="16"/>
-        <imgframe name="video_ai_note_close" src="IDP_VIDEO_AI_NOTE_OPEN_CLOSE" subwidth="16"/>
+        <imgframe name="video_ai_note_dlg_frame" src="IDP_VIDEO_AI_NOTE_DLG_FRAME" left="16" right="16" top="16" bottom="16"/>
+        <imgframe name="video_ai_note_open_folder" src="IDP_VIDEO_AI_NOTE_OPEN_FOLDER" subwidth="24"/>
+        <imgframe name="video_ai_note_close" src="IDP_VIDEO_AI_NOTE_OPEN_CLOSE" subwidth="24"/>
         <imgframe name="ainote_guide_bkg_img" src="IDP_VIDEO_AI_NOTE_GUIDE_BKG"/>
         <imgframe name="ainote_guide_newbkg_img" src="IDP_VIDEO_AI_NOTE_GUIDE_NEWBKG"/>
         <imgframe name="ainote_guide_triangle_img" src="IDP_VIDEO_AI_NOTE_GUIDE_TRIANGLE"/>
         <imgframe name="ainote_guide_count_img" src="IDP_VIDEO_AI_NOTE_GUIDE_COUNT"/>
         <imgframe name="ainote_help_img" src="IDP_VIDEO_AI_NOTE_HELP" subwidth="18"/>
         <imgframe name="ainote_guide_img" src="IDP_VIDEO_AI_NOTE_GUIDE"/>
+        <imglst name="video_ai_note_top_most" src="IDP_VIDEO_AI_NOTE_TOP_MOST" subwidth="24"/>
+        <imglst name="video_ai_note_top_most_cancel" src="IDP_VIDEO_AI_NOTE_TOP_MOST_CANCEL" subwidth="24"/>
+        <imgframe name="video_ai_note_top_most_guide" src="IDP_VIDEO_AI_NOTE_TOP_MOST_GUIDE"/>
+        <imgframe name="video_ai_note_common_tip_bkg" src="IDP_VIDEO_AI_NOTE_COMMON_TIP_BKG" left="8" right="8" top="10" bottom="8"/>
       
         <!--同步空间历史记录-->
         <imgframe name="common_panel_bkg3" src="IDP_DUI_PANEL_BKG3"/>
@@ -1530,6 +1592,15 @@
         <imgframe name="record_confirm_panel" src="IDP_DUI_RECORD_CONFIRM_PANEL"/>
         <imgframe name="record_selected_panel" src="IDP_DUI_RECORD_SELECTED_PANEL"/>
         <imgframe name="record_un_select_panel" src="IDP_DUI_RECORD_UN_SELECT_PANEL"/>
+        
+        <!--内嵌页相关资源-->
+        <imgframe name="embedded_web_im_tip_bkg" src="IDP_DUI_EMBEDDEDWEBPAGE_IM_TIP_BKG"/>
+        <imglst name="embedded_web_im_tip_close" src="IDP_DUI_EMBEDDEDWEBPAGE_IM_TIP_CLOSE" subwidth="16"/>
+        <imglst name="embedded_web_im_tip_ok_btn" src="IDP_DUI_EMBEDDEDWEBPAGE_IM_TIP_OK" subwidth="128"/>
+      
+        <!--通用tip资源-->
+        <imgframe name="common_tip_bkg_blu" src="IDR_DUI_COMMON_TIP_BLUE_BG"/>
+        <imgframe name="common_tip_bkg_blu_triangle_up" src="IDR_DUI_COMMON_TIP_BLUE_TRG_UP"/>
     </skins>
 
     <style>
@@ -1701,9 +1772,9 @@
         <class name="cls_video_subtitle_txt_gray" crtext="A4A4A4" font="0000:微软雅黑" crdisabled="4c4c4c"/>
         <class name="cls_video_subtitle_txt_white" crtext="ffffff" font="0000:微软雅黑" crdisabled="4c4c4c"/>
         <class name="cls_video_subtitle_txt_blue" crtext="3a8cff" font="0000:微软雅黑" crdisabled="4c4c4c"/>
-        <class name="cls_video_overspeed_item_white_btn" skin="common_translucent_img"  crtext="ffffff" crhover="ffffff" font="0000:微软雅黑" hoverfont="0200:微软雅黑"  cursor="hand"/>
-        <class name="cls_video_overspeed_item_blue_checked_btn" skin="video_overspeed_blue_btn"  crtext="3887ff" crhover="3887ff" font="0000:微软雅黑" hoverfont="0200:微软雅黑" cursor="hand"/>
-        <class name="cls_video_overspeed_item_yellow_checked_btn" skin="video_overspeed_blue_btn"  crtext="ffda99" crhover="ffda99" font="0000:微软雅黑" hoverfont="0200:微软雅黑" cursor="hand"/>
+        <class name="cls_video_overspeed_item_white_btn" skin="common_translucent_img"  crtext="ffffff" crhover="ffffff" font="0000:微软雅黑" hoverfont="0002:微软雅黑"  cursor="hand"/>
+        <class name="cls_video_overspeed_item_blue_checked_btn" skin="video_overspeed_blue_btn"  crtext="3887ff" crhover="3887ff" font="0000:微软雅黑" hoverfont="0002:微软雅黑" cursor="hand"/>
+        <class name="cls_video_overspeed_item_yellow_checked_btn" skin="video_overspeed_blue_btn"  crtext="ffda99" crhover="ffda99" font="0000:微软雅黑" hoverfont="0002:微软雅黑" cursor="hand"/>
         <class name="cls_video_overspeed_vip_btn" crtext="64360D" crhover="64360D" font="0000:微软雅黑" skin="video_overspeed_svip_btn" cursor="arrow"/>
         <class name="cls_video_playlist_filename" crtext="333333" crhover="06a8ff" font="0000:微软雅黑" hoverfont="0000:微软雅黑" align="left"/>
         <class name="cls_video_playlist_tab_btn" crtext="d2d2d2" font="0200:微软雅黑" crhover="06a7ff" hoverfont="0200:微软雅黑" align="left" valign="middle" cursor="arrow"/>
@@ -1774,7 +1845,7 @@
         <!--视频清晰度切换-->
         <class name="cls_video_definition_item_blue_btn"  skin="video_overspeed_blue_btn" crtext="ffffff" crhover="ffffff" font="0000:微软雅黑" cursor="arrow"/>
         <class name="cls_video_definition_item_yellow_btn" skin="video_overspeed_yellow_btn" crtext="ffffff" crhover="ffffff" font="0000:微软雅黑" cursor="arrow"/>
-        <class name="cls_video_definition_script_text" skin="definition_script" crtext="42230C"  font2="facename:微软雅黑;bold:0;italic:0;underline:0;adding:-2" cursor="arrow" align="center" valign="middle" />
+        <class name="cls_video_definition_script_text" skin="definition_newbg" crtext="FFDBA6"  font2="facename:微软雅黑;bold:0;italic:0;underline:0;adding:-2" cursor="arrow" align="center" valign="middle" />
         <!--p2p互助提速-->
         <class name="cls_p2p_help_eachother_green_frame" skin="p2p_help_eachother_frame" font="0000:微软雅黑" crtext="FFFFFF" x-margin="0"/>
         <class name="cls_p2p_help_eachother_link" cursor="hand" crtext="666666" crhover="666666" font="0002:微软雅黑" hoverfont="0002:微软雅黑" />
@@ -1815,7 +1886,7 @@
         <class name="cls_quota_svip_guide_btn" skin="usercard_svip_btn" crtext="664100" font="0000:微软雅黑" textmode="25" cursor="arrow"/>
     
         <class name="cls_sync_init_guide_link" cursor="hand" crtext="06a8ff" crhover="06a8ff" font="0000:微软雅黑" hoverfont="0000:微软雅黑"/>
-        <class name="cls_dlg_video_ai_note" skin="video_ai_note_dlg_frame" font="0000:微软雅黑" crtext="FFFFFF" x-margin="0"/>
+        <class name="cls_dlg_video_ai_note" skin="video_playlist_bg" font="0000:微软雅黑" crtext="FFFFFF" x-margin="0"/>
 
     </style>
 

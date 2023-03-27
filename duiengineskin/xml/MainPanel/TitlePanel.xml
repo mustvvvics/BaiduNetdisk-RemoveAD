@@ -2,10 +2,10 @@
   <!--logo-->
   <img pos="20,12,@122,@26" skin="titlepanel_logo"></img>
   
-  <!--文字运营位-->
-  <link name="link_header_ad" pos="-0,|-0" crtext="C9A566" font="0000:微软雅黑" align="left" maxwidth="0" cursor="hand" dotted="1" show="0"></link>
+  <!--文字运营位 要修改的-->
+  <link name="link_header_ad" pos="-0,|-0" crtext="C9A566" font="0000:微软雅黑" align="left" maxwidth="200" cursor="hand" dotted="1" show="0"></link>
   
-  <!--icon广告-->
+  <!--icon广告 要修改的-->
   <!-- <imgbtn name="btn_icon_ad" pos="-588,|-14,@28,@28" skin="titlepanel_ad_skin" cursor="hand" show="0"></imgbtn>  -->
  
   <!--用户头像-->
@@ -16,23 +16,23 @@
  
   <!--用户昵称-->
   <text name="txt_nickname" pos="-450,|-8" crtext="333333" font="0000:微软雅黑" align="left" cursor="arrow" maxwidth="200" dotted="1"></text>
-  <!--会员身份标识-->
+  <!--会员身份标识 要修改的-->
   <imgbtn name="btn_crown" pos="-0,|-0,@0,@0" skin="titlepanel_translucent" icoskin="titlepanel_vipclose" cursor="hand"/>
   
-   <!--企业认证-->
+   <!--企业认证 要修改的-->
   <dlg name="dlg_enterprise" pos="-0,|-0,@0,@0">
     <link name="link_enterprise_authentication" pos="0,0" font="0004:微软雅黑" crtext="0065DD" cursor="hand">%str1553%</link>
-    <imgbtn name="btn_enterprise_arrow" pos="[0,|-0,@0,@0" skin="enterprise_down_btn" cursor="arrow" show="0"></imgbtn>
+    <imgbtn name="btn_enterprise_arrow" pos="[4,|-5,@12,@12" skin="enterprise_down_btn" cursor="arrow" show="0"></imgbtn>
   </dlg>
   
-  <!--会员中心-->
+  <!--会员中心 要修改的-->
   <imgbtn name="btn_vipcenter" pos="-0,|-0,@0,@0" class="cls_titlepanel_vipcenter_btn" txtyoffset="2">%str1505%</imgbtn>
   <dlg name="dlg_coupon" pos="[-0,|-0,@0,@0" skin="titlepanel_vipcenter_cornel" show="0">
     <text name="text_coupon" pos="0,0" font2="facename:微软雅黑;adding:-2" crtext="ffffff"></text>
   </dlg>
   <text name="text_vipcenter" class="cls_titlepanel_vipcenter_btn" show="0"></text>
 
-  <!--游戏icon-->
+  <!--游戏icon 要修改的-->
   <!-- <imgbtn name="btn_game_icon_ad" pos="-208,|-14,@28,@28" skin="titlepanel_game_center_skin" cursor="hand" ></imgbtn> -->
 
   <dlg name="title_right_region" pos="-179,10,-119,-10">

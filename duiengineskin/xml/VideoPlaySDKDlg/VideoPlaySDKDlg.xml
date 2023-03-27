@@ -1,4 +1,4 @@
-﻿<layer name="VideoPlaySDKDlg" width="1010" height="568" minsize="800,500" appwin="1" ncRect="0,0,0,0" resize="1" translucent="0">
+﻿<layer name="VideoPlaySDKDlg"  width="1080" height="650" minsize="940,600" appwin="1" ncRect="0,0,0,0" resize="1" translucent="0">
 	<body>
     <dlg name="maindlg" pos="0,0,-0,-0" class="cls_video_dlg_frame">
     </dlg>

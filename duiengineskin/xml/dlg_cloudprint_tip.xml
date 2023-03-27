@@ -1,0 +1,17 @@
+﻿<layer name="CloudPrintTipDlg"  width="400" height="180" appwin="0" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame">
+      <caption pos="0,0,-0,38">
+        <img pos="10,8" skin="common_logo_main"></img>
+        <text name="dlg_title" pos="39,9" class="cls_dlg_title_text">%str7205%</text>
+        <imgbtn name="btn_close" skin="btn_sys_close" pos="-34,1,-2,21" cursor="arrow" tip="%str250%" animate="1"/>
+      </caption>
+      <dlg pos="0,38,-0,-0">
+        <text name="text_file_upload_tip1" pos="14,18" crtext="333333" align="center">%str7208%</text>
+        <text name="text_file_upload_tip2" pos="14,48" crtext="333333" align="center">%str7209%</text>
+        <imgbtn name="btn_confirm" pos="133,75,-136,108" cursor="arrow" animate="1" skin="btn_default" crtext="ffffff">%str7206%</imgbtn>
+        <check name="check_close_tip" pos="150,-25" class="vcentertext" crtext="333333" state="0">%str7207%</check>
+      </dlg>
+    </dlg> 
+  </body>
+</layer>

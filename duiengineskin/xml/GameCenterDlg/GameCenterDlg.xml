@@ -14,7 +14,7 @@
               </dlg>
             </template>
           </listboxex>
-          <imgbtn name="btn_refresh" skin="gamecenter_dlg_btn_refresh" pos="-128,|-8,@15,@16" cursor="arrow" tip="%str217%"/>
+          <imgbtn name="btn_refresh" skin="browser_dlg_btn_refresh" pos="-128,|-8,@15,@16" cursor="arrow" tip="%str217%"/>
           <hr pos="-98,|-6,@1,@12" size="1" crbg="DCDFE6"/>
           <imgbtn name="btn_minimize" skin="titlepanel_minmize_btn" pos="-84,|-8,@15,@16" cursor="arrow" tip="%str251%"/>
           <imgbtn name="btn_maximize" skin="titlepanel_maximize_btn" pos="-56,|-8,@15,@16" cursor="arrow" tip="%str1503%"/>

@@ -1,7 +1,7 @@
-<!-- <layer name="AdCardWnd" width="360" height="284" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+<layer name="AdCardWnd" width="360" height="284" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
   <body> 
     <dlg name="dlg_ad" pos="0,0,-0,-0" skin="titlepanel_textad_bgk" >   
         <imgbtn name="adcard_btn" pos="30,34,@300,@220" skin="titlepanel_translucent" cursor="hard" ></imgbtn>  
     </dlg>
   </body>
-</layer> -->
+</layer>

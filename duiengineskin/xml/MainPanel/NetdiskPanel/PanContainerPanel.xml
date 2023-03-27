@@ -35,4 +35,7 @@
   <dlg name="pan_container_status_panel" pos="0,-34,-0,-0">
     <include src="IDR_DUI_FILE_CONTAINER_STATUS_PANEL"/>
   </dlg>
+  <dlg name="pan_container_brower_search_panel" pos="0,-44,-0,-0" show="0">
+    <include src="IDR_DUI_FILE_CONTAINER_BROWERSEARCH_PANEL"/>
+  </dlg>
 </dlg>

@@ -69,6 +69,12 @@
     </dlg>
   </dlg>
   
+  <!--创建企业\团队 指引-->
+  <dlg name="sharelist_create_enterprise_guide" pos="0,-65,-0,-50" show="0">
+    <link name="link_open_enterprise" pos="250,0" cursor="hand" crtext="0000FF" crhover="0fabfe" font="0204:微软雅黑">%str2026%</link>
+    <text pos="[5,0" font="0204:微软雅黑" crtext="666665">%str2027%</text>
+  </dlg>
+  
   <!--底部状态栏-->
   <dlg name="sharelist_bottom" pos="0,-38,-0,-0" crbg="fbfbfb">
     <hr pos="0,0,-0,@1" crbg="eaecf2"/>

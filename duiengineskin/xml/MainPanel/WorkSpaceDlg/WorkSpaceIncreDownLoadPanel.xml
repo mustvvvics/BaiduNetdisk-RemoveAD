@@ -1,9 +1,9 @@
 <layer name="IncreDownLoad" width="256" height="184" appwin="0" ncRect="0,0,0,0" translucent="1" nomaxsize="1">
   <body>
     <dlg name="dlg_incredownload_guide" pos="0,0,@256,@184" skin="workspace_file_incredownload_bg" show="1">
-      <text pos="32,26,-32,@22" crtext="FFFFFF" font="0400:微软雅黑">%str4678%</text>
-      <text pos="32,[8,-32,@20" crtext="FFFFFF" font="0200:微软雅黑" multilines="1">%str4679%</text>
-      <imgbtn name="btn_close_first_guide" pos="32,[38,@80,@28" crtext="06A7FF" font="0200:微软雅黑" skin="workspace_file_incredownload_knowbtn" cursor="hand">%str762%</imgbtn>
+      <text name="title" pos="32,26,-32,@22" crtext="FFFFFF" font="0400:微软雅黑">%str4678%</text>
+      <text name="content" pos="32,[8,-32,@20" crtext="FFFFFF" font="0200:微软雅黑" multilines="1">%str4679%</text>
+      <imgbtn name="btn_close_confirm" pos="32,[38,@80,@28" crtext="06A7FF" font="0200:微软雅黑" skin="workspace_file_incredownload_knowbtn" cursor="hand">%str762%</imgbtn>
     </dlg>
   </body>
 </layer>

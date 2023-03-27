@@ -1,0 +1,12 @@
+<layer width="518" height="286" minsize="518,286" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="embedded_web_im_tip_bkg">
+      <dlg pos="26,22,-26,-30">
+        <text pos="24,15,@30,@18" maxwidth="60" crtext="03081A" font="0204:微软雅黑">%str2507%</text>
+        <imgbtn name="btn_close" pos="426,18,@16,@16" skin="embedded_web_im_tip_close"/>
+        <text name="txt_tip" pos="0,93,-0,@16" align="center" crtext="03081A" font="0300:微软雅黑"/>
+        <imgbtn name="btn_ok" pos="168,160,@128,@36" skin="embedded_web_im_tip_ok_btn"/>
+      </dlg>
+    </dlg>
+  </body>
+</layer>

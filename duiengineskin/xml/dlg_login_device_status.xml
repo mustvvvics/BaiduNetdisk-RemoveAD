@@ -48,6 +48,12 @@
           <text pos="21,48" crtext="666665" >%str3715%</text>
           <text pos="21,68" crtext="666665" >%str3716%</text>
         </dlg>
+
+        <dlg name="text_open_enterprise_dlg" pos="38,350,@500,@50" show="0">
+          <text pos="0,0" font="0204:微软雅黑" crtext="666665">%str3730%</text>
+          <link name="text_open_enterprise" pos="[1,0" cursor="hand" crtext="0000FF" crhover="0fabfe" font="0204:微软雅黑">%str3731%</link>
+          <text pos="0,20" crtext="666665">%str3732%</text>
+        </dlg>
       </dlg>
 
       <dlg name="panel_device_cheat" pos="1,38,-1,-1">

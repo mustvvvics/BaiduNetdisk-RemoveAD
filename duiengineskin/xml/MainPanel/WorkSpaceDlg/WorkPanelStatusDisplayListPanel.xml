@@ -17,8 +17,10 @@
             </dlg>
             <hr pos="0,47,-0,@1" size="1" crbg="F5F6FA"></hr>
             <dlg name="dlg_top_float" pos="10,56,-10,@36" crbg="F5F6FA" show="0">
-                <text name="txt_float_tip" pos="24,9,@280,@18" crtext="878C9C"></text>
+                <img name="img_svip" pos="15,10,@20,@17" skin="cloudbridge_float_svip"/>
+                <text name="txt_float_tip" pos="40,9,@280,@18" crtext="878C9C"></text>
                 <link name="link_float" pos="-72,9,@48,@18" crtext="06A7FF" cursor="hand"></link>
+                <imgbtn name="btn_float_close" skin="titlepanel_close_btn" pos="-32,12,@12,@14" cursor="arrow" tip="%str250%"></imgbtn>
             </dlg>
             <listboxex name="listbox_sync_list" pos="0,64,-0,-0" show="1" itemheight="72" virtual="1">
                 <template>

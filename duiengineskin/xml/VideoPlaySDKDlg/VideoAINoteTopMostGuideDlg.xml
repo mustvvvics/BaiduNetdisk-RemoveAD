@@ -1,0 +1,5 @@
+<layer width="208" height="80" minsize="208,80" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="0">
+  <body>
+    <dlg pos="0,0,-0,-0" skin="video_ai_note_top_most_guide" show="1"/>
+  </body>
+</layer>

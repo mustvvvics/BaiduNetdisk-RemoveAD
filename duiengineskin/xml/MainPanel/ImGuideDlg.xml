@@ -1,0 +1,7 @@
+﻿<layer name="FuncGuideWnd"  width="246" height="68" toolwindow="1" ncRect="0,0,0,0"  resize="0" translucent="1"  nomaxsize="1">
+  <body>
+    <dlg pos="0,0,-0,-0" class="cls_dlg_frame" skin="navigatepanel_im_guide_bg">
+      <text name="txt_im_guide_tip" pos="36,22" crtext="ffffff" font="0400:微软雅黑">%str1715%</text>
+    </dlg>
+  </body>
+</layer>

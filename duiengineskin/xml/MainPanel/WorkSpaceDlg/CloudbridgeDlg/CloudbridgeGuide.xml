@@ -1,0 +1,20 @@
+<layer name="CloudbridgeGuide" width="514" height="399" appwin="0" toolwindow="1" ncRect="5,5,5,5" translucent="1" nomaxsize="1">
+    <body>
+        <dlg name="dlg_main" pos="0,0,-0,-0" skin="cloudbridge_guide_frame">
+            <dlg pos="25,25,-25,-25">
+                <caption pos="0,0,-0,@28">
+                    <text name="title" pos="24,15" font="0104:微软雅黑" crtext="03081A">%str6856%</text>
+                    <imgbtn name="btn_close" pos="-40,18,@16,@16" skin="wechatbackup_guide_dlg_close"></imgbtn>
+                </caption>
+                <dlg pos="24,105,@208,@210">
+                    <text name="subtitle" pos="0,0,-0,@30" font="0104:微软雅黑" crtext="03081A" textmode="40810">%str6857%</text>
+                    <text name="content" pos="0,[7,-0,@60" crtext="AFB3BF" font="0000:微软雅黑" textmode="40810">%str6858%</text>
+                </dlg>
+                <gifplayer name="gif_intro" pos="260,62,@204,@173" skin="gif_workspace_quick_sync" show="1" />
+                <imgbtn name="btn_confirm" pos="132,255,@200,@36" font="0200:微软雅黑" crtext="FFFFFF" skin="workspace_guide_btn_bkg_one" cursor="hand">%str4680%</imgbtn>
+                <img name="img_svip" pos="304,251,@34,@15" skin="cloudbridge_new_svip"/>
+                <link name="link_help" pos="196,303" crtext="495366" cursor="hand" font="0200:微软雅黑" align="left" show="1">%str6859%</link>
+            </dlg>
+        </dlg>
+    </body>
+</layer>

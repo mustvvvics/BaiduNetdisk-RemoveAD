@@ -1,13 +1,25 @@
-<layer name="SearchHistoryPanel" width="240" height="370" appwin="0" ncRect="0,0,0,0" toolwindow="1" translucent="1" nomaxsize="1">
+<layer name="SearchHistoryPanel" width="272" height="201" appwin="0" ncRect="0,0,0,0" toolwindow="1" translucent="1" nomaxsize="1">
   <body>
     <dlg pos="0,0,-0,-0" skin="mainpanel_addresspanel_searchbox_his_bg">
-        <listboxex name="search_history_item_view" pos="1,1,-1,-1" itemheight="26" virtual="1">
-         <template>
-          <dlg pos="0,0,-0,-0">
-            <link name="txt_item_name" pos="3,|-9" font="0000:微软雅黑" class="cls_addresspanel_searchbox_keyword_link" show="1" textmode="40824"/>
-          </dlg>
+      <dlg pos="16,16,-16,-16">
+        <text name="text_history_title" pos="16,16" font="0004:微软雅黑" crtext="000000">%str7241%</text>
+        <filethumbview name="filethumbview_search_history" pos="4,44,@232,@30" itemheight="30" itemwidth="116" virtual="1">
+          <template cursor="hand">
+            <dlg name="dlg_thumb_item" pos="0,0,-0,-0">
+              <text name="text_item" pos="12,|-6" maxwidth="100" font="0000:微软雅黑" crtext="03081A" dotted="1"/>
+            </dlg>
           </template>
-       </listboxex>
+        </filethumbview>
+        <dlg name="dlg_whole_search_entry" pos="4,-48,@232,@44" show="0">
+          <hr pos="0,0,-0,@1" crbg="F9F9FA" size="1"/>
+          <imgbtn name="btn_whole_search_entry" pos="0,1,-0,-0" skin="common_translucent_img" cursor="hand">
+            <img pos="9,12,@57,@21" skin="mainpanel_addresspanel_searchbox_his_whole_search_icon"/>
+            <text pos="74,15" font="0000:微软雅黑" crtext="000000">%str7240%</text>
+            <text name="text_keyword" pos="[2,15" maxwidth="80" font="0000:微软雅黑" crtext="0095FF"  dotted="1"/>
+            <img pos="-18,17,@12,@12" skin="mainpanel_addresspanel_searchbox_his_bwhole_search_arrow"/>
+          </imgbtn>
+        </dlg>
+      </dlg>
     </dlg>
   </body>
 </layer>

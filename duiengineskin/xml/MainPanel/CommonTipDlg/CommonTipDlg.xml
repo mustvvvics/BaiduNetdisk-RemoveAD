@@ -1,0 +1,10 @@
+<layer width="200" height="41" minsize="81,40" appwin="0" ncRect="0,0,0,0" resize="0" translucent="1" nomaxsize="0">
+  <body>
+    <dlg name="TipPanelBg" pos="0,0,-0,-0" skin="tippanel_bg">
+      <img pos="98,0,@16,@8" skin="common_tip_bkg_blu_triangle_up"/>
+      <dlg pos="0,7,-0,-0" skin="common_tip_bkg_blu" show="1">
+        <text name="txt_tip" pos="14,6" align="center" crtext="ffffff" font="0200:微软雅黑"/>
+      </dlg>
+    </dlg>  
+  </body>
+</layer>

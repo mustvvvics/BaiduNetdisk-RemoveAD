@@ -84,6 +84,7 @@
                 <imgbtn name="btn_share" pos="8,|-8,@16,@16" skin="mainpanel_listview_share" cursor="arrow" tip="%str2306%" show="0"></imgbtn>
                 <imgbtn name="btn_down" pos="[18,|-8,@16,@16" skin="mainpanel_listview_down" cursor="arrow" tip="%str2321%" show="0"></imgbtn>
                 <imgbtn name="btn_del" pos="[18,|-8,@16,@16" skin="mainpanel_listview_del" cursor="arrow" tip="%str2325%" show="0"></imgbtn>
+                <imgbtn name="btn_img_extract_text" pos="[18,|-8,@16,@16" skin="mainpanel_listview_img_extract_text" cursor="arrow" tip="%str7220%" show="0"></imgbtn>
                 <imgbtn name="btn_rename" pos="[18,|-8,@16,@16" skin="mainpanel_listview_rename" cursor="arrow" tip="%str2332%" show="0"></imgbtn>
                 <imgbtn name="btn_pdftoword" pos="[18,|-8,@16,@16" skin="mainpanel_listview_pdf_to_word" cursor="arrow" tip="%str2361%" show="0"></imgbtn>
                 <imgbtn name="btn_mobileview" pos="[18,|-8,@16,@16" skin="mainpanel_listview_mobile_view" cursor="arrow" tip="%str2362%" show="0"></imgbtn>
@@ -138,10 +139,12 @@
 
   <!--空文件列表视图-->
   <dlg name="dlg_empty_view" pos="0,0,-0,-0" show="0">
+    <link name="link_browser_search_calc" pos="0,0" class="cls_btn_weblink" show="0"></link>
     <img name="empty_view_bg" pos="|-90,|-100,@181,@127" skin="mainpanel_emptyview_empty"></img>
-    <text name="txt_empty_tip" pos="|-150,[8,@300,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2307%</text>
+    <text name="txt_empty_tip" pos="|-200,[8,@400,@18" crtext="333333" font="0200:微软雅黑" align="center">%str2307%</text>
     <text name="txt_empty_tip_line2" pos="0,[8,-0,@18" crtext="333333" font="0200:微软雅黑" align="center" show="0">%str4401%</text>
-    <imgbtn name="btn_upload" pos="|-36,[16,@72,@25" class="defultbtn" crtext="ffffff" cursor="arrow">%str2310%</imgbtn>
+    <link name="link_browser_search" pos="60,[-16,-30,@18" align="center" class="cls_btn_weblink" show="0"></link>
+    <imgbtn name="btn_upload" pos="|-36,[16,@72,@25" class="defultbtn" crtext="ffffff" cursor="arrow">%str2310%</imgbtn>  
   </dlg>
 
   <!--正在加载视图-->

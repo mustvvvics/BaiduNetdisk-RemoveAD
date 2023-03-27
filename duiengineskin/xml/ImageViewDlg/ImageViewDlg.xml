@@ -53,19 +53,21 @@
         <text name="txt_op_tip" pos="[6,0,-17,-0" crtext="ffffff" font="0200:微软雅黑" textmode="40824">%str2119%</text>
       </dlg>
       <dlg name="dlg_opbtnlist_view" pos="0,-136,-0,@70" skin="imageviewpanel_dlg_mask_down">
-        <dlg name="dlg_opbtnlist_view_child" pos="|-270,0,@540,-0">
+        <dlg name="dlg_opbtnlist_view_child" pos="|-300,0,@600,-0">
           <imgbtn name="btn_op_image_zoom" skin="imageviewpanel_btn_zoom" pos="0,23,@24,@24" cursor="arrow" tip="%str2102%"></imgbtn>
           <imgbtn name="btn_op_image_rotate" skin="imageviewpanel_btn_rotate" pos="60,23,@24,@24" cursor="arrow" tip="%str2103%"></imgbtn>
           <imgbtn name="btn_op_image_share" skin="imageviewpanel_btn_share" pos="120,23,@24,@24" cursor="arrow" tip="%str2104%" show="1"></imgbtn>
           <imgbtn name="btn_op_image_download" skin="imageviewpanel_btn_download" pos="180,23,@24,@24" cursor="arrow" tip="%str2105%"></imgbtn>
           <imgbtn name="btn_op_image_delete" skin="imageviewpanel_btn_delete" pos="240,23,@24,@24" cursor="arrow" tip="%str2106%" show="1"></imgbtn>
-          <imgbtn name="btn_op_image_detail" skin="imageviewpanel_btn_detail" pos="300,23,@24,@24" cursor="arrow" tip="%str2107%"></imgbtn>
-          <imgbtn name="btn_op_image_cloudedit" skin="imageviewpanel_btn_cloudedit" pos="360,23,@24,@24" cursor="arrow" tip="%str2128%"></imgbtn>
+          <imgbtn name="btn_op_image_extract_text" skin="imageviewpanel_btn_extract_text" pos="300,23,@24,@24" cursor="arrow" tip="%str7220%" show="1"></imgbtn>
+          <imgbtn name="btn_op_image_detail" skin="imageviewpanel_btn_detail" pos="360,23,@24,@24" cursor="arrow" tip="%str2107%"></imgbtn>
+          <imgbtn name="btn_op_image_cloudedit" skin="imageviewpanel_btn_cloudedit" pos="420,23,@24,@24" cursor="arrow" tip="%str2128%"></imgbtn>
           <img name="oplist_sep" pos="-123,30,@1,@10" skin="imageviewpanel_opbtnlist_view_sep"/>
           <link name="txt_op_index" pos="-100,23" crtext="ffffff" font="0400:微软雅黑" show="0"></link>
           <imgbtn name="btn_op_collaspe" class="cls_imagepanel_btn_collapse" pos="-100,23,@100,@24" cursor="arrow">%str2121%</imgbtn>
         </dlg>
       </dlg>
+      <img name="img_tip_extract_text" skin="imageviewpanel_tip_extract_text" pos="524,-137" pos2type="center" show="0"/>
 
       <!--底部列表视图-->
       <dlg name="dlg_bottom_view" pos="|-450,-66,@900,-8" show="0">

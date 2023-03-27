@@ -1,0 +1,10 @@
+<dlg name="brower_search_panel" pos="0,0,-0,-0">
+ <hr pos="0,0,-0,1" size="1" crbg="F1F1F1"/>
+ <imgbtn name="brower_search_panel_btn" skin="titlepanel_translucent" pos="0,0,-0,-0">
+   <img name="brower_search_icon" pos="22,10,@65,@24" skin="mainpanel_pan_panel_brower_search_icon" ></img>
+   <text name="text1" pos="[10,14" font="0100:微软雅黑" crtext="030B1A">%str7240%</text>
+   <text name="text_search_key" pos="[2,14" font="0100:微软雅黑" crtext="0095FF"></text>
+   <text name="text2" pos="-210,14" font="0100:微软雅黑" crtext="A2ABBD">%str7246%</text>
+   <text name="text3" pos="[0,14" font="0100:微软雅黑" crtext="0095FF">%str7247%</text>
+ </imgbtn>
+</dlg>

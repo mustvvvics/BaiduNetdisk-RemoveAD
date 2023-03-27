@@ -25,6 +25,7 @@
 <resid type="XML" name="IDR_DUI_FILE_CONTAINER_SEARCH_GUIDE_DLG" file="xml\MainPanel\NetdiskPanel\FileContainerPanel\SearchGuideDlg.xml"/>
 <resid type="XML" name="IDR_DUI_FILE_CONTAINER_SEARCH_APPLY_DLG" file="xml\MainPanel\NetdiskPanel\FileContainerPanel\SearchApplyDlg.xml"/>
 <resid type="XML" name="IDR_DUI_FILE_CONTAINER_STATUS_PANEL" file="xml\MainPanel\NetdiskPanel\FileContainerPanel\StatusPanel.xml"/>
+<resid type="XML" name="IDR_DUI_FILE_CONTAINER_BROWERSEARCH_PANEL" file="xml\MainPanel\NetdiskPanel\FileContainerPanel\BrowserSearchPanel.xml"/>
 <resid type="XML" name="IDR_DUI_FILE_VIEWCONTAINER_PANEL" file="xml\MainPanel\NetdiskPanel\FileContainerPanel\ViewContainerPanel.xml"/>
 <resid type="XML" name="IDR_DUI_TRANS_LEFT_PANEL" file="xml\MainPanel\TransPanel\TransLeftPanel.xml"/>
 <resid type="XML" name="IDR_DUI_PT2PT_PANEL" file="xml\MainPanel\FunctionalBoxPanel\Pt2PtPanel.xml"/>
@@ -73,6 +74,8 @@
 <resid type="XML" name="IDR_DUI_VIDEO_AI_NOTE_DIALOG" layer="1" file="xml\VideoPlaySDKDlg\VideoAINoteDlg.xml"/>
 <resid type="XML" name="IDR_DUI_VIDEO_AI_DOC_DIALOG" layer="1" file="xml\VideoPlaySDKDlg\VideoAIDocDlg.xml"/>
 <resid type="XML" name="IDR_DUI_VIDEO_AI_NOTEHELP_DIALOG" layer="1" file="xml\VideoPlaySDKDlg\VideoAINoteHelpDlg.xml"/>
+<resid type="XML" name="IDR_DUI_VIDEO_AI_NOTE_TOP_MOST_GUIDE" layer="1" file="xml\VideoPlaySDKDlg\VideoAINoteTopMostGuideDlg.xml"/>
+<resid type="XML" name="IDR_DUI_VIDEO_AI_NOTE_COMMON_TIP" layer="1" file="xml\VideoPlaySDKDlg\VideoAINoteCommonTipDlg.xml"/>
 <resid type="XML" name="IDR_DUI_NEXTBATCH_PANEL" file="xml\GarbageCleanDlg\NextBatchPanel.xml"/>
 <resid type="XML" name="IDR_DUI_MASKSVIPGUIDE_DIALOG" layer="1" file="xml\GarbageCleanDlg\MaskSvipGuideDlg.xml"/>
 <resid type="XML" name="IDR_DUI_ONEKEYCLEAN_PANEL" file="xml\GarbageCleanDlg\OneKeyCleanPanel.xml"/>
@@ -120,6 +123,10 @@
 <resid type="XML" name="IDR_DUI_GUID_FLOAT_SELECTIVE_WND" layer="1" file="xml\MainPanel\WorkSpaceDlg\WorkSpaceResidentGuide\SelectivePathIntroduce.xml"/>
 <resid type="XML" name="IDR_DUI_GUID_FLOAT_CLOUDBRIDGE_WND" layer="1" file="xml\MainPanel\WorkSpaceDlg\WorkSpaceResidentGuide\CloudBridgeIntroduce.xml"/>
 <resid type="XML" name="IDR_DUI_GUID_USER_BUY_COMMON_DIALOG" layer="1" file="xml\MainPanel\GuidUserBuySvipDlg.xml"/>
+<resid type="XML" name="IDR_DUI_IM_GUIDE_DLG" file="xml\MainPanel\ImGuideDlg.xml"/>
+<resid type="XML" name="IDR_DUI_CLOUDPRINTTIP_DIALOG" layer="1" file="xml\dlg_cloudprint_tip.xml"/>
+<resid type="XML" name="IDR_DUI_COMMON_TOOL_PAGE_DLG" layer="1" file="xml\CommonToolPageDlg\CommonToolPageDlg.xml"/>
+<resid type="XML" name="IDR_DUI_IMGEXTRACTTEXT" layer="1" file="xml\ImgExtractTextDlg\ImgExtractTextDlg.xml"/>
 
 <!--自动登录挽留-->
 <resid type="XML" name="IDR_DUI_LOGIN_RETENTION_DIALOG" layer="1" file="xml\dlg_login_retention.xml"/>
@@ -425,6 +432,7 @@
 <resid type="IMGX" name="IDP_IMG_FUNTION_CLOUD_EDIT" file="image\MainPanel\FunctionalBoxPanel\CloudEdit.png" />
 <resid type="IMGX" name="IDP_IMG_FUNTION_ENTERPRISE_CUSTOMIZE" file="image\MainPanel\FunctionalBoxPanel\enterpriseCustomize.png" />
 <resid type="IMGX" name="IDP_IMG_FUNTION_TEXT_EXTRACT" file="image\MainPanel\FunctionalBoxPanel\textExtract.png" />
+<resid type="IMGX" name="IDP_IMG_FUNTION_ICON_LOADING" file="image\MainPanel\FunctionalBoxPanel\icon_loading.png" />
 
 <!--文件类型相关资源-->
 <resid type="IMGX" name="IDP_IMG_FILETYPE_MIDDLE_VIDEO" file="image\FileType\Middle\VideoType.png" />
@@ -624,8 +632,14 @@
 
 <!--视频播放器相关资源-->
 <resid type="IMGX" name="IDP_VIDEO_BK_BG" file="image\VideoPlayDlg\bk_skin.png" />
+<resid type="IMGX" name="IDP_VIDEO_PLAYLIST_HR" file="image\VideoPlayDlg\video_playlist_hr.png" />
+<resid type="IMGX" name="IDP_VIDEO_AINOTE_TEXT" file="image\VideoPlayDlg\video_ainote_text.png" />
 <resid type="IMGX" name="IDP_VIDEO_PROG_BG" file="image\VideoPlayDlg\mini_progress_bg.png"/>
 <resid type="IMGX" name="IDP_VIDEO_BIG_PROG_BG" file="image\VideoPlayDlg\big_progress_bg.png"/>
+<resid type="IMGX" name="IDP_VIDEO_OVERSPEED_PROG_BG" file="image\VideoPlayDlg\overspeed_progress_bg.png"/>
+<resid type="IMGX" name="IDP_VIDEO_OVERSPEED_PROG_BIGBG" file="image\VideoPlayDlg\overspeed_progress_big_bg.png"/>
+<resid type="IMGX" name="IDP_VIDEO_OVERSPEED_CURSOR_GREY" file="image\VideoPlayDlg\overspeed_cursor_grey.png"/>
+<resid type="IMGX" name="IDP_VIDEO_OVERSPEED_CURSOR_WHITE" file="image\VideoPlayDlg\overspeed_cursor_white.png"/>
 <resid type="IMGX" name="IDP_VIDEO_PROG_BG_VOLUM" file="image\VideoPlayDlg\mini_progress_bg_volum.png"/>
 <resid type="IMGX" name="IDP_VIDEO_PROG_BAR" file="image\VideoPlayDlg\mini_progress_bar.png"/>
 <resid type="IMGX" name="IDP_VIDEO_BIG_PROG_BAR" file="image\VideoPlayDlg\big_progress_bar.png"/>
@@ -650,18 +664,26 @@
 <resid type="IMGX" name="IDP_VIDEO_BTN_DELETE" file="image\VideoPlayDlg\image_delete.png"/>
 <resid type="IMGX" name="IDP_VIDEO_BTN_DOWNLOAD" file="image\VideoPlayDlg\image_download.png"/>
 <resid type="IMGX" name="IDP_VIDEO_BTN_SETTING" file="image\VideoPlayDlg\image_setting.png"/>
+<resid type="IMGX" name="IDP_VIDEO_BTN_BOTTOM_SETTING" file="image\VideoPlayDlg\video_setting.png"/>
 <resid type="IMGX" name="IDP_VIDEO_DOWNLOAD" file="image\VideoPlayDlg\video_download.png"/>
 <resid type="IMGX" name="IDP_VIDEO_SHARE" file="image\VideoPlayDlg\video_share.png"/>
 <resid type="IMGX" name="IDP_VIDEO_TOPMOST" file="image\VideoPlayDlg\video_topmost.png"/>
+<resid type="IMGX" name="IDP_VIDEO_TOPMOST_SMALL" file="image\VideoPlayDlg\video_topmost_small.png"/>
 <resid type="IMGX" name="IDP_VIDEO_NO_TOPMOST" file="image\VideoPlayDlg\video_no_topmost.png"/>
+<resid type="IMGX" name="IDP_VIDEO_NO_TOPMOST_SMALL" file="image\VideoPlayDlg\video_no_topmost_small.png"/>
 <resid type="IMGX" name="IDP_VIDEO_TOLINE" file="image\VideoPlayDlg\video_top_line.png"/>
 <resid type="IMGX" name="IDP_VIDEO_BTN_HALFSCREEN" file="image\VideoPlayDlg\video_halfscreen_btn.png"/>
 <resid type="IMGX" name="IDP_VIDEO_BTN_FULLSCREEN" file="image\VideoPlayDlg\video_fullscreen_btn.png"/>
 <resid type="IMGX" name="IDP_VIDEO_BTN_PLAYLIST_OPEN" file="image\VideoPlayDlg\video_playlist_open_btn.png"/>
 <resid type="IMGX" name="IDP_VIDEO_BTN_PLAYLIST_CLOSE" file="image\VideoPlayDlg\video_playlist_close_btn.png"/>
 <resid type="IMGX" name="IDP_VIDEO_OP_BG" file="image\VideoPlayDlg\VideoOpBkg.png"/>
+<resid type="IMGX" name="IDP_VIDEO_PLAYLIST_SPLITE" file="image\VideoPlayDlg\video_playlist_splite.png"/>
 <resid type="IMGX" name="IDP_VIDEO_MASK_BG"   file="image\VideoPlayDlg\MaskBg.png" />
+<resid type="IMGX" name="IDP_VIDEO_SHORTCUT_GUIDE_BG" file="image\VideoPlayDlg\shortcut_guide_bg.png"/>
+<resid type="IMGX" name="IDP_VIDEO_SHORTCUT_GUIDE_CONTENT" file="image\VideoPlayDlg\shortcut_guide_content.png"/>
+<resid type="IMGX" name="IDP_VIDEO_SHORTCUT_GUIDE_OK_BTN_BG" file="image\VideoPlayDlg\shortcut_guide_ok_btn_bg.png"/>
 <resid type="IMGX" name="IDP_VIDEO_BTN_CLOSE"   file="image\VideoPlayDlg\close_btn.png" />
+<resid type="IMGX" name="IDP_VIDEO_BTN_CLOSE_TIP"   file="image\VideoPlayDlg\close_btn_tip.png" />
 <resid type="IMGX" name="IDP_VIDEO_BTN_SENIOR"   file="image\VideoPlayDlg\senior.png" />
 <resid type="IMGX" name="IDP_VIDEO_BTN_MAXSIZE_NORMAL"   file="image\VideoPlayDlg\maxsize_normal_btn.png" />
 <resid type="IMGX" name="IDP_VIDEO_BTN_MAXSIZE_RECOVER"   file="image\VideoPlayDlg\maxsize_recover_btn.png" />
@@ -671,6 +693,10 @@
 <resid type="IMGX" name="IDP_VIDEO_CAPTIONBAR_BG"   file="image\VideoPlayDlg\captionbar_bg.png" />
 <resid type="IMGX" name="IDP_VIDEO_SKIPAD_BG"   file="image\VideoPlayDlg\skip_ad_bg.png" />
 <resid type="IMGX" name="IDP_VIDEO_TIP_BG"   file="image\VideoPlayDlg\tip_bg.png" />
+<resid type="IMGX" name="IDP_VIDEO_TIP_BG_2"   file="image\VideoPlayDlg\tip_bg_2.png" />
+<resid type="IMGX" name="IDP_VIDEO_PLAY_STATUS_PLAY"   file="image\VideoPlayDlg\play_status_play.png" />
+<resid type="IMGX" name="IDP_VIDEO_PLAY_STATUS_PAUSE"   file="image\VideoPlayDlg\play_status_pause.png" />
+<resid type="IMGX" name="IDP_VIDEO_OVERSPEED_TIP_SHORTCUT_PRESS"   file="image\VideoPlayDlg\overspeed\tip_shortcut_press.png" />
 <resid type="IMGX" name="IDP_VIDEO_TOP_SENIORCLOSE"   file="image\VideoPlayDlg\seniorclose.png" />
 <resid type="IMGX" name="IDP_VIDEO_NEXT_PLAY_BG"   file="image\VideoPlayDlg\video_next_play.png" />
 <resid type="IMGX" name="IDP_VIDEO_PLAY_TYPE"   file="image\VideoPlayDlg\video_play_type.png" />
@@ -701,10 +727,12 @@
 <resid type="IMGX" name="IDP_VIDEO_BTN_PLAYLIST_PLAYING"   file="image\VideoPlayDlg\video_playlist_playing.png" />
 <resid type="IMGX" name="IDP_VIDEO_DEFAULT_AD_IMG"   file="image\VideoPlayDlg\default_ad_image.png" />
 <resid type="IMGX" name="IDP_VIDEO_TIME_TIP_BG"   file="image\VideoPlayDlg\time_tip_bg.png" />
+<resid type="IMGX" name="IDP_VIDEO_BG"   file="image\VideoPlayDlg\video_bg.png" />
 <resid type="IMGX" name="IDP_VIDEO_DECODE_BG"   file="image\VideoPlayDlg\video_decode_bg.png" />
 <resid type="IMGX" name="IDP_VIDEO_VOLUM_THUMB_BIG"   file="image\VideoPlayDlg\volum_thumb_big.png" />
 <resid type="IMGX" name="IDP_VIDEO_VOLUM_THUMB_SMALL"   file="image\VideoPlayDlg\volum_thumb_small.png" />
 <resid type="IMGX" name="IDP_VIDEO_SPEED_THUMB_SMALL"   file="image\VideoPlayDlg\speed_thumb_small.png" />
+<resid type="IMGX" name="IDP_VIDEO_SPEED_THUMB_BIG"   file="image\VideoPlayDlg\speed_thumb_big.png" />
 <resid type="IMGX" name="IDP_VIDEO_DRAG_LEFT"   file="image\VideoPlayDlg\drag_left.png" />
 <resid type="IMGX" name="IDP_VIDEO_DRAG_RIGHT"   file="image\VideoPlayDlg\drag_right.png" />
 <resid type="IMGX" name="IDP_VIDEO_VOLUME_ADJUST_BG"   file="image\VideoPlayDlg\video_volume_adjust_bg.png" />
@@ -733,12 +761,16 @@
 <resid type="IMGX" name="IDP_VIDEO_OVERSPEED_BLUE_BTN" file="image\VideoPlayDlg\overspeed\btn_overspeed_item_blue.png"/>
 <resid type="IMGX" name="IDP_VIDEO_OVERSPEED_YELLOW_BTN" file="image\VideoPlayDlg\overspeed\btn_overspeed_item_yellow.png"/>
 <resid type="IMGX" name="IDP_VIDEO_OVERSPEED_SVIP_BTN" file="image\VideoPlayDlg\overspeed\btn_overspeed_open_svip.png"/>
+<resid type="IMGX" name="IDP_VIDEO_OVERSPEED_CUSTOMS" file="image\VideoPlayDlg\overspeed\customs_overspeed.png"/>
 <resid type="IMGX" name="IDP_VIDEO_OVERSPEED_SVIP_IMG" file="image\VideoPlayDlg\overspeed\overspeed_svip.png"/>
 <resid type="IMGX" name="IDP_VIDEO_OVERSPEED_NEW_IMG" file="image\VideoPlayDlg\new.png"/>
 <resid type="IMGX" name="IDP_VIDEO_DEFINITION_GUIDE_IMG" file="image\VideoPlayDlg\definition_guide.png"/>
+<resid type="IMGX" name="IDP_VIDEO_DELETE_IMG" file="image\VideoPlayDlg\video_delete.png"/>
+<resid type="IMGX" name="IDP_VIDEO_QUESTION_IMG" file="image\VideoPlayDlg\video_question.png"/> 
 <resid type="IMGX" name="IDP_SUBTLTLE_GUIDE_TOP_IMG" file="image\VideoPlayDlg\toast.png"/>
 <resid type="IMGX" name="IDP_SUBTLTLE_GUIDE_LOG_IMG" file="image\VideoPlayDlg\subtitle_log.png"/>
 <resid type="IMGX" name="IDP_SUBTLTLE_PRODUCE_DLG_BG_IMG" file="image\VideoPlayDlg\subtitle_produce_dlg_bg.png"/>
+<resid type="IMGX" name="IDP_VIP_NEW_IMG" file="image\VideoPlayDlg\svip_new.png"/>
 <resid type="IMGX" name="IDP_AIDOC_PRODUCE_DLG_BG_IMG" file="image\VideoPlayDlg\aidoc_produce_dlg_bg.png"/>
 <resid type="IMGX" name="IDP_SUBTLTLE_GUIDE_BOTTOM_IMG" file="image\VideoPlayDlg\Triangle.png"/>
 <resid type="IMGX" name="IDP_SUBTITLE_LANGUAGE_BTN_IMG" file="image\VideoPlayDlg\subtitle_language_btn.png"/>
@@ -773,6 +805,8 @@
 <resid type="IMGX" name="IDP_VIDEO_NOTE_PROCESS_BAR_POINT_IMG"  file="image\VideoPlayDlg\videonote\process_bar_point.png" />
 <resid type="IMGX" name="IDP_VIDEO_NOTE_PROCESS_BAR_BIG_POINT_IMG"  file="image\VideoPlayDlg\videonote\process_bar_big_point.png" />
 <resid type="IMGX" name="IDP_VIDEO_NOTE_ADD_ICON"  file="image\VideoPlayDlg\videonote\add_note_icon.png" />
+<resid type="IMGX" name="IDP_VIDEO_CLOSE_LIST_BTN"  file="image\VideoPlayDlg\video_close_list_btn.png" />
+<resid type="IMGX" name="IDP_VIDEO_OPEN_LIST_BTN"  file="image\VideoPlayDlg\video_open_list_btn.png" />
 <!--视频特权引导-->
 <resid type="IMGX" name="IDP_VIDEO_GUIDE_IMG" file="image\VideoPlayDlg\guide\video_guide_img.png" />
 <resid type="IMGX" name="IDP_VIDEO_GUIDE_BTN_YELLOW" file="image\VideoPlayDlg\guide\video_guide_btn_yellow.png" />
@@ -984,6 +1018,7 @@
 <resid type="IMGX" name="IDP_MAINPANEL_TOOLBAR_PDFTOWORD" file="image\MainPanel\NetdiskPanel\Toolbar\pdftoword.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_TOOLBAR_MOBILEVIEW" file="image\MainPanel\NetdiskPanel\Toolbar\mobileview.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_TOOLBAR_CLOUDEDIT" file="image\MainPanel\NetdiskPanel\Toolbar\cloudedit.png"/>
+<resid type="IMGX" name="IDP_MAINPANEL_TOOLBAR_CLOUDPRINT" file="image\MainPanel\NetdiskPanel\Toolbar\cloudprint.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_TOOLBAR_DROPDOWN" file="image\MainPanel\NetdiskPanel\Toolbar\arrow.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_TOOLBAR_OFFLINEDOWNLOAD" file="image\MainPanel\NetdiskPanel\Toolbar\offlinedownload.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_TOOLBAR_MORE" file="image\MainPanel\NetdiskPanel\Toolbar\more.png"/>
@@ -1040,11 +1075,12 @@
 <resid type="IMGX" name="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HISITEM_HOVER" file="image\MainPanel\NetdiskPanel\AddressPanel\SearchBox\seachbox_history_item_hover.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HISITEM_NORMAL" file="image\MainPanel\NetdiskPanel\AddressPanel\SearchBox\seachbox_history_item_normal.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_ADDRESSPANEL_SEARCH_APPLY_BGK" file="image\MainPanel\NetdiskPanel\AddressPanel\SearchBox\search_apply_bgk.png"/>
-
 <resid type="IMGX" name="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HIS_BG" file="image\MainPanel\NetdiskPanel\AddressPanel\SearchBox\searchbox_history_bkg.png"/>
+<resid type="IMGX" name="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HIS_WHOLE_SEARCH_ICON" file="image\MainPanel\NetdiskPanel\AddressPanel\SearchBox\seachbox_history_whole_search_icon.png"/>
+<resid type="IMGX" name="IDP_MAINPANEL_ADDRESSPANEL_SEARCHBOX_HIS_WHOLE_SEARCH_ARROW" file="image\MainPanel\NetdiskPanel\AddressPanel\SearchBox\seachbox_history_whole_search_arrow.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_ADDRESSPANEL_REFRESHING" file="image\MainPanel\NetdiskPanel\AddressPanel\refreshing.gif"/>
 <resid type="IMGX" name="IDP_MAINPANEL_ADDRESSPANEL_SEARCH_GUIDE" file="image\MainPanel\NetdiskPanel\AddressPanel\search_guide_img.png"/>
-
+<resid type="IMGX" name="IDP_MAINPANEL_ADDRESSPANEL_BROWER_SEARCH_ICON" file="image\MainPanel\NetdiskPanel\AddressPanel\SearchBox\brower_search.png"/>
 <!--主面板状态栏-->
 <resid type="IMGX" name="IDP_GIF_STATUSPANEL_PORTABLE_DEVICE" file="image\MainPanel\NetdiskPanel\StatusPanel\portable_dev.gif" />
 <resid type="IMGX" name="IDP_GIF_STATUSPANEL_LOCK" file="image\MainPanel\NetdiskPanel\StatusPanel\lock.gif" />
@@ -1072,6 +1108,7 @@
 <resid type="IMGX" name="IDP_MAINPANEL_LISTVIEW_DOC_TO_ONLINEDOC" file="image\MainPanel\NetdiskPanel\ViewContainerPanel\ListView\doc_to_onlinedoc.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_LISTVIEW_RENAME" file="image\MainPanel\NetdiskPanel\ViewContainerPanel\ListView\rename.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_LISTVIEW_FILEVER" file="image\MainPanel\NetdiskPanel\ViewContainerPanel\ListView\filever.png"/>
+<resid type="IMGX" name="IDP_MAINPANEL_LISTVIEW_IMG_EXTRACT_TEXT" file="image\MainPanel\NetdiskPanel\ViewContainerPanel\ListView\img_extract_text.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_EMPTYVIEW_EMPTY" file="image\MainPanel\NetdiskPanel\ViewContainerPanel\EmptyView\empty.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_EMPTYVIEW_LOADING" file="image\MainPanel\NetdiskPanel\ViewContainerPanel\EmptyView\loading.png"/>
 <resid type="IMGX" name="IDP_MAINPANEL_EMPTYVIEW_ERROR" file="image\MainPanel\NetdiskPanel\ViewContainerPanel\EmptyView\error.png"/>
@@ -1140,6 +1177,7 @@
 <resid type="IMGX" name="IDP_IMAGEPANEL_BTN_SHARE" file="image\ImageViewDlg\btn_share.png"/>
 <resid type="IMGX" name="IDP_IMAGEPANEL_BTN_DOWNLOAD" file="image\ImageViewDlg\btn_download.png"/>
 <resid type="IMGX" name="IDP_IMAGEPANEL_BTN_DELETE" file="image\ImageViewDlg\btn_delete.png"/>
+<resid type="IMGX" name="IDP_IMAGEPANEL_BTN_EXTRACT_TEXT" file="image\ImageViewDlg\btn_extract_text.png"/>
 <resid type="IMGX" name="IDP_IMAGEPANEL_BTN_DETAIL" file="image\ImageViewDlg\btn_detail.png"/>
 <resid type="IMGX" name="IDP_IMAGEPANEL_BTN_CLOUDEDIT" file="image\ImageViewDlg\btn_cloudedit.png"/>
 <resid type="IMGX" name="IDP_IMAGEPANEL_BTN_BOTTOM_LEFT" file="image\ImageViewDlg\btn_bottom_left.png"/>
@@ -1161,6 +1199,7 @@
 <resid type="IMGX" name="IDP_IMAGEPANEL_BTN_COLLAPSE" file="image\ImageViewDlg\collapse.png"/>
 <resid type="IMGX" name="IDP_IMAGEPANEL_BTN_EXPAND" file="image\ImageViewDlg\expand.png"/>
 <resid type="IMGX" name="IDP_IMAGEPANEL_SPECIAL_IMG_GUIDE" file="image\ImageViewDlg\special_img_guide.png"/>
+<resid type="IMGX" name="IDP_IMAGEPANEL_TIP_EXTRACT_TEXT" file="image\ImageViewDlg\tip_extract_text.png"/>
 <!--外链分享列表面板-->
 <resid type="IMGX" name="IDP_SHARELIST_BTN_CANCEL" file="image\MainPanel\ShareList\btn_cancel.png"/>
 <resid type="IMGX" name="IDP_SHARELIST_BTN_COPY" file="image\MainPanel\ShareList\btn_copy.png"/>
@@ -1199,6 +1238,7 @@
 <resid type="IMGX" name="IDP_IMG_DEFINITION_SVIPONLY_SCRIPT" file="image\MainPanel\FunctionalBoxPanel\SvipOnly.png" />
 <resid type="IMGX" name="IDP_IMG_DEFINITION_FREE_SCRIPT" file="image\MainPanel\FunctionalBoxPanel\Free.png" />
 <resid type="IMGX" name="IDP_IMG_DEFINITION_SCRIPT" file="image\VideoPlayDlg\definition\image_bg.png" />
+<resid type="IMGX" name="IDP_IMG_DEFINITION_NEWBG" file="image\VideoPlayDlg\definition\image_new_bg.png" />
 <resid type="IMGX" name="IDP_IMG_DEFINITION_GUIDE_BUTTON" file="image\VideoPlayDlg\definition\svip_button.png" />
 <resid type="IMGX" name="IDP_VIDEO_TASKBAR_YELLOW_BTN_WORDS"   file="image\VideoPlayDlg\definition\yellow_words_btn.png" />
 
@@ -1336,6 +1376,7 @@
 <resid type="IMGX" name="IDP_NAVIGATEPANEL_CONTENT_BUBBLE_DEFAULT" file="image\MainPanel\NavigatePanel\default_bubble_content.png"/>
 <resid type="IMGX" name="IDP_NAVIGATEPANEL_BG" file="image\MainPanel\NavigatePanel\navigate_bg.png"/>
 <resid type="IMGX" name="IDP_NAVIGATEPANEL_ENTERPRISE_CERT_BG" file="image\MainPanel\NavigatePanel\enterprise_cert_btn.png"/>
+<resid type="IMGX" name="IDP_NAVIGATEPANEL_BG_IM_GUIDE" file="image\MainPanel\NavigatePanel\im_guide_bg.png"/>
 <resid type="XML" name="IDR_DUI_TOOLBAR_BUBBLEAD_DLG" layer="1" file="xml\MainPanel\ToolbarBubbleAdDlg.xml"/>
 <resid type="XML" name="IDR_DUI_TOOLBAR_ENTERPRISE_GUIDE_DLG" layer="1" file="xml\MainPanel\ToolbarEnterpriseGuideDlg.xml"/>
 
@@ -1660,6 +1701,14 @@
 <resid type="XML" name="IDR_DUI_WORKSPACE_QUICK_START_GUIDE_PANEL" layer="1" file="xml\MainPanel\WorkSpaceDlg\WorkspaceQuickStartGuide.xml"/>
 <resid type="XML" name="IDR_DUI_WORKSPACE_SELECT_SYNC_PANEL" layer="1" file="xml\MainPanel\WorkSpaceDlg\WorkspaceSelectSync.xml"/>
 
+<!-- 浏览器界面 -->
+<resid type="XML" name="IDR_DUI_BROWSERBASE_DLG" layer="1" file="xml\BrowserDlg\BrowserBaseDlg.xml"/>
+<resid type="XML" name="IDR_DUI_BROWSERSEARCH_DLG" layer="1" file="xml\BrowserDlg\BrowserSearchDlg.xml"/>
+<resid type="IMGX" name="IDR_DUI_BROWSER_HVOVER_ITEM_BG" file="image\GameCenterDlg\browser_item_hover_bg.png"/>
+<resid type="IMGX" name="IDR_DUI_BROWSER_SELECT_ITEM_BG" file="image\GameCenterDlg\browser_item_selected_bg.png"/>
+<resid type="IMGX" name="IDR_DUI_BROWSER_NORMAL_ITEM_BG" file="image\GameCenterDlg\browser_item_normal_bg.png"/>
+<resid type="IMGX" name="IDR_DUI_BROWSER_ITEM_CLOSE" file="image\GameCenterDlg\btn_close.png"/>
+
 <!-- 游戏中心 -->
 <resid type="XML" name="IDR_DUI_GAMECENTER_DLG" layer="1" file="xml\GameCenterDlg\GameCenterDlg.xml"/>
 <resid type="IMGX" name="IDP_DUI_GAMECENTER_BTN_REFRESH" file="image\GameCenterDlg\btn_refresh.png"/>
@@ -1673,12 +1722,16 @@
 <resid type="IMGX" name="IDR_DUI_CLOUDBRIDGE_YELLOW_BRN" file="image\WorkSpaceDlg\CloudBridge\yellow_btn.png"/>
 <resid type="IMGX" name="IDR_DUI_CLOUDBRIDGE_YELLOW_FRAME" file="image\WorkSpaceDlg\CloudBridge\yellow_frame.png"/>
 <resid type="IMGX" name="IDR_DUI_CLOUDBRIDGE_SVIP_FRAME" file="image\WorkSpaceDlg\CloudBridge\svip_frame.png"/>
+<resid type="IMGX" name="IDR_DUI_CLOUDBRIDGE_GUIDE_FRAME" file="image\WorkSpaceDlg\CloudBridge\cloudbridge_guide_frame.png"/>
 <resid type="IMGX" name="IDR_DUI_CLOUDBRIDGE_UNRIDIO" file="image\WorkSpaceDlg\CloudBridge\un_ridio.png"/>
 <resid type="IMGX" name="IDR_DUI_CLOUDBRIDGE_INRIDIO" file="image\WorkSpaceDlg\CloudBridge\in_ridio.png"/>
 <resid type="IMGX" name="IDR_DUI_CLOUDBRIDGE_QUESTION" file="image\WorkSpaceDlg\CloudBridge\question.png"/>
+<resid type="IMGX" name="IDR_DUI_CLOUDBRIDGE_NEW_SVIP" file="image\WorkSpaceDlg\CloudBridge\cloudbridge_new_svip.png"/>
+<resid type="IMGX" name="IDR_DUI_CLOUDBRIDGE_FLOAT_SVIP" file="image\WorkSpaceDlg\CloudBridge\float_svip.png"/>
 <resid type="XML" name="IDR_DUI_CLOUDBRIDGE_INTRODUCE" layer="1" file="xml\MainPanel\WorkSpaceDlg\CloudbridgeDlg\CloudbridgeIntroduce.xml"/>
 <resid type="XML" name="IDR_DUI_CLOUDBRIDGE_DOWNLOAD" layer="1" file="xml\MainPanel\WorkSpaceDlg\CloudbridgeDlg\CloudbridgeDownload.xml"/>
 <resid type="XML" name="IDR_DUI_CLOUDBRIDGE_OPERATE" layer="1" file="xml\MainPanel\WorkSpaceDlg\CloudbridgeDlg\CloudbridgeOperateProgress.xml"/>
+<resid type="XML" name="IDR_DUI_CLOUDBRIDGE_GUIDE" layer="1" file="xml\MainPanel\WorkSpaceDlg\CloudbridgeDlg\CloudbridgeGuide.xml"/>
 
 <!-- 文件搜索tip资源 -->
 <resid type="IMGX" name="IDP_SEARCH_YUN_FAILED_TIP_ICON" file="image\SearchFileTip\tip_icon.png"/>
@@ -1773,6 +1826,10 @@
 <resid type="IMGX" name="IDP_VIDEO_AI_NOTE_GUIDE_COUNT" file="image\VideoPlayDlg\videoainote\count.png"/>
 <resid type="IMGX" name="IDP_VIDEO_AI_NOTE_HELP" file="image\VideoPlayDlg\videoainote\ainote_help.png"/>
 <resid type="IMGX" name="IDP_VIDEO_AI_NOTE_GUIDE" file="image\VideoPlayDlg\videoainote\ainote_guide.png"/>
+<resid type="IMGX" name="IDP_VIDEO_AI_NOTE_TOP_MOST" file="image\VideoPlayDlg\videoainote\top_most.png"/>
+<resid type="IMGX" name="IDP_VIDEO_AI_NOTE_TOP_MOST_CANCEL" file="image\VideoPlayDlg\videoainote\top_most_cancel.png"/>
+<resid type="IMGX" name="IDP_VIDEO_AI_NOTE_TOP_MOST_GUIDE" file="image\VideoPlayDlg\videoainote\top_most_guide.png"/>
+<resid type="IMGX" name="IDP_VIDEO_AI_NOTE_COMMON_TIP_BKG" file="image\VideoPlayDlg\videoainote\common_tip_bkg.png"/>
 
 <!--操作记录时间筛选-->
 <resid type="XML" name="IDR_DUI_WORKSPACE_RECORD_TIME_SELECT" layer="1" file="xml\MainPanel\WorkSpaceDlg\NetdiskPanel\WorkspaceRecordTimeSelectDlg.xml"/>
@@ -1782,3 +1839,28 @@
 <resid type="IMGX" name="IDP_DUI_RECORD_SELECTED_PANEL" file="image\WorkSpaceDlg\FileRecord\selected_panel.png"/>
 <resid type="IMGX" name="IDP_DUI_RECORD_UN_SELECT_PANEL" file="image\WorkSpaceDlg\FileRecord\un_select_panel.png"/>
 
+<!--内嵌页相关资源-->
+<resid type="XML" name="IDR_DUI_EMBEDDEDWEBPAGE_IM_TIP" layer="1" file="xml\MainPanel\EmbeddedWebPageDlg\IMTipDlg.xml"/>
+<resid type="IMGX" name="IDP_DUI_EMBEDDEDWEBPAGE_IM_TIP_BKG" file="image\MainPanel\EmbeddedWebPageDlg\IM\tip_bkg.png"/>
+<resid type="IMGX" name="IDP_DUI_EMBEDDEDWEBPAGE_IM_TIP_CLOSE" file="image\MainPanel\EmbeddedWebPageDlg\IM\tip_close.png"/>
+<resid type="IMGX" name="IDP_DUI_EMBEDDEDWEBPAGE_IM_TIP_OK" file="image\MainPanel\EmbeddedWebPageDlg\IM\tip_ok_btn.png"/>
+
+<!--通用tip相关资源-->
+<resid type="XML" name="IDR_DUI_COMMON_TIP" layer="1" file="xml\MainPanel\CommonTipDlg\CommonTipDlg.xml"/>
+<resid type="IMGX" name="IDR_DUI_COMMON_TIP_BLUE_BG" file="image\MainPanel\CommonTipDlg\tip_bkg.png"/>
+<resid type="IMGX" name="IDR_DUI_COMMON_TIP_BLUE_TRG_UP" file="image\MainPanel\CommonTipDlg\triangle_up.png"/>
+
+<!--视频侧边栏-->
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_BACK" file="image\VideoPlayDlg\videoplaylist\video_playlist_back.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_CLOSE" file="image\VideoPlayDlg\videoplaylist\btn_close.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_HOMEPAGE_RIGHT" file="image\VideoPlayDlg\videoplaylist\videolist_homepage_right.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_BG" file="image\VideoPlayDlg\videoplaylist\playlist_bg.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_CAPTIONBG" file="image\VideoPlayDlg\videoplaylist\video_playlist_captionbg.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_FEATURECOLLECTIONBG" file="image\VideoPlayDlg\videoplaylist\videoplaylist_featurecollection.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_FEATUREDISPLAYSOURCE" file="image\VideoPlayDlg\videoplaylist\videoplaylist_featuredisplaysource.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_VIDEO_BK" file="image\VideoPlayDlg\videoplaylist\video_bk.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_VIDEO_PLAYING" file="image\VideoPlayDlg\videoplaylist\video_playing.gif"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_ITEM_BACK" file="image\VideoPlayDlg\videoplaylist\playlist_itemback.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_DEFAULT_PICTURE" file="image\VideoPlayDlg\videoplaylist\default_picture.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_ERROR_TIP" file="image\VideoPlayDlg\videoplaylist\error_tip.png"/>
+<resid type="IMGX" name="IDP_VIDEOPLAYLIST_GIF_LOADING" file="image\VideoPlayDlg\loading.gif" />

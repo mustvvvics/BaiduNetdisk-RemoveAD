@@ -13,22 +13,23 @@
         <dlg name="dlg_qrcode_login" pos="5,0,@310,-0">
           <img name="img_qrcode" pos="106,36,@13,@13" skin="img_login_qrcode"/>
           <text name="txt_qrcode_login" pos="[5,31,@84,@22" crtext="000000" font="0400:微软雅黑" valign="middle">%str278%</text>
-          <dlg name="dlg_scanapp_guide" pos="20,82,-20,@20">
+          <dlg name="dlg_scanapp_guide" pos="20,62,-20,@20">
             <text name="txt_scanapp_prefix" pos="59,0" crtext="666666" font="0200:微软雅黑" align="left">%str280%</text>
             <link name="link_scanapp_name" pos="[0,0" cursor="hand" crtext="06a8ff" crhover="06a8ff" font="0200:微软雅黑" hoverfont="0202:微软雅黑" align="left">%str281%</link>
             <text name="txt_scanapp_surfix" pos="[0,0" crtext="666666" font="0200:微软雅黑" align="left">%str282%</text>
           </dlg>
 
           <!--二维码面板-->
-          <dlg name="dlg_qrcode" pos="|-77,119,@154,@154" msgtransparent="1">
+          <dlg name="dlg_qrcode" pos="|-77,99,@154,@154" msgtransparent="1">
           </dlg>
 		  <!--扫码引导-->
-          <img name="img_qrcode_guide" pos="182,129,@112,@138" skin="img_login_qrcode_guide" show="0"/>
+          <img name="img_qrcode_guide" pos="182,109,@112,@138" skin="img_login_qrcode_guide" show="0"/>
           <!--错误提示-->
 		  <dlg name="dlg_qrcode_tip" pos="|-77,275,@160,@16" show="0">
 		    <img pos="2,0,@16,@16" skin="img_login_errortip_icon"/>
 			<text name="txt_qrcode_error" pos="[2,|-8" crtext="ff4040" dotted="1"/>
 		  </dlg>
+          <text name="txt_login_qecode" pos="0,263,-0,@20" crtext="000000" font="0000:微软雅黑" align="center" show="0"></text>
           <imgbtn name="btn_refresh_qrcode" pos="|-48,293,@96,@30" skin="img_login_btn_reg" crtext="06a8ff" cursor="arrow">%str283%</imgbtn>
           <hr pos="-1,0,@1,-0" crbg="bcbcbc" show="0"></hr>
         </dlg>

@@ -20,10 +20,10 @@
             class="cls_transleftpanel_op_btn"  txtxoffset="55" show="0">%str3750%</imgbtn>
     <hr name="hr_line_cloud" pos="0,0,@3,-0" crbg="06a8ff" show="0"/>
   </dlg>
-  <!--广告面板-->
+  <!--广告面板 要修改的-->
   <dlg name="dlg_ad" pos="0,0,0,0" show="0">
     <!--与AdPanel.xml内容一致-->
-    <dlg name="AdPanel" pos="0,0,-0,-0">
+    <dlg name="AdPanel" pos="0,0,-0,-0">  
       <gifplayer name="ad_img_bkg" pos="0,0,-0,-0" bulltimer="1"></gifplayer>
       <imgbtn name="ad_img_btn" pos="0,0,-0,-0"></imgbtn>
       <imgbtn name="ad_close_btn" pos="-16,0,-0,16" cursor="arrow" tip="关闭" show="0"></imgbtn>
@@ -35,7 +35,7 @@
     </dlg>
   </dlg>
   
-  <!--流量包-->
+  <!-- 流量包  -->
   <dlg name="dlg_speedup_package" pos="0,-50,-0,-10" > 
     <dlg name="dlg_svip_speedup_package" pos="0,0,-1,-1" show="0"> 
         <img pos="10,0,@16,@16" skin="speedup_package_svip_icon"></img>

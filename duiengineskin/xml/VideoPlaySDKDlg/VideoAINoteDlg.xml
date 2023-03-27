@@ -1,28 +1,22 @@
-<layer title="%str6950%" width="368" height="568" minsize="368,568" appwin="1" ncRect="4,4,4,4" resize="1" translucent="0" nomaxsize="0">
+<layer name="VideoAiPower" width="348" height="480" minsize="348,480" appwin="0" ncRect="0,0,0,0" resize="1" translucent="0" nomaxsize="0">
   <body>
     <dlg pos="0,0,-0,-0" class="cls_dlg_video_ai_note">
-      <caption name="dlg_note_caption" pos="0,0,-0,38">
-        <img pos="10,8" skin="common_logo_main"></img>
-        <text pos="39,9" name="file_name_title" maxwidth="300" class="cls_dlg_title_text">%str6950%</text>
-        <imgbtn name="btn_ainotehelp" skin="ainote_help_img" pos="[6,8,@18,@18" cursor="arrow" tip="%str6957%" animate="0" show="1"/>
-        <imgbtn name="btn_open_folder" skin="video_ai_note_open_folder" pos="-62,8,@16,@16" cursor="arrow" tip="%str6951%" animate="0" show="1"/>
-        <imgbtn name="btn_close" skin="video_ai_note_close" pos="-30,8,@16,@16" cursor="arrow" tip="%str250%" animate="0"/>
-      </caption>
-      <dlg name="dlg_note_view" pos="10,38,-10,-36">
-        <dlg pos="0,0,-0,-0">
-          <webbrowser name="ai_web_page" pos="0,0,-0,-0" use_ie="0" show="1" reboot_on_render_crash="0"/>
-          <!--网络连接错误面板-->
-          <dlg name="network_error_panel" pos="0,0,-0,-0" show="0">
-            <dlg name="network_error_tip_panel" pos="|-90,|-100" width="180" height="200">
-              <img pos="|-52,0" skin="doc_dlg_load_error" width="103" height="93" />
-              <text pos="0,110,-0,130" class="cls_txt_red">%str6952%</text>
-              <imgbtn name="btn_retry" class="defultbtn" pos="|-48,162" width="96" height="34" cursor="arrow">%str6953%</imgbtn>
-            </dlg>
-          </dlg>
+      <dlg pos="0,0,-0,-0"  name="text_load_video_tip" skin="video_playlist_bg">
+        <gifplayer name="gif_loading" pos="|-16,|-16,@32,@32" skin="video_playlist_gif_loading"/>
+        <text pos="0,[30,-0,@14" crtext="A1A1A1" font="0200:微软雅黑" align="center">%str7256%</text>
+      </dlg>
+      <webbrowser name="ai_note_page" pos="0,0,-0,-0" use_ie="0" reboot_on_render_crash="0" show="0"/>
+      <!--网络连接错误面板-->
+      <dlg name="network_error_panel" pos="0,0,-0,-0" show="0">
+        <dlg name="network_error_tip_panel" pos="|-90,|-100" width="180" height="200">
+          <img pos="|-52,0" skin="doc_dlg_load_error" width="103" height="93" />
+          <text pos="0,110,-0,130" class="cls_txt_red">%str6952%</text>
+          <imgbtn name="btn_retry" class="defultbtn" pos="|-48,162" width="96" height="34" cursor="arrow">%str6953%</imgbtn>
         </dlg>
       </dlg>
-      <dlg name="dlg_note_tip_panel" pos="0,-36,-0,-0">
-        <text name="note_tip" pos="20,12,-0,24" crtext="030b1a" font="0000:微软雅黑"></text>
+      <dlg name="dlg_note_tip_panel" pos="12,-70,-12,-12" skin="video_ainote_text" show="0">
+        <text name="note_tip" pos="16,30" crtext="030B1A" font="0000:微软雅黑"></text>
+        <imgbtn name="btn_open_folder" skin="video_ai_note_open_folder" pos="-36,26,@24,@24" cursor="arrow" tip="%str6951%" animate="0" show="1"/>
       </dlg>
     </dlg>
   </body>
